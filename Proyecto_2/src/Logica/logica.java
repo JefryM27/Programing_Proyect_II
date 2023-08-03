@@ -1,5 +1,7 @@
 package Logica;
 
+import GUI.ChinoTico;
+
 
 public class logica {
 
@@ -8,6 +10,9 @@ public class logica {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ChinoTico tico = new ChinoTico();
+        tico.setVisible(true);
+        
     }
     
 }
