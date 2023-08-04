@@ -147,7 +147,6 @@ public class ChinoTico extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTabbedPane1.setBackground(new java.awt.Color(0, 204, 0));
-        jTabbedPane1.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabbedPane1.setOpaque(true);
 
@@ -175,7 +174,6 @@ public class ChinoTico extends javax.swing.JFrame {
 
         lblNombreEmpresa.setBackground(new java.awt.Color(0, 0, 0));
         lblNombreEmpresa.setFont(new java.awt.Font("Segoe UI Emoji", 0, 48)); // NOI18N
-        lblNombreEmpresa.setForeground(new java.awt.Color(0, 0, 0));
         lblNombreEmpresa.setText("Bienvenidos a ChinoTico");
         jPInicio.add(lblNombreEmpresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, 520, -1));
 
@@ -500,7 +498,6 @@ public class ChinoTico extends javax.swing.JFrame {
         JPCtegorias.setBackground(new java.awt.Color(0, 0, 0));
 
         jTabCategorias.setBackground(new java.awt.Color(255, 102, 102));
-        jTabCategorias.setForeground(new java.awt.Color(0, 0, 0));
         jTabCategorias.setAutoscrolls(true);
         jTabCategorias.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabCategorias.setOpaque(true);
@@ -508,7 +505,6 @@ public class ChinoTico extends javax.swing.JFrame {
         JPEnergizante.setBackground(new java.awt.Color(0, 0, 0));
 
         jTabbedPane3.setBackground(new java.awt.Color(0, 102, 102));
-        jTabbedPane3.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabbedPane3.setOpaque(true);
 
@@ -547,7 +543,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabbedPane3.addTab("Energizantes", jPanel46);
 
         jTabbedPane10.setBackground(new java.awt.Color(153, 0, 0));
-        jTabbedPane10.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabbedPane10.setOpaque(true);
 
@@ -592,11 +587,11 @@ public class ChinoTico extends javax.swing.JFrame {
         jPVino.setLayout(jPVinoLayout);
         jPVinoLayout.setHorizontalGroup(
             jPVinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ImajenVino, javax.swing.GroupLayout.PREFERRED_SIZE, 1087, Short.MAX_VALUE)
+            .addComponent(ImajenVino, javax.swing.GroupLayout.DEFAULT_SIZE, 1087, Short.MAX_VALUE)
             .addGroup(jPVinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPVinoLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(ImajenVino1, javax.swing.GroupLayout.PREFERRED_SIZE, 1075, Short.MAX_VALUE)
+                    .addComponent(ImajenVino1, javax.swing.GroupLayout.DEFAULT_SIZE, 1075, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         jPVinoLayout.setVerticalGroup(
@@ -618,7 +613,7 @@ public class ChinoTico extends javax.swing.JFrame {
         jPanel52.setLayout(jPanel52Layout);
         jPanel52Layout.setHorizontalGroup(
             jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 1063, Short.MAX_VALUE)
+            .addComponent(jTabbedPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 1063, Short.MAX_VALUE)
         );
         jPanel52Layout.setVerticalGroup(
             jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -641,7 +636,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabCategorias.addTab("Bebidas", JPEnergizante);
 
         jTabbedPane4.setBackground(new java.awt.Color(0, 102, 102));
-        jTabbedPane4.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabbedPane4.setOpaque(true);
 
@@ -719,7 +713,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabCategorias.addTab("Abarrotes", jPGranos);
 
         jTabbedPane5.setBackground(new java.awt.Color(0, 102, 102));
-        jTabbedPane5.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabbedPane5.setOpaque(true);
 
@@ -797,7 +790,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabCategorias.addTab("Limpieza", jPanel12);
 
         jTabbedPane6.setBackground(new java.awt.Color(0, 102, 102));
-        jTabbedPane6.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabbedPane6.setOpaque(true);
 
@@ -890,7 +882,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabCategorias.addTab("Cuidado Personal", jPanel13);
 
         jTabbedPane9.setBackground(new java.awt.Color(0, 102, 102));
-        jTabbedPane9.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabbedPane9.setOpaque(true);
 
@@ -953,7 +944,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabCategorias.addTab("Mascotas", jPanel14);
 
         jTabbedPane7.setBackground(new java.awt.Color(0, 102, 102));
-        jTabbedPane7.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTabbedPane7.setOpaque(true);
 
@@ -988,7 +978,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabbedPane7.addTab("Verduras", jPanel35);
 
         jTabbedPane8.setBackground(new java.awt.Color(153, 0, 0));
-        jTabbedPane8.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane8.setOpaque(true);
 
         jPanel37.setBackground(new java.awt.Color(0, 0, 0));
@@ -1093,10 +1082,8 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabCategorias.addTab("Frescos", jPanel15);
 
         jPanel16.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel16.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CARRITO", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel16.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel16.setBorder(javax.swing.BorderFactory.createTitledBorder("CARRITO"));
 
-        tblCarrito.setBackground(new java.awt.Color(255, 255, 255));
         tblCarrito.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -1145,8 +1132,7 @@ public class ChinoTico extends javax.swing.JFrame {
         );
 
         jPDetalleCompra.setBackground(new java.awt.Color(204, 204, 204));
-        jPDetalleCompra.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Detalle de Compra", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPDetalleCompra.setForeground(new java.awt.Color(0, 0, 0));
+        jPDetalleCompra.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Detalle de Compra"));
 
         DetalleCompra.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane4.setViewportView(DetalleCompra);
@@ -1169,7 +1155,7 @@ public class ChinoTico extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 533, Short.MAX_VALUE)
                     .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPDetalleCompra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -1208,16 +1194,14 @@ public class ChinoTico extends javax.swing.JFrame {
         jTabbedPane1.addTab("Categorias", JPCtegorias);
 
         jPanel48.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel48.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Factura", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel48.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel48.setBorder(javax.swing.BorderFactory.createTitledBorder("Factura"));
 
         jLabel32.setBackground(new java.awt.Color(0, 0, 0));
         jLabel32.setFont(new java.awt.Font("Segoe UI Light", 2, 36)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(0, 0, 0));
         jLabel32.setText("Carrito de Compras");
 
         jPanel49.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel49.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Productos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel49.setBorder(javax.swing.BorderFactory.createTitledBorder("Productos"));
 
         tblCarritoCompras.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1271,8 +1255,7 @@ public class ChinoTico extends javax.swing.JFrame {
         );
 
         jPanel50.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel50.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Facturacion", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel50.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel50.setBorder(javax.swing.BorderFactory.createTitledBorder("Facturacion"));
 
         btnFinalizarCompra.setBackground(new java.awt.Color(0, 153, 51));
         btnFinalizarCompra.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -1281,17 +1264,14 @@ public class ChinoTico extends javax.swing.JFrame {
         btnFinalizarCompra.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel38.setFont(new java.awt.Font("Segoe UI Emoji", 2, 24)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(0, 0, 0));
         jLabel38.setText("Total:");
 
         jLabel42.setFont(new java.awt.Font("Segoe UI Emoji", 2, 24)); // NOI18N
-        jLabel42.setForeground(new java.awt.Color(0, 0, 0));
         jLabel42.setText("Envio:");
 
         jPanel51.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel43.setFont(new java.awt.Font("SimSun-ExtB", 2, 36)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(0, 0, 0));
         jLabel43.setText("Chino Tico");
 
         javax.swing.GroupLayout jPanel51Layout = new javax.swing.GroupLayout(jPanel51);
@@ -1312,7 +1292,6 @@ public class ChinoTico extends javax.swing.JFrame {
         );
 
         jLabel44.setFont(new java.awt.Font("Segoe UI Emoji", 2, 24)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(0, 0, 0));
         jLabel44.setText("Sub-Total");
 
         javax.swing.GroupLayout jPanel50Layout = new javax.swing.GroupLayout(jPanel50);
@@ -1374,7 +1353,7 @@ public class ChinoTico extends javax.swing.JFrame {
                     .addGroup(jPanel48Layout.createSequentialGroup()
                         .addGap(624, 624, 624)
                         .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
         jPanel48Layout.setVerticalGroup(
             jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
