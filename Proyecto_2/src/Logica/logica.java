@@ -14,8 +14,8 @@ public class logica {
         tico.setVisible(true);
         tico.setResizable(false);
         tico.setLocationRelativeTo(null);
-
-        
+        tico.actualizarTablaCliente();
+        tico.actualizarTablaProveedor();
     }
     
 }

@@ -1,12 +1,62 @@
 
 package GUI;
 
+import Logica.*;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 public class ChinoTico extends javax.swing.JFrame {
+    private Cliente cliente = new Cliente(this);
+    private Proveedor proveedor = new Proveedor(this);
 
    
     public ChinoTico() {
         initComponents();
+        //desactivarPaneles();
     }
+    
+    public void actualizarTablaCliente() {
+        cliente.actualizarTabla((DefaultTableModel) tblClientes.getModel());
+    }
+    public void actualizarTablaProveedor() {
+        proveedor.actualizarTabla((DefaultTableModel) tblProveedores.getModel());
+    }
+
+    private void limpiarCampos(){
+        this.txtCedulaCliente.setText("");
+        this.txtNombreCliente.setText("");
+        this.txt1ApellidoCliente.setText("");
+        this.txt2ApellidoCliente.setText("");
+        this.txtTelefonoCliente.setText("");
+        this.txtCorreoCliente.setText("");
+        this.txtCedulaProveedor.setText("");
+        this.txtNombreProveedor.setText("");
+        this.txtTelefonoProveedor.setText("");
+        this.txtCorreoProveedor.setText("");
+    }
+    
+    // Method to check if the fields are empty
+    private boolean camposVacios(String... campos) {
+        for (String campo : campos) {
+            if (campo.isEmpty()) {
+                return true;
+            }
+        }
+        return false;
+    }
+    //Method to disable panels without disabling the first 2
+    private void desactivarPaneles() {
+        for (int i = 2; i < jTabbedPane1.getTabCount(); i++) {
+            jTabbedPane1.setEnabledAt(i, false);
+        }
+    }
+    //Method to activate panels
+    private void activarPaneles() {
+        for (int i = 2; i < jTabbedPane1.getTabCount(); i++) {
+            jTabbedPane1.setEnabledAt(i, true);
+        }
+    }
+
 
 
     @SuppressWarnings("unchecked")
@@ -21,7 +71,7 @@ public class ChinoTico extends javax.swing.JFrame {
         lblImejenInicio = new javax.swing.JLabel();
         jPClientes = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblCliente = new javax.swing.JTable();
+        tblClientes = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -47,7 +97,7 @@ public class ChinoTico extends javax.swing.JFrame {
         lblImajen6 = new javax.swing.JLabel();
         jPProveedores = new javax.swing.JPanel();
         TablaProveedor = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        tblProveedores = new javax.swing.JTable();
         jPanel8 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -183,18 +233,26 @@ public class ChinoTico extends javax.swing.JFrame {
 
         jPClientes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblCliente.setModel(new javax.swing.table.DefaultTableModel(
+        tblClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Cedula", "Nombre", "Primer Apellido", "Segundo Apellido", "Teléfono", "Correo"
             }
-        ));
-        jScrollPane1.setViewportView(tblCliente);
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(tblClientes);
 
         jPClientes.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 90, 1040, 230));
 
@@ -231,6 +289,11 @@ public class ChinoTico extends javax.swing.JFrame {
         btnGuardarCliente.setBackground(new java.awt.Color(0, 153, 51));
         btnGuardarCliente.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardarCliente.setText("Guardar");
+        btnGuardarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarClienteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -349,18 +412,26 @@ public class ChinoTico extends javax.swing.JFrame {
 
         jPProveedores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        tblProveedores.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Cedula", "Nombre", "Teléfono", "Correo"
             }
-        ));
-        TablaProveedor.setViewportView(jTable3);
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, true, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        TablaProveedor.setViewportView(tblProveedores);
 
         jPProveedores.add(TablaProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 1040, 230));
 
@@ -397,6 +468,11 @@ public class ChinoTico extends javax.swing.JFrame {
         btnGuardarProveedor.setBackground(new java.awt.Color(0, 153, 51));
         btnGuardarProveedor.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardarProveedor.setText("Guardar");
+        btnGuardarProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarProveedorActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -1380,6 +1456,58 @@ public class ChinoTico extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCorreoProveedorActionPerformed
 
+    private void btnGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarClienteActionPerformed
+    // Get the data entered in the text fields
+    String cédula = txtCedulaCliente.getText();
+    String nombre = txtNombreCliente.getText();
+    String primerApellido = txt1ApellidoCliente.getText();
+    String segundoApellido = txt2ApellidoCliente.getText();
+    String teléfono = txtTelefonoCliente.getText();
+    String correo = txtCorreoCliente.getText();
+    // Check that the fields are not empty
+    if (camposVacios(cédula, nombre, primerApellido, segundoApellido, teléfono, correo)) {
+        JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios.", "Error", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+    int idAleatorio = 0;
+    Cliente nuevoCliente = new Cliente(this);
+    nuevoCliente.setId(idAleatorio);
+    nuevoCliente.setCédula(cédula);
+    nuevoCliente.setNombre(nombre);
+    nuevoCliente.setPrimerApellido(primerApellido);
+    nuevoCliente.setSegundoApellido(segundoApellido);
+    nuevoCliente.setTeléfono(teléfono);
+    nuevoCliente.setCorreo(correo);
+    nuevoCliente.guardarCliente();
+    actualizarTablaCliente();
+    limpiarCampos();
+    //activarPaneles();
+    }//GEN-LAST:event_btnGuardarClienteActionPerformed
+
+    private void btnGuardarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarProveedorActionPerformed
+      // Get the data entered in the text fields
+    String cedula = txtCedulaProveedor.getText();
+    String nombre = txtNombreProveedor.getText();
+    String telefono = txtTelefonoProveedor.getText();
+    String correo = txtCorreoProveedor.getText();
+    // Check that the fields are not empty
+    if (camposVacios(cedula, nombre, telefono, correo)) {
+        JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios.", "Error", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+    int idAleatorio = 0;
+    Proveedor nuevoProveedor = new Proveedor(this);
+    nuevoProveedor.setId(idAleatorio);
+    nuevoProveedor.setCedulaJuridica(cedula);
+    nuevoProveedor.setNombre(nombre);
+    nuevoProveedor.setTelefono(telefono);
+    nuevoProveedor.setCorreo(correo);
+    nuevoProveedor.guardarProveedor();
+    actualizarTablaProveedor();
+    limpiarCampos();
+    //activarPaneles();
+    }//GEN-LAST:event_btnGuardarProveedorActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1482,7 +1610,6 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane7;
     private javax.swing.JTabbedPane jTabbedPane8;
     private javax.swing.JTabbedPane jTabbedPane9;
-    private javax.swing.JTable jTable3;
     private javax.swing.JLabel lblImajen1;
     private javax.swing.JLabel lblImajen2;
     private javax.swing.JLabel lblImajen3;
@@ -1500,7 +1627,8 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JLabel lblNombreEmpresa;
     private javax.swing.JTable tblCarrito;
     private javax.swing.JTable tblCarritoCompras;
-    private javax.swing.JTable tblCliente;
+    private javax.swing.JTable tblClientes;
+    private javax.swing.JTable tblProveedores;
     private javax.swing.JTextField txt1ApellidoCliente;
     private javax.swing.JTextField txt2ApellidoCliente;
     private javax.swing.JTextField txtCedulaCliente;
