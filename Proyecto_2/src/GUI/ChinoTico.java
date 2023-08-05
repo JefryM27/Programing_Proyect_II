@@ -132,6 +132,14 @@ public class ChinoTico extends javax.swing.JFrame {
         jPGranos = new javax.swing.JPanel();
         jTabbedPane4 = new javax.swing.JTabbedPane();
         jPgranos = new javax.swing.JPanel();
+        lblArrozblancokuska = new javax.swing.JLabel();
+        lblProductoArrozblancokuska = new javax.swing.JLabel();
+        lblPesoArrozblancokuska = new javax.swing.JLabel();
+        lblPrecioArrozblancokuska = new javax.swing.JLabel();
+        txtProductoArrozblancokuska = new javax.swing.JTextField();
+        txtPesoArrozblancokuska = new javax.swing.JTextField();
+        txtPrecioArrozblancokuska = new javax.swing.JTextField();
+        btnComprarArrozblancokuska = new javax.swing.JButton();
         jPEnlatados = new javax.swing.JPanel();
         jPAceites = new javax.swing.JPanel();
         jPBotanas = new javax.swing.JPanel();
@@ -697,15 +705,77 @@ public class ChinoTico extends javax.swing.JFrame {
 
         jPgranos.setBackground(new java.awt.Color(0, 0, 0));
 
+        lblArrozblancokuska.setIcon(new javax.swing.ImageIcon("C:\\Users\\Cristopher Matus\\OneDrive\\Imágenes\\Imagenes Proyecto#2\\Imagenes Granos y pasta\\Arroz blanco.jpg")); // NOI18N
+
+        lblProductoArrozblancokuska.setForeground(new java.awt.Color(255, 255, 255));
+        lblProductoArrozblancokuska.setText("Producto:");
+
+        lblPesoArrozblancokuska.setForeground(new java.awt.Color(255, 255, 255));
+        lblPesoArrozblancokuska.setText("Peso:");
+
+        lblPrecioArrozblancokuska.setForeground(new java.awt.Color(255, 255, 255));
+        lblPrecioArrozblancokuska.setText("Precio:");
+
+        txtProductoArrozblancokuska.setText("Arroz blanco kuska");
+
+        txtPesoArrozblancokuska.setText("3 kg");
+
+        txtPrecioArrozblancokuska.setText("₡1.450.00");
+        txtPrecioArrozblancokuska.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPrecioArrozblancokuskaActionPerformed(evt);
+            }
+        });
+
+        btnComprarArrozblancokuska.setBackground(new java.awt.Color(0, 51, 0));
+        btnComprarArrozblancokuska.setForeground(new java.awt.Color(255, 255, 255));
+        btnComprarArrozblancokuska.setText("Comprar");
+
         javax.swing.GroupLayout jPgranosLayout = new javax.swing.GroupLayout(jPgranos);
         jPgranos.setLayout(jPgranosLayout);
         jPgranosLayout.setHorizontalGroup(
             jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPgranosLayout.createSequentialGroup()
+                .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPgranosLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblArrozblancokuska)
+                            .addGroup(jPgranosLayout.createSequentialGroup()
+                                .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblProductoArrozblancokuska)
+                                    .addComponent(lblPesoArrozblancokuska)
+                                    .addComponent(lblPrecioArrozblancokuska))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtPesoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtProductoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPrecioArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPgranosLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(btnComprarArrozblancokuska)))
+                .addContainerGap(875, Short.MAX_VALUE))
         );
         jPgranosLayout.setVerticalGroup(
             jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPgranosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblArrozblancokuska)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblProductoArrozblancokuska)
+                    .addComponent(txtProductoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPesoArrozblancokuska)
+                    .addComponent(txtPesoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPrecioArrozblancokuska)
+                    .addComponent(txtPrecioArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnComprarArrozblancokuska)
+                .addContainerGap(509, Short.MAX_VALUE))
         );
 
         jTabbedPane4.addTab("Granos y Pastas", jPgranos);
@@ -759,11 +829,11 @@ public class ChinoTico extends javax.swing.JFrame {
         jPGranos.setLayout(jPGranosLayout);
         jPGranosLayout.setHorizontalGroup(
             jPGranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 1063, Short.MAX_VALUE)
+            .addComponent(jTabbedPane4)
         );
         jPGranosLayout.setVerticalGroup(
             jPGranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 773, Short.MAX_VALUE)
+            .addComponent(jTabbedPane4)
         );
 
         jTabCategorias.addTab("Abarrotes", jPGranos);
@@ -1508,6 +1578,10 @@ public class ChinoTico extends javax.swing.JFrame {
     //activarPaneles();
     }//GEN-LAST:event_btnGuardarProveedorActionPerformed
 
+    private void txtPrecioArrozblancokuskaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioArrozblancokuskaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecioArrozblancokuskaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1520,6 +1594,7 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JPanel JPLinea;
     private javax.swing.JScrollPane TablaProveedor;
     private javax.swing.JButton btnActulizarFacturazion;
+    private javax.swing.JButton btnComprarArrozblancokuska;
     private javax.swing.JButton btnEditarCarrito;
     private javax.swing.JButton btnEditarCliente;
     private javax.swing.JButton btnEditarProveedor;
@@ -1610,6 +1685,7 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane7;
     private javax.swing.JTabbedPane jTabbedPane8;
     private javax.swing.JTabbedPane jTabbedPane9;
+    private javax.swing.JLabel lblArrozblancokuska;
     private javax.swing.JLabel lblImajen1;
     private javax.swing.JLabel lblImajen2;
     private javax.swing.JLabel lblImajen3;
@@ -1625,6 +1701,9 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JLabel lblImejenInicio;
     private javax.swing.JLabel lblLema;
     private javax.swing.JLabel lblNombreEmpresa;
+    private javax.swing.JLabel lblPesoArrozblancokuska;
+    private javax.swing.JLabel lblPrecioArrozblancokuska;
+    private javax.swing.JLabel lblProductoArrozblancokuska;
     private javax.swing.JTable tblCarrito;
     private javax.swing.JTable tblCarritoCompras;
     private javax.swing.JTable tblClientes;
@@ -1638,6 +1717,9 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JTextField txtEnvio;
     private javax.swing.JTextField txtNombreCliente;
     private javax.swing.JTextField txtNombreProveedor;
+    private javax.swing.JTextField txtPesoArrozblancokuska;
+    private javax.swing.JTextField txtPrecioArrozblancokuska;
+    private javax.swing.JTextField txtProductoArrozblancokuska;
     private javax.swing.JTextField txtSubTotal;
     private javax.swing.JTextField txtTelefonoCliente;
     private javax.swing.JTextField txtTelefonoProveedor;
