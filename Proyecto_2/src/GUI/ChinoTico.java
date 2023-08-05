@@ -132,7 +132,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jPGranos = new javax.swing.JPanel();
         jTabbedPane4 = new javax.swing.JTabbedPane();
         jPgranos = new javax.swing.JPanel();
-        lblArrozblancokuska = new javax.swing.JLabel();
         lblProductoArrozblancokuska = new javax.swing.JLabel();
         lblPesoArrozblancokuska = new javax.swing.JLabel();
         lblPrecioArrozblancokuska = new javax.swing.JLabel();
@@ -140,6 +139,7 @@ public class ChinoTico extends javax.swing.JFrame {
         txtPesoArrozblancokuska = new javax.swing.JTextField();
         txtPrecioArrozblancokuska = new javax.swing.JTextField();
         btnComprarArrozblancokuska = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jPEnlatados = new javax.swing.JPanel();
         jPAceites = new javax.swing.JPanel();
         jPBotanas = new javax.swing.JPanel();
@@ -705,8 +705,6 @@ public class ChinoTico extends javax.swing.JFrame {
 
         jPgranos.setBackground(new java.awt.Color(0, 0, 0));
 
-        lblArrozblancokuska.setIcon(new javax.swing.ImageIcon("C:\\Users\\Cristopher Matus\\OneDrive\\Imágenes\\Imagenes Proyecto#2\\Imagenes Granos y pasta\\Arroz blanco.jpg")); // NOI18N
-
         lblProductoArrozblancokuska.setForeground(new java.awt.Color(255, 255, 255));
         lblProductoArrozblancokuska.setText("Producto:");
 
@@ -731,6 +729,9 @@ public class ChinoTico extends javax.swing.JFrame {
         btnComprarArrozblancokuska.setForeground(new java.awt.Color(255, 255, 255));
         btnComprarArrozblancokuska.setText("Comprar");
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesAbarrotes/Imagenes Granos y pasta/Arroz blanco.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout jPgranosLayout = new javax.swing.GroupLayout(jPgranos);
         jPgranos.setLayout(jPgranosLayout);
         jPgranosLayout.setHorizontalGroup(
@@ -738,30 +739,30 @@ public class ChinoTico extends javax.swing.JFrame {
             .addGroup(jPgranosLayout.createSequentialGroup()
                 .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPgranosLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(btnComprarArrozblancokuska))
+                    .addGroup(jPgranosLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblArrozblancokuska)
-                            .addGroup(jPgranosLayout.createSequentialGroup()
-                                .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblProductoArrozblancokuska)
-                                    .addComponent(lblPesoArrozblancokuska)
-                                    .addComponent(lblPrecioArrozblancokuska))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtPesoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtProductoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPrecioArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(lblProductoArrozblancokuska)
+                            .addComponent(lblPesoArrozblancokuska)
+                            .addComponent(lblPrecioArrozblancokuska))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtPesoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtProductoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPrecioArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPgranosLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(btnComprarArrozblancokuska)))
+                        .addGap(31, 31, 31)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(875, Short.MAX_VALUE))
         );
         jPgranosLayout.setVerticalGroup(
             jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPgranosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblArrozblancokuska)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPgranosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblProductoArrozblancokuska)
                     .addComponent(txtProductoArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -775,7 +776,7 @@ public class ChinoTico extends javax.swing.JFrame {
                     .addComponent(txtPrecioArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnComprarArrozblancokuska)
-                .addContainerGap(509, Short.MAX_VALUE))
+                .addContainerGap(503, Short.MAX_VALUE))
         );
 
         jTabbedPane4.addTab("Granos y Pastas", jPgranos);
@@ -1605,6 +1606,7 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JButton btnFinalizarCompra;
     private javax.swing.JButton btnGuardarCliente;
     private javax.swing.JButton btnGuardarProveedor;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -1685,7 +1687,6 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane7;
     private javax.swing.JTabbedPane jTabbedPane8;
     private javax.swing.JTabbedPane jTabbedPane9;
-    private javax.swing.JLabel lblArrozblancokuska;
     private javax.swing.JLabel lblImajen1;
     private javax.swing.JLabel lblImajen2;
     private javax.swing.JLabel lblImajen3;
