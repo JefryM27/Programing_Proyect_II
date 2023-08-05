@@ -79,8 +79,6 @@ public class ChinoTico extends javax.swing.JFrame {
         jPLicores = new javax.swing.JPanel();
         jPCervezas = new javax.swing.JPanel();
         jPVino = new javax.swing.JPanel();
-        ImajenVino = new javax.swing.JLabel();
-        ImajenVino1 = new javax.swing.JLabel();
         jPGranos = new javax.swing.JPanel();
         jTabbedPane4 = new javax.swing.JTabbedPane();
         jPgranos = new javax.swing.JPanel();
@@ -578,33 +576,15 @@ public class ChinoTico extends javax.swing.JFrame {
 
         jPVino.setBackground(new java.awt.Color(0, 0, 0));
 
-        ImajenVino.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imajenes diseño/pngtree-liquor-list-with-bottles-lined-up-on-a-dark-shelves-picture-image_3422701.jpg"))); // NOI18N
-
-        ImajenVino1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imajenes diseño/pngtree-liquor-list-with-bottles-lined-up-on-a-dark-shelves-picture-image_3422701.jpg"))); // NOI18N
-        ImajenVino1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-
         javax.swing.GroupLayout jPVinoLayout = new javax.swing.GroupLayout(jPVino);
         jPVino.setLayout(jPVinoLayout);
         jPVinoLayout.setHorizontalGroup(
             jPVinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ImajenVino, javax.swing.GroupLayout.DEFAULT_SIZE, 1087, Short.MAX_VALUE)
-            .addGroup(jPVinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPVinoLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(ImajenVino1, javax.swing.GroupLayout.DEFAULT_SIZE, 1075, Short.MAX_VALUE)
-                    .addContainerGap()))
+            .addGap(0, 1063, Short.MAX_VALUE)
         );
         jPVinoLayout.setVerticalGroup(
             jPVinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPVinoLayout.createSequentialGroup()
-                .addContainerGap(407, Short.MAX_VALUE)
-                .addComponent(ImajenVino, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(jPVinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPVinoLayout.createSequentialGroup()
-                    .addGap(10, 10, 10)
-                    .addComponent(ImajenVino1, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(340, Short.MAX_VALUE)))
+            .addGap(0, 711, Short.MAX_VALUE)
         );
 
         jTabbedPane10.addTab("Vino", jPVino);
@@ -613,7 +593,7 @@ public class ChinoTico extends javax.swing.JFrame {
         jPanel52.setLayout(jPanel52Layout);
         jPanel52Layout.setHorizontalGroup(
             jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 1063, Short.MAX_VALUE)
+            .addComponent(jTabbedPane10)
         );
         jPanel52Layout.setVerticalGroup(
             jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1407,8 +1387,6 @@ public class ChinoTico extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextPane DetalleCompra;
-    private javax.swing.JLabel ImajenVino;
-    private javax.swing.JLabel ImajenVino1;
     private javax.swing.JPanel JPCtegorias;
     private javax.swing.JPanel JPEnergizante;
     private javax.swing.JPanel JPLinea;
