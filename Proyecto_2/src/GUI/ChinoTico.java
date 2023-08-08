@@ -2,8 +2,18 @@
 package GUI;
 
 import Logica.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 
 public class ChinoTico extends javax.swing.JFrame {
     private Cliente cliente = new Cliente(this);
@@ -152,6 +162,19 @@ public class ChinoTico extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
         jTabbedPane6 = new javax.swing.JTabbedPane();
         jPanel29 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtCepilloProCuidado = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtCepilloProCuidado1 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
         jPanel30 = new javax.swing.JPanel();
         jPanel31 = new javax.swing.JPanel();
         jPanel32 = new javax.swing.JPanel();
@@ -1047,7 +1070,7 @@ public class ChinoTico extends javax.swing.JFrame {
         );
         jPanel45Layout.setVerticalGroup(
             jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 742, Short.MAX_VALUE)
+            .addGap(0, 748, Short.MAX_VALUE)
         );
 
         jTabbedPane3.addTab("Gaseosas", jPanel45);
@@ -1100,7 +1123,7 @@ public class ChinoTico extends javax.swing.JFrame {
         );
         jPVinoLayout.setVerticalGroup(
             jPVinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 711, Short.MAX_VALUE)
+            .addGap(0, 717, Short.MAX_VALUE)
         );
 
         jTabbedPane10.addTab("Vino", jPVino);
@@ -1208,7 +1231,7 @@ public class ChinoTico extends javax.swing.JFrame {
                     .addComponent(txtPrecioArrozblancokuska, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnComprarArrozblancokuska)
-                .addContainerGap(503, Short.MAX_VALUE))
+                .addContainerGap(509, Short.MAX_VALUE))
         );
 
         jTabbedPane4.addTab("Granos y Pastas", jPgranos);
@@ -1343,7 +1366,7 @@ public class ChinoTico extends javax.swing.JFrame {
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 773, Short.MAX_VALUE)
+            .addComponent(jTabbedPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 779, Short.MAX_VALUE)
         );
 
         jTabCategorias.addTab("Limpieza", jPanel12);
@@ -1354,15 +1377,154 @@ public class ChinoTico extends javax.swing.JFrame {
 
         jPanel29.setBackground(new java.awt.Color(0, 0, 0));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imajenes diseño/CuidadoPersonal/Cepillo 360 Advanced LW.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Producto:");
+
+        txtCepilloProCuidado.setBackground(new java.awt.Color(0, 0, 0));
+        txtCepilloProCuidado.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        txtCepilloProCuidado.setForeground(new java.awt.Color(255, 255, 255));
+        txtCepilloProCuidado.setText("Cepillo Dental Colgate procuidado");
+        txtCepilloProCuidado.setBorder(null);
+        txtCepilloProCuidado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCepilloProCuidadoActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Peso:");
+
+        jLabel5.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Precio: ");
+
+        jTextField2.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField2.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField2.setText("1110 CRC");
+        jTextField2.setBorder(null);
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imajenes diseño/CuidadoPersonal/Cepillo Colgate twister medio.png"))); // NOI18N
+
+        jLabel7.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Producto:");
+
+        txtCepilloProCuidado1.setBackground(new java.awt.Color(0, 0, 0));
+        txtCepilloProCuidado1.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        txtCepilloProCuidado1.setForeground(new java.awt.Color(255, 255, 255));
+        txtCepilloProCuidado1.setText("Cepillo Dental Colgate twister");
+        txtCepilloProCuidado1.setBorder(null);
+        txtCepilloProCuidado1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCepilloProCuidado1ActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Peso:");
+
+        jLabel9.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Precio: ");
+
+        jTextField3.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField3.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField3.setText("1335 CRC");
+        jTextField3.setBorder(null);
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
         jPanel29.setLayout(jPanel29Layout);
         jPanel29Layout.setHorizontalGroup(
             jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel29Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel29Layout.createSequentialGroup()
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel29Layout.createSequentialGroup()
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(209, 209, 209)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel29Layout.createSequentialGroup()
+                                .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCepilloProCuidado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel29Layout.createSequentialGroup()
+                                        .addGap(72, 72, 72)
+                                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel29Layout.createSequentialGroup()
+                                                .addComponent(jLabel9)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(jPanel29Layout.createSequentialGroup()
+                                        .addGap(66, 66, 66)
+                                        .addComponent(jLabel7)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txtCepilloProCuidado1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(493, 493, 493))))
+                    .addGroup(jPanel29Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
         jPanel29Layout.setVerticalGroup(
             jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel29Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel29Layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtCepilloProCuidado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel29Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtCepilloProCuidado1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(561, 561, 561))))
         );
 
         jTabbedPane6.addTab("Cuidado Bucal", jPanel29);
@@ -1431,11 +1593,11 @@ public class ChinoTico extends javax.swing.JFrame {
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 1063, Short.MAX_VALUE)
+            .addComponent(jTabbedPane6)
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 773, Short.MAX_VALUE)
+            .addComponent(jTabbedPane6)
         );
 
         jTabCategorias.addTab("Cuidado Personal", jPanel13);
@@ -2631,7 +2793,7 @@ public class ChinoTico extends javax.swing.JFrame {
                             .addComponent(txtTioCatPrecio16, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnTioCat13, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         jTabbedPane9.addTab("Alimentos", jPanel42);
@@ -3791,7 +3953,7 @@ public class ChinoTico extends javax.swing.JFrame {
                             .addComponent(txtTioCatPrecio29, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnTioCat28, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         jTabbedPane9.addTab("Accesorios", jPanel43);
@@ -4951,7 +5113,7 @@ public class ChinoTico extends javax.swing.JFrame {
                             .addComponent(txtTioCatPrecio47, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnTioCat46, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         jTabbedPane9.addTab("Limpieza", jPanel44);
@@ -5074,7 +5236,7 @@ public class ChinoTico extends javax.swing.JFrame {
         );
         jPanel36Layout.setVerticalGroup(
             jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE)
+            .addComponent(jTabbedPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE)
         );
 
         jTabbedPane7.addTab("Carnes", jPanel36);
@@ -5089,7 +5251,7 @@ public class ChinoTico extends javax.swing.JFrame {
         );
         jPanel41Layout.setVerticalGroup(
             jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 742, Short.MAX_VALUE)
+            .addGap(0, 748, Short.MAX_VALUE)
         );
 
         jTabbedPane7.addTab("Embutidos", jPanel41);
@@ -5213,7 +5375,7 @@ public class ChinoTico extends javax.swing.JFrame {
             .addGroup(JPCtegoriasLayout.createSequentialGroup()
                 .addGroup(JPCtegoriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTabCategorias))
+                    .addComponent(jTabCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, 810, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -5427,7 +5589,8 @@ public class ChinoTico extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCorreoProveedorActionPerformed
 
     private void btnGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarClienteActionPerformed
-    // Get the data entered in the text fields
+
+            // Get the data entered in the text fields
     String cédula = txtCedulaCliente.getText();
     String nombre = txtNombreCliente.getText();
     String primerApellido = txt1ApellidoCliente.getText();
@@ -5439,9 +5602,8 @@ public class ChinoTico extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios.", "Error", JOptionPane.ERROR_MESSAGE);
         return;
     }
-    int idAleatorio = 0;
     Cliente nuevoCliente = new Cliente(this);
-    nuevoCliente.setId(idAleatorio);
+    nuevoCliente.setId( this.generarID("cliente.json") + 1);
     nuevoCliente.setCédula(cédula);
     nuevoCliente.setNombre(nombre);
     nuevoCliente.setPrimerApellido(primerApellido);
@@ -5451,9 +5613,24 @@ public class ChinoTico extends javax.swing.JFrame {
     nuevoCliente.guardarCliente();
     actualizarTablaCliente();
     limpiarCampos();
-    //activarPaneles();
+//activarPaneles();
     }//GEN-LAST:event_btnGuardarClienteActionPerformed
 
+    private int generarID(String fileName){
+        try {
+        File archivoJSON = new File(fileName);
+        JSONParser parser = new JSONParser();
+        JSONArray array = (JSONArray) parser.parse(new FileReader(archivoJSON));
+        int lastIndex = array.size()-1;        
+        JSONObject ultimo_cliente = (JSONObject) array.get(lastIndex);
+        //accesses the attributes of the last data in the table
+        Long id = (Long) ultimo_cliente.get("id");
+        return id.intValue(); 
+        } catch (IOException | ParseException e) {
+            return 1000;
+        }
+    };
+    
     private void btnGuardarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarProveedorActionPerformed
       // Get the data entered in the text fields
     String cedula = txtCedulaProveedor.getText();
@@ -5465,9 +5642,8 @@ public class ChinoTico extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios.", "Error", JOptionPane.ERROR_MESSAGE);
         return;
     }
-    int idAleatorio = 0;
     Proveedor nuevoProveedor = new Proveedor(this);
-    nuevoProveedor.setId(idAleatorio);
+    nuevoProveedor.setId(this.generarID("proveedor.json") + 1);
     nuevoProveedor.setCedulaJuridica(cedula);
     nuevoProveedor.setNombre(nombre);
     nuevoProveedor.setTelefono(telefono);
@@ -5914,6 +6090,22 @@ public class ChinoTico extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTioCatPeso53ActionPerformed
 
+    private void txtCepilloProCuidadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCepilloProCuidadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCepilloProCuidadoActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void txtCepilloProCuidado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCepilloProCuidado1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCepilloProCuidado1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -6055,6 +6247,7 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel197;
     private javax.swing.JLabel jLabel198;
     private javax.swing.JLabel jLabel199;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel200;
     private javax.swing.JLabel jLabel201;
     private javax.swing.JLabel jLabel202;
@@ -6159,6 +6352,7 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel297;
     private javax.swing.JLabel jLabel298;
     private javax.swing.JLabel jLabel299;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel300;
     private javax.swing.JLabel jLabel301;
     private javax.swing.JLabel jLabel302;
@@ -6220,9 +6414,15 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel357;
     private javax.swing.JLabel jLabel358;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPAceites;
     private javax.swing.JPanel jPBotanas;
     private javax.swing.JPanel jPCervezas;
@@ -6288,6 +6488,9 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane7;
     private javax.swing.JTabbedPane jTabbedPane8;
     private javax.swing.JTabbedPane jTabbedPane9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     private javax.swing.JLabel lblImajen1;
     private javax.swing.JLabel lblImajen2;
     private javax.swing.JLabel lblImajen3;
@@ -6317,6 +6520,8 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JTextField txtCantoPrecio;
     private javax.swing.JTextField txtCedulaCliente;
     private javax.swing.JTextField txtCedulaProveedor;
+    private javax.swing.JTextField txtCepilloProCuidado;
+    private javax.swing.JTextField txtCepilloProCuidado1;
     private javax.swing.JTextField txtCobayes;
     private javax.swing.JTextField txtCobayesPeso;
     private javax.swing.JTextField txtCobayesPrecio;
