@@ -130,7 +130,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="-170" y="0" width="1710" height="810"/>
+                  <AbsoluteConstraints x="-170" y="0" width="1800" height="810"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -1703,9 +1703,9 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="3" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="txtCepilloProCuidado1" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="txtCepilloProCuidado1" min="-2" pref="29" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>

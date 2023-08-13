@@ -690,7 +690,7 @@ public class ChinoTico extends javax.swing.JFrame {
 
         lblImejenInicio.setForeground(new java.awt.Color(0, 0, 153));
         lblImejenInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imajenes diseño/Retail-de-supermercado.png"))); // NOI18N
-        jPInicio.add(lblImejenInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(-170, 0, 1710, 810));
+        jPInicio.add(lblImejenInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(-170, 0, 1800, 810));
 
         jTabbedPane1.addTab("Inicio", jPInicio);
 
@@ -1515,7 +1515,7 @@ public class ChinoTico extends javax.swing.JFrame {
                     .addGroup(jPanel29Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtCepilloProCuidado1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -5375,7 +5375,7 @@ public class ChinoTico extends javax.swing.JFrame {
             .addGroup(JPCtegoriasLayout.createSequentialGroup()
                 .addGroup(JPCtegoriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTabCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, 810, Short.MAX_VALUE))
+                    .addComponent(jTabCategorias, javax.swing.GroupLayout.DEFAULT_SIZE, 810, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
