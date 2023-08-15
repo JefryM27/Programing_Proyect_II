@@ -511,66 +511,344 @@
             "imagen" : "/Imagenes/Bebidas/FantaKolita 1500ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "FANTA NARANJA",
+            "peso" : "1500 ML",
+            "precio" : "1200,00",
+            "imagen" : "/Imagenes/Bebidas/FantaNaranja 1500ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "FANTA NARANJA",
+            "peso" : "355 ML",
+            "precio" : "600,00",
+            "imagen" : "/Imagenes/Bebidas/FantaNaranja 355ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "FANTA UVA",
+            "peso" : "2500 ML",
+            "precio" : "2000,00",
+            "imagen" : "/Imagenes/Bebidas/FantaUva 2500ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "FANTA UVA",
+            "peso" : "355 ML",
+            "precio" : "600,00",
+            "imagen" : "/Imagenes/Bebidas/FantaUva 355ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "FRESCA TORONJA",
+            "peso" : "3000 ML",
+            "precio" : "2100,00",
+            "imagen" : "/Imagenes/Bebidas/FrescaToronja 3000ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "FRESCA TORONJA",
+            "peso" : "600 ML",
+            "precio" : "850,00",
+            "imagen" : "/Imagenes/Bebidas/FrescaToronja 600ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "MIRINDINA DE PIÑA",
+            "peso" : "3000 ML",
+            "precio" : "1600,00",
+            "imagen" : "/Imagenes/Bebidas/MirindaPiña 3000ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "MIRINDINA DE PIÑA",
+            "peso" : "600 ML",
+            "precio" : "750,00",
+            "imagen" : "/Imagenes/Bebidas/MirindaPiña 600ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
-            "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "nombre" : "PEPSI",
+            "peso" : "3000 ML",
+            "precio" : "1550,00",
+            "imagen" : "/Imagenes/Bebidas/Pepsi 3000ml.jpg"
         },
         {
-            "nombre" : "MAXX ENERGY",
-            "peso" : "350 ML",
+            "nombre" : "PEPSI",
+            "peso" : "2500 ML",
             "precio" : "1100,00",
-            "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
+            "imagen" : "/Imagenes/Bebidas/Pepsi 2500ml.jpg"
+        },
+        {
+            "nombre" : "PEPSI",
+            "peso" : "600 ML",
+            "precio" : "630,00",
+            "imagen" : "/Imagenes/Bebidas/Pepsi 600ml.jpg"
         }
-        
-        
+    ],
+    "Jugos" : [
+        {
+            "nombre" : "ARIZONA MUCHO MANGO",
+            "peso" : "458 ML",
+            "precio" : "700,00",
+            "imagen" : "/Imagenes/Bebidas/ArizonaMuchoMango 458ml.jpg"
+        },
+        {
+            "nombre" : "ARIZONA DE SANDIA",
+            "precio" : "700,00",
+            "imagen" : "/Imagenes/Bebidas/ArizonaSandia 458ml.jpg"
+        },
+        {
+            "nombre" : "ARIZONA TE VERDE CON MIEL Y GINSENG",
+            "peso" : "458 ML",
+            "precio" : "700,00",
+            "imagen" : "/Imagenes/Bebidas/ArizonaTeVerdeConMielyGinseng 458ml.jpg"
+        },
+        {
+            "nombre" : "JUGO DE MANZANA",
+            "peso" : "1000 ML",
+            "precio" : "1500,00",
+            "imagen" : "/Imagenes/Bebidas/DosPinosJugoDeManzana 1000ml.jpg"
+        },
+        {
+            "nombre" : "JUGO DE NARANJA",
+            "peso" : "1000 ML",
+            "precio" : "1100,00",
+            "imagen" : "/Imagenes/Bebidas/DosPinosJugoDeNaranja 1000ml.jpg"
+        },
+        {
+            "nombre" : "JUGO DE NARANJA",
+            "peso" : "2200 ML",
+            "precio" : "1800,00",
+            "imagen" : "/Imagenes/Bebidas/DosPinosJugoDeNaranja 2200m.jpg"
+        },
+        {
+            "nombre" : "JUGO DE NARANJA",
+            "peso" : "250 ML",
+            "precio" : "500,00",
+            "imagen" : "/Imagenes/Bebidas/JugoDosPinosDeNaranja 250ml.jpg"
+        },
+        {
+            "nombre" : "HI-C DE LIMON",
+            "peso" : "250 ML",
+            "precio" : "390,00",
+            "imagen" : "/Imagenes/Bebidas/Pepsi 2500ml.jpg"
+        },
+        {
+            "nombre" : "HI-C DE FRUTAS",
+            "peso" : "250 ML",
+            "precio" : "390,00",
+            "imagen" : "/Imagenes/Bebidas/JugoHi-CDeFrutas 250ml.jpg"
+        },
+        {
+            "nombre" : "HI-C DE MELOCOTON",
+            "peso" : "250 ML",
+            "precio" : "390,00",
+            "imagen" : "/Imagenes/Bebidas/JugoHi-CDeMelocoton 250ml.jpg"
+        },
+        {
+            "nombre" : "HI-C DE PERA",
+            "peso" : "250 ML",
+            "precio" : "390,00",
+            "imagen" : "/Imagenes/Bebidas/JugoHi-CDePera 250ml.jpg"
+        },
+        {
+            "nombre" : "HI-C DE UVA",
+            "peso" : "250 ML",
+            "precio" : "390,00",
+            "imagen" : "/Imagenes/Bebidas/JugoHi-CDeUva 250ml.jpg"
+        },
+        {
+            "nombre" : "HI-C DE MANZANA",
+            "peso" : "250 ML",
+            "precio" : "390,00",
+            "imagen" : "/Imagenes/Bebidas/JugoHi-cDeManzana 250ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE VERDE DE MANZANA VERDE",
+            "peso" : "500 ML",
+            "precio" : "525,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalTeVerdeDeManzanaVerde 500ml.jpg"
+        },
+        {
+            "nombre" : "WELCHITO DE UVA",
+            "peso" : "250 ML",
+            "precio" : "800,00",
+            "imagen" : "/Imagenes/Bebidas/WelchitoDeUva 200ml.jpg"
+        },
+        {
+            "nombre" : "TAMPICO",
+            "peso" : "2500 ML",
+            "precio" : "1250,00",
+            "imagen" : "/Imagenes/Bebidas/JugoTampico 2500ml.jpg"
+        },
+        {
+            "nombre" : "TAMPICO",
+            "peso" : "250 ML",
+            "precio" : "373,00",
+            "imagen" : "/Imagenes/Bebidas/JugoTampico 250ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL DE FRUTAS",
+            "peso" : "1000 ML",
+            "precio" : "1000,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalDeFrutas 1000ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL DE MANGO",
+            "peso" : "350 ML",
+            "precio" : "500,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalDeMango 350ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL DE MANZANA",
+            "peso" : "350 ML",
+            "precio" : "500,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalDeManzana 350ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE BLANCO",
+            "peso" : "1000 ML",
+            "precio" : "998,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalTeBlanco 1000ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE BLANCO",
+            "peso" : "3000 ML",
+            "precio" : "1420,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalTeBlanco 3000ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE BLANCO",
+            "peso" : "500 ML",
+            "precio" : "488,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalTeBlanco 500ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE FRIO DE LIMON",
+            "peso" : "1000 ML",
+            "precio" : "998,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalTeFrioDeLimon 1000ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE FRIO DE LIMON",
+            "peso" : "500 ML",
+            "precio" : "525,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalTeFrioDeLimon 500ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE DE MELOCOTON",
+            "peso" : "3000 ML",
+            "precio" : "1420,00",
+            "imagen" : "/Imagenes/Bebidas/tropicalTeFrioMelocoton 3000ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE DE MELOCOTON",
+            "peso" : "1000 ML",
+            "precio" : "998,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalTeFrioMelocoton 1000ml.jpg"
+        },
+        {
+            "nombre" : "TROPICAL TE DE MELOCOTON",
+            "peso" : "500 ML",
+            "precio" : "525,00",
+            "imagen" : "/Imagenes/Bebidas/TropicalTeFrioMelocoton 500ml.jpg"
+        }
+    ],
+    
+    "Accesorios_Mascotas" : [
+        {
+            "nombre" : "ABRIGO NEGRO PARA PERRO",
+            "peso" : "100 MG",
+            "precio" : "4000,00",
+            "imagen" : "/Imagenes/Mascotas/Abrigo negro.jpg"
+        },
+        {
+            "nombre" : "CASA DE GATOS",
+            "peso" : "30 KG",
+            "precio" : "40000,00",
+            "imagen" : "/Imagenes/Mascotas/Casa de gatos.jpg"
+        },
+        {
+            "nombre" : "CASITA ROSADA PARA HAMSTERS",
+            "peso" : "6 KG",
+            "precio" : "30000,00",
+            "imagen" : "/Imagenes/Mascotas/Casita Rosada.jpg"
+        },
+        {
+            "nombre" : "COLLAR ROSADO",
+            "peso" : "60 MG",
+            "precio" : "1500,00",
+            "imagen" : "/Imagenes/Mascotas/Collar.jpg"
+        },
+        {
+            "nombre" : "CONTENEDOR DE ARENA PARA GATOS",
+            "peso" : "1 KG",
+            "precio" : "3000,00",
+            "imagen" : "/Imagenes/Mascotas/Contenedor de arena.jpg"
+        },
+        {
+            "nombre" : "LAZO NEGRO PARA GATOS",
+            "peso" : "50 MG",
+            "precio" : "1000,00",
+            "imagen" : "/Imagenes/Mascotas/Lazo.jpg"
+        },
+        {
+            "nombre" : "MOCHILA PARA GATOS",
+            "peso" : "1 KG",
+            "precio" : "10000,00",
+            "imagen" : "/Imagenes/Mascotas/Mochila para Gatos.jpg"
+        },
+        {
+            "nombre" : "PALAS PARA GATOS",
+            "peso" : "90 MG",
+            "precio" : "1000,00",
+            "imagen" : "/Imagenes/Mascotas/Pala para Gatos.jpg"
+        },
+        {
+            "nombre" : "PECHERA NEGRA PARA PERRO",
+            "peso" : "700 MG",
+            "precio" : "5600,00",
+            "imagen" : "/Imagenes/Mascotas/Pechera Negra.jpg"
+        },
+        {
+            "nombre" : "PECHERA ROSADA PARA GATOS",
+            "peso" : "140 MG",
+            "precio" : "2300,00",
+            "imagen" : "/Imagenes/Mascotas/Pechera Rosada.jpg"
+        },
+        {
+            "nombre" : "PECHERA CAFE PARA PERRO",
+            "peso" : "100 MG",
+            "precio" : "3800,00",
+            "imagen" : "/Imagenes/Mascotas/Pechera para Perro.jpg"
+        },
+        {
+            "nombre" : "PELOTA CON CUERDA PARA MASCOTAS",
+            "peso" : "300 MG",
+            "precio" : "2500,00",
+            "imagen" : "/Imagenes/Mascotas/Pelota con cueerda.jpg"
+        },
+        {
+            "nombre" : "PELOTAS PARA MASCOTAS",
+            "peso" : "500 MG",
+            "precio" : "5000,00",
+            "imagen" : "/Imagenes/Mascotas/Pelotas .jpg"
+        },
+        {
+            "nombre" : "RASCADOR PARA GATOS",
+            "peso" : "1 KG",
+            "precio" : "7000,00",
+            "imagen" : "/Imagenes/Mascotas/Rascador.jpg"
+        },
+        {
+            "nombre" : "RATON DE JUGUETE PARA GATOS",
+            "peso" : "500 MG",
+            "precio" : "6000,00",
+            "imagen" : "/Imagenes/Mascotas/Raton de jugete.jpg"
+        },
+        {
+            "nombre" : "RUEDA PARA HAMSTERS",
+            "peso" : "400 MG",
+            "precio" : "3000,00",
+            "imagen" : "/Imagenes/Mascotas/Rueda azul.jpg"
+        },
+        {
+            "nombre" : "HUESO DE JUGUETE",
+            "peso" : "400 MG",
+            "precio" : "1300,00",
+            "imagen" : "/Imagenes/Mascotas/Ueso de Jugete.jpg"
+        }
     ]
 }
