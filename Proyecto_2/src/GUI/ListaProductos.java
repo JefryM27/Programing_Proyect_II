@@ -16,7 +16,7 @@ public class ListaProductos extends javax.swing.JPanel {
     public ListaProductos(List<Producto> productos, ChinoTico parent) {
         initComponents();
         this.productos = productos;
-        System.out.println(getParent());
+      //  System.out.println(getParent());
         this.parent = parent;
         this.imprimirProductos();
         

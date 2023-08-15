@@ -2,7 +2,6 @@
 package Logica;
 
 import java.io.FileReader;
-import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +17,10 @@ public class Datos {
     public Datos(){
         this.rutaProductos = "productos.json";
     }
-    
+    /*this method id for charging the products and we are using a list for charging the list better
+    using the json we are reading the file that rutaProductos have and with the json object we are adding 
+    the objects that productos file have.
+    */
     public List<Producto> cargarProductos(String categoria){
         ArrayList<Producto> infoProductos = new ArrayList();
         

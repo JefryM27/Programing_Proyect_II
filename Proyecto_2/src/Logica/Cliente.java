@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Logica;
 
 import GUI.ChinoTico;
@@ -16,10 +13,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-/**
- *
- * @author allys
- */
 public class Cliente {
     private int id;
     private String cédula;
@@ -43,93 +36,58 @@ public class Cliente {
         this.correo = correo;
     }
 
-    /**
-     * @return the id
-     */
+   
     public int getId() {
         return id;
     }
 
-    /**
-     * @param id the id to set
-     */
     public void setId(int id) {
         this.id = id;
     }
 
-    /**
-     * @return the cédula
-     */
+    
     public String getCédula() {
         return cédula;
     }
 
-    /**
-     * @param cédula the cédula to set
-     */
+   
     public void setCédula(String cédula) {
         this.cédula = cédula;
     }
 
-    /**
-     * @return the nombre
-     */
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * @param nombre the nombre to set
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * @return the primerApellido
-     */
     public String getPrimerApellido() {
         return primerApellido;
     }
 
-    /**
-     * @param primerApellido the primerApellido to set
-     */
     public void setPrimerApellido(String primerApellido) {
         this.primerApellido = primerApellido;
     }
 
-    /**
-     * @return the segundoApellido
-     */
     public String getSegundoApellido() {
         return segundoApellido;
     }
 
-    /**
-     * @param segundoApellido the segundoApellido to set
-     */
     public void setSegundoApellido(String segundoApellido) {
         this.segundoApellido = segundoApellido;
     }
 
-    /**
-     * @return the teléfono
-     */
     public String getTeléfono() {
         return teléfono;
     }
 
-    /**
-     * @param teléfono the teléfono to set
-     */
     public void setTeléfono(String teléfono) {
         this.teléfono = teléfono;
     }
 
-    /**
-     * @return the correoElectrónico
-     */
+  
     public String getCorreo() {
         return correo;
     }

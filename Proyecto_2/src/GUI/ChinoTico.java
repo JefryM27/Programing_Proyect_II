@@ -3,11 +3,9 @@ package GUI;
 
 import Logica.*;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import org.json.simple.JSONArray;
@@ -30,7 +28,7 @@ public class ChinoTico extends javax.swing.JFrame {
         scrollEnergizantes.setViewportView(new ListaProductos(datos.cargarProductos("Energizantes"), this));
         scrollGaseosas.setViewportView(new ListaProductos(datos.cargarProductos("Gaseosas"), this));
         scrollJugos.setViewportView(new ListaProductos(datos.cargarProductos("Jugos"), this));
-        
+        scrollAccesoriosMascotas.setViewportView(new ListaProductos(datos.cargarProductos("Accesorios_Mascotas"), this));
     }
     
     public void actualizarTablaCliente() {
