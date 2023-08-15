@@ -1,25 +1,36 @@
 
 package Logica;
-import Logica.*;
+
 
 public class Producto {
   private int  idProducto;
   private String nombre;
   private  double precio;
-  private String precentecion;
   private int idProveedor;
   private int idCategoria;
   private int idMarca;
+  private String peso;
+  private String imagen;
 
-    public Producto(int idProducto, String nombre, double precio, String precentecion, int idProveedor, int idCategoria, int idMarca) {
+    public Producto(int idProducto, String nombre, double precio, int idProveedor, int idCategoria, int idMarca, String peso, String imagen) {
         this.idProducto = idProducto;
         this.nombre = nombre;
         this.precio = precio;
-        this.precentecion = precentecion;
         this.idProveedor = idProveedor;
         this.idCategoria = idCategoria;
         this.idMarca = idMarca;
+        this.peso = peso;
+        this.imagen = imagen;
     }
+
+    public Producto(String nombre, double precio, String peso, String imagen) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.peso = peso;
+        this.imagen = imagen;
+    }
+    
+    
 
     /**
      * @return the idProducto
@@ -63,19 +74,6 @@ public class Producto {
         this.precio = precio;
     }
 
-    /**
-     * @return the precentecion
-     */
-    public String getPrecentecion() {
-        return precentecion;
-    }
-
-    /**
-     * @param precentecion the precentecion to set
-     */
-    public void setPrecentecion(String precentecion) {
-        this.precentecion = precentecion;
-    }
 
     /**
      * @return the idProveedor
@@ -118,6 +116,25 @@ public class Producto {
     public void setIdMarca(int idMarca) {
         this.idMarca = idMarca;
     }
+
+    public String getPeso() {
+        return peso;
+    }
+
+    public void setPeso(String peso) {
+        this.peso = peso;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+    
+    
+    
   
         
     

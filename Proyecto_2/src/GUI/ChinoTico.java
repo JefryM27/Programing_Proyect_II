@@ -22,7 +22,15 @@ public class ChinoTico extends javax.swing.JFrame {
    
     public ChinoTico() {
         initComponents();
-        //desactivarPaneles();
+        Datos datos = new Datos();
+        ListaProductos cervezas = new ListaProductos(datos.cargarProductos("Cervezas"),this);
+        scrollCervezas.setViewportView(new ListaProductos(datos.cargarProductos("Cervezas"),this));
+        scrollLicores.setViewportView(new ListaProductos(datos.cargarProductos("Licores"), this));
+        scrollVino.setViewportView(new ListaProductos(datos.cargarProductos("Vinos"), this));
+        scrollEnergizantes.setViewportView(new ListaProductos(datos.cargarProductos("Energizantes"), this));
+        scrollGaseosas.setViewportView(new ListaProductos(datos.cargarProductos("Gaseosas"), this));
+        scrollJugos.setViewportView(new ListaProductos(datos.cargarProductos("Jugos"), this));
+        
     }
     
     public void actualizarTablaCliente() {
@@ -65,6 +73,11 @@ public class ChinoTico extends javax.swing.JFrame {
         for (int i = 2; i < JTabMain.getTabCount(); i++) {
             JTabMain.setEnabledAt(i, true);
         }
+    }
+    
+    public void agregarProducto(Producto producto){
+        
+       ((DefaultTableModel) tblCarrito.getModel()).addRow(new Object[]{producto.getNombre(), producto.getPeso(), producto.getPrecio()});
     }
 
 
@@ -1192,13 +1205,10 @@ public class ChinoTico extends javax.swing.JFrame {
 
         tblCarrito.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Nombre", "Peso", "Precio"
             }
         ));
         scrollCarrito.setViewportView(tblCarrito);

@@ -3,151 +3,151 @@
         {
             "nombre" : "BAM BOO DAIQUIRI FRESA LATA",
             "peso" : "350 ML",
-            "precio" : "900,00",
+            "precio" : 900.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA ALCOHÓLICA BAM BOO DAIQUIRI FRESA LATA 350 ML.jpg"
         },
         {
             "nombre" : "BAM BOO MOJITO LATA",
             "peso" : "350 ML",
-            "precio" : "900,00",
+            "precio" : 900.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA ALCOHÓLICA BAM BOO MOJITO LATA 350 ML.jpg"
         },
         {
             "nombre" : "BAM BOO RON & COLA LATA",
             "peso" : "350 ML",
-            "precio" : "900,00",
+            "precio" : 900.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA ALCOHÓLICA BAM BOO RON & COLA LATA 473 ml.jpg"
         },
         {
             "nombre" : "CUBA LIBRE RON & COLA LATA 350 ML",
             "peso" : "350 ML",
-            "precio" : "1000,00",
+            "precio" : 1000.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA ALCOHÓLICA CUBA LIBRE RON & COLA LATA 350 ML.jpg"
         },
          {
             "nombre" : "SMIRNOFF BLACK ICE LATA",
             "peso" : "350 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA ALCOHÓLICA SMIRNOFF BLACK ICE LATA 350 ML.jpg"
         },
         {
             "nombre" : "SMIRNOFF ICE GREEN APPLE BITE LATA",
             "peso" : "350 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA ALCOHÓLICA SMIRNOFF ICE GREEN APPLE BITE LATA 350 ML.jpg"
         },
         {
             "nombre" : "SMIRNOFF ICE LATA",
             "peso" : "350 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA ALCOHÓLICA SMIRNOFF ICE LATA 350 ML.jpg"
         },
         {
             "nombre" : "SMIRNOFF ICE RASPBERRY CRUSH LATA",
             "peso" : "350 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA ALCOHÓLICA SMIRNOFF ICE RASPBERRY CRUSH  LATA 350 ML.jpg"
         }, 
         {
             "nombre" : "CERVEZA BAVARIA GOLD LATA",
             "peso" : "350 ML",
-            "precio" : "950,00",
+            "precio" : 950.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA BAVARIA GOLD LATA 350 ML.jpg"
         },
         {
             "nombre" : "CERVEZA BAVARIA MASTERS EDITION LATA",
             "peso" : "350 ML",
-            "precio" : "950,00",
+            "precio" : 950.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA BAVARIA MASTERS EDITION LATA 350 ML.jpg"
         }, 
         {
             "nombre" : "CERVEZA BOHEMIA LAGER LATA",
             "peso" : "350 ML",
-            "precio" : "630,00",
+            "precio" : 630.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA BOHEMIA LAGER LATA 350 ML.jpg"
         }, 
         {
             "nombre" : "CERVEZA HEINEKEN LAGER PREMIUM LATA",
             "peso" : "355 ML",
-            "precio" : "991,00",
-            "imagen" : "/Imagenes/CERVEZA HEINEKEN LAGER PREMIUM LATA 355 ML.jpg"
+            "precio" : 991.00,
+            "imagen" : "/Imagenes/Bebidas/CERVEZA HEINEKEN LAGER PREMIUM LATA 355 ML.jpg"
         },
         {
             "nombre" : "CERVEZA IMPERIAL BOTELLA",
             "peso" : "1000 ML",
-            "precio" : "1500,00",
+            "precio" : 1500.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA IMPERIAL BOTELLA 1000 ML.jpg"
         },
         {
             "nombre" : "CERVEZA IMPERIAL LATA",
             "peso" : "350 ML",
-            "precio" : "965,00",
+            "precio" : 965.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA IMPERIAL LATA 350 ml.jpg"
         },
         {
             "nombre" : "CERVEZA IMPERIAL SILVER BOTELLA",
             "peso" : "1000 ML",
-            "precio" : "1500,00",
+            "precio" : 1500.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA IMPERIAL SILVER BOTELLA 1000 ML.jpg"
         },
         {
             "nombre" : "CERVEZA IMPERIAL SILVER LATA",
             "peso" : "350 ML",
-            "precio" : "965,00",
+            "precio" : 965.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA IMPERIAL SILVER LATA 350 ML.jpg"
         },
         {
             "nombre" : "CERVEZA IMPERIAL ULTRA LATA",
             "peso" : "350 ML",
-            "precio" : "965,00",
+            "precio" : 965.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA IMPERIAL ULTRA LATA 350 ML.jpg"
         },
         {
             "nombre" : "CERVEZA LIGHT BAVARIA LATA",
             "peso" : "350 ML",
-            "precio" : "950,00",
-            "imagen" : "/Imagenes/Bebidas/CCERVEZA LIGHT BAVARIA LATA 350 ML.jpg"
+            "precio" : 950.00,
+            "imagen" : "/Imagenes/Bebidas/CERVEZA LIGHT BAVARIA LATA 350 ML.jpg"
         },
         {
             "nombre" : "CERVEZA LIGHT IMPERIAL BOTELLA",
             "peso" : "1000 ML",
-            "precio" : "1500,00",
+            "precio" : 1500.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA LIGHT IMPERIAL BOTELLA 1000 ML.jpg"
         },
         {
             "nombre" : "CERVEZA PILSEN 6.0 LATA",
             "peso" : "350 ML",
-            "precio" : "965,00",
+            "precio" : 965.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA PILSEN 6.0 LATA 350 ML.jpg"
         },
         {
             "nombre" : "CERVEZA PILSEN BOTELLA",
             "peso" : "1000 ML",
-            "precio" : "1500,00",
+            "precio" : 1500.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA PILSEN BOTELLA 1000 ML.jpg"
         },
         {
             "nombre" : "CERVEZA PILSEN LAT",
             "peso" : "350 ML",
-            "precio" : "965,00",
+            "precio" : 965.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA PILSEN LATA 350 ML.jpg"
         },
         {
             "nombre" : "CERVEZA ROCK LIMON BOTELLA",
             "peso" : "350 ML",
-            "precio" : "871,00",
+            "precio" : 871.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA ROCK LIMON BOTELLA 350 ML.jpg"
         },
         {
             "nombre" : "CERVEZA ROCK LIMON BOTELLA",
             "peso" : "350 ML",
-            "precio" : "871,00",
+            "precio" : 871.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA ROCK LIMON BOTELLA 350 ML.jpg"
         },
         {
             "nombre" : "CERVEZA SOL ORIGINAL BOTELLA",
             "peso" : "350 ML",
-            "precio" : "871,00",
+            "precio" : 871.00,
             "imagen" : "/Imagenes/Bebidas/CERVEZA SOL ORIGINAL BOTELLA 355 ml.jpg"
         } 
     ],
@@ -156,175 +156,175 @@
         {
             "nombre" : "CACIQUE LIGAO BAHIA SANDIA",
             "peso" : "1000 ML",
-            "precio" : "3640,00",
+            "precio" : 3640.00,
             "imagen" : "/Imagenes/Bebidas/COCTEL CACIQUE LIGAO BAHIA SANDIA 1000ml.jpg"
         },
         {
             "nombre" : "CACIQUE LIGAO PUERTO GUAYABA",
             "peso" : "1000 ML",
-            "precio" : "3655,00",
+            "precio" : 3655.00,
             "imagen" : "/Imagenes/Bebidas/COCTEL CACIQUE LIGAO PUERTO GUAYABA 1000 ml.jpg"
         },
         {
             "nombre" : "CACIQUE LIGAO RESERVA FRUTAL",
             "peso" : "1000 ML",
-            "precio" : "3538,00",
+            "precio" : 3538.00,
             "imagen" : "/Imagenes/Bebidas/COCTEL CACIQUE LIGAO RESERVA FRUTAL 1000ml.jpg"
         },
         {
             "nombre" : "CREMA IRLANDESA BAILEYS",
             "peso" : "1000 ML",
-            "precio" : "14800,00",
+            "precio" : 14800.00,
             "imagen" : "/Imagenes/Bebidas/CREMA IRLANDESA BAILEYS 1000 ML.jpg"
         },
         {
             "nombre" : "GUARO CACIQUE ETIQUETA ROJA",
             "peso" : "1000 ML",
-            "precio" : "4361,00",
+            "precio" : 4361.00,
             "imagen" : "/Imagenes/Bebidas/GUARO CACIQUE ETIQUETA ROJA 1000 ML.jpg"
         },
         {
             "nombre" : "GUARO CACIQUE ETIQUETA ROJA",
             "peso" : "365 ML",
-            "precio" : "1353,00",
+            "precio" : 1353.00,
             "imagen" : "/Imagenes/Bebidas/GUARO CACIQUE ETIQUETA ROJA 365 ML.jpg"
         },
         {
             "nombre" : "LICOR DE FRUTAS HPNOTIQ",
             "peso" : "750 ML",
-            "precio" : "26765,00",
+            "precio" : 26765.00,
             "imagen" : "/Imagenes/Bebidas/LICOR DE FRUTAS HPNOTIQ 750 ML.jpg"
         },
         {
             "nombre" : "LICOR DE HIERBAS CAMPARI",
             "peso" : "750 ML",
-            "precio" : "19126,00",
+            "precio" : 19126.00,
             "imagen" : "/Imagenes/Bebidas/LICOR DE HIERBAS CAMPARI 750 ML.jpg"
         },
         {
             "nombre" : "RON BACARDI SUPERIOR",
             "peso" : "1000 ML",
-            "precio" : "8947,00",
+            "precio" : 8947.00,
             "imagen" : "/Imagenes/Bebidas/RON BACARDI SUPERIOR 980 ML.jpg"
         },
         {
             "nombre" : "RON CAPITAN MORGA",
             "peso" : "1000 ML",
-            "precio" : "11530,00",
+            "precio" : 11530.00,
             "imagen" : "/Imagenes/Bebidas/RON CAPITAN MORGAN 1000 ml.jpg"
         },
         {
             "nombre" : "RON CENTENARIO 7 AÑOS",
             "peso" : "1000 ML",
-            "precio" : "12057,00",
+            "precio" : 12057.00,
             "imagen" : "/Imagenes/Bebidas/RON CENTENARIO 7 AÑOS 1000 ML.jpg"
         },
         {
             "nombre" : "RON COLORADO",
             "peso" : "1000 ML",
-            "precio" : "5858,00",
+            "precio" : 5858.00,
             "imagen" : "/Imagenes/Bebidas/RON COLORADO 1000 ML.jpg"
         },
         {
             "nombre" : "RON FLOR DE CAÑA CENTENARIO 12 AÑOS",
             "peso" : "1000 ML",
-            "precio" : "30000,00",
+            "precio" : 30000.00,
             "imagen" : "/Imagenes/Bebidas/RON FLOR DE CAÑA CENTENARIO 12 AÑOS 750 ml.jpg"
         },
         {
             "nombre" : "RON FLOR DE CAÑA ORO 4 AÑOS",
             "peso" : "1000 ML",
-            "precio" : "8500,00",
+            "precio" : 8500.00,
             "imagen" : "/Imagenes/Bebidas/RON FLOR DE CAÑA ORO 4 AÑOS 1000 ML.jpg"
         },
         {
             "nombre" : "RON FLOR DE CAÑA RESERVA 7AÑOS",
             "peso" : "1000 ML",
-            "precio" : "10700,00",
+            "precio" : 10700.00,
             "imagen" : "/Imagenes/Bebidas/RON FLOR DE CAÑA RESERVA 7AÑOS 1000 ML.jpg"
         },
         {
             "nombre" : "TEQUILA 1800 AÑEJO CLARO",
             "peso" : "750 ML",
-            "precio" : "36400,00",
+            "precio" : 36400.00,
             "imagen" : "/Imagenes/Bebidas/TEQUILA 1800 AÑEJO CLARO 750 ml.jpg"
         },
         {
             "nombre" : "TEQUILA JOSE CUERVO ESPECIAL",
             "peso" : "750 ML",
-            "precio" : "17248,00",
+            "precio" : 17248.00,
             "imagen" : "/Imagenes/Bebidas/TEQUILA JOSE CUERVO ESPECIAL 750 ML.jpg"
         },
         {
             "nombre" : "TEQUILA RANCHO ESCONDIDO ORO",
             "peso" : "750 ML",
-            "precio" : "7000,00",
+            "precio" : 7000.00,
             "imagen" : "/Imagenes/Bebidas/TEQUILA RANCHO ESCONDIDO ORO 750 ML.jpg"
         },
         {
             "nombre" : "TEQUILA ROSE CREMA DE FRESA",
             "peso" : "750 ML",
-            "precio" : "20000,00",
+            "precio" : 20000.00,
             "imagen" : "/Imagenes/Bebidas/TEQUILA ROSE CREMA DE FRESA 750 ML.jpg"
         },
         {
             "nombre" : "WHISKY BUCHANANS 12 AÑOS",
             "peso" : "750 ML",
-            "precio" : "26662,00",
+            "precio" : 26662.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY BUCHANANS 12 AÑOS 750 ml.jpg"
         },
         {
             "nombre" : "WHISKY CHIVAS REGAL 12 AÑOS",
             "peso" : "750 ML",
-            "precio" : "33507,00",
+            "precio" : 33507.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY CHIVAS REGAL 12 AÑOS 750 ML.jpg"
         },
         {
             "nombre" : "WHISKY J&B 1000 ML",
             "peso" : "1000 ML",
-            "precio" : "16500,00",
+            "precio" : 16500.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY J&B 1000 ML.jpg"
         },
         {
             "nombre" : "WHISKY JACK DANIELS 1000 ML",
             "peso" : "1000 ML",
-            "precio" : "24640,00",
+            "precio" : 24640.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY JACK DANIELS 1000 ML.jpg"
         },
           {
             "nombre" : "WHISKY JACK DANIELS HONEY",
             "peso" : "750 ML",
-            "precio" : "2296500",
+            "precio" : 2296500,
             "imagen" : "/Imagenes/Bebidas/WHISKY JACK DANIELS HONEY 750 ML.jpg"
         },
         {
             "nombre" : "WHISKY JOHNNIE WALKER ETIQUETA NEGRA",
             "peso" : "750 ML",
-            "precio" : "30000,00",
+            "precio" : 30000.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY JOHNNIE WALKER ETIQUETA NEGRA 1000 ML.jpg"
         },
         {
             "nombre" : "WHISKY JOHNNIE WALKER ETIQUETA ROJA",
             "peso" : "750 ML",
-            "precio" : "21000,00",
+            "precio" : 21000.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY JOHNNIE WALKER ETIQUETA ROJA 375 ML.jpg"
         },
         {
             "nombre" : "WHISKY JOHNNIE WALKER NEGRO DOUBLE BLACK",
             "peso" : "750 ML",
-            "precio" : "40520,00",
+            "precio" : 40520.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY JOHNNIE WALKER NEGRO DOUBLE BLACK 1000 ML.jpg"
         },
         {
             "nombre" : "WHISKY OLD PARR 12 AÑOS",
             "peso" : "1000 ML",
-            "precio" : "38789,00",
+            "precio" : 38789.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY OLD PARR 12 AÑOS 1000 ML.jpg"
         },
           {
             "nombre" : "WHISKY PASSPORT SCOTCH",
             "peso" : "1000 ML",
-            "precio" : "10633,00",
+            "precio" : 10633.00,
             "imagen" : "/Imagenes/Bebidas/WHISKY PASSPORT SCOTCH 1000 ML.jpg"
         }
     ],
@@ -333,43 +333,43 @@
         {
             "nombre" : "VINO CASILLERO DEL DIABLO RED BLEND CONCHA Y TORO",
             "peso" : "750 ML",
-            "precio" : "7000,00",
+            "precio" : 7000.00,
             "imagen" : "/Imagenes/Bebidas/VINO CASILLERO DEL DIABLO RED BLEND CONCHA Y TORO 750 ml.jpg"
         },
         {
             "nombre" : "VINO FIESTA DE FRESA",
             "peso" : "750 ML",
-            "precio" : "2384,00",
+            "precio" : 2384.00,
             "imagen" : "/Imagenes/Bebidas/VINO FIESTA DE FRESA 750 ML.jpg"
         },
         {
             "nombre" : "VINO FINCA LAS MORAS RESERVA MALBEC",
             "peso" : "750 ML",
-            "precio" : "8835,00",
+            "precio" : 8835.00,
             "imagen" : "/Imagenes/Bebidas/VINO FINCA LAS MORAS RESERVA MALBEC 750 ml.jpg"
         },
         {
             "nombre" : "VINO TINTO ALAMOS CABERNET SAUVIGNON",
             "peso" : "750 ML",
-            "precio" : "9660,00",
+            "precio" : 9660.00,
             "imagen" : "/Imagenes/Bebidas/VINO TINTO ALAMOS CABERNET SAUVIGNON 750 ML.jpg"
         },
         {
             "nombre" : "VINO TINTO BERINGER CABERNET SAUVIGNON",
             "peso" : "1000 ML",
-            "precio" : "9700,00",
+            "precio" : 9700.00,
             "imagen" : "/Imagenes/BebidasVINO TINTO BERINGER CABERNET SAUVIGNON 750 ML.jpg"
         },
         {
             "nombre" : "VINO TINTO CLOS DE PIRQUE CABERNET SAUVIGNON TETRA BRIK",
             "peso" : "1000 ML",
-            "precio" : "2660,00",
+            "precio" : 2660.00,
             "imagen" : "/Imagenes/Bebidas/VINO TINTO CLOS DE PIRQUE CABERNET SAUVIGNON TETRA BRIK 1000 M.jpg"
         },
         {
             "nombre" : "VINO TINTO FRONTERA MERLOT",
             "peso" : "1000 ML",
-            "precio" : "7000,00",
+            "precio" : 7000.00,
             "imagen" : "/Imagenes/Bebidas/VINO TINTO FRONTERA MERLOT 1500 ML.jpg"
         }
     ],
@@ -378,44 +378,44 @@
         {
             "nombre" : "POWERADE AVALANCHA",
             "peso" : "600 ML",
-            "precio" : "900,00",
+            "precio" : 900.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA HIDRATANTE POWERADE AVALANCHA  600 ML.jpg"
         },
         {
             "nombre" : "POWERDADE ZERO GRAPE",
             "peso" : "591 ML",
-            "precio" : "900,00",
+            "precio" : 900.00,
             "imagen" : "/Imagenes/Bebidas/BEBIDA HIDRATANTE POWERDADE ZERO GRAPE 591ml.jpg"
         },
         {
             "nombre" : "MONSTER ULTRA",
             "peso" : "453 ML",
-            "precio" : "1500,00",
-            "imagen" : "/Imagenes/Bebidas/BebidaEnergeticaMonsterUltra 473ml"
+            "precio" : 1500.00,
+            "imagen" : "/Imagenes/Bebidas/BebidaEnergeticaMonsterUltra 473ml.jpg"
         },
         {
             "nombre" : "MONSTER GREEN",
             "peso" : "453 ML",
-            "precio" : "1500,00",
-            "imagen" : "/Imagenes/Bebidas/BebidaEnergeticaMonsterUltra 473ml.jpg"
+            "precio" : 1500.00,
+            "imagen" : "/Imagenes/Bebidas/BebidaEnergeticaMonstrer 473ml.jpg"
         },
         {
             "nombre" : "JET",
             "peso" : "600 ML",
-            "precio" : "1000,00",
+            "precio" : 1000.00,
             "imagen" : "/Imagenes/Bebidas/Jet 600ml.jpg"
         },
         {
             "nombre" : "MAXX ENERGY",
             "peso" : "350 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/MaxxxEnergy 350ml.jpg"
         },
         {
             "nombre" : "RED BULL",
             "peso" : "250 ML",
-            "precio" : "1400,00",
-            "imagen" : "/Imagenes/Bebidas/RedBull 250ml"
+            "precio" : 1400.00,
+            "imagen" : "/Imagenes/Bebidas/RedBull 250ml.jpg"
         }
     ],
     
@@ -423,326 +423,327 @@
     {
             "nombre" : "7 UP",
             "peso" : "3000 ML",
-            "precio" : "1688,00",
+            "precio" : 1688.00,
             "imagen" : "/Imagenes/Bebidas/7up 3000ml.jpg"
         },
         {
             "nombre" : "7 UP",
             "peso" : "600 ML",
-            "precio" : "850,00",
+            "precio" : 850.00,
             "imagen" : "/Imagenes/Bebidas/7up 600ml.jpg"
         },
         {
             "nombre" : "CANADA DRY CLUB SODA",
             "peso" : "2000 ML",
-            "precio" : "1677,00",
+            "precio" : 1677.00,
             "imagen" : "/Imagenes/Bebidas/CanadaDryClubSoda 2000ml.jpg"
         },
         {
             "nombre" : "CANADA DRY CLUB SODA",
             "peso" : "600 ML",
-            "precio" : "864,00",
+            "precio" : 864.00,
             "imagen" : "/Imagenes/Bebidas/CanadaDryClubSoda 600ml.jpg"
         },
         {
             "nombre" : "CANADA DRY GINGER ALE",
             "peso" : "1500 ML",
-            "precio" : "1322,00",
+            "precio" : 1322.00,
             "imagen" : "/Imagenes/Bebidas/CanadaDryGingerAle 1500ml.jpg"
         },
         {
             "nombre" : "CANADA DRY GINGER ALE",
             "peso" : "3000 ML",
-            "precio" : "2338,00",
+            "precio" : 2338.00,
             "imagen" : "/Imagenes/Bebidas/CanadaDryGingerAle 3000ml.jpg"
         },
         {
             "nombre" : "CANADA DRY GINGER ALE",
             "peso" : "600 ML",
-            "precio" : "864,00",
+            "precio" : 864.00,
             "imagen" : "/Imagenes/Bebidas/CanadaDryGingerAle 600ml.jpg"
         },
         {
             "nombre" : "COCA COLA",
             "peso" : "1500 ML",
-            "precio" : "1322,00",
-            "imagen" : "/Imagenes/BebidasCocaCola 1500ml.jpg"
+            "precio" : 1322.00,
+            "imagen" : "/Imagenes/Bebidas/CocaCola 1500ml.jpg"
         },
         {
             "nombre" : "COCA COLA",
             "peso" : "3000 ML",
-            "precio" : "2035,00",
+            "precio" : 2035.00,
             "imagen" : "/Imagenes/Bebidas/CocaCola 3000ml.jpg"
         },
         {
             "nombre" : "COCA COLA",
             "peso" : "600 ML",
-            "precio" : "864,00",
-            "imagen" : "/Imagenes/BebidasCocaCola 600ml.jpg"
+            "precio" : 864.00,
+            "imagen" : "/Imagenes/Bebidas/CocaCola 600ml.jpg"
         },
         {
             "nombre" : "COCA COLA ZERO",
             "peso" : "2500 ML",
-            "precio" : "1400,00",
+            "precio" : 1400.00,
             "imagen" : "/Imagenes/Bebidas/CocaColaCero 2500ml.jpg"
         },
         {
             "nombre" : "COCA COLA ZERO",
             "peso" : "350 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/CocaColaCero 355ml.jpg"
         },
         {
             "nombre" : "COCA COLA CHERRY LATA",
             "peso" : "350 ML",
-            "precio" : "864,00",
+            "precio" : 864.00,
             "imagen" : "/Imagenes/Bebidas/CocaColaCherry 350ml.jpg"
         },
         {
             "nombre" : "COCA COLA RETORNABLE",
             "peso" : "2500 ML",
-            "precio" : "1472,00",
+            "precio" : 1472.00,
             "imagen" : "/Imagenes/Bebidas/CocaColaRetornable 2500ml.jpg"
         },
         {
             "nombre" : "FANTA KOLITA",
             "peso" : "1500 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/FantaKolita 1500ml.jpg"
         },
         {
             "nombre" : "FANTA NARANJA",
             "peso" : "1500 ML",
-            "precio" : "1200,00",
+            "precio" : 1200.00,
             "imagen" : "/Imagenes/Bebidas/FantaNaranja 1500ml.jpg"
         },
         {
             "nombre" : "FANTA NARANJA",
             "peso" : "355 ML",
-            "precio" : "600,00",
+            "precio" : 600.00,
             "imagen" : "/Imagenes/Bebidas/FantaNaranja 355ml.jpg"
         },
         {
             "nombre" : "FANTA UVA",
             "peso" : "2500 ML",
-            "precio" : "2000,00",
+            "precio" : 2000.00,
             "imagen" : "/Imagenes/Bebidas/FantaUva 2500ml.jpg"
         },
         {
             "nombre" : "FANTA UVA",
             "peso" : "355 ML",
-            "precio" : "600,00",
+            "precio" : 600.00,
             "imagen" : "/Imagenes/Bebidas/FantaUva 355ml.jpg"
         },
         {
             "nombre" : "FRESCA TORONJA",
             "peso" : "3000 ML",
-            "precio" : "2100,00",
+            "precio" : 2100.00,
             "imagen" : "/Imagenes/Bebidas/FrescaToronja 3000ml.jpg"
         },
         {
             "nombre" : "FRESCA TORONJA",
             "peso" : "600 ML",
-            "precio" : "850,00",
+            "precio" : 850.00,
             "imagen" : "/Imagenes/Bebidas/FrescaToronja 600ml.jpg"
         },
         {
             "nombre" : "MIRINDINA DE PIÑA",
             "peso" : "3000 ML",
-            "precio" : "1600,00",
+            "precio" : 1600.00,
             "imagen" : "/Imagenes/Bebidas/MirindaPiña 3000ml.jpg"
         },
         {
             "nombre" : "MIRINDINA DE PIÑA",
             "peso" : "600 ML",
-            "precio" : "750,00",
+            "precio" : 750.00,
             "imagen" : "/Imagenes/Bebidas/MirindaPiña 600ml.jpg"
         },
         {
             "nombre" : "PEPSI",
             "peso" : "3000 ML",
-            "precio" : "1550,00",
+            "precio" : 1550.00,
             "imagen" : "/Imagenes/Bebidas/Pepsi 3000ml.jpg"
         },
         {
             "nombre" : "PEPSI",
             "peso" : "2500 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/Pepsi 2500ml.jpg"
         },
         {
             "nombre" : "PEPSI",
             "peso" : "600 ML",
-            "precio" : "630,00",
+            "precio" : 630.00,
             "imagen" : "/Imagenes/Bebidas/Pepsi 600ml.jpg"
         }
     ],
+    
     "Jugos" : [
         {
             "nombre" : "ARIZONA MUCHO MANGO",
             "peso" : "458 ML",
-            "precio" : "700,00",
+            "precio" : 700.00,
             "imagen" : "/Imagenes/Bebidas/ArizonaMuchoMango 458ml.jpg"
         },
         {
             "nombre" : "ARIZONA DE SANDIA",
-            "precio" : "700,00",
+            "precio" : 700.00,
             "imagen" : "/Imagenes/Bebidas/ArizonaSandia 458ml.jpg"
         },
         {
             "nombre" : "ARIZONA TE VERDE CON MIEL Y GINSENG",
             "peso" : "458 ML",
-            "precio" : "700,00",
+            "precio" : 700.00,
             "imagen" : "/Imagenes/Bebidas/ArizonaTeVerdeConMielyGinseng 458ml.jpg"
         },
         {
             "nombre" : "JUGO DE MANZANA",
             "peso" : "1000 ML",
-            "precio" : "1500,00",
+            "precio" : 1500.00,
             "imagen" : "/Imagenes/Bebidas/DosPinosJugoDeManzana 1000ml.jpg"
         },
         {
             "nombre" : "JUGO DE NARANJA",
             "peso" : "1000 ML",
-            "precio" : "1100,00",
+            "precio" : 1100.00,
             "imagen" : "/Imagenes/Bebidas/DosPinosJugoDeNaranja 1000ml.jpg"
         },
         {
             "nombre" : "JUGO DE NARANJA",
             "peso" : "2200 ML",
-            "precio" : "1800,00",
-            "imagen" : "/Imagenes/Bebidas/DosPinosJugoDeNaranja 2200m.jpg"
+            "precio" : 1800.00,
+            "imagen" : "/Imagenes/Bebidas/DosPinosJugoDeNaranja 2200ml.jpg"
         },
         {
             "nombre" : "JUGO DE NARANJA",
             "peso" : "250 ML",
-            "precio" : "500,00",
+            "precio" : 500.00,
             "imagen" : "/Imagenes/Bebidas/JugoDosPinosDeNaranja 250ml.jpg"
         },
         {
             "nombre" : "HI-C DE LIMON",
             "peso" : "250 ML",
-            "precio" : "390,00",
-            "imagen" : "/Imagenes/Bebidas/Pepsi 2500ml.jpg"
+            "precio" : 390.00,
+            "imagen" : "/Imagenes/Bebidas/JugoHi-CDeDeLimon 330ml.jpg"
         },
         {
             "nombre" : "HI-C DE FRUTAS",
             "peso" : "250 ML",
-            "precio" : "390,00",
+            "precio" : 390.00,
             "imagen" : "/Imagenes/Bebidas/JugoHi-CDeFrutas 250ml.jpg"
         },
         {
             "nombre" : "HI-C DE MELOCOTON",
             "peso" : "250 ML",
-            "precio" : "390,00",
+            "precio" : 390.00,
             "imagen" : "/Imagenes/Bebidas/JugoHi-CDeMelocoton 250ml.jpg"
         },
         {
             "nombre" : "HI-C DE PERA",
             "peso" : "250 ML",
-            "precio" : "390,00",
+            "precio" : 390.00,
             "imagen" : "/Imagenes/Bebidas/JugoHi-CDePera 250ml.jpg"
         },
         {
             "nombre" : "HI-C DE UVA",
             "peso" : "250 ML",
-            "precio" : "390,00",
+            "precio" : 390.00,
             "imagen" : "/Imagenes/Bebidas/JugoHi-CDeUva 250ml.jpg"
         },
         {
             "nombre" : "HI-C DE MANZANA",
             "peso" : "250 ML",
-            "precio" : "390,00",
+            "precio" : 390.00,
             "imagen" : "/Imagenes/Bebidas/JugoHi-cDeManzana 250ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE VERDE DE MANZANA VERDE",
             "peso" : "500 ML",
-            "precio" : "525,00",
+            "precio" : 525.00,
             "imagen" : "/Imagenes/Bebidas/TropicalTeVerdeDeManzanaVerde 500ml.jpg"
         },
         {
             "nombre" : "WELCHITO DE UVA",
             "peso" : "250 ML",
-            "precio" : "800,00",
+            "precio" : 800.00,
             "imagen" : "/Imagenes/Bebidas/WelchitoDeUva 200ml.jpg"
         },
         {
             "nombre" : "TAMPICO",
             "peso" : "2500 ML",
-            "precio" : "1250,00",
+            "precio" : 1250.00,
             "imagen" : "/Imagenes/Bebidas/JugoTampico 2500ml.jpg"
         },
         {
             "nombre" : "TAMPICO",
             "peso" : "250 ML",
-            "precio" : "373,00",
+            "precio" : 373.00,
             "imagen" : "/Imagenes/Bebidas/JugoTampico 250ml.jpg"
         },
         {
             "nombre" : "TROPICAL DE FRUTAS",
             "peso" : "1000 ML",
-            "precio" : "1000,00",
+            "precio" : 1000.00,
             "imagen" : "/Imagenes/Bebidas/TropicalDeFrutas 1000ml.jpg"
         },
         {
             "nombre" : "TROPICAL DE MANGO",
             "peso" : "350 ML",
-            "precio" : "500,00",
+            "precio" : 500.00,
             "imagen" : "/Imagenes/Bebidas/TropicalDeMango 350ml.jpg"
         },
         {
             "nombre" : "TROPICAL DE MANZANA",
             "peso" : "350 ML",
-            "precio" : "500,00",
+            "precio" : 500.00,
             "imagen" : "/Imagenes/Bebidas/TropicalDeManzana 350ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE BLANCO",
             "peso" : "1000 ML",
-            "precio" : "998,00",
+            "precio" : 998.00,
             "imagen" : "/Imagenes/Bebidas/TropicalTeBlanco 1000ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE BLANCO",
             "peso" : "3000 ML",
-            "precio" : "1420,00",
+            "precio" : 1420.00,
             "imagen" : "/Imagenes/Bebidas/TropicalTeBlanco 3000ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE BLANCO",
             "peso" : "500 ML",
-            "precio" : "488,00",
+            "precio" : 488.00,
             "imagen" : "/Imagenes/Bebidas/TropicalTeBlanco 500ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE FRIO DE LIMON",
             "peso" : "1000 ML",
-            "precio" : "998,00",
+            "precio" : 998.00,
             "imagen" : "/Imagenes/Bebidas/TropicalTeFrioDeLimon 1000ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE FRIO DE LIMON",
             "peso" : "500 ML",
-            "precio" : "525,00",
+            "precio" : 525.00,
             "imagen" : "/Imagenes/Bebidas/TropicalTeFrioDeLimon 500ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE DE MELOCOTON",
             "peso" : "3000 ML",
-            "precio" : "1420,00",
+            "precio" : 1420.00,
             "imagen" : "/Imagenes/Bebidas/tropicalTeFrioMelocoton 3000ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE DE MELOCOTON",
             "peso" : "1000 ML",
-            "precio" : "998,00",
+            "precio" : 998.00,
             "imagen" : "/Imagenes/Bebidas/TropicalTeFrioMelocoton 1000ml.jpg"
         },
         {
             "nombre" : "TROPICAL TE DE MELOCOTON",
             "peso" : "500 ML",
-            "precio" : "525,00",
+            "precio" : 525.00,
             "imagen" : "/Imagenes/Bebidas/TropicalTeFrioMelocoton 500ml.jpg"
         }
     ],
@@ -751,104 +752,333 @@
         {
             "nombre" : "ABRIGO NEGRO PARA PERRO",
             "peso" : "100 MG",
-            "precio" : "4000,00",
+            "precio" : 4000.00,
             "imagen" : "/Imagenes/Mascotas/Abrigo negro.jpg"
         },
         {
             "nombre" : "CASA DE GATOS",
             "peso" : "30 KG",
-            "precio" : "40000,00",
+            "precio" : 40000.00,
             "imagen" : "/Imagenes/Mascotas/Casa de gatos.jpg"
         },
         {
             "nombre" : "CASITA ROSADA PARA HAMSTERS",
             "peso" : "6 KG",
-            "precio" : "30000,00",
+            "precio" : 30000.00,
             "imagen" : "/Imagenes/Mascotas/Casita Rosada.jpg"
         },
         {
             "nombre" : "COLLAR ROSADO",
             "peso" : "60 MG",
-            "precio" : "1500,00",
+            "precio" : 1500.00,
             "imagen" : "/Imagenes/Mascotas/Collar.jpg"
         },
         {
             "nombre" : "CONTENEDOR DE ARENA PARA GATOS",
             "peso" : "1 KG",
-            "precio" : "3000,00",
+            "precio" : 3000.00,
             "imagen" : "/Imagenes/Mascotas/Contenedor de arena.jpg"
         },
         {
             "nombre" : "LAZO NEGRO PARA GATOS",
             "peso" : "50 MG",
-            "precio" : "1000,00",
+            "precio" : 1000.00,
             "imagen" : "/Imagenes/Mascotas/Lazo.jpg"
         },
         {
             "nombre" : "MOCHILA PARA GATOS",
             "peso" : "1 KG",
-            "precio" : "10000,00",
+            "precio" : 10000.00,
             "imagen" : "/Imagenes/Mascotas/Mochila para Gatos.jpg"
         },
         {
             "nombre" : "PALAS PARA GATOS",
             "peso" : "90 MG",
-            "precio" : "1000,00",
+            "precio" : 1000.00,
             "imagen" : "/Imagenes/Mascotas/Pala para Gatos.jpg"
         },
         {
             "nombre" : "PECHERA NEGRA PARA PERRO",
             "peso" : "700 MG",
-            "precio" : "5600,00",
+            "precio" : 5600.00,
             "imagen" : "/Imagenes/Mascotas/Pechera Negra.jpg"
         },
         {
             "nombre" : "PECHERA ROSADA PARA GATOS",
             "peso" : "140 MG",
-            "precio" : "2300,00",
+            "precio" : 2300.00,
             "imagen" : "/Imagenes/Mascotas/Pechera Rosada.jpg"
         },
         {
             "nombre" : "PECHERA CAFE PARA PERRO",
             "peso" : "100 MG",
-            "precio" : "3800,00",
+            "precio" : 3800.00,
             "imagen" : "/Imagenes/Mascotas/Pechera para Perro.jpg"
         },
         {
             "nombre" : "PELOTA CON CUERDA PARA MASCOTAS",
             "peso" : "300 MG",
-            "precio" : "2500,00",
+            "precio" : 2500.00,
             "imagen" : "/Imagenes/Mascotas/Pelota con cueerda.jpg"
         },
         {
             "nombre" : "PELOTAS PARA MASCOTAS",
             "peso" : "500 MG",
-            "precio" : "5000,00",
+            "precio" : 5000.00,
             "imagen" : "/Imagenes/Mascotas/Pelotas .jpg"
         },
         {
             "nombre" : "RASCADOR PARA GATOS",
             "peso" : "1 KG",
-            "precio" : "7000,00",
+            "precio" : 7000.00,
             "imagen" : "/Imagenes/Mascotas/Rascador.jpg"
         },
         {
             "nombre" : "RATON DE JUGUETE PARA GATOS",
             "peso" : "500 MG",
-            "precio" : "6000,00",
+            "precio" : 6000.00,
             "imagen" : "/Imagenes/Mascotas/Raton de jugete.jpg"
         },
         {
             "nombre" : "RUEDA PARA HAMSTERS",
             "peso" : "400 MG",
-            "precio" : "3000,00",
+            "precio" : 3000.00,
             "imagen" : "/Imagenes/Mascotas/Rueda azul.jpg"
         },
         {
             "nombre" : "HUESO DE JUGUETE",
             "peso" : "400 MG",
-            "precio" : "1300,00",
+            "precio" : 1300.00,
             "imagen" : "/Imagenes/Mascotas/Ueso de Jugete.jpg"
         }
+    ],
+    
+    "Alimentos_Mascotas"  : [
+        {
+            "nombre" : "ALIMENTO PARA GATOS -ALCAT-",
+            "peso" : "1 KG",
+            "precio" : 4000.00,
+            "imagen" : "/Imagenes/Mascotas/ALCAT.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA PERRO -CANTTO-",
+            "peso" : "10 KG",
+            "precio" : 10000.00,
+            "imagen" : "/Imagenes/Mascotas/Cantto.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATO -DONKAT-",
+            "peso" : "7 KG",
+            "precio" : 14000.00,
+            "imagen" : "/Imagenes/Mascotas/Dontkat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -DROPS-",
+            "peso" : "2 KG",
+            "precio" : 4000.00,
+            "imagen" : "/Imagenes/Mascotas/Drops.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -EXTRUSION-",
+            "peso" : "2 KG",
+            "precio" : 3000.00,
+            "imagen" : "/Imagenes/Mascotas/Extrusion.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -GOBAYES-",
+            "peso" : "10 KG",
+            "precio" : 10000.00,
+            "imagen" : "/Imagenes/Mascotas/GOBAYES.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -GATI-",
+            "peso" : "4 KG",
+            "precio" : 11000.00,
+            "imagen" : "/Imagenes/Mascotas/Gati.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -HAMSTER PRO-",
+            "peso" : "3 KG",
+            "precio" : 6000.00,
+            "imagen" : "/Imagenes/Mascotas/HamsterPro.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -HANSALI-",
+            "peso" : "7 KG",
+            "precio" : 8000.00,
+            "imagen" : "/Imagenes/Mascotas/HansAli.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -KIKI-",
+            "peso" : "1 KG",
+            "precio" : 2000.00,
+            "imagen" : "/Imagenes/Mascotas/KIKI.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -KANTE-",
+            "peso" : "2 KG",
+            "precio" : 2000.00,
+            "imagen" : "/Imagenes/Mascotas/Kante.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -MANTENANCE CAT-",
+            "peso" : "2 KG",
+            "precio" : 4000.00,
+            "imagen" : "/Imagenes/Mascotas/Mantenance Cat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -MAZURI-",
+            "peso" : "1 KG",
+            "precio" : 5000.00,
+            "imagen" : "/Imagenes/Mascotas/Mazuri.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -MEGAKAT-",
+            "peso" : "1 KG",
+            "precio" : 3000.00,
+            "imagen" : "/Imagenes/Mascotas/MegaKat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -MEOW MIX-",
+            "peso" : "2 KG",
+            "precio" : 4000.00,
+            "imagen" : "/Imagenes/Mascotas/Meow Mix.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA HAMSTER -POTSH-",
+            "peso" : "2 KG",
+            "precio" : 4000.00,
+            "imagen" : "/Imagenes/Mascotas/Potsh.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : "3 KG",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATO -WHISKAS",
+            "peso" : "8 KG",
+            "precio" : 12000.00,
+            "imagen" : "/Imagenes/Mascotas/Whiskas.jpg"
+        }
+    ],
+    
+    "Limpieza_Mascotas" : [
+        {
+            "nombre" : "SHAMPOO DE COCO PARA PERRO",
+            "peso" : " 2 L",
+            "precio" : 15000.00,
+            "imagen" : "/Imagenes/Mascotas/Champu de Coco.jpg"
+        },
+        {
+            "nombre" : "SHAMPOO PARA GATO",
+            "peso" : " 1 L",
+            "precio" : 6000.00,
+            "imagen" : "/Imagenes/Mascotas/Champu para Gto.jpg"
+        },
+        {
+            "nombre" : "SHAMPOO PARA PERRO",
+            "peso" : " 1 L",
+            "precio" : 8000.00,
+            "imagen" : "/Imagenes/Mascotas/ChampuCan.jpg"
+        },
+        {
+            "nombre" : "COMBO DE LIMPIEZA PARA GATOS",
+            "peso" : "90 ML",
+            "precio" : 2000.00,
+            "imagen" : "/Imagenes/Mascotas/ComboKAt.jpg"
+        },
+        {
+            "nombre" : "SHAMPOO PARA GATOS",
+            "peso" : "1 L ",
+            "precio" : 10000.00,
+            "imagen" : "/Imagenes/Mascotas/Easygrodom.jpg"
+        },
+        {
+            "nombre" : "FREGADERA REDONDA PARA MASCOTAS",
+            "peso" : "100 ML ",
+            "precio" : 2000.00,
+            "imagen" : "/Imagenes/Mascotas/Fregadera Redonda.jpg"
+        },
+        {
+            "nombre" : "FREGADERA PARA GATOS",
+            "peso" : "700 ML ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/Fregadera para gatos.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        },
+        {
+            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
+            "peso" : " ",
+            "precio" : 7000.00,
+            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+        }
+        
     ]
 }
