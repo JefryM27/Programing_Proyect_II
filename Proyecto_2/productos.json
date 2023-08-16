@@ -1381,7 +1381,7 @@
             "nombre": "FAJITAS DE POLLO",
             "peso": "1 KG",
             "precio": 5926.00,
-            "imagen": "/Imagenes/Frescos/Fajitas de pollo 1KG 5366.jpg"
+            "imagen": "/Imagenes/Frescos/Fajitas de pollo 1KG 5926.jpg"
         },
         {
             "nombre": "FILET DE POLLO ADOBADO BBQ",
@@ -1822,6 +1822,382 @@
             "peso": "200 G",
             "precio": 2291.00,
             "imagen": "/Imagenes/Frescos/Tocineta preformada 2291.jpg"
+        }
+    ],
+    "Frutas": [
+        {
+            "nombre": "AGUACATE",
+            "peso": "1 KG",
+            "precio": 2395.00,
+            "imagen": "/Imagenes/Frescos/Aguacate 1KG 2395.jpg"
+        },
+        {
+            "nombre": "ARANDANOS BANDEJAS",
+            "peso": "125 G",
+            "precio": 1765.00,
+            "imagen": "/Imagenes/Frescos/Arandanos bandeja 125G 1765.jpg"
+        },
+        {
+            "nombre": "BANANO CRIOLLO",
+            "peso": "1 UND",
+            "precio": 65.00,
+            "imagen": "/Imagenes/Frescos/Banano criollo 1 UND 65.jpg"
+        },
+        {
+            "nombre": "CIRUELA",
+            "peso": "1KG ",
+            "precio": 4412.00,
+            "imagen": "/Imagenes/Frescos/Ciruela 1KG 4412.jpg"
+        },
+        {
+            "nombre": "FRESA BANDEJA",
+            "peso": "250 G",
+            "precio": 1110.00,
+            "imagen": "/Imagenes/Frescos/Fresa bandeja 250G 1110.jpg"
+        },
+        {
+            "nombre": "GRANADILLA",
+            "peso": "1 UND",
+            "precio": 335.00,
+            "imagen": "/Imagenes/Frescos/Granadilla 1 UND 335.jpg"
+        },
+        {
+            "nombre": "LIMON ACIDO",
+            "peso": "1 UND",
+            "precio": 91.00,
+            "imagen": "/Imagenes/Frescos/Limon acido 1 UND 91.jpg"
+        },
+        {
+            "nombre": "KIWI",
+            "peso": "1 KG",
+            "precio": 3119.00,
+            "imagen": "/Imagenes/Frescos/Kiwi 1KG 3119.jpg"
+        },
+        {
+            "nombre": "GUAYABA",
+            "peso": "1 KG",
+            "precio": 1895.00,
+            "imagen": "/Imagenes/Frescos/Guayaba 1KG 1895.jpg"
+        },
+        {
+            "nombre": "MANDARINA",
+            "peso": "1 KG",
+            "precio": 2365.00,
+            "imagen": "/Imagenes/Frescos/Mandarina 1KG 2365.jpg"
+        },
+        {
+            "nombre": "MANGA",
+            "peso": "1 KG",
+            "precio": 2980.00,
+            "imagen": "/Imagenes/Frescos/Manga 1KG 1107.jpg"
+        },
+        {
+            "nombre": "MANZANA EMPACADA MIXTA",
+            "peso": "6 UND",
+            "precio": 1350.00,
+            "imagen": "/Imagenes/Frescos/Manzana empacada mixta 6 UND 1350.jpg"
+        },
+        {
+            "nombre": "MANZANA GALA",
+            "peso": "1 UND",
+            "precio": 534.00,
+            "imagen": "/Imagenes/Frescos/Manzana gala 1 UND 534 .jpg"
+        },
+        {
+            "nombre": "MANZANA EMPACADA",
+            "peso": "10 UND",
+            "precio": 2250.00,
+            "imagen": "/Imagenes/Frescos/Manzana gala empacada 10 UND 2250.jpg"
+        },
+        {
+            "nombre": "MANZANA GRANNY",
+            "peso": "6 UND",
+            "precio": 950.00,
+            "imagen": "/Imagenes/Frescos/Manzana granny 6 UND 950.jpg"
+        },
+        {
+            "nombre": "MELOCOTON",
+            "peso": "1 KG",
+            "precio": 4655.00,
+            "imagen": "/Imagenes/Frescos/Melocoton 1KG 4655.jpg"
+        },
+        {
+            "nombre": "MELON",
+            "peso": "1 UND",
+            "precio": 847.00,
+            "imagen": "/Imagenes/Frescos/Melon 1 UND 847.jpg"
+        },
+        {
+            "nombre": "NARANJA",
+            "peso": "1 KG",
+            "precio": 1850.00,
+            "imagen": "/Imagenes/Frescos/Naranja 1KG 1850.jpg"
+        },
+        {
+            "nombre": "NARANJA MALLA",
+            "peso": "1 KG",
+            "precio": 1670.00,
+            "imagen": "/Imagenes/Frescos/Naranja malla 1670.jpg"
+        },
+        {
+            "nombre": "SALCHICHON DE PAVO",
+            "peso": "1 KG",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Frescos/Papaya 1KG 456.jpg"
+        },
+        {
+            "nombre": "PERA",
+            "peso": "1 UND",
+            "precio": 480.00,
+            "imagen": "/Imagenes/Frescos/Pera 1 UND 480.jpg"
+        },
+        {
+            "nombre": "PIÑA",
+            "peso": "1 UND",
+            "precio": 1200.00,
+            "imagen": "/Imagenes/Frescos/Piña 1 UND 1200.jpg"
+        },
+        {
+            "nombre": "PIPA",
+            "peso": "1 UND",
+            "precio": 437.00,
+            "imagen": "/Imagenes/Frescos/Pipa 1 UND 437.jpg"
+        },
+        {
+            "nombre": "PULPA DE FRESA",
+            "peso": "980 G",
+            "precio": 3700.00,
+            "imagen": "/Imagenes/Frescos/Pulpa de fresa 980G 3700.jpg"
+        },
+        {
+            "nombre": "PULPA DE GUANABANA",
+            "peso": "980 G",
+            "precio": 3775.00,
+            "imagen": "/Imagenes/Frescos/Pulpa de guanabana 980G 3775.jpg"
+        },
+        {
+            "nombre": "PULPA DE MANGO",
+            "peso": "960 G",
+            "precio": 3480.00,
+            "imagen": "/Imagenes/Frescos/Pulpa de mango 960G 3480.jpg"
+        },
+        {
+            "nombre": "PULPA DE MORA",
+            "peso": "980 G",
+            "precio": 3500.00,
+            "imagen": "/Imagenes/Frescos/Pulpa de mora 980G 3500.jpg"
+        },
+        {
+            "nombre": "PULPA DE PIÑA",
+            "peso": "960 G",
+            "precio": 3500.00,
+            "imagen": "/Imagenes/Frescos/Pulpa de piña 960G 3500.jpg"
+        },
+        {
+            "nombre": "SANDIA",
+            "peso": "1 KG",
+            "precio": 1518.00,
+            "imagen": "/Imagenes/Frescos/Sandia 1KG 711.jpg"
+        },
+        {
+            "nombre": "UVA GLOBO",
+            "peso": "1 KG",
+            "precio": 3825.00,
+            "imagen": "/Imagenes/Frescos/Uva globo 1KG 3825.jpg"
+        },
+        {
+            "nombre": "UVA VERDE",
+            "peso": "1 KG",
+            "precio": 4550.00,
+            "imagen": "/Imagenes/Frescos/Uva verde 1KG 4550.jpg"
+        },
+        {
+            "nombre": "UVA NEGRA",
+            "peso": "1 KG",
+            "precio": 4750.00,
+            "imagen": "/Imagenes/Frescos/Uva negra 1KG 4750.jpg"
+        }
+    ],
+    "Verduras": [
+        {
+            "nombre": "AJO",
+            "peso": "3 UND",
+            "precio": 375.00,
+            "imagen": "/Imagenes/Frescos/Ajo 3 UND 375.jpg"
+        },
+        {
+            "nombre": "AJO MALLA",
+            "peso": "500 G",
+            "precio": 616.00,
+            "imagen": "/Imagenes/Frescos/Ajo malla 500G 616.jpg"
+        },
+        {
+            "nombre": "APIO 1KG 1955",
+            "peso": "1 UND",
+            "precio": 1995.00,
+            "imagen": "/Imagenes/Frescos/Apio 1KG 1955.jpg"
+        },
+        {
+            "nombre": "AYOTE 1KG 620",
+            "peso": "1KG ",
+            "precio": 620.00,
+            "imagen": "/Imagenes/Frescos/Ayote 1KG 620.jpg"
+        },
+        {
+            "nombre": "CAMOTE",
+            "peso": "1 KG",
+            "precio": 750.00,
+            "imagen": "/Imagenes/Frescos/Camote 1KG 750.jpg"
+        },
+        {
+            "nombre": "GRANADILLA",
+            "peso": "1 UND",
+            "precio": 1433.00,
+            "imagen": "/Imagenes/Frescos/Cebolla 1KG 1433.jpg"
+        },
+        {
+            "nombre": "CEBOLLA MINU MALLA",
+            "peso": "1 KG",
+            "precio": 1050.00,
+            "imagen": "/Imagenes/Frescos/Cebolla mini malla 1KG 1050.jpg"
+        },
+        {
+            "nombre": "CEBOLLINO",
+            "peso": "1 UND",
+            "precio": 490.00,
+            "imagen": "/Imagenes/Frescos/Cebollino 1 UND 490.jpg"
+        },
+        {
+            "nombre": "GHILE DULCE",
+            "peso": "1 UND",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Frescos/Chile dilce 1 UND 456.jpg"
+        },
+        {
+            "nombre": "CHILE DULCE MALLA",
+            "peso": "1 UND",
+            "precio": 782.00,
+            "imagen": "/Imagenes/Frescos/Chile dulce malla 1 UND 782.jpg"
+        },
+        {
+            "nombre": "COLIFLOR",
+            "peso": "1 UND",
+            "precio": 1822.00,
+            "imagen": "/Imagenes/Frescos/Coliflor 1 UND 1822.jpg"
+        },
+        {
+            "nombre": "CULANTRO ROLLO",
+            "peso": "1 UND",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Frescos/Culantro rollo 1 UND 586.jpg"
+        },
+        {
+            "nombre": "ENSALADA",
+            "peso": "250 G",
+            "precio": 982.00,
+            "imagen": "/Imagenes/Frescos/Ensalada 250G 982.jpg"
+        },
+        {
+            "nombre": "ESPICANA",
+            "peso": "1 UND",
+            "precio": 1250.00,
+            "imagen": "/Imagenes/Frescos/Espinaca 1 UND 1250.jpg"
+        },
+        {
+            "nombre": "GUINEO",
+            "peso": "1 UND",
+            "precio": 85.00,
+            "imagen": "/Imagenes/Frescos/Guineo 1 UND 85.jpg"
+        },
+        {
+            "nombre": "JENGIBRE",
+            "peso": "1 KG",
+            "precio": 1563.00,
+            "imagen": "/Imagenes/Frescos/Jengibre 1KG 1563.jpg"
+        },
+        {
+            "nombre": "PAPA MINI MALLA",
+            "peso": "1 KG",
+            "precio": 1042.00,
+            "imagen": "/Imagenes/Frescos/Papa mini malla 1KG 1042.jpg"
+        },
+        {
+            "nombre": "PEPINO",
+            "peso": "1 KG",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Frescos/Pepino 1KG 586.jpg"
+        },
+        {
+            "nombre": "RABANO",
+            "peso": "1 UND",
+            "precio": 1107.00,
+            "imagen": "/Imagenes/Frescos/Rabano 1 UND 1107.jpg"
+        },
+        {
+            "nombre": "REMOLACHA",
+            "peso": "1 UND",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Frescos/Remolacha 1 UND 456.jpg"
+        },
+        {
+            "nombre": "REPOLLO MORADO",
+            "peso": "1 KG",
+            "precio": 984.00,
+            "imagen": "/Imagenes/Frescos/Repollo morado 1KG 984.jpg"
+        },
+        {
+            "nombre": "TIQUISQUE",
+            "peso": "1 KG",
+            "precio": 3000.00,
+            "imagen": "/Imagenes/Frescos/Tiquisque 1 KG 3000.jpg"
+        },
+        {
+            "nombre": "TOMATE BANDEJA",
+            "peso": "1 UND",
+            "precio": 2150.00,
+            "imagen": "/Imagenes/Frescos/Tomate bandeja 1 UND 2150.jpg"
+        },
+        {
+            "nombre": "TOMATE PRIMERA",
+            "peso": "1 KG",
+            "precio": 1889.00,
+            "imagen": "/Imagenes/Frescos/Tomate primera 1 KG 1889.jpg"
+        },
+        {
+            "nombre": "YUCA",
+            "peso": "1 KG",
+            "precio": 947.00,
+            "imagen": "/Imagenes/Frescos/Yuca 1KG 947.jpg"
+        },
+        {
+            "nombre": "ZANAHORIA",
+            "peso": "1 KG",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Frescos/Zanahoria 1KG 456.jpg"
+        },
+        {
+            "nombre": "ZUQUINI",
+            "peso": "1 UND",
+            "precio": 510.00,
+            "imagen": "/Imagenes/Frescos/Zuquini 1 UND 510.jpg"
+        },
+        {
+            "nombre": "ESPINACA ROLLO",
+            "peso": "1 UND",
+            "precio": 475.00,
+            "imagen": "/Imagenes/Frescos/Espinaca rollo 1 UND 475.jpeg"
+        },
+        {
+            "nombre": "PULPA DE MORA",
+            "peso": "2 UND",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Frescos/Elote blanco 2 UND 586.jpeg"
+        },
+        {
+            "nombre": "ÑAMPI",
+            "peso": "1 KG",
+            "precio": 2476.00,
+            "imagen": "/Imagenes/Frescos/Ñampi 1KG 2476.jpeg"
         }
     ]
 }

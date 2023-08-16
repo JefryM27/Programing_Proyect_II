@@ -33,7 +33,13 @@ public class ChinoTico extends javax.swing.JFrame {
         scrollHigineMascotas.setViewportView(new ListaProductos(datos.cargarProductos("Limpieza_Mascotas"), this));
         scrollBotanas.setViewportView(new ListaProductos(datos.cargarProductos("Botanas"), this));
         scrollAceite.setViewportView(new ListaProductos(datos.cargarProductos("Aceites_Grasas"), this));
-        
+        scrollPollo.setViewportView(new ListaProductos(datos.cargarProductos("Pollo"), this));
+        scrollRes.setViewportView(new ListaProductos(datos.cargarProductos("Res"), this));
+        scrollMariscos.setViewportView(new ListaProductos(datos.cargarProductos("Mariscos"), this));
+        scrollCerdo.setViewportView(new ListaProductos(datos.cargarProductos("Cerdo"), this));
+        scrollFrutas.setViewportView(new ListaProductos(datos.cargarProductos("Frutas"), this));
+        scrollVerduras.setViewportView(new ListaProductos(datos.cargarProductos("Verduras"), this));
+        scrollEmbutidos.setViewportView(new ListaProductos(datos.cargarProductos("Embutidos"), this));
     }
     
     public void actualizarTablaCliente() {
