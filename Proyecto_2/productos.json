@@ -997,88 +997,229 @@
         },
         {
             "nombre" : "FREGADERA REDONDA PARA MASCOTAS",
-            "peso" : "100 ML ",
+            "peso" : "100 MG ",
             "precio" : 2000.00,
             "imagen" : "/Imagenes/Mascotas/Fregadera Redonda.jpg"
         },
         {
             "nombre" : "FREGADERA PARA GATOS",
-            "peso" : "700 ML ",
+            "peso" : "700 MG ",
             "precio" : 7000.00,
             "imagen" : "/Imagenes/Mascotas/Fregadera para gatos.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "GUANTE RASCADOR PARA GATOS",
+            "peso" : "170 MG ",
+            "precio" : 2000.00,
+            "imagen" : "/Imagenes/Mascotas/Guante Rascador.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "LAVA PATITAS",
+            "peso" : "100 MG ",
+            "precio" : 2800.00,
+            "imagen" : "/Imagenes/Mascotas/Lava patitas.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
+            "nombre" : "LOTION KAT",
+            "peso" : "700 ML ",
             "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "imagen" : "/Imagenes/Mascotas/LocionKat.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "PALA PARA RECOGER EXCREMENTO",
+            "peso" : "100 MG ",
+            "precio" : 1000.00,
+            "imagen" : "/Imagenes/Mascotas/Pala.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
+            "nombre" : "TINA AZUL PARA MASCOTAS",
+            "peso" : "500MG ",
             "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "imagen" : "/Imagenes/Mascotas/Tina Azul.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "TINA PARA HAMSTERS",
+            "peso" : "200 MG ",
+            "precio" : 3000.00,
+            "imagen" : "/Imagenes/Mascotas/Tinita.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "CEPILLO PARA PEINAR HAMSTERS",
+            "peso" : "100 MG ",
+            "precio" : 2000.00,
+            "imagen" : "/Imagenes/Mascotas/Zapillito.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "CEPILLO DENTAL PARA PERROS",
+            "peso" : "50 MG ",
+            "precio" : 3000.00,
+            "imagen" : "/Imagenes/Mascotas/Zapillo.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "CEPILLO QUITA PELO PARA GATO",
+            "peso" : "100 MG ",
+            "precio" : 2000.00,
+            "imagen" : "/Imagenes/Mascotas/Zepillo Azul.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "CEPILLO PARA EL CUIDADO DE HAMSTERS",
+            "peso" : "200 MG ",
+            "precio" : 4000.00,
+            "imagen" : "/Imagenes/Mascotas/Zeppillito azul.jpg"
+        }  
+    ],
+    "Botanas" : [
+        {
+            "nombre" : "BARQUILLOS DE VAINILLA",
+            "peso" : "10 G ",
+            "precio" : 1300.00,
+            "imagen" : "/Imagenes/Abarrotes/BARQUILLOS-VAINILLA.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "BOQUITA KITTY SURTIDA MIX",
+            "peso" : "560 G ",
+            "precio" : 2000.00,
+            "imagen" : "/Imagenes/Abarrotes/Boquita-Kitty-Surtida-Mix.jpg"
         },
         {
-            "nombre" : "ALIMENTO PARA GATOS -PROCAT-",
-            "peso" : " ",
-            "precio" : 7000.00,
-            "imagen" : "/Imagenes/Mascotas/ProCat.jpg"
+            "nombre" : "CHIRULITOS",
+            "peso" : "100 G ",
+            "precio" : 300.00,
+           "imagen" : "/Imagenes/Abarrotes/Chirulitos sabor a salsa.jpg"
+        },
+        {
+            "nombre" : "CHOKIS CHISPAS CHOCOLATE",
+            "peso" : "325 G ",
+            "precio" : 750.00,
+            "imagen" : "/Imagenes/Abarrotes/Chokis Chispas Chocolate.jpg"
+
+        },
+        {
+            "nombre" : "GALLETA BEST",
+            "peso" : " 189 G ",
+            "precio" : 725.00,
+            "imagen" : "/Imagenes/Abarrotes/Galleta Best.jpg"
+
+        },
+        {
+            "nombre" : "GALLETA MARIA",
+            "peso" : "300 G ",
+            "precio" : 300.00,
+            "imagen" : "/Imagenes/Abarrotes/Galleta Maria.jpg"
+        },
+        {
+            "nombre" : "GALLETA DE MANTEQUILLA",
+            "peso" : "325 G ",
+            "precio" : 450.00,
+            "imagen" : "/Imagenes/Abarrotes/Galleta-Mantequilla.jpg"
+        },
+        {
+            "nombre" : "GALLETA CRACKETS",
+            "peso" : "186 G ",
+            "precio" : 450.00,
+            "imagen" : "/Imagenes/Abarrotes/Galletas Crackets.jpg"
+        },
+        {
+            "nombre" : "MENEITOS",
+            "peso" : "125 G ",
+            "precio" : 300.00,
+            "imagen" : "/Imagenes/Abarrotes/Meneito queso.png"
+        },
+        {
+            "nombre" : "PICARITAS JACKS JAPALAPEÑAS",
+            "peso" : "27 G ",
+            "precio" : 300.00,
+            "imagen" : "/Imagenes/Abarrotes/PICARITAS JACKS JALAPEÑAS.jpg"
+        },
+        {
+            "nombre" : "PICARITAS BARBACOA",
+            "peso" : "27 G ",
+            "precio" : 300.00,
+            "imagen" : "/Imagenes/Abarrotes/Picaritas barbacoa.jpg"
+        },
+        {
+            "nombre" : "PICARONAS DE QUESO",
+            "peso" : "150 G ",
+            "precio" : 450.00,
+            "imagen" : "/Imagenes/Abarrotes/Picaronas.jpg"
+        },
+        {
+            "nombre" : "PRO TEORADITOS",
+            "peso" : "90 G ",
+            "precio" : 675.00,
+            "imagen" : "/Imagenes/Abarrotes/Pro Toreaditos Maíz .jpg"
+        },
+        {
+            "nombre" : "QUESITOS",
+            "peso" : "30 G ",
+            "precio" : 250.00,
+            "imagen" : "/Imagenes/Abarrotes/Quesitos.jpg"
+        },
+        {
+            "nombre" : "RANCHITAS DE QUESO",
+            "peso" : "25 G ",
+            "precio" : 200.00,
+            "imagen" : "/Imagenes/Abarrotes/Ranchitas .jpg"
+        },
+        {
+            "nombre" : "TAQUERITOS",
+            "peso" : "37 G ",
+            "precio" : 375.00,
+            "imagen" : "/Imagenes/Abarrotes/Taqueritos.jpg"
+        },
+        {
+            "nombre" : "SORBETO TOSH",
+            "peso" : "100 G ",
+            "precio" : 450.00,
+            "imagen" : "/Imagenes/Abarrotes/Tosh.png"
+        },
+        {
+            "nombre" : "GALLETAS CANASTA",
+            "peso" : "167 G ",
+            "precio" : 675.00,
+            "imagen" : "/Imagenes/Abarrotes/canasta-tubo galletas.png"
+        },
+        {
+            "nombre" : "GALLETA OREO",
+            "peso" : "325 G ",
+            "precio" : 725.00,
+            "imagen" : "/Imagenes/Abarrotes/chocolate-oreo galleta.jpg"
+        },
+        {
+            "nombre" : "GALLETAS COCANAS",
+            "peso" : "316 G ",
+            "precio" : 2200.00,
+            "imagen" : "/Imagenes/Abarrotes/galletas cocanas.jpg"
+        },
+        {
+            "nombre" : "GALLETAS RECREO",
+            "peso" : "200 G ",
+            "precio" : 400.00,
+            "imagen" : "/Imagenes/Abarrotes/galletas-pozuelo.png"
+        },
+        {
+            "nombre" : "`PICARITAS HOTS",
+            "peso" : "75 G ",
+            "precio" : 545.00,
+            "imagen" : "/Imagenes/Abarrotes/picarita jacks.jpg"
+        },
+        {
+            "nombre" : "PLATANITOS TOSTADOS",
+            "peso" : "65 G ",
+            "precio" : 350.00,
+            "imagen" : "/Imagenes/Abarrotes/platanitos tostados.jpg"
+        },
+        {
+            "nombre" : "SNACKS CHIPS",
+            "peso" : "24 G ",
+            "precio" : 250.00,
+            "imagen" : "/Imagenes/Abarrotes/snacks chips.jpg"
+        },
+        {
+            "nombre" : "TRONADITAS",
+            "peso" : "36 G ",
+            "precio" : 350.00,
+            "imagen" : "/Imagenes/Abarrotes/tronaditas.jpg"
         }
-        
     ]
 }
