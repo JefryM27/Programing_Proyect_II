@@ -358,7 +358,7 @@
             "nombre" : "VINO TINTO BERINGER CABERNET SAUVIGNON",
             "peso" : "1000 ML",
             "precio" : 9700.00,
-            "imagen" : "/Imagenes/BebidasVINO TINTO BERINGER CABERNET SAUVIGNON 750 ML.jpg"
+            "imagen" : "/Imagenes/Bebidas/VINO TINTO BERINGER CABERNET SAUVIGNON 750 ML.jpg"
         },
         {
             "nombre" : "VINO TINTO CLOS DE PIRQUE CABERNET SAUVIGNON TETRA BRIK",
@@ -1221,5 +1221,158 @@
             "precio" : 350.00,
             "imagen" : "/Imagenes/Abarrotes/tronaditas.jpg"
         }
+    ],
+    
+    "Aceites_Grasas" : [
+        {
+            "nombre" : "ACEITE DOROFRIT",
+            "peso" : "1600 ML",
+            "precio" : 2430.00,
+            "imagen" : "/Imagenes/Abarrotes/Aceite Dorofrit5 .jpg"
+        },
+        {
+            "nombre" : "ACEITE CLOVER",
+            "peso" : "1500 ML",
+            "precio" : 2330.00,
+            "imagen" : "/Imagenes/Abarrotes/Aceite clover.jpg"
+        },
+        {
+            "nombre" : "ACEITE DE MAIZ",
+            "peso" : "900 ML",
+            "precio" : 2200.00,
+            "imagen" : "/Imagenes/Abarrotes/Aceite de maiz y girasol.jpg"
+        },
+        {
+            "nombre" : "ACEITE DE SUYA SULI",
+            "peso" : "700 ML",
+            "precio" : 1650.00,
+            "imagen" : "/Imagenes/Abarrotes/Aceite de soya.jpg"
+        },
+        {
+            "nombre" : "ACEITE PEREX",
+            "peso" : "700 ML",
+            "precio" : 1258.00,
+            "imagen" : "/Imagenes/Abarrotes/Aceite perex .jpg"
+        },
+        {
+            "nombre" : "ACEITE SULI",
+            "peso" : "2600 ML",
+            "precio" : 4000.00,
+            "imagen" : "/Imagenes/Abarrotes/Aceite suli.jpg"
+        },
+        {
+            "nombre" : "ACEITE DE SOYA IDEAL",
+            "peso" : "1500 ML",
+            "precio" : 2500.00,
+            "imagen" : "/Imagenes/Abarrotes/Aceite-Ideal-Soya.jpg"
+        },
+        {
+            "nombre" : "ACEITE MAZOLA",
+            "peso" : "1500 ML",
+            "precio" : 3000.00,
+            "imagen" : "/Imagenes/Abarrotes/snacks chips.jpg"
+        },
+        {
+            "nombre" : "ACEITE MEVI",
+            "peso" : "250 ML",
+            "precio" : 6000.00,
+            "imagen" : "/Imagenes/Abarrotes/Aceite-Mevi-Oil-Aguacate-Xtra-Virgen-250ml-1-35334.jpg"
+        },
+        {
+            "nombre" : "ACEITE CORONA",
+            "peso" : "1000 ML",
+            "precio" : 3450.00,
+            "imagen" : "/Imagenes/Abarrotes/Corona_Aceite.jpg"
+        },
+        {
+            "nombre" : "MANTECA GRISCO",
+            "peso" : "484 G",
+            "precio" : 4580.00,
+            "imagen" : "/Imagenes/Abarrotes/Manteca grisco.jpg"
+        },
+        {
+            "nombre" : "MANTECA VEGETAL",
+            "peso" : "460 G",
+            "precio" : 650.00,
+            "imagen" : "/Imagenes/Abarrotes/Manteca vegetal.jpg"
+        },
+        {
+            "nombre" : "MANTECA FR CERDO",
+            "peso" : "220 G ",
+            "precio" : 4000.00,
+            "imagen" : "/Imagenes/Abarrotes/snacks chips.jpg"
+        },
+        {
+            "nombre" : "MANTECA CLOVER",
+            "peso" : "250 G",
+            "precio" : 930.00,
+            "imagen" : "/Imagenes/Abarrotes/Manteca_Clover.jpg"
+        },
+        {
+            "nombre" : "MANTEQUILLA",
+            "peso" : "24 G ",
+            "precio" : 250.00,
+            "imagen" : "/Imagenes/Abarrotes/Manteca_Clover.jpg"
+        },
+        {
+            "nombre" : "ACEITE COOPEGROPAL",
+            "peso" : "1200 ML ",
+            "precio" : 1300.00,
+            "imagen" : "/Imagenes/Abarrotes/aceite coopeagropal.png"
+        },
+        {
+            "nombre" : "ACEITE DE OLIVA",
+            "peso" : "3200 ML",
+            "precio" : 11650.00,
+            "imagen" : "/Imagenes/Abarrotes/aceite de oliva.jpg"
+        },
+        {
+            "nombre" : "ACEITE SULI",
+            "peso" : "5000 ML",
+            "precio" : 12000.00,
+            "imagen" : "/Imagenes/Abarrotes/aceite5000ml.png"
+        },
+        {
+            "nombre" : "ACEITE ESPA",
+            "peso" : "450 ML",
+            "precio" : 1450.00,
+            "imagen" : "/Imagenes/Abarrotes/aceiteESP450ml-960x960.png"
+        },
+        {
+            "nombre" : "ACEITE CAPULLO",
+            "peso" : "450 ML",
+            "precio" : 2490.00,
+            "imagen" : "/Imagenes/Abarrotes/snacks chips.jpg"
+        },
+        {
+            "nombre" : "MANTECA MAZOLE",
+            "peso" : "424 G",
+            "precio" : 806.00,
+            "imagen" : "/Imagenes/Abarrotes/manteca mazole.jpg"
+        },
+        {
+            "nombre" : "MANTECA CORONA",
+            "peso" : "460 G",
+            "precio" : 850.00,
+            "imagen" : "/Imagenes/Abarrotes/manteca-460g.jpg"
+        },
+        {
+            "nombre" : "MANTECA",
+            "peso" : "540 G",
+            "precio" : 945.00,
+            "imagen" : "/Imagenes/Abarrotes/manteca.png"
+        },
+        {
+            "nombre" : "MANTEQUILLA MARGARITA",
+            "peso" : "2 K",
+            "precio" : 2975.00,
+            "imagen" : "/Imagenes/Abarrotes/margarina manteqilla.jpg"
+        },
+        {
+            "nombre" : "ACEITE NATURAL",
+            "peso" : "500 MLG ",
+            "precio" : 2350.00,
+            "imagen" : "/Imagenes/Abarrotes/natural aceite.png"
+        } 
     ]
 }
