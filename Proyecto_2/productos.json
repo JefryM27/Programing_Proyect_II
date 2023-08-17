@@ -2032,13 +2032,13 @@
             "imagen": "/Imagenes/Frescos/Ajo malla 500G 616.jpg"
         },
         {
-            "nombre": "APIO 1KG 1955",
+            "nombre": "APIO",
             "peso": "1 UND",
             "precio": 1995.00,
             "imagen": "/Imagenes/Frescos/Apio 1KG 1955.jpg"
         },
         {
-            "nombre": "AYOTE 1KG 620",
+            "nombre": "AYOTE",
             "peso": "1KG ",
             "precio": 620.00,
             "imagen": "/Imagenes/Frescos/Ayote 1KG 620.jpg"
@@ -2068,7 +2068,7 @@
             "imagen": "/Imagenes/Frescos/Cebollino 1 UND 490.jpg"
         },
         {
-            "nombre": "GHILE DULCE",
+            "nombre": "CHILE DULCE",
             "peso": "1 UND",
             "precio": 456.00,
             "imagen": "/Imagenes/Frescos/Chile dilce 1 UND 456.jpg"
@@ -2098,7 +2098,7 @@
             "imagen": "/Imagenes/Frescos/Ensalada 250G 982.jpg"
         },
         {
-            "nombre": "ESPICANA",
+            "nombre": "ESPINACA",
             "peso": "1 UND",
             "precio": 1250.00,
             "imagen": "/Imagenes/Frescos/Espinaca 1 UND 1250.jpg"
@@ -2198,6 +2198,908 @@
             "peso": "1 KG",
             "precio": 2476.00,
             "imagen": "/Imagenes/Frescos/Ñampi 1KG 2476.jpeg"
+        }
+    ],
+    "Accesorios": [
+        {
+            "nombre": "CEPILLITO CONTRASTE COCINA",
+            "peso": "1 UND",
+            "precio": 1341.00,
+            "imagen": "/Imagenes/Limpieza/CEPILLITO CONTRASTE LOLA PARA COCINA 1 UND 1341.jpeg"
+        },
+        {
+            "nombre": "CEPILLO BETTANIN NOVICA DURO",
+            "peso": "1 UND",
+            "precio": 1522.00,
+            "imagen": "/Imagenes/Limpieza/CEPILLO BETTANIN NOVICA DURO ADAPT PLÁSTICO 1 UND 1522.jpeg"
+        },
+        {
+            "nombre": "CEPILLO CONTRASTE LOLA MULTIUSO",
+            "peso": "1 UND",
+            "precio": 1739.00,
+            "imagen": "/Imagenes/Limpieza/CEPILLO CONTRASTE LOLA MULTIUSO ANATÓMICO 1 UND 1739.jpeg"
+        },
+        {
+            "nombre": "CEPILLO ETERNA DURO #8 PLÁSTICO",
+            "peso": "1 UND",
+            "precio": 750.00,
+            "imagen": "/Imagenes/Limpieza/CEPILLO ETERNA DURO #8 PLÁSTICO 1 UND 750.jpeg"
+        },
+        {
+            "nombre": "CEPILLO ETERNA DURO PARA PISO",
+            "peso": "1 UND",
+            "precio": 2100.00,
+            "imagen": "/Imagenes/Limpieza/CEPILLO ETERNA DURO PARA PISO 1 UND 2100.jpeg"
+        },
+        {
+            "nombre": "CEPILLO ETERNA HISOPO",
+            "peso": "1 UND",
+            "precio": 792.00,
+            "imagen": "/Imagenes/Limpieza/CEPILLO ETERNA HISOPO PARA BOTELLA 1 UND 792.jpeg"
+        },
+        {
+            "nombre": "CEPILLO ETERNA MULTIUSO",
+            "peso": "1 UND",
+            "precio": 1804.00,
+            "imagen": "/Imagenes/Limpieza/CEPILLO ETERNA LECHERO MULTIUSO PLÁSTICO 1 UND 1804.jpeg"
+        },
+        {
+            "nombre": "CUERDA MULTIUSO TENDEDERO",
+            "peso": "1 UND",
+            "precio": 487.00,
+            "imagen": "/Imagenes/Limpieza/CUERDA CONTRASTE MULTIUSO PARA TENDEDERO 10 M 1 UND 487.jpeg"
+        },
+        {
+            "nombre": "DESTUPIDOR ETERNA INODORO",
+            "peso": "1 UND",
+            "precio": 1474.00,
+            "imagen": "/Imagenes/Limpieza/DESTUPIDOR ETERNA PARA INODORO 1 UND 1474.jpeg"
+        },
+        {
+            "nombre": "ESCOBA ETERNA PARA CIELOS",
+            "peso": "1 UND",
+            "precio": 4497.00,
+            "imagen": "/Imagenes/Limpieza/ESCOBA ETERNA PARA CIELOS CON PALO 1 UND 4497.jpeg"
+        },
+        {
+            "nombre": "ESCOBITA ETERNA",
+            "peso": "1 UND",
+            "precio": 781.00,
+            "imagen": "/Imagenes/Limpieza/ESCOBITA ETERNA 1 UND 781.jpeg"
+        },
+        {
+            "nombre": "ESCOBON NOVICA",
+            "peso": "1 UND",
+            "precio": 3848.00,
+            "imagen": "/Imagenes/Limpieza/ESCOBON BETTANIN NOVICA CON PALO METALICO 1 UND 3848.jpeg"
+        },
+        {
+            "nombre": "GUANTE CONTRASTE MULTIUSO",
+            "peso": "1 UND",
+            "precio": 1511.00,
+            "imagen": "/Imagenes/Limpieza/GUANTE CONTRASTE MULTIUSO TALLA M 1 UND 1511.jpeg"
+        },
+        {
+            "nombre": "GUANTE SCOTCH BRITE MULTIUSO",
+            "peso": "1 UND",
+            "precio": 1658.00,
+            "imagen": "/Imagenes/Limpieza/GUANTE SCOTCH BRITE MULTIUSO TALLA G AROMA LIMÓN 1 UND 1658.jpeg"
+        },
+        {
+            "nombre": "GUANTE SCOTCH BRITE PARA COCINA",
+            "peso": "1 UND",
+            "precio": 1606.00,
+            "imagen": "/Imagenes/Limpieza/GUANTE SCOTCH BRITE PARA COCINA TALLA M AROMA LIMÓN 1 und 1606.jpeg"
+        },
+        {
+            "nombre": "MECHA SUPER MECHA PARA PISO #30",
+            "peso": "1 UND",
+            "precio": 1449.00,
+            "imagen": "/Imagenes/Limpieza/MECHA SUPER MECHA PARA PISO #30 1 UND 1449.jpeg"
+        },
+        {
+            "nombre": "PALA BETTANIN NOVICA PLÁSTICA",
+            "peso": "1 UND",
+            "precio": 2387.00,
+            "imagen": "/Imagenes/Limpieza/PALA BETTANIN NOVICA PLÁSTICA PARA BASURA 1 UND 2387.jpeg"
+        },
+        {
+            "nombre": "PALA ETERNA PLÁSTICA PARA BASURA",
+            "peso": "1 UND",
+            "precio": 1561.00,
+            "imagen": "/Imagenes/Limpieza/PALA ETERNA PLÁSTICA PARA BASURA 1 UND 1561.jpeg"
+        },
+        {
+            "nombre": "PALO PISO ETERNA",
+            "peso": "1 UND",
+            "precio": 2562.00,
+            "imagen": "/Imagenes/Limpieza/PALO PISO ETERNA 1 UND 2562.jpeg"
+        },
+        {
+            "nombre": "PAÑO COMERCIALIZADORA DE PRODUCTOS",
+            "peso": "1 UND",
+            "precio": 2762.00,
+            "imagen": "/Imagenes/Limpieza/PAÑO COMERCIALIZADORA DE PRODUCTOS PARA PISO 1 UND 2762.jpeg"
+        },
+        {
+            "nombre": "PAÑO DE MICROFIBRA CASABELLA",
+            "peso": "2 UND",
+            "precio": 4489.00,
+            "imagen": "/Imagenes/Limpieza/PAÑO DE MICROFIBRA CASABELLA PARA SACUDIR 30.48 X 35.56 CM 2 UND 4489.jpeg"
+        },
+        {
+            "nombre": "PAÑO SCOTCH BRITE DE MICROFIBRA",
+            "peso": "1 UND",
+            "precio": 929.00,
+            "imagen": "/Imagenes/Limpieza/PAÑO SCOTCH BRITE DE MICROFIBRA MULTIUSO PARA LIMPIEZA 1.00 UND 929.jpeg"
+        },
+        {
+            "nombre": "PRENSA CONTRASTE LOLA PARA ROPA",
+            "peso": "12 UND",
+            "precio": 1699.00,
+            "imagen": "/Imagenes/Limpieza/PRENSA CONTRASTE LOLA PARA ROPA 12 UND 1699.jpeg"
+        },
+        {
+            "nombre": "PRENSA ETERNA PLÁSTICA PARA ROPA",
+            "peso": "12 UND",
+            "precio": 479.00,
+            "imagen": "/Imagenes/Limpieza/PRENSA ETERNA PLÁSTICA PARA ROPA 12 UND 479.jpeg"
+        },
+        {
+            "nombre": "PRENSAS PARA ROPA COMPACTO",
+            "peso": "12 UND",
+            "precio": 979.00,
+            "imagen": "/Imagenes/Limpieza/PRENSAS PARA ROPA BETTANIN ESFREBOM COMPACTO Y MULTIUSO 12 UND 979.jpeg"
+        },
+        {
+            "nombre": "RASTRILLO ETERNA PLÁSTICO CON PALO",
+            "peso": "1 UND",
+            "precio": 2002.00,
+            "imagen": "/Imagenes/Limpieza/RASTRILLO ETERNA PLÁSTICO CON PALO 1 UND 2002.jpeg"
+        },
+        {
+            "nombre": "REPUESTO BETTANIN PARA MOPA",
+            "peso": "1 UND",
+            "precio": 2973.00,
+            "imagen": "/Imagenes/Limpieza/REPUESTO BETTANIN PARA MOPA 1 UND 2973.jpeg"
+        },
+        {
+            "nombre": "REPUESTO SCOTCH BRITE QUITA PELUSA",
+            "peso": "1 UND",
+            "precio": 3753.00,
+            "imagen": "/Imagenes/Limpieza/REPUESTO SCOTCH BRITE PARA RODILLO QUITA PELUSA 30 HOJAS 1 UND 3753.jpeg"
+        }
+    ],
+    "Desifectante y limpiadores": [
+        {
+            "nombre": "CERA PLEDGE AROMA GARDEN",
+            "peso": "350 G",
+            "precio": 2101.00,
+            "imagen": "/Imagenes/Limpieza/Cera Genie Pledge Cremosa Neutra Aroma County Garden 350 g 2101.jpeg"
+        },
+        {
+            "nombre": "CERA GENIE PASTA PARA MADERA",
+            "peso": "140 G",
+            "precio": 1369.00,
+            "imagen": "/Imagenes/Limpieza/Cera Genie Pledge pasta para madera 140 g 1369.jpeg"
+        },
+        {
+            "nombre": "CERA PLEDGE PISO ROJO",
+            "peso": "290 G",
+            "precio": 2867.00,
+            "imagen": "/Imagenes/Limpieza/Cera Genie Pledge pasta para piso rojo 290 g 2867.jpeg"
+        },
+        {
+            "nombre": "CERA PLEDGE PASTA ROJA",
+            "peso": "140 G ",
+            "precio": 1362.00,
+            "imagen": "/Imagenes/Limpieza/Cera Genie Pledge pasta Roja 140 g 1362.jpeg"
+        },
+        {
+            "nombre": "CERA REX ROJA",
+            "peso": "330 ML",
+            "precio": 2280.00,
+            "imagen": "/Imagenes/Limpieza/Cera Rex Cremosa Roja Aroma Lavanda 330 ml 2280.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE ECOLOGICO FLORES",
+            "peso": "1000 ML",
+            "precio": 1265.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Bluetech Ecologico Aroma Flores  1000ml 1265.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE ECOLOGICO LIMON",
+            "peso": "100O ML",
+            "precio": 1265.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Bluetech Ecologico Aroma Limon  1000ml 1265.jpeg"
+        },
+        {
+            "nombre": "DESINFECTACTE CARBOLINA",
+            "peso": "260 ML",
+            "precio": 1759.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Carbolina Deuso Efectivo en Hacienda 260 ml 1759.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE CLORALEX MASCOTAS",
+            "peso": "950 ML",
+            "precio": 1503.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Cloralex Mascotas Para exteriores 950 ml 1503.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE ECOBREEZE AEROSOL",
+            "peso": "113 ML",
+            "precio": 3507.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Ecobreeze de Citricos en Aerosol 113 ml 3507.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE ECOBREEZE LIMON",
+            "peso": "3875 ML",
+            "precio": 2084.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Ecobreeze de Limon 3875 ml 2084.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE ECOBREEZE SANDIA",
+            "peso": "3875 ML",
+            "precio": 3074.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Ecobreeze de sandia 3875 ml 3074.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE SAFE Y CLEAN ALOE",
+            "peso": "113 G",
+            "precio": 1990.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Ecobreeze safe y clean Aroma aloe 113 g 1990.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE FABULUSO CLORO",
+            "peso": "675 ML",
+            "precio": 921.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Alternativa de Cloro  675ml 921.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE FABULOSO FRESCURA",
+            "peso": "900 ML",
+            "precio": 1148.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Alternativa de Cloro Aroma Frescura Primavera 900ml 1148.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE FABULOSO 1 GALON",
+            "peso": "1 UND",
+            "precio": 4124.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Frescura Activa 1 galon 4124.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE ANTIBACTERIAL",
+            "peso": "900 ML",
+            "precio": 1148.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Frescura Activa antibacterial  900 ml 1148.jpeg"
+        },
+        {
+            "nombre": "DESINFECTACTE LAVANDA 1 GALON",
+            "peso": "1 UND",
+            "precio": 4124.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Frescura Activa antibacterial  aroma Lavanda 1 galon 4124.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE FRESCURA ACTIVA",
+            "peso": "750 ML",
+            "precio": 921.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Frescura Activa antibacterial 750 ml 921.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE MANZANA VERDE",
+            "peso": "750 ML",
+            "precio": 948.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Frescura Activa antibacterial Aroma manzana verde 750 ml 948.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE FRESCURA ACTIVA MANZANA",
+            "peso": "900 ML",
+            "precio": 1148.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Frescura Activa antibacterial Aroma manzana verde 900 ml 1148.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE FABULOSO CON BICARBONATO",
+            "peso": "750 ML",
+            "precio": 921.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Frescura Activa con bicarbonato 750 ml 921.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE CON BICARBONATO",
+            "peso": "900 ML",
+            "precio": 1148.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Fabuloso Frescura Activa con bicarbonato 900 ml 1148.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE KLINS BOUQUET",
+            "peso": "3785 ML",
+            "precio": 1932.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Klins Aroma Bouquet 3785 ml 1932.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE LYSOL LAVANDA",
+            "peso": "3785 ML",
+            "precio": 6648.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Lysol Aroma Lavanda 3785 ml 6648.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE LYSOL LIMON",
+            "peso": "3785 ML",
+            "precio": 6648.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Lysol Aroma Limon 3785 ml 6648.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE LYSOL EN AEROSOL LIMON",
+            "peso": "538 ML",
+            "precio": 9655.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Lysol Aroma Limon en aerosol 538 ml 9655.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE ALEGRA TU DIA",
+            "peso": "3785 ML",
+            "precio": 3542.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Poet Alegra tu dia 3785 ml 3542.jpeg"
+        },
+        {
+            "nombre": "DESINFECTANTE TRONEX LIMON",
+            "peso": "750 ML",
+            "precio": 761.00,
+            "imagen": "/Imagenes/Limpieza/Desifectante Tronex Frescura Limon 750 ml 761.jpeg"
+        },
+        {
+            "nombre": "DISCOS ACTIVOS PATO GEL",
+            "peso": "36 ML",
+            "precio": 4495.00,
+            "imagen": "/Imagenes/Limpieza/Discos activos Pato Pato Gel 36 ml 4495.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR LYSOL EN GEL LAVANDA",
+            "peso": "6 UND",
+            "precio": 4530.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR AUTOMATICO LYSOL PARA SANITARIO EN GEL AROMA LAVANDA 6 UND 30 G.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR AUTOMATICO GEL MANGO",
+            "peso": "6 UND",
+            "precio": 4636.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR AUTOMATICO LYSOL PARA SANITARIO EN GEL BRAND NEW DAY AROMA MANGO & HIBISCUS 6 UND 30 G 4636.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR BRASSO GOLD",
+            "peso": "500 ML",
+            "precio": 1770.00,
+            "imagen": "/Imagenes/Limpieza/Limpiador Brasso Gold Antograsa Aroma Naranja 500 ml 1770.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR CLOROX BAÑO",
+            "peso": "450 ML",
+            "precio": 1282.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR CLOROX PARA BAÑO 450 ML 1282.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR SANITARIO HARPIC",
+            "peso": "75O ML",
+            "precio": 4093.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR DE SANITARIO HARPIC REMUEVE SARRO 750 ml 4093.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR PATO DISCOS ACTIVOS LIMA",
+            "peso": "6 UND",
+            "precio": 3494.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR DE SANITARIO PATO DISCOS ACTIVOS LIMA FRESCA 6 UND 3494.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR PATO DISCOS ACTIVOS",
+            "peso": "12 UND",
+            "precio": 4972.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR DE SANITARIO PATO EN GEL DISCOS ACTIVOS AROMA LIMA FRESCA 12 UND 72 ML 4972.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR DESENGRASANTE FLOREX",
+            "peso": "500 ML",
+            "precio": 3380.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR DESENGRASANTE FLOREX BIODEGRADABLE PARA HORNOS & PARRILLAS 500 ml 3380.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR PARA LAVADORA LIQUIDO",
+            "peso": "250 ML",
+            "precio": 3679.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR DR BECKMANN PARA LAVADORAS LIQUIDO 250 ML 3679.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR PARA REFRIGERADORAS EN SPRAY",
+            "peso": "250 ML",
+            "precio": 3413.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR DR BECKMANN PARA REFRIGERADORAS BIO-HIGIENICO EN SPARAY 250 ml 3413.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR PARA HORNOS Y PARRILLAS",
+            "peso": "238 G",
+            "precio": 7893.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR EASY-OFF PARA HORNOS Y PARRILLAS EN PAST 238 g 7893.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR ANTIHONGOS 650 ML 4401",
+            "peso": "650 G",
+            "precio": 4401.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR HARPIC ANTIHONGOS 650 ML 4401.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR MR MUSCULO COCINA",
+            "peso": "500 ML",
+            "precio": 1664.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR MR MUSCULO COCINA AROMA NARANJA 500 ML 1664.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR MR MISCULO COCINA NARANJA",
+            "peso": "650 ML",
+            "precio": 3111.00,
+            "imagen": "/Imagenes/Limpieza/Limpiador MR Musculo Para cocina aroma naranja 650ml 3111.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR PLEDGE MULTISUPERFICIES",
+            "peso": "500 ML",
+            "precio": 2284.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR PLEDGE MULTISUPERFICIES AROMA CITRICO 500 ML 2284.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR WEIMAN VITROCERAMICA",
+            "peso": "425 G",
+            "precio": 5943.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR WEIMAN PARA VITROCERAMICA 425 G 5943.jpeg"
+        },
+        {
+            "nombre": "LIMPIADOR WINDEX ORIGINAL VIDRIOS",
+            "peso": "500 ML",
+            "precio": 1442.00,
+            "imagen": "/Imagenes/Limpieza/LIMPIADOR WINDEX ORIGINAL PARA VIDRIOS & SUPERFICIES DOYPACK 500 ml 1442.jpeg"
+        },
+        {
+            "nombre": "LUSTRADOR PARA MUEBLES AEROSOL",
+            "peso": "378 ML",
+            "precio": 5469.00,
+            "imagen": "/Imagenes/Limpieza/LUSTRADOR PLEDGE PARA MUEBLES EN AEROSOL 378,00 ml 5469.jpeg"
+        },
+        {
+            "nombre": "PASTILLA DESINFECTANTE BOUQUET",
+            "peso": "55 G",
+            "precio": 445.00,
+            "imagen": "/Imagenes/Limpieza/PASTILLA DESINFECTANE TRONEX AROMA BOUQUET 55 G 444.jpeg"
+        },
+        {
+            "nombre": "PASTILLA DESINFECTANTE AROMA FLORAL",
+            "peso": "55 G",
+            "precio": 440.00,
+            "imagen": "/Imagenes/Limpieza/PASTILLA DESINFECTANTE TRONEX AROMA FLORAL 55 G 440.jpeg"
+        },
+        {
+            "nombre": "PASTILLA DESINFECTANTE VAINILLA",
+            "peso": "55 G",
+            "precio": 445.00,
+            "imagen": "/Imagenes/Limpieza/PASTILLA DESINFECTANTE TRONEX AROMA VAINILLA 55 g 444.jpeg"
+        },
+        {
+            "nombre": "PASTILLA SANITARIO HARPIC",
+            "peso": "2 UND",
+            "precio": 3138.00,
+            "imagen": "/Imagenes/Limpieza/PASTILLA SANITARIA HARPIC 10X POWER ULTRA 2 UND 90 G 3138.jpeg"
+        },
+        {
+            "nombre": "PASTILLA PATO BRISA DE MAR",
+            "peso": "4 UND",
+            "precio": 4965.00,
+            "imagen": "/Imagenes/Limpieza/PASTILLA SANITARIA PATO BRISA DE MAR 4 UND 160.00 g 4965.jpeg"
+        },
+        {
+            "nombre": "PASTILLA PATO SIN COLOR",
+            "peso": "52 G",
+            "precio": 3329.00,
+            "imagen": "/Imagenes/Limpieza/PASTILLA SANITARIA PATO SIN COLOR AROMA FRESCO 52 G 3329.jpeg"
+        },
+        {
+            "nombre": "PASTILLA SANITARIA SURTIDO",
+            "peso": "50 G",
+            "precio": 375.00,
+            "imagen": "/Imagenes/Limpieza/PASTILLA SANITARIA SANI TAB SURTIDO 72 UND 50 G 375.jpeg"
+        },
+        {
+            "nombre": "SAN PIC AROMA HERBAL",
+            "peso": "445 ML",
+            "precio": 1906.00,
+            "imagen": "/Imagenes/Limpieza/San pic Aroma Herbal 445 ml 1906.jpeg"
+        },
+        {
+            "nombre": "SAN PIC AROMA LAVANDA",
+            "peso": "44 ML",
+            "precio": 1906.00,
+            "imagen": "/Imagenes/Limpieza/San Pic Aroma Lavanda 44ml 1906.jpeg"
+        },
+        {
+            "nombre": "TOALLAS LYSOL DESINFECTANTES",
+            "peso": "80 UND",
+            "precio": 7129.00,
+            "imagen": "/Imagenes/Limpieza/TOALLAS LYSOL DESINFECTANTES ESENCIA CITRIUS 80 UND 80 g 7129.jpeg"
+        }
+    ],
+    "Detergentes": [
+        {
+            "nombre": "DETERGENTE ARIEL DOBLE PODER",
+            "peso": "2.5 KG",
+            "precio": 6412.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE ARIEL DOBLE PODER 2.5 KG 6412.jpeg"
+        },
+        {
+            "nombre": "DETERGENTE ARIEL REVITACOLOR",
+            "peso": "800 G",
+            "precio": 2046.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE ARIEL EN POLVO REVITACOLOR 800 g 2046.jpeg"
+        },
+        {
+            "nombre": "DETERGENTE ARIEL REVITACOLOR",
+            "peso": "3.7 KG",
+            "precio": 9178.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE ARIEL EN POLVO REVITACOLOR 3700,00 g 9178.jpeg"
+        },
+        {
+            "nombre": "AYOTE 1KG 620",
+            "peso": "1KG ",
+            "precio": 620.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE ARIEL LIQUIDO CONCENTRADO REVITACOLOR 2800,00 ml 9354.jpeg"
+        },
+        {
+            "nombre": "CAMOTE",
+            "peso": "1 KG",
+            "precio": 750.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL 400 G 1258.jpeg"
+        },
+        {
+            "nombre": "GRANADILLA",
+            "peso": "1 UND",
+            "precio": 1433.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL 1500 G 4037.jpeg"
+        },
+        {
+            "nombre": "CEBOLLA MINU MALLA",
+            "peso": "1 KG",
+            "precio": 1050.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL DOBLE PODER 900 G 2292.jpeg"
+        },
+        {
+            "nombre": "CEBOLLINO",
+            "peso": "1 UND",
+            "precio": 490.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL DOBLE PODER 1000 G 2606.jpeg"
+        },
+        {
+            "nombre": "GHILE DULCE",
+            "peso": "1 UND",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL DOWNY 400 G 950.jpeg"
+        },
+        {
+            "nombre": "CHILE DULCE MALLA",
+            "peso": "1 UND",
+            "precio": 782.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL DOWNY 1500 G 3836.jpeg"
+        },
+        {
+            "nombre": "COLIFLOR",
+            "peso": "1 UND",
+            "precio": 1822.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO EFORT 3 FRESCURA FLORAL 6000 G 7491.jpeg"
+        },
+        {
+            "nombre": "CULANTRO ROLLO",
+            "peso": "1 UND",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 1000 G 1550.jpeg"
+        },
+        {
+            "nombre": "ENSALADA",
+            "peso": "250 G",
+            "precio": 982.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 1500 G 2201.jpeg"
+        },
+        {
+            "nombre": "ESPICANA",
+            "peso": "1 UND",
+            "precio": 1250.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 FRESCA SENSACION 1000 G 1550.jpeg"
+        },
+        {
+            "nombre": "GUINEO",
+            "peso": "1 UND",
+            "precio": 85.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 FRESCA SENSACION 2500 G 3585.jpeg"
+        },
+        {
+            "nombre": "JENGIBRE",
+            "peso": "1 KG",
+            "precio": 1563.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 FRESCA SENSACION 4000 G 5374.jpeg"
+        },
+        {
+            "nombre": "PAPA MINI MALLA",
+            "peso": "1 KG",
+            "precio": 1042.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 MANZANA 3000 G 4187.jpeg"
+        },
+        {
+            "nombre": "PEPINO",
+            "peso": "1 KG",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO IREX ACONDICIONADOR TELAS 1000 G 1588.jpeg"
+        },
+        {
+            "nombre": "RABANO",
+            "peso": "1 UND",
+            "precio": 1107.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO IREX ACONDICIONADOR TELAS 1500 G 2271.jpeg"
+        },
+        {
+            "nombre": "REMOLACHA",
+            "peso": "1 UND",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO IREX BICARBONATO 1500 G 2271.jpeg"
+        },
+        {
+            "nombre": "REPOLLO MORADO",
+            "peso": "1 KG",
+            "precio": 984.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO IREX UV COLOR CARE 1500 G 2271.jpeg"
+        },
+        {
+            "nombre": "TIQUISQUE",
+            "peso": "1 KG",
+            "precio": 3000.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO RENDIDOR FORMULA QUITAMANCHAS 1500 G 2222.jpeg"
+        },
+        {
+            "nombre": "TOMATE BANDEJA",
+            "peso": "1 UND",
+            "precio": 2150.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO RINSO HORTENCIAS Y FLORES 2500 g 4464.jpeg"
+        },
+        {
+            "nombre": "TOMATE PRIMERA",
+            "peso": "1 KG",
+            "precio": 1889.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO RINSO HORTENSIAS Y FLORES 450 G 1006.jpeg"
+        },
+        {
+            "nombre": "YUCA",
+            "peso": "1 KG",
+            "precio": 947.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO SURF BAÑO DE BLANCURA 1500 G 1736.jpeg"
+        },
+        {
+            "nombre": "ZANAHORIA",
+            "peso": "1 KG",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO SURF FUERZA FLORAL 400 g 604.jpeg"
+        },
+        {
+            "nombre": "ZUQUINI",
+            "peso": "1 UND",
+            "precio": 510.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO UNOX 35 G 134.jpeg"
+        },
+        {
+            "nombre": "ESPINACA ROLLO",
+            "peso": "1 UND",
+            "precio": 475.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO UNOX INTELLIGENT 800 g 1661.jpeg"
+        },
+        {
+            "nombre": "PULPA DE MORA",
+            "peso": "2 UND",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE XEDEX ANTIBACTERIAL COMBATE LOS MALOS OLORES 2500 g 4624.jpeg"
+        },
+        {
+            "nombre": "ÑAMPI",
+            "peso": "1 KG",
+            "precio": 2476.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE XEDEX EN POLVO ANTIBACTERIAL 1500 g 3090.jpeg"
+        },
+        {
+            "nombre": "ÑAMPI",
+            "peso": "1 KG",
+            "precio": 2476.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE XEDEX EN POLVO PROTECCION COLOR 2500 g 4695.jpeg"
+        },
+        {
+            "nombre": "ÑAMPI",
+            "peso": "1 KG",
+            "precio": 2476.00,
+            "imagen": "/Imagenes/Limpieza/DETERGENTE XEDEX LIQUIDO PROTECCION COLOR 5000 ml 8960.jpeg"
+        }
+    ],
+    "Lava platos": [
+        {
+            "nombre": "AJO",
+            "peso": "3 UND",
+            "precio": 375.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION ALOE TOQUE DE CREMA 640 ml 2480.jpeg"
+        },
+        {
+            "nombre": "AJO MALLA",
+            "peso": "500 G",
+            "precio": 616.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION AVENA 425 G 1290.jpeg"
+        },
+        {
+            "nombre": "APIO 1KG 1955",
+            "peso": "1 UND",
+            "precio": 1995.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION CARBON ACTIVADO ANTI OLORES 750 g 1768.jpeg"
+        },
+        {
+            "nombre": "AYOTE 1KG 620",
+            "peso": "1KG ",
+            "precio": 620.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION COMPLETE ANTIBACTERIAL 640 ml 1612.jpeg"
+        },
+        {
+            "nombre": "CAMOTE",
+            "peso": "1 KG",
+            "precio": 750.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION LIMÓN 600 G 1392.jpeg"
+        },
+        {
+            "nombre": "GRANADILLA",
+            "peso": "1 UND",
+            "precio": 1433.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION LIMÓN BARRA 250 G 720.jpeg"
+        },
+        {
+            "nombre": "CEBOLLA MINU MALLA",
+            "peso": "1 KG",
+            "precio": 1050.00,
+            "imagen": "/Imagenes/Limpieza/Cebolla mini malla 1KG 1050.jpeg"
+        },
+        {
+            "nombre": "CEBOLLINO",
+            "peso": "1 UND",
+            "precio": 490.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION LÍQUIDO AVENA 400 ML 1858.jpeg"
+        },
+        {
+            "nombre": "GHILE DULCE",
+            "peso": "1 UND",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION PODEROSO EN PLASTICOS 750 g 1860.jpeg"
+        },
+        {
+            "nombre": "CHILE DULCE MALLA",
+            "peso": "1 UND",
+            "precio": 782.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS BLUETECH LÍQUIDO 675 ml 2160.jpeg"
+        },
+        {
+            "nombre": "COLIFLOR",
+            "peso": "1 UND",
+            "precio": 1822.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS CASCADE LÍQUIDO ORIGINAL 924 G 12.414.jpeg"
+        },
+        {
+            "nombre": "CULANTRO ROLLO",
+            "peso": "1 UND",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS DOÑA BLANCA 340 G 989.jpeg"
+        },
+        {
+            "nombre": "ENSALADA",
+            "peso": "250 G",
+            "precio": 982.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS DOÑA BLANCA CILINDRO LIMÓN 170 G 536.jpeg"
+        },
+        {
+            "nombre": "ESPICANA",
+            "peso": "1 UND",
+            "precio": 1250.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 3 UND 540 g 1662.jpeg"
+        },
+        {
+            "nombre": "GUINEO",
+            "peso": "1 UND",
+            "precio": 85.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 90 G 208.jpeg"
+        },
+        {
+            "nombre": "JENGIBRE",
+            "peso": "1 KG",
+            "precio": 1563.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 130 g 338.jpg"
+        },
+        {
+            "nombre": "PAPA MINI MALLA",
+            "peso": "1 KG",
+            "precio": 1042.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 180 g 444.jpeg"
+        },
+        {
+            "nombre": "PEPINO",
+            "peso": "1 KG",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 270 G 627.jpeg"
+        },
+        {
+            "nombre": "RABANO",
+            "peso": "1 UND",
+            "precio": 1107.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX COCO CON GLICERINA 1000 g 1400.jpeg"
+        },
+        {
+            "nombre": "REMOLACHA",
+            "peso": "1 UND",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX LIMON 1000 g 1313.jpeg"
+        },
+        {
+            "nombre": "REPOLLO MORADO",
+            "peso": "1 KG",
+            "precio": 984.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS JOY ULTRA ESENCIA LIMÓN 2066 ML 6204.jpeg"
+        },
+        {
+            "nombre": "TIQUISQUE",
+            "peso": "1 KG",
+            "precio": 3000.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS BAYAS SILVESTRES 1000 G 1867.jpeg"
+        },
+        {
+            "nombre": "TOMATE BANDEJA",
+            "peso": "1 UND",
+            "precio": 2150.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS LIMÓN 600 G 915.jpeg"
+        },
+        {
+            "nombre": "TOMATE PRIMERA",
+            "peso": "1 KG",
+            "precio": 1889.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS MELOCOTON GEL CON ESPONJA 400 g 1447.jpeg"
+        },
+        {
+            "nombre": "YUCA",
+            "peso": "1 KG",
+            "precio": 947.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS NARANJA 100g 1658.jpeg"
+        },
+        {
+            "nombre": "ZANAHORIA",
+            "peso": "1 KG",
+            "precio": 456.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS NARANJA 450 g 883.jpeg"
+        },
+        {
+            "nombre": "ZUQUINI",
+            "peso": "1 UND",
+            "precio": 510.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS LEMON LÍQUIDO BOLSA 500 ml 1462.jpeg"
+        },
+        {
+            "nombre": "ESPINACA ROLLO",
+            "peso": "1 UND",
+            "precio": 475.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS LIQUIDO AXION CARBON ACTIVADO ANTI OLORES 640 ml 2094.jpeg"
+        },
+        {
+            "nombre": "PULPA DE MORA",
+            "peso": "2 UND",
+            "precio": 586.00,
+            "imagen": "/Imagenes/Limpieza/LAVAPLATOS PRIL LÍQUIDO LIMÓN 400 ML 1245.jpeg"
+        },
+        {
+            "nombre": "ÑAMPI",
+            "peso": "1 KG",
+            "precio": 2476.00,
+            "imagen": "/Imagenes/Limpieza/OFERTA LAVAPLATOS AXION LIMÓN 3 UND 1275 G 3116.jpeg"
+        },
+        {
+            "nombre": "ÑAMPI",
+            "peso": "1 KG",
+            "precio": 2476.00,
+            "imagen": "/Imagenes/Limpieza/OFERTA LAVAPLATOS KLINS 2 UND 500 G 1769.jpeg"
         }
     ]
 }

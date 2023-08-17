@@ -45,16 +45,13 @@ public class ProductoPanel extends javax.swing.JPanel {
         lblImgen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Bebidas/7up 3000ml.jpg"))); // NOI18N
 
         lblNombre.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        lblNombre.setForeground(new java.awt.Color(0, 0, 0));
         lblNombre.setText("Nombre");
 
         lblPeso.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        lblPeso.setForeground(new java.awt.Color(0, 0, 0));
         lblPeso.setText("Peso");
 
         lblPrecio.setBackground(new java.awt.Color(0, 0, 0));
         lblPrecio.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        lblPrecio.setForeground(new java.awt.Color(0, 0, 0));
         lblPrecio.setText("Precio");
 
         btnComprar.setText("Comprar");
@@ -71,7 +68,7 @@ public class ProductoPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblNombre)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblImgen)
@@ -89,7 +86,7 @@ public class ProductoPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(lblImgen)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
