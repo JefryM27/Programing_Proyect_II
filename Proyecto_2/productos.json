@@ -1845,7 +1845,7 @@
         },
         {
             "nombre": "CIRUELA",
-            "peso": "1KG ",
+            "peso": "1 KG",
             "precio": 4412.00,
             "imagen": "/Imagenes/Frescos/Ciruela 1KG 4412.jpg"
         },
@@ -2740,365 +2740,359 @@
             "imagen": "/Imagenes/Limpieza/DETERGENTE ARIEL EN POLVO REVITACOLOR 3700,00 g 9178.jpeg"
         },
         {
-            "nombre": "AYOTE 1KG 620",
-            "peso": "1KG ",
-            "precio": 620.00,
+            "nombre": "DETERGENTE LIQUIDO CONCENTRADO",
+            "peso": "2800 ML",
+            "precio": 9354.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE ARIEL LIQUIDO CONCENTRADO REVITACOLOR 2800,00 ml 9354.jpeg"
         },
         {
-            "nombre": "CAMOTE",
-            "peso": "1 KG",
-            "precio": 750.00,
+            "nombre": "DETERGENTE EN POLVO ARIEL",
+            "peso": "400 G",
+            "precio": 1258.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL 400 G 1258.jpeg"
         },
         {
-            "nombre": "GRANADILLA",
-            "peso": "1 UND",
-            "precio": 1433.00,
+            "nombre": "DETERGENTE EN POLVO ARIEL",
+            "peso": "1.5 KG",
+            "precio": 4037.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL 1500 G 4037.jpeg"
         },
         {
-            "nombre": "CEBOLLA MINU MALLA",
-            "peso": "1 KG",
-            "precio": 1050.00,
+            "nombre": "DETERGENTE ARIEL DOBLE PODER",
+            "peso": "900 G",
+            "precio": 2292.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL DOBLE PODER 900 G 2292.jpeg"
         },
         {
-            "nombre": "CEBOLLINO",
-            "peso": "1 UND",
-            "precio": 490.00,
+            "nombre": "DETERGENTE ARIEL DOBLE PODER",
+            "peso": "1 KG",
+            "precio": 2606.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL DOBLE PODER 1000 G 2606.jpeg"
         },
         {
-            "nombre": "GHILE DULCE",
-            "peso": "1 UND",
-            "precio": 456.00,
+            "nombre": "DETERGENTE EN POLVO DOWNY",
+            "peso": "400 G",
+            "precio": 950.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL DOWNY 400 G 950.jpeg"
         },
         {
-            "nombre": "CHILE DULCE MALLA",
-            "peso": "1 UND",
-            "precio": 782.00,
+            "nombre": "DETERGENTE ARIEL DOWNY",
+            "peso": "1.5 KG",
+            "precio": 3836.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO ARIEL DOWNY 1500 G 3836.jpeg"
         },
         {
-            "nombre": "COLIFLOR",
-            "peso": "1 UND",
-            "precio": 1822.00,
+            "nombre": "DETERGENTE EFORT FLORAL",
+            "peso": "6 KG",
+            "precio": 7491.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO EFORT 3 FRESCURA FLORAL 6000 G 7491.jpeg"
         },
         {
-            "nombre": "CULANTRO ROLLO",
-            "peso": "1 UND",
-            "precio": 586.00,
+            "nombre": "DETERGENTE FORT 3",
+            "peso": "1 KG",
+            "precio": 1550.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 1000 G 1550.jpeg"
         },
         {
-            "nombre": "ENSALADA",
-            "peso": "250 G",
-            "precio": 982.00,
+            "nombre": "DETERGENTE FORT 3",
+            "peso": "1.5 KG",
+            "precio": 2201.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 1500 G 2201.jpeg"
         },
         {
-            "nombre": "ESPICANA",
-            "peso": "1 UND",
-            "precio": 1250.00,
+            "nombre": "DETERGENTE FORT 3 FRESCURA",
+            "peso": "1 KG",
+            "precio": 1550.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 FRESCA SENSACION 1000 G 1550.jpeg"
         },
         {
-            "nombre": "GUINEO",
-            "peso": "1 UND",
-            "precio": 85.00,
+            "nombre": "DETERGENTE EN POLVO FORT 3",
+            "peso": "2.5 KG",
+            "precio": 3585.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 FRESCA SENSACION 2500 G 3585.jpeg"
         },
         {
-            "nombre": "JENGIBRE",
-            "peso": "1 KG",
-            "precio": 1563.00,
+            "nombre": "DETERGENTE FRESCA SENSACION",
+            "peso": "4 KG",
+            "precio": 5374.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 FRESCA SENSACION 4000 G 5374.jpeg"
         },
         {
-            "nombre": "PAPA MINI MALLA",
-            "peso": "1 KG",
-            "precio": 1042.00,
+            "nombre": "DETERGENTE FORT 3 MANZANA",
+            "peso": "3 KG",
+            "precio": 4187.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO FORT 3 MANZANA 3000 G 4187.jpeg"
         },
         {
-            "nombre": "PEPINO",
+            "nombre": "DETERGENTE IREX ACONDICIONADOR",
             "peso": "1 KG",
-            "precio": 586.00,
+            "precio": 1588.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO IREX ACONDICIONADOR TELAS 1000 G 1588.jpeg"
         },
         {
-            "nombre": "RABANO",
-            "peso": "1 UND",
-            "precio": 1107.00,
+            "nombre": "DETERGENTE IREX TELAS",
+            "peso": "1.5 KG",
+            "precio": 2271.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO IREX ACONDICIONADOR TELAS 1500 G 2271.jpeg"
         },
         {
-            "nombre": "REMOLACHA",
-            "peso": "1 UND",
-            "precio": 456.00,
+            "nombre": "DETERGENTE IREX BICARBONATO",
+            "peso": "1.5 KG",
+            "precio": 2271.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO IREX BICARBONATO 1500 G 2271.jpeg"
         },
         {
-            "nombre": "REPOLLO MORADO",
-            "peso": "1 KG",
+            "nombre": "DETERGENTE IREX UV COLOR CARE",
+            "peso": "1.5 KG",
             "precio": 984.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO IREX UV COLOR CARE 1500 G 2271.jpeg"
         },
         {
-            "nombre": "TIQUISQUE",
-            "peso": "1 KG",
-            "precio": 3000.00,
+            "nombre": "DETERGENTE RENDIDOR QUITAMANCHAS",
+            "peso": "1.5 KG",
+            "precio": 2225.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO RENDIDOR FORMULA QUITAMANCHAS 1500 G 2222.jpeg"
         },
         {
-            "nombre": "TOMATE BANDEJA",
-            "peso": "1 UND",
-            "precio": 2150.00,
+            "nombre": "DETERGENTE RINSO HORTENCIAS",
+            "peso": "2.5 KG",
+            "precio": 4465.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO RINSO HORTENCIAS Y FLORES 2500 g 4464.jpeg"
         },
         {
-            "nombre": "TOMATE PRIMERA",
-            "peso": "1 KG",
-            "precio": 1889.00,
+            "nombre": "DETERGENTE RINSO FLORES",
+            "peso": "450 G",
+            "precio": 1006.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO RINSO HORTENSIAS Y FLORES 450 G 1006.jpeg"
         },
         {
-            "nombre": "YUCA",
-            "peso": "1 KG",
-            "precio": 947.00,
+            "nombre": "DETERGENTE SURF BAÑO",
+            "peso": "1.5 KG",
+            "precio": 1736.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO SURF BAÑO DE BLANCURA 1500 G 1736.jpeg"
         },
         {
-            "nombre": "ZANAHORIA",
-            "peso": "1 KG",
-            "precio": 456.00,
+            "nombre": "DETERGENTE SURF FUERZA FLORAL",
+            "peso": "400 G",
+            "precio": 604.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO SURF FUERZA FLORAL 400 g 604.jpeg"
         },
         {
-            "nombre": "ZUQUINI",
-            "peso": "1 UND",
-            "precio": 510.00,
+            "nombre": "DETERGENTE EN POLVO UNOX",
+            "peso": "350 G",
+            "precio": 1034.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO UNOX 35 G 134.jpeg"
         },
         {
-            "nombre": "ESPINACA ROLLO",
-            "peso": "1 UND",
-            "precio": 475.00,
+            "nombre": "DETERGENTE UNOX INTELLIGENT",
+            "peso": "800 G",
+            "precio": 1661.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE EN POLVO UNOX INTELLIGENT 800 g 1661.jpeg"
         },
         {
-            "nombre": "PULPA DE MORA",
-            "peso": "2 UND",
-            "precio": 586.00,
+            "nombre": "DETERGENTE XEDEX ANTIBACTERIAL",
+            "peso": "2.5 KG",
+            "precio": 4625.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE XEDEX ANTIBACTERIAL COMBATE LOS MALOS OLORES 2500 g 4624.jpeg"
         },
         {
-            "nombre": "ÑAMPI",
-            "peso": "1 KG",
-            "precio": 2476.00,
+            "nombre": "DETERGENTE XEDEX ANTIBACTERIAL",
+            "peso": "1.5 KG",
+            "precio": 3090.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE XEDEX EN POLVO ANTIBACTERIAL 1500 g 3090.jpeg"
         },
         {
-            "nombre": "ÑAMPI",
-            "peso": "1 KG",
+            "nombre": "DETERGENTE XEDEX PORTECCION COLOR",
+            "peso": "2.5 KG",
             "precio": 2476.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE XEDEX EN POLVO PROTECCION COLOR 2500 g 4695.jpeg"
         },
         {
-            "nombre": "ÑAMPI",
-            "peso": "1 KG",
-            "precio": 2476.00,
+            "nombre": "DETERGENE XEDEX LIQUIDO",
+            "peso": "5000 ML",
+            "precio": 8960.00,
             "imagen": "/Imagenes/Limpieza/DETERGENTE XEDEX LIQUIDO PROTECCION COLOR 5000 ml 8960.jpeg"
         }
     ],
     "Lava platos": [
         {
-            "nombre": "AJO",
-            "peso": "3 UND",
-            "precio": 375.00,
+            "nombre": "LAVAPLATOS AXION ALOE CREMA",
+            "peso": "640 ML",
+            "precio": 2480.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION ALOE TOQUE DE CREMA 640 ml 2480.jpeg"
         },
         {
-            "nombre": "AJO MALLA",
-            "peso": "500 G",
-            "precio": 616.00,
+            "nombre": "LAVAPLATOS AXION AVENA",
+            "peso": "425 G",
+            "precio": 1290.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION AVENA 425 G 1290.jpeg"
         },
         {
-            "nombre": "APIO 1KG 1955",
-            "peso": "1 UND",
-            "precio": 1995.00,
+            "nombre": "LAVAPLATOS CARBON ANTI OLORES",
+            "peso": "750 G",
+            "precio": 1768.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION CARBON ACTIVADO ANTI OLORES 750 g 1768.jpeg"
         },
         {
-            "nombre": "AYOTE 1KG 620",
-            "peso": "1KG ",
-            "precio": 620.00,
+            "nombre": "LAVAPLATOS AXION COMPLETE",
+            "peso": "640 ML",
+            "precio": 1612.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION COMPLETE ANTIBACTERIAL 640 ml 1612.jpeg"
         },
         {
-            "nombre": "CAMOTE",
-            "peso": "1 KG",
-            "precio": 750.00,
+            "nombre": "LAVAPLATOS AXION LIMON BARRA",
+            "peso": "600 G",
+            "precio": 1392.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION LIMÓN 600 G 1392.jpeg"
         },
         {
-            "nombre": "GRANADILLA",
-            "peso": "1 UND",
-            "precio": 1433.00,
+            "nombre": "LAVAPLATOS AXION LIMÓN",
+            "peso": "250 G",
+            "precio": 720.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION LIMÓN BARRA 250 G 720.jpeg"
         },
         {
-            "nombre": "CEBOLLA MINU MALLA",
-            "peso": "1 KG",
-            "precio": 1050.00,
-            "imagen": "/Imagenes/Limpieza/Cebolla mini malla 1KG 1050.jpeg"
-        },
-        {
-            "nombre": "CEBOLLINO",
-            "peso": "1 UND",
-            "precio": 490.00,
+            "nombre": "LAVAPLATOS AXION PODEROSO",
+            "peso": "400 ML",
+            "precio": 1858.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION LÍQUIDO AVENA 400 ML 1858.jpeg"
         },
         {
-            "nombre": "GHILE DULCE",
-            "peso": "1 UND",
-            "precio": 456.00,
+            "nombre": "LAVAPLATOS AXION PLASTICOS",
+            "peso": "750 G",
+            "precio": 1860.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS AXION PODEROSO EN PLASTICOS 750 g 1860.jpeg"
         },
         {
-            "nombre": "CHILE DULCE MALLA",
-            "peso": "1 UND",
-            "precio": 782.00,
+            "nombre": "LAVAPLATOS BLUETECH LÍQUIDO",
+            "peso": "675 ML",
+            "precio": 2160.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS BLUETECH LÍQUIDO 675 ml 2160.jpeg"
         },
         {
-            "nombre": "COLIFLOR",
-            "peso": "1 UND",
-            "precio": 1822.00,
+            "nombre": "LAVAPLATOS CASCADE LÍQUIDO",
+            "peso": "924 G",
+            "precio": 12414.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS CASCADE LÍQUIDO ORIGINAL 924 G 12.414.jpeg"
         },
         {
-            "nombre": "CULANTRO ROLLO",
-            "peso": "1 UND",
-            "precio": 586.00,
+            "nombre": "LAVAPLATOS DOÑA BLANCA",
+            "peso": "340 G",
+            "precio": 989.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS DOÑA BLANCA 340 G 989.jpeg"
         },
         {
-            "nombre": "ENSALADA",
-            "peso": "250 G",
-            "precio": 982.00,
+            "nombre": "LAVAPLATOS CILINDRO LIMÓN",
+            "peso": "170 G",
+            "precio": 536.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS DOÑA BLANCA CILINDRO LIMÓN 170 G 536.jpeg"
         },
         {
-            "nombre": "ESPICANA",
-            "peso": "1 UND",
-            "precio": 1250.00,
+            "nombre": "LAVAPLATOS IREX CILINDRO 3 UND",
+            "peso": "540 G",
+            "precio": 1662.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 3 UND 540 g 1662.jpeg"
         },
         {
-            "nombre": "GUINEO",
-            "peso": "1 UND",
-            "precio": 85.00,
+            "nombre": "LAVAPLATOS IREX CILINDRO",
+            "peso": "90 G",
+            "precio": 208.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 90 G 208.jpeg"
         },
         {
-            "nombre": "JENGIBRE",
-            "peso": "1 KG",
-            "precio": 1563.00,
+            "nombre": "LAVAPLATOS IREX CILINDRO",
+            "peso": "130 G",
+            "precio": 338.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 130 g 338.jpg"
         },
         {
-            "nombre": "PAPA MINI MALLA",
-            "peso": "1 KG",
-            "precio": 1042.00,
+            "nombre": "LAVAPLATOS IREX CILINDRO",
+            "peso": "180 G",
+            "precio": 445.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 180 g 444.jpeg"
         },
         {
-            "nombre": "PEPINO",
-            "peso": "1 KG",
-            "precio": 586.00,
+            "nombre": "LAVAPLATOS IREX CILINDRO",
+            "peso": "270 G",
+            "precio": 627.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX CILINDRO 270 G 627.jpeg"
         },
         {
-            "nombre": "RABANO",
-            "peso": "1 UND",
-            "precio": 1107.00,
+            "nombre": "LAVAPLATOS IREX COCO GLICERINA",
+            "peso": "1 KG",
+            "precio": 1400.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX COCO CON GLICERINA 1000 g 1400.jpeg"
         },
         {
-            "nombre": "REMOLACHA",
-            "peso": "1 UND",
-            "precio": 456.00,
+            "nombre": "LAVAPLATOS IREX LIMON",
+            "peso": "1 KG",
+            "precio": 1313.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS IREX LIMON 1000 g 1313.jpeg"
         },
         {
-            "nombre": "REPOLLO MORADO",
-            "peso": "1 KG",
-            "precio": 984.00,
+            "nombre": "LAVAPLATOS JOY ULTRA ESENCIA LIMÓN",
+            "peso": "2066 ML",
+            "precio": 6204.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS JOY ULTRA ESENCIA LIMÓN 2066 ML 6204.jpeg"
         },
         {
-            "nombre": "TIQUISQUE",
+            "nombre": "LAVAPLATOS KLINS BAYAS SILVESTRES",
             "peso": "1 KG",
-            "precio": 3000.00,
+            "precio": 1867.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS BAYAS SILVESTRES 1000 G 1867.jpeg"
         },
         {
-            "nombre": "TOMATE BANDEJA",
-            "peso": "1 UND",
-            "precio": 2150.00,
+            "nombre": "LAVAPLATOS KLINS LIMÓN",
+            "peso": "600 G",
+            "precio": 915.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS LIMÓN 600 G 915.jpeg"
         },
         {
-            "nombre": "TOMATE PRIMERA",
-            "peso": "1 KG",
-            "precio": 1889.00,
+            "nombre": "LAVAPLATOS KLINS MELOCOTON GEL",
+            "peso": "400 G",
+            "precio": 1447.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS MELOCOTON GEL CON ESPONJA 400 g 1447.jpeg"
         },
         {
-            "nombre": "YUCA",
-            "peso": "1 KG",
-            "precio": 947.00,
+            "nombre": "LAVAPLATOS KLINS NARANJA",
+            "peso": "100 G",
+            "precio": 1658.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS NARANJA 100g 1658.jpeg"
         },
         {
-            "nombre": "ZANAHORIA",
-            "peso": "1 KG",
-            "precio": 456.00,
+            "nombre": "LAVAPLATOS KLINS NARANJA",
+            "peso": "450 G",
+            "precio": 883.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS KLINS NARANJA 450 g 883.jpeg"
         },
         {
-            "nombre": "ZUQUINI",
-            "peso": "1 UND",
-            "precio": 510.00,
+            "nombre": "LAVAPLATOS LEMON LÍQUIDO",
+            "peso": "500 ML",
+            "precio": 1462.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS LEMON LÍQUIDO BOLSA 500 ml 1462.jpeg"
         },
         {
-            "nombre": "ESPINACA ROLLO",
-            "peso": "1 UND",
-            "precio": 475.00,
+            "nombre": "LAVAPLATOS LIQUIDO AXION CARBON",
+            "peso": "640 ML",
+            "precio": 2094.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS LIQUIDO AXION CARBON ACTIVADO ANTI OLORES 640 ml 2094.jpeg"
         },
         {
-            "nombre": "PULPA DE MORA",
-            "peso": "2 UND",
-            "precio": 586.00,
+            "nombre": "LAVAPLATOS PRIL LÍQUIDO LIMÓN",
+            "peso": "400 ML",
+            "precio": 1245.00,
             "imagen": "/Imagenes/Limpieza/LAVAPLATOS PRIL LÍQUIDO LIMÓN 400 ML 1245.jpeg"
         },
         {
-            "nombre": "ÑAMPI",
-            "peso": "1 KG",
-            "precio": 2476.00,
+            "nombre": "OFERTA LAVAPLATOS AXION 3 UND",
+            "peso": "1275 G",
+            "precio": 3116.00,
             "imagen": "/Imagenes/Limpieza/OFERTA LAVAPLATOS AXION LIMÓN 3 UND 1275 G 3116.jpeg"
         },
         {
-            "nombre": "ÑAMPI",
-            "peso": "1 KG",
-            "precio": 2476.00,
+            "nombre": "OFERTA LAVAPLATOS KLINS 2 UND",
+            "peso": "500 G",
+            "precio": 1769.00,
             "imagen": "/Imagenes/Limpieza/OFERTA LAVAPLATOS KLINS 2 UND 500 G 1769.jpeg"
         }
     ]
