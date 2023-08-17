@@ -344,6 +344,11 @@ public class ChinoTico extends javax.swing.JFrame {
         btnEditarCliente.setBackground(new java.awt.Color(0, 102, 102));
         btnEditarCliente.setForeground(new java.awt.Color(255, 255, 255));
         btnEditarCliente.setText("Editar");
+        btnEditarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarClienteActionPerformed(evt);
+            }
+        });
 
         btnEliminarCliente.setBackground(new java.awt.Color(153, 0, 0));
         btnEliminarCliente.setForeground(new java.awt.Color(255, 255, 255));
@@ -1593,9 +1598,27 @@ public class ChinoTico extends javax.swing.JFrame {
     //activarPaneles();
     }//GEN-LAST:event_btnGuardarProveedorActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void btnEditarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarClienteActionPerformed
+
+        int selectedRow = tblClientes.getSelectedRow();
+        if (selectedRow >=0) {
+            String cedula = txtCedulaCliente.getText();
+            String nombre = txtNombreCliente.getText();
+            String primerA = txt1ApellidoCliente.getText();
+            String segundoA = txt2ApellidoCliente.getText();
+            String telefono = txtTelefonoCliente.getText();
+            String correo = txtCorreoCliente.getText();
+            this.cliente.actualizar_cliente(selectedRow-1, cedula, nombre, primerA, segundoA, telefono, correo);
+             actualizarTablaCliente();
+             limpiarCampos();
+             JOptionPane.showMessageDialog(null, "Se actualizo el cliente");
+        }else{
+          JOptionPane.showMessageDialog(null, "Selecciona un cliente");
+        }
+        
+    }//GEN-LAST:event_btnEditarClienteActionPerformed
+
+   
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -171,5 +171,54 @@ public class Cliente {
             e.printStackTrace();// Print the exception trace for debugging.
         }
     }
+    
+    public void actualizar_cliente(int id, String cedula, String nombre, String primer_apellido, String segundo_apellido, String telefono, String correo) {
+        try {
+            // Leer el archivo JSON de clientes
+            JSONParser parser = new JSONParser();
+            JSONArray clientesArray = (JSONArray) parser.parse(new FileReader("Cliente.json"));
+            // Buscar el cliente con el ID especificado
+            boolean clienteEncontrado = false;
+            for (Object obj : clientesArray) {
+                JSONObject clienteJSON = (JSONObject) obj;
+                int clienteId = Integer.parseInt(clienteJSON.get("id").toString());
+                if (clienteId == id) {
+                    // Actualizar la información del cliente si los campos de texto no están en blanco
+                    if (!cedula.isEmpty()) {
+                        clienteJSON.put("cedula", cedula);
+                    }
+                    if (!nombre.isEmpty()) {
+                        clienteJSON.put("nombre", nombre);
+                    }
+                    if (!primer_apellido.isEmpty()) {
+                        clienteJSON.put("primer_apellido", primer_apellido);
+                    }
+                    if (!segundo_apellido.isEmpty()) {
+                        clienteJSON.put("segundo_apellido", segundo_apellido);
+                    }
+                    if (!telefono.isEmpty()) {
+                        clienteJSON.put("telefono", telefono);
+                    }
+                    if (!correo.isEmpty()) {
+                        clienteJSON.put("correo", correo);
+                    }
+
+                    clienteEncontrado = true;
+                    break;
+                }
+            }
+            if (clienteEncontrado) {
+                FileWriter fileWriter = new FileWriter("Cliente.json");
+                fileWriter.write(clientesArray.toJSONString());
+                fileWriter.flush();
+                fileWriter.close();
+                System.out.println("Cliente actualizado exitosamente.");
+            } else {
+                System.out.println("No se encontró un cliente con el ID " + id);
+            }
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
