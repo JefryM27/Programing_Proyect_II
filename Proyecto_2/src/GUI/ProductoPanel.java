@@ -45,13 +45,16 @@ public class ProductoPanel extends javax.swing.JPanel {
         lblImgen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Bebidas/7up 3000ml.jpg"))); // NOI18N
 
         lblNombre.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(0, 0, 0));
         lblNombre.setText("Nombre");
 
         lblPeso.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        lblPeso.setForeground(new java.awt.Color(0, 0, 0));
         lblPeso.setText("Peso");
 
         lblPrecio.setBackground(new java.awt.Color(0, 0, 0));
         lblPrecio.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        lblPrecio.setForeground(new java.awt.Color(0, 0, 0));
         lblPrecio.setText("Precio");
 
         btnComprar.setText("Comprar");
@@ -68,16 +71,16 @@ public class ProductoPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblNombre)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lblPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblNombre)
                             .addComponent(lblImgen)
                             .addComponent(btnComprar)
                             .addComponent(lblPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 61, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(lblPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 61, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

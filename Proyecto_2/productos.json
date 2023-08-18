@@ -3095,5 +3095,603 @@
             "precio": 1769.00,
             "imagen": "/Imagenes/Limpieza/OFERTA LAVAPLATOS KLINS 2 UND 500 G 1769.jpeg"
         }
+    ],
+    "Enlatados" : [
+        {
+            "nombre": "ZANAHORIAS EN CUBOS",
+            "peso": "300 G",
+            "precio": 2000.00,
+            "imagen": "/Imagenes/Abarrotes/Arvejas-Con-Zanahoria-Lata.jpg"
+        },
+        {
+            "nombre": "ATUN AZUL -CAZUELA-",
+            "peso": "170 G",
+            "precio": 2000.00,
+            "imagen": "/Imagenes/Abarrotes/Atun cazuela lata.jpg"
+        },
+        {
+            "nombre": "SARDINAS ENLATADAS",
+            "peso": "230 G",
+            "precio": 1400.00,
+            "imagen": "/Imagenes/Abarrotes/Atun sardimas.jpg"
+        },
+        {
+            "nombre": "ATUN AZUL -SULI-",
+            "peso": "140 G",
+            "precio": 600.00,
+            "imagen": "/Imagenes/Abarrotes/Atun suli.jpg"
+        },
+        {
+            "nombre": "ATUN AZUL -TESORO DEL MAR-",
+            "peso": "295 G",
+            "precio": 2195.00,
+            "imagen": "/Imagenes/Abarrotes/Atun tesoro del mar.jpg"
+        },
+        {
+            "nombre": "ATUN AZUL -SABEMAS-",
+            "peso": "140 G",
+            "precio": 880.00,
+            "imagen": "/Imagenes/Abarrotes/Atun-Sabemas-Lomo-En-Trozos-En-Aceite.jpg"
+        },
+        {
+            "nombre": "CABALLA SARDINA",
+            "peso": "220 G",
+            "precio": 1600.00,
+            "imagen": "/Imagenes/Abarrotes/Caballa sardina.jpg"
+        },
+        {
+            "nombre": " ATUN CON VEGETALES -CALVO-",
+            "peso": "260 G",
+            "precio": 1300.00,
+            "imagen": "/Imagenes/Abarrotes/Calvo vegetales.png"
+        },
+        {
+            "nombre": "ALBAHACA CON TOMATE CALVO",
+            "peso": "142 G",
+            "precio": 1445.00,
+            "imagen": "/Imagenes/Abarrotes/Calvo-Albahaca-Tomate.jpg"
+        },
+        {
+            "nombre": "CARNE ENLATADA",
+            "peso": "464 G",
+            "precio": 3720.00,
+            "imagen": "/Imagenes/Abarrotes/Carne de muelas enlatado.jpg"
+        },
+        {
+            "nombre": "MAIZ ENLATADO",
+            "peso": "420 G",
+            "precio": 2425.00,
+            "imagen": "/Imagenes/Abarrotes/Elotes.jpg"
+        },
+        {
+            "nombre": "ENSALADA CON ATUN",
+            "peso": "200 G",
+            "precio": 1400.00,
+            "imagen": "/Imagenes/Abarrotes/Ensalada con atun.png"
+        },
+        {
+            "nombre": "ENSALADA ENLATADA",
+            "peso": "148 G",
+            "precio": 1000.00,
+            "imagen": "/Imagenes/Abarrotes/Ensalada enlatada.jpg"
+        },
+        {
+            "nombre": "ENSALADA PRIMAVERA ENLATADA",
+            "peso": "454 G",
+            "precio": 2800.00,
+            "imagen": "/Imagenes/Abarrotes/Ensalada primavera.jpg"
+        },
+        {
+            "nombre": "LENTEJAS ENLATADAS",
+            "peso": "1275 G",
+            "precio": 3116.00,
+            "imagen": "/Imagenes/Abarrotes/Lentejas.jpg"
+        },
+        {
+            "nombre": "PALMITA ENLATADO",
+            "peso": "500 G",
+            "precio": 3000.00,
+            "imagen": "/Imagenes/Abarrotes/Palmito-La-Cima-En-Medallones.jpg"
+        },
+        {
+            "nombre": "PESCADO ENLATADO",
+            "peso": "400 G",
+            "precio": 2000.00,
+            "imagen": "/Imagenes/Abarrotes/Pescado conservas .png"
+        },
+        {
+            "nombre": "GARBANZOS ENLATADOS",
+            "peso": "240 G",
+            "precio": 620.00,
+            "imagen": "/Imagenes/Abarrotes/Toño Garbanzos.jpg"
+        },
+        {
+            "nombre": "VEGETALES ENLATADOS",
+            "peso": "300 G",
+            "precio": 1200.00,
+            "imagen": "/Imagenes/Abarrotes/Toño vegetales.jpg"
+        },
+        {
+            "nombre": "ATUN AZULL -SALADES-",
+            "peso": "494 G",
+            "precio": 1700.00,
+            "imagen": "/Imagenes/Abarrotes/atun salades.jpg"
+        },
+        {
+            "nombre": "ATUNN AZUL -CONSERVA-",
+            "peso": "220 G",
+            "precio": 1825.00,
+            "imagen": "/Imagenes/Abarrotes/atun-en-conserva.jpg"
+        },
+        {
+            "nombre": "CARNES ENLATADAS",
+            "peso": "464 G",
+            "precio": 3720.00,
+            "imagen": "/Imagenes/Abarrotes/carnes enlatadas.jpg"
+        },
+        {
+            "nombre": "TOMATE ENLATADO  -PEA-",
+            "peso": "350 G",
+            "precio": 2140.00,
+            "imagen": "/Imagenes/Abarrotes/tomato-pea-natural..png"
+        },
+        {
+            "nombre": "TUNA INTERNACIONAL",
+            "peso": "100 G",
+            "precio": 750.00,
+            "imagen": "/Imagenes/Abarrotes/tuna-international-genoa-salamipng.png"
+        },
+        {
+            "nombre": "TUNA ITALIANA",
+            "peso": "75 G",
+            "precio": 450.00,
+            "imagen": "/Imagenes/Abarrotes/tuna-italiano.png"
+        }
+    ],
+    
+    "Granos y Pastas" : [
+        {
+            "nombre": "ARROZ BLANCO -KUSKA-",
+            "peso": "1 KG",
+            "precio": 2750.00,
+            "imagen": "/Imagenes/Abarrotes/Arroz blanco.jpg"
+        },
+        {
+            "nombre": "ARROZ BLANCO 95% -LUISIANA-",
+            "peso": "4 KG",
+            "precio": 6350.00,
+            "imagen": "/Imagenes/Abarrotes/Arroz luisiana.jpg"
+        },
+        {
+            "nombre": "ARROZ BLANCO 99% -LUISIANA-",
+            "peso": "1.7 KG",
+            "precio": 1534.00,
+            "imagen": "/Imagenes/Abarrotes/Arroz lusiana99.jpg"
+        },
+        {
+            "nombre": "ARROZ BLANCO 99% -TIO PELON-",
+            "peso": "4 KG",
+            "precio": 3900.00,
+            "imagen": "/Imagenes/Abarrotes/Arroz tio pelon.jpg"
+        },
+        {
+            "nombre": "ARROZ Y GRANOS",
+            "peso": "700 G",
+            "precio": 1200.00,
+            "imagen": "/Imagenes/Abarrotes/Arroz y granos.jpg"
+        },
+        {
+            "nombre": "ARROZ BLANCO 99% -TIO PELON-",
+            "peso": "1 KG",
+            "precio": 2400.00,
+            "imagen": "/Imagenes/Abarrotes/Arroz-Marca-Tio-Pelon-99-Grano.jpg"
+        },
+        {
+            "nombre": "ARROZ BLANCO -SCHETTINO-",
+            "peso": "1 KG",
+            "precio": 2300.00,
+            "imagen": "/Imagenes/Abarrotes/arroz.jpg"
+        },
+        {
+            "nombre": "GRANOS DE MAIZ",
+            "peso": "300 G",
+            "precio": 3000.00,
+            "imagen": "/Imagenes/Abarrotes/choclo en grano.jpg"
+        },
+        {
+            "nombre": "FRIJOLES NEGROS -GRANO DE ORO-",
+            "peso": "1 KG",
+            "precio": 1750.00,
+            "imagen": "/Imagenes/Abarrotes/Frijol grano de oro.jpg"
+        },
+        {
+            "nombre": "FRIJOLES NEGROS -INDIANA-",
+            "peso": "1 KG",
+            "precio": 1260.00,
+            "imagen": "/Imagenes/Abarrotes/Frijol-Indiana-Negro.jpg"
+        },
+        {
+            "nombre": "FRIJOLES ROJOS -SABEMAS-",
+            "peso": "1 KG",
+            "precio": 1450.00,
+            "imagen": "/Imagenes/Abarrotes/Frijol-Rojo-Sabemas.jpg"
+        },
+        {
+            "nombre": "FRIJOLES NEGROS -TIO PELON-",
+            "peso": "1 KG",
+            "precio": 1850.00,
+            "imagen": "/Imagenes/Abarrotes/frijoles tio pelon.jpg"
+        },
+        {
+            "nombre": "AVENA -GRANO DE ORO-",
+            "peso": "1 KG",
+            "precio": 2300.00,
+            "imagen": "/Imagenes/Abarrotes/GRANO DE ORO Bolsa 1Kg.jpg"
+        },
+        {
+            "nombre": "GARBANZOS",
+            "peso": "570 G",
+            "precio": 1800.00,
+            "imagen": "/Imagenes/Abarrotes/garbanzo.jpg"
+        },
+        {
+            "nombre": "GRANOS DE CAFE VERDE",
+            "peso": "1 KG",
+            "precio": 2450.00,
+            "imagen": "/Imagenes/Abarrotes/Granos de cafe verde.jpg"
+        },
+        {
+            "nombre": "TRIGO -SARRACENO-",
+            "peso": "1 KG",
+            "precio": 2856.00,
+            "imagen": "/Imagenes/Abarrotes/Granos de trigo sarraceno.jpg"
+        },
+        {
+            "nombre": "TORNILLITOS -PRINCE-",
+            "peso": "350 G",
+            "precio": 1600.00,
+            "imagen": "/Imagenes/Abarrotes/PASTA-PRINCE-TORNILLO.jpg"
+        },
+        {
+            "nombre": "PASTA ORZA",
+            "peso": "7.5 KG",
+            "precio": 8450.00,
+            "imagen": "/Imagenes/Abarrotes/Pasta Orza.jpg"
+        },
+        {
+            "nombre": "PASTA RAMEN",
+            "peso": "170 G",
+            "precio": 1620.00,
+            "imagen": "/Imagenes/Abarrotes/Pasta Ramen.jpg"
+        },
+        {
+            "nombre": "PASTA ROMANA",
+            "peso": "230 G",
+            "precio": 2000.00,
+            "imagen": "/Imagenes/Abarrotes/Pasta Roma.jpg"
+        },
+        {
+            "nombre": "CHOP SUEY",
+            "peso": "200 G",
+            "precio": 1300.00,
+            "imagen": "/Imagenes/Abarrotes/Pasta chop Suey.jpg"
+        },
+        {
+            "nombre": "PASTA PLUMA -LUCEMA-",
+            "peso": "250 G",
+            "precio": 600.00,
+            "imagen": "/Imagenes/Abarrotes/Pasta-Lucema-Mediana-Pluma.jpg"
+        },
+        {
+            "nombre": "ARITOS -GRANO DE ORO-",
+            "peso": "450 G",
+            "precio": 1250.00,
+            "imagen": "/Imagenes/Abarrotes/imagen-pasta-corta-arito.jpg"
+        }
+    ],
+    
+    "Lacteos" : [
+        {
+            "nombre": "MANTEQUILLA -DOS PINOS-",
+            "peso": "150 G",
+            "precio": 1450.00,
+            "imagen": "/Imagenes/Abarrotes/DOS-PINOS-MANTEQUILLA.jpg"
+        },
+        {
+            "nombre": "FRESCO LECHE DE CHOCOLATE",
+            "peso": "250 ML",
+            "precio": 525.00,
+            "imagen": "/Imagenes/Abarrotes/fresco leche chocolate.jpg"
+        },
+        {
+            "nombre": "FRESCO LECHE DE FRESA",
+            "peso": "250 ML",
+            "precio": 525.00,
+            "imagen": "/Imagenes/Abarrotes/fresco leche fresa.jpg"
+        },
+        {
+            "nombre": "FRESCO LECHE DE VAINILLA",
+            "peso": "250 ML",
+            "precio": 525.00,
+            "imagen": "/Imagenes/Abarrotes/fresco leche.jpg"
+        },
+        {
+            "nombre": "HELADO CAPRICHO",
+            "peso": "76 G",
+            "precio": 655.00,
+            "imagen": "/Imagenes/Abarrotes/Helado capri fram.jpg"
+        },
+        {
+            "nombre": "HELADO DE VAINILLA -DOS PINOS-",
+            "peso": "700 G",
+            "precio": 3750.00,
+            "imagen": "/Imagenes/Abarrotes/Helado de vainilla.jpg"
+        },
+        {
+            "nombre": "HELADO KRUNCHY -DOS PINOS-",
+            "peso": "75 G",
+            "precio": 775.00,
+            "imagen": "/Imagenes/Abarrotes/Helado krunchy Dos Pinos.jpg"
+        },
+        {
+            "nombre": "HELADO DE FRESA -DOS PINOS-",
+            "peso": "600 G",
+            "precio": 2665.00,
+            "imagen": "/Imagenes/Abarrotes/helado dos pinos fresa.jpg"
+        },
+        {
+            "nombre": "HELADO DE CHOCOLATE -DOS PINOS-",
+            "peso": "900 G",
+            "precio": 4550.00,
+            "imagen": "/Imagenes/Abarrotes/helado de chocolate.jpg"
+        },
+        {
+            "nombre": "HELADO DE LIMON -DOS PINOS-",
+            "peso": "580 G",
+            "precio": 5600.00,
+            "imagen": "/Imagenes/Abarrotes/helado-limon-dos-pinos.png"
+        },
+        {
+            "nombre": "HELADO DE MINI SANDWICH -DOS PINOS-",
+            "peso": "950 G",
+            "precio": 4100.00,
+            "imagen": "/Imagenes/Abarrotes/Helado mini Sandwich dos pino.png"
+        },
+        {
+            "nombre": "HELADO DE FRESA -COLUMBIA",
+            "peso": "570 G",
+            "precio": 3700.00,
+            "imagen": "/Imagenes/Abarrotes/Helado-Colanta-de-FRESA.jpg"
+        },
+        {
+            "nombre": "LACTOCREMA -DOS PINOS-",
+            "peso": "460 G",
+            "precio": 1473.00,
+            "imagen": "/Imagenes/Abarrotes/Lactocrema dos pinos.jpg"
+        },
+        {
+            "nombre": "LECHE PINITO -DOS PINOS-",
+            "peso": "1.8 L",
+            "precio": 1300.00,
+            "imagen": "/Imagenes/Abarrotes/Leche dos pino.jpg"
+        },
+        {
+            "nombre": "LECHE LARGA VIDA -CORONADO-",
+            "peso": "1 L",
+            "precio": 1839.00,
+            "imagen": "/Imagenes/Abarrotes/Leche larga vida.jpg"
+        },
+        {
+            "nombre": "NATILLA ZARCERO",
+            "peso": "750 G",
+            "precio": 2180.00,
+            "imagen": "/Imagenes/Abarrotes/Natilla zarcero. jpg"
+        },
+        {
+            "nombre": "QUESO CREMA -DOS PINOS-",
+            "peso": "210 G",
+            "precio": 1320.00,
+            "imagen": "/Imagenes/Abarrotes/Queso crema dos pinos .jpg"
+        },
+        {
+            "nombre": "QUESO -DOS PINOS-",
+            "peso": "1 KG",
+            "precio": 2500.00,
+            "imagen": "/Imagenes/Abarrotes/Queso dos pinos.jpg"
+        },
+        {
+            "nombre": "QUESO MANTEQUILLS",
+            "peso": "200 G",
+            "precio": 2500.00,
+            "imagen": "/Imagenes/Abarrotes/Queso mantequilla.png"
+        },
+        {
+            "nombre": "QUESO  MOZZARELA RALLADO ",
+            "peso": "225 G",
+            "precio": 2500.00,
+            "imagen": "/Imagenes/Abarrotes/Queso rallado Mozzarella.jpg"
+        },
+        {
+            "nombre": "QUESO SEMI DURO",
+            "peso": "500G",
+            "precio": 2200.00,
+            "imagen": "/Imagenes/Abarrotes/Queso semi duro .jpg"
+        },
+        {
+            "nombre": "QUESO WHARMANN",
+            "peso": "200 G",
+            "precio": 3200.00,
+            "imagen": "/Imagenes/Abarrotes/Queso wharmann .jpg"
+        },
+        {
+            "nombre": "YOGURT DE FRUTAS",
+            "peso": "1 G",
+            "precio": 1770.00,
+            "imagen": "/Imagenes/Abarrotes/YOGURT CORONADO FRUTA .jpg"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Abarrotes/Yogurt de mora.jpg"
+        },
+        {
+            "nombre": "YOGURT DE FRESA",
+            "peso": "250 ML",
+            "precio": 1925.00,
+            "imagen": "/Imagenes/Abarrotes/Yogurt dos pinos delact fresa .jpg"
+        }    
+    ],
+    
+    "Cuidado Bucal" : [
+        {
+            "nombre": "Cepillo Colgate procuidado suave",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+           "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+           "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },{
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        },
+        {
+            "nombre": "YOGURT DE MORA",
+            "peso": "1.8 L",
+            "precio": 3150.00,
+            "imagen": "/Imagenes/Cuidado Personal/Yogurt de mora.png"
+        }  
     ]
 }

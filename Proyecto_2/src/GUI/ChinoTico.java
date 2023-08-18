@@ -44,7 +44,9 @@ public class ChinoTico extends javax.swing.JFrame {
         scrollDesinfectantes.setViewportView(new ListaProductos(datos.cargarProductos("Desifectante y limpiadores"), this));
         scrollLavaPlatos.setViewportView(new ListaProductos(datos.cargarProductos("Lava platos"), this));
         scrollDetergentes.setViewportView(new ListaProductos(datos.cargarProductos("Detergentes"), this));
-        
+        scrollEnlatados.setViewportView(new ListaProductos(datos.cargarProductos("Enlatados"), this));
+        scrollGranos.setViewportView(new ListaProductos(datos.cargarProductos("Granos y Pastas"), this));
+        scrollLacteos.setViewportView(new ListaProductos(datos.cargarProductos("Granos y Pastas"), this));
     }
     
     public void actualizarTablaCliente() {
@@ -180,6 +182,7 @@ public class ChinoTico extends javax.swing.JFrame {
         JpAceite = new javax.swing.JPanel();
         scrollBotanas = new javax.swing.JScrollPane();
         JpBotanas = new javax.swing.JPanel();
+        scrollLacteos = new javax.swing.JScrollBar();
         scrollEnlatados = new javax.swing.JScrollPane();
         JpEnlatados = new javax.swing.JPanel();
         JpLimpieza = new javax.swing.JPanel();
@@ -468,13 +471,13 @@ public class ChinoTico extends javax.swing.JFrame {
         JpClientes.add(lblImajen2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, -10, 730, 420));
 
         lblImajen3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondos/9ecda51d8c2bad23237e6e63159df01b.jpg"))); // NOI18N
-        JpClientes.add(lblImajen3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, -10, 730, 420));
+        JpClientes.add(lblImajen3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, -10, 730, 420));
 
         lblImajen4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondos/9ecda51d8c2bad23237e6e63159df01b.jpg"))); // NOI18N
         JpClientes.add(lblImajen4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, -1, 410));
 
         lblImajen5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondos/9ecda51d8c2bad23237e6e63159df01b.jpg"))); // NOI18N
-        JpClientes.add(lblImajen5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 400, 720, 410));
+        JpClientes.add(lblImajen5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 410, 720, 410));
 
         lblImajen6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondos/9ecda51d8c2bad23237e6e63159df01b.jpg"))); // NOI18N
         JpClientes.add(lblImajen6, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 410, 740, 400));
@@ -821,6 +824,9 @@ public class ChinoTico extends javax.swing.JFrame {
         scrollBotanas.setViewportView(JpBotanas);
 
         JTabSubCategoriasAbarrotes.addTab("Botanas", scrollBotanas);
+
+        scrollLacteos.setPreferredSize(new java.awt.Dimension(1061, 806));
+        JTabSubCategoriasAbarrotes.addTab("Lacteos", scrollLacteos);
 
         javax.swing.GroupLayout JpEnlatadosLayout = new javax.swing.GroupLayout(JpEnlatados);
         JpEnlatados.setLayout(JpEnlatadosLayout);
@@ -1757,6 +1763,7 @@ public class ChinoTico extends javax.swing.JFrame {
     private javax.swing.JScrollPane scrollGranos;
     private javax.swing.JScrollPane scrollHigineMascotas;
     private javax.swing.JScrollPane scrollJugos;
+    private javax.swing.JScrollBar scrollLacteos;
     private javax.swing.JScrollPane scrollLavaPlatos;
     private javax.swing.JScrollPane scrollLicores;
     private javax.swing.JScrollPane scrollMariscos;

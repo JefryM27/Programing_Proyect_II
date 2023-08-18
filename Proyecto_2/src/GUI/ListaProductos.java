@@ -4,7 +4,6 @@ package GUI;
 import Logica.Producto;
 import java.awt.GridLayout;
 import java.util.List;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 
@@ -24,7 +23,7 @@ public class ListaProductos extends javax.swing.JPanel {
     
     private void imprimirProductos(){
         JPanel panel;
-        setLayout(new GridLayout(0, 4, 8, 8));
+        setLayout(new GridLayout(0, 3, 8, 8));
         
         for (int i = 0; i < productos.size(); i++) {
             Producto producto = productos.get(i);
