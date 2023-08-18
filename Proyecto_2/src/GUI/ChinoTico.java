@@ -543,6 +543,11 @@ public class ChinoTico extends javax.swing.JFrame {
         btnEliminarProveedor.setBackground(new java.awt.Color(153, 0, 0));
         btnEliminarProveedor.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminarProveedor.setText("Eliminar");
+        btnEliminarProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarProveedorActionPerformed(evt);
+            }
+        });
 
         btnGuardarProveedor.setBackground(new java.awt.Color(0, 153, 51));
         btnGuardarProveedor.setForeground(new java.awt.Color(255, 255, 255));
@@ -1646,6 +1651,25 @@ public class ChinoTico extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Se actualizo el proveedor");
         }else{JOptionPane.showMessageDialog(null, "Seleciona un Proveedor en la tabla");}
     }//GEN-LAST:event_btnEditarProveedorActionPerformed
+
+    private void btnEliminarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProveedorActionPerformed
+        int selectedRow = tblProveedores.getSelectedRow();
+
+    if (selectedRow >= 0) {
+        DefaultTableModel model = (DefaultTableModel) tblProveedores.getModel();
+        model.removeRow(selectedRow);
+         String cedula = txtCedulaCliente.getText();
+            String nombre = txtNombreCliente.getText();
+            String primerA = txt1ApellidoCliente.getText();
+            String segundoA = txt2ApellidoCliente.getText();
+            String telefono = txtTelefonoCliente.getText();
+            String correo = txtCorreoCliente.getText();
+            this.cliente.actualizar_tblProveedores(selectedRow-1, cedula, nombre, primerA, segundoA, telefono, correo);
+        JOptionPane.showMessageDialog(this, "El provedor fue eliminado correctamente");
+    } else {
+        JOptionPane.showMessageDialog(this, "Seleccione un provedor para eliminar", "Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_btnEliminarProveedorActionPerformed
 
    
  
