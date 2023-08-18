@@ -46,7 +46,7 @@ public class ChinoTico extends javax.swing.JFrame {
         scrollDetergentes.setViewportView(new ListaProductos(datos.cargarProductos("Detergentes"), this));
         scrollEnlatados.setViewportView(new ListaProductos(datos.cargarProductos("Enlatados"), this));
         scrollGranos.setViewportView(new ListaProductos(datos.cargarProductos("Granos y Pastas"), this));
-        scrollLacteos.setViewportView(new ListaProductos(datos.cargarProductos("Granos y Pastas"), this));
+        //scrollLacteos.setViewportView(new ListaProductos(datos.cargarProductos("Granos y Pastas"), this));
     }
     
     public void actualizarTablaCliente() {
@@ -534,6 +534,11 @@ public class ChinoTico extends javax.swing.JFrame {
         btnEditarProveedor.setBackground(new java.awt.Color(0, 102, 102));
         btnEditarProveedor.setForeground(new java.awt.Color(255, 255, 255));
         btnEditarProveedor.setText("Editar");
+        btnEditarProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarProveedorActionPerformed(evt);
+            }
+        });
 
         btnEliminarProveedor.setBackground(new java.awt.Color(153, 0, 0));
         btnEliminarProveedor.setForeground(new java.awt.Color(255, 255, 255));
@@ -1617,15 +1622,30 @@ public class ChinoTico extends javax.swing.JFrame {
             String segundoA = txt2ApellidoCliente.getText();
             String telefono = txtTelefonoCliente.getText();
             String correo = txtCorreoCliente.getText();
-            this.cliente.actualizar_cliente(selectedRow-1, cedula, nombre, primerA, segundoA, telefono, correo);
+            this.cliente.editar_cliente(selectedRow-1, cedula, nombre, primerA, segundoA, telefono, correo);
              actualizarTablaCliente();
              limpiarCampos();
              JOptionPane.showMessageDialog(null, "Se actualizo el cliente");
         }else{
-          JOptionPane.showMessageDialog(null, "Selecciona un cliente");
+          JOptionPane.showMessageDialog(null, "Selecciona un Cliente en la tabla");
         }
         
     }//GEN-LAST:event_btnEditarClienteActionPerformed
+
+    private void btnEditarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProveedorActionPerformed
+        // TODO add your handling code here:
+        int selectedRow =tblProveedores.getSelectedRow();
+        if (selectedRow>=0){
+            String cedula = txtCedulaProveedor.getText();
+            String nombre = txtNombreProveedor.getText();
+            String telefono = txtTelefonoProveedor.getText();
+            String correo = txtCorreoProveedor.getText();
+            this.proveedor.editar_Proveedor(selectedRow, cedula, nombre, telefono, correo);
+           this.actualizarTablaProveedor();
+            this.limpiarCampos();
+            JOptionPane.showMessageDialog(null, "Se actualizo el proveedor");
+        }else{JOptionPane.showMessageDialog(null, "Seleciona un Proveedor en la tabla");}
+    }//GEN-LAST:event_btnEditarProveedorActionPerformed
 
    
  

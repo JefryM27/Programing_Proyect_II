@@ -172,18 +172,15 @@ public class Cliente {
         }
     }
     
-    public void actualizar_cliente(int id, String cedula, String nombre, String primer_apellido, String segundo_apellido, String telefono, String correo) {
+    public void editar_cliente(int id, String cedula, String nombre, String primer_apellido, String segundo_apellido, String telefono, String correo) {
         try {
-            // Leer el archivo JSON de clientes
             JSONParser parser = new JSONParser();
             JSONArray clientesArray = (JSONArray) parser.parse(new FileReader("Cliente.json"));
-            // Buscar el cliente con el ID especificado
             boolean clienteEncontrado = false;
             for (Object obj : clientesArray) {
                 JSONObject clienteJSON = (JSONObject) obj;
                 int clienteId = Integer.parseInt(clienteJSON.get("id").toString());
                 if (clienteId == id) {
-                    // Actualizar la información del cliente si los campos de texto no están en blanco
                     if (!cedula.isEmpty()) {
                         clienteJSON.put("cedula", cedula);
                     }
@@ -212,10 +209,7 @@ public class Cliente {
                 fileWriter.write(clientesArray.toJSONString());
                 fileWriter.flush();
                 fileWriter.close();
-                System.out.println("Cliente actualizado exitosamente.");
-            } else {
-                System.out.println("No se encontró un cliente con el ID " + id);
-            }
+            } 
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }

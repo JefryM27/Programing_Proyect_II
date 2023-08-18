@@ -154,5 +154,41 @@ public class Proveedor {
         return "Proveedor [id=" + id + ", cedulaJuridica=" + cedulaJuridica + ", nombre=" + nombre + ", telefono="
                 + telefono + ", correo=" + correo + "]";
     }
+ public void editar_Proveedor(int id, String cedula, String nombre,  String telefono, String correo) {
+        try {
+            JSONParser parser = new JSONParser();
+            JSONArray clientesArray = (JSONArray) parser.parse(new FileReader("proveedor.json"));
+            boolean clienteEncontrado = false;
+            for (Object obj : clientesArray) {
+                JSONObject clienteJSON = (JSONObject) obj;
+                int clienteId = Integer.parseInt(clienteJSON.get("id").toString());
+                if (clienteId == id) {
+                    if (!cedula.isEmpty()) {
+                        clienteJSON.put("cedula", cedula);
+                    }
+                    if (!nombre.isEmpty()) {
+                        clienteJSON.put("nombre", nombre);
+                    }
+                 
+                    if (!telefono.isEmpty()) {
+                        clienteJSON.put("telefono", telefono);
+                    }
+                    if (!correo.isEmpty()) {
+                        clienteJSON.put("correo", correo);
+                    }
+
+                    clienteEncontrado = true;
+                    break;
+                }
+            }
+            if (clienteEncontrado) {
+                FileWriter fileWriter = new FileWriter("proveedor.json");
+                fileWriter.write(clientesArray.toJSONString());
+                fileWriter.flush();
+                fileWriter.close();
+            } 
+        } catch (IOException | ParseException e) {
+        }
+    }
 }
 
