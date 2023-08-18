@@ -359,6 +359,11 @@ public class ChinoTico extends javax.swing.JFrame {
         btnEliminarCliente.setBackground(new java.awt.Color(153, 0, 0));
         btnEliminarCliente.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminarCliente.setText("Eliminar");
+        btnEliminarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarClienteActionPerformed(evt);
+            }
+        });
 
         btnGuardarCliente.setBackground(new java.awt.Color(0, 153, 51));
         btnGuardarCliente.setForeground(new java.awt.Color(255, 255, 255));
@@ -1670,6 +1675,25 @@ public class ChinoTico extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Seleccione un provedor para eliminar", "Error", JOptionPane.ERROR_MESSAGE);
     }
     }//GEN-LAST:event_btnEliminarProveedorActionPerformed
+
+    private void btnEliminarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarClienteActionPerformed
+            int selectedRow = tblClientes.getSelectedRow();
+
+    if (selectedRow >= 0) {
+        DefaultTableModel model = (DefaultTableModel) tblClientes.getModel();
+        model.removeRow(selectedRow);
+         String cedula = txtCedulaCliente.getText();
+            String nombre = txtNombreCliente.getText();
+            String primerA = txt1ApellidoCliente.getText();
+            String segundoA = txt2ApellidoCliente.getText();
+            String telefono = txtTelefonoCliente.getText();
+            String correo = txtCorreoCliente.getText();
+            this.cliente.actualizar_tblProveedores(selectedRow-1, cedula, nombre, primerA, segundoA, telefono, correo);
+        JOptionPane.showMessageDialog(this, "El cliente fue eliminado correctamente");
+    } else {
+        JOptionPane.showMessageDialog(this, "Seleccione un cliente para eliminar", "Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_btnEliminarClienteActionPerformed
 
    
  

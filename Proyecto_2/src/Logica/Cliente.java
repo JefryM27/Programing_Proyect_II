@@ -218,5 +218,13 @@ public class Cliente {
     public void actualizar_tblProveedores(int i, String cedula, String nombre, String primerA, String segundoA, String telefono, String correo) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    public void actualizar_cliente(int i, String cedula, String nombre, String primerA, String segundoA, String telefono, String correo) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void actualizar_tblClientes(int i, String cedula, String nombre, String primerA, String segundoA, String telefono, String correo) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 
