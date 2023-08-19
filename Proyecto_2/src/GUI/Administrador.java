@@ -171,7 +171,7 @@ public class Administrador extends javax.swing.JFrame {
         cbxSubcategorias = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1250, 1250));
+        setPreferredSize(new java.awt.Dimension(1960, 1054));
         setResizable(false);
 
         JTabMain.setBackground(new java.awt.Color(0, 204, 0));
@@ -207,7 +207,7 @@ public class Administrador extends javax.swing.JFrame {
 
         lblImejenInicio.setForeground(new java.awt.Color(0, 0, 153));
         lblImejenInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondos/Retail-de-supermercado.png"))); // NOI18N
-        JpInicio.add(lblImejenInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, 0, 1340, 810));
+        JpInicio.add(lblImejenInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, 0, 1800, 810));
 
         JTabMain.addTab("Inicio", JpInicio);
 

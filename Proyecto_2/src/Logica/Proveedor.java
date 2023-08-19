@@ -1,7 +1,7 @@
 package Logica;
 
 import GUI.Administrador;
-import GUI.ChinoTico;
+import GUI.Usuario;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;

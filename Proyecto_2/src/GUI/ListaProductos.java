@@ -10,9 +10,9 @@ import javax.swing.JPanel;
 public class ListaProductos extends javax.swing.JPanel {
 
     private List<Producto> productos;
-    private ChinoTico parent;
+    private Usuario parent;
     
-    public ListaProductos(List<Producto> productos, ChinoTico parent) {
+    public ListaProductos(List<Producto> productos, Usuario parent) {
         initComponents();
         this.productos = productos;
       //  System.out.println(getParent());

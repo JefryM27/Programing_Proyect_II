@@ -16,6 +16,11 @@ public class logica {
         tico.setLocationRelativeTo(null);
         tico.actualizarTablaCliente();
         tico.actualizarTablaProveedor();
+        
+        Usuario tico2 = new Usuario();
+        tico2.setVisible(true);
+        tico2.setResizable(false);
+        tico2.setLocationRelativeTo(null);
     }
     
 }

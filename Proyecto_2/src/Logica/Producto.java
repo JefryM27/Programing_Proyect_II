@@ -1,16 +1,17 @@
-
 package Logica;
 
+import javax.swing.table.DefaultTableModel;
 
 public class Producto {
-  private int  idProducto;
-  private String nombre;
-  private  double precio;
-  private int idProveedor;
-  private int idCategoria;
-  private int idMarca;
-  private String peso;
-  private String imagen;
+
+    private int idProducto;
+    private String nombre;
+    private double precio;
+    private int idProveedor;
+    private int idCategoria;
+    private int idMarca;
+    private String peso;
+    private String imagen;
 
     public Producto(int idProducto, String nombre, double precio, int idProveedor, int idCategoria, int idMarca, String peso, String imagen) {
         this.idProducto = idProducto;
@@ -29,8 +30,6 @@ public class Producto {
         this.peso = peso;
         this.imagen = imagen;
     }
-    
-    
 
     /**
      * @return the idProducto
@@ -73,7 +72,6 @@ public class Producto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-
 
     /**
      * @return the idProveedor
@@ -132,10 +130,17 @@ public class Producto {
     public void setImagen(String imagen) {
         this.imagen = imagen;
     }
-    
-    
-    
-  
-        
-    
+
+    public int productoExistente(DefaultTableModel model, String nombre) {
+        int rowCount = model.getRowCount();
+
+        for (int row = 0; row < rowCount; row++) {
+            String nombreExistente = (String) model.getValueAt(row, 0);
+            if (nombreExistente.equals(nombre)) {
+                return row;
+            }
+        }
+        return -1;
+    }
+
 }
