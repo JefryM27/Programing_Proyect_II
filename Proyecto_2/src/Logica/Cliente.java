@@ -1,6 +1,7 @@
 
 package Logica;
 
+import GUI.Administrador;
 import GUI.ChinoTico;
 import java.io.File;
 import java.io.FileReader;
@@ -20,9 +21,9 @@ public class Cliente {
     private String segundoApellido;
     private String teléfono;
     private String correo;
-    private ChinoTico tico;
+    private Administrador tico;
     
-    public Cliente(ChinoTico tico){
+    public Cliente(Administrador tico){
         this.tico = tico;
     }
     public Cliente(int id,String cédula,String nombre, String primerApellido,String segundoApellido,String teléfono,String correo){

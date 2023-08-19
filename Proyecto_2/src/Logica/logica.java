@@ -10,7 +10,7 @@ public class logica {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ChinoTico tico = new ChinoTico();
+        Administrador tico = new Administrador();
         tico.setVisible(true);
         tico.setResizable(false);
         tico.setLocationRelativeTo(null);
