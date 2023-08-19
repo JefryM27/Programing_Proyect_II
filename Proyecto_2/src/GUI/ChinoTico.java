@@ -96,7 +96,21 @@ public class ChinoTico extends javax.swing.JFrame {
        ((DefaultTableModel) tblCarrito.getModel()).addRow(new Object[]{producto.getNombre(), producto.getPeso(), producto.getPrecio()});
     }
 
-
+ private void activarBotones(){
+        btnGuardarCliente.setEnabled(true);
+        btnGuardarProveedor.setEnabled(true);
+        btnEditarCliente.setEnabled(true);   
+        btnEliminarProveedor.setEnabled(true);
+        btnEliminarCliente.setEnabled(true);
+ }
+    
+    private void desactivarBotones(){
+        btnGuardarCliente.setEnabled(false);
+        btnGuardarProveedor.setEnabled(false);
+        btnEditarCliente.setEnabled(false); 
+        btnEliminarProveedor.setEnabled(false);
+        btnEliminarCliente.setEnabled(false);
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -1702,15 +1716,15 @@ public class ChinoTico extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarClienteActionPerformed
 
     private void txtCedulaClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaClienteActionPerformed
-           String cedula = txtCedulaCliente.getText(); // Obtener el valor del campo de texto
+          String cedula = txtCedulaCliente.getText(); // Get the value of the text field
     
-    if (cedula.matches("\\d{10}")) {
-        // La cédula es válida, realizar acciones adicionales si es necesario
-        System.out.println("Cédula jurídica válida");
-    } else {
-        // La cédula no es válida, mostrar un mensaje de error
-        System.out.println("Cédula jurídica no válida");
-    }
+        if (cedula.matches("\\d{9}")) {
+    System.out.println("Cédula normal válida");
+}        else if (cedula.matches("\\d{10}")) {
+    System.out.println("Cédula jurídica válida");
+}       else {
+    System.out.println("Cédula no válida");
+}
     }//GEN-LAST:event_txtCedulaClienteActionPerformed
 
    
