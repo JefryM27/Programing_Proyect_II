@@ -1,5 +1,5 @@
-
 package GUI;
+
 import Logica.*;
 import java.io.File;
 import java.io.FileReader;
@@ -11,20 +11,20 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-
-
 /**
  *
  * @author jefry
  */
 public class Administrador extends javax.swing.JFrame {
+
     private Cliente cliente = new Cliente(this);
     private Proveedor proveedor = new Proveedor(this);
-    
+
     public Administrador() {
         initComponents();
-        
+
     }
+
     // Method to check if the fields are empty
     private boolean camposVacios(String... campos) {
         for (String campo : campos) {
@@ -34,23 +34,25 @@ public class Administrador extends javax.swing.JFrame {
         }
         return false;
     }
-    
-    private int generarID(String fileName){
+
+    private int generarID(String fileName) {
         try {
-        File archivoJSON = new File(fileName);
-        JSONParser parser = new JSONParser();
-        JSONArray array = (JSONArray) parser.parse(new FileReader(archivoJSON));
-        int lastIndex = array.size()-1;        
-        JSONObject ultimo_cliente = (JSONObject) array.get(lastIndex);
-        //accesses the attributes of the last data in the table
-        Long id = (Long) ultimo_cliente.get("id");
-        return id.intValue(); 
+            File archivoJSON = new File(fileName);
+            JSONParser parser = new JSONParser();
+            JSONArray array = (JSONArray) parser.parse(new FileReader(archivoJSON));
+            int lastIndex = array.size() - 1;
+            JSONObject ultimo_cliente = (JSONObject) array.get(lastIndex);
+            //accesses the attributes of the last data in the table
+            Long id = (Long) ultimo_cliente.get("id");
+            return id.intValue();
         } catch (IOException | ParseException e) {
             return 1000;
         }
-    };
+    }
+
+    ;
     
-    private void limpiarCampos(){
+    private void limpiarCampos() {
         this.txtCedulaCliente.setText("");
         this.txtNombreCliente.setText("");
         this.txt1ApellidoCliente.setText("");
@@ -62,14 +64,15 @@ public class Administrador extends javax.swing.JFrame {
         this.txtTelefonoProveedor.setText("");
         this.txtCorreoProveedor.setText("");
     }
-    
+
     public void actualizarTablaCliente() {
         cliente.actualizarTabla((DefaultTableModel) tblClientes.getModel());
     }
+
     public void actualizarTablaProveedor() {
         proveedor.actualizarTabla((DefaultTableModel) tblProveedores.getModel());
     }
-   
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -1040,7 +1043,7 @@ public class Administrador extends javax.swing.JFrame {
             String segundoA = txt2ApellidoCliente.getText();
             String telefono = txtTelefonoCliente.getText();
             String correo = txtCorreoCliente.getText();
-            this.cliente.actualizar_tblProveedores(selectedRow-1, cedula, nombre, primerA, segundoA, telefono, correo);
+            this.cliente.actualizar_tblProveedores(selectedRow - 1, cedula, nombre, primerA, segundoA, telefono, correo);
             JOptionPane.showMessageDialog(this, "El provedor fue eliminado correctamente");
         } else {
             JOptionPane.showMessageDialog(this, "Seleccione un provedor para eliminar", "Error", JOptionPane.ERROR_MESSAGE);
@@ -1049,8 +1052,8 @@ public class Administrador extends javax.swing.JFrame {
 
     private void btnEditarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProveedorActionPerformed
         // TODO add your handling code here:
-        int selectedRow =tblProveedores.getSelectedRow();
-        if (selectedRow>=0){
+        int selectedRow = tblProveedores.getSelectedRow();
+        if (selectedRow >= 0) {
             String cedula = txtCedulaProveedor.getText();
             String nombre = txtNombreProveedor.getText();
             String telefono = txtTelefonoProveedor.getText();
@@ -1059,7 +1062,9 @@ public class Administrador extends javax.swing.JFrame {
             this.actualizarTablaProveedor();
             this.limpiarCampos();
             JOptionPane.showMessageDialog(null, "Se actualizo el proveedor");
-        }else{JOptionPane.showMessageDialog(null, "Seleciona un Proveedor en la tabla");}
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleciona un Proveedor en la tabla");
+        }
     }//GEN-LAST:event_btnEditarProveedorActionPerformed
 
     private void txtCorreoProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoProveedorActionPerformed
@@ -1081,7 +1086,7 @@ public class Administrador extends javax.swing.JFrame {
             return;
         }
         Cliente nuevoCliente = new Cliente(this);
-        nuevoCliente.setId( this.generarID("cliente.json") + 1);
+        nuevoCliente.setId(this.generarID("cliente.json") + 1);
         nuevoCliente.setCédula(cédula);
         nuevoCliente.setNombre(nombre);
         nuevoCliente.setPrimerApellido(primerApellido);
@@ -1106,7 +1111,7 @@ public class Administrador extends javax.swing.JFrame {
             String segundoA = txt2ApellidoCliente.getText();
             String telefono = txtTelefonoCliente.getText();
             String correo = txtCorreoCliente.getText();
-            this.cliente.actualizar_tblProveedores(selectedRow-1, cedula, nombre, primerA, segundoA, telefono, correo);
+            this.cliente.actualizar_tblProveedores(selectedRow - 1, cedula, nombre, primerA, segundoA, telefono, correo);
             JOptionPane.showMessageDialog(this, "El cliente fue eliminado correctamente");
         } else {
             JOptionPane.showMessageDialog(this, "Seleccione un cliente para eliminar", "Error", JOptionPane.ERROR_MESSAGE);
@@ -1116,18 +1121,18 @@ public class Administrador extends javax.swing.JFrame {
     private void btnEditarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarClienteActionPerformed
 
         int selectedRow = tblClientes.getSelectedRow();
-        if (selectedRow >=0) {
+        if (selectedRow >= 0) {
             String cedula = txtCedulaCliente.getText();
             String nombre = txtNombreCliente.getText();
             String primerA = txt1ApellidoCliente.getText();
             String segundoA = txt2ApellidoCliente.getText();
             String telefono = txtTelefonoCliente.getText();
             String correo = txtCorreoCliente.getText();
-            this.cliente.editar_cliente(selectedRow-1, cedula, nombre, primerA, segundoA, telefono, correo);
+            this.cliente.editar_cliente(selectedRow - 1, cedula, nombre, primerA, segundoA, telefono, correo);
             actualizarTablaCliente();
             limpiarCampos();
             JOptionPane.showMessageDialog(null, "Se actualizo el cliente");
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Selecciona un Cliente en la tabla");
         }
     }//GEN-LAST:event_btnEditarClienteActionPerformed
@@ -1137,9 +1142,9 @@ public class Administrador extends javax.swing.JFrame {
 
         if (cedula.matches("\\d{9}")) {
             System.out.println("Cédula normal válida");
-        }        else if (cedula.matches("\\d{10}")) {
+        } else if (cedula.matches("\\d{10}")) {
             System.out.println("Cédula jurídica válida");
-        }       else {
+        } else {
             System.out.println("Cédula no válida");
         }
     }//GEN-LAST:event_txtCedulaClienteActionPerformed

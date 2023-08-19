@@ -10,6 +10,8 @@ public class logica {
      */
     public static void main(String[] args) {
         //Producto.ActualizarID();
+        //Proveedor.AsignarIdProveedorPorCategoria();
+        //Categoria.AsignarIdCategoriaPorProducto();
         // TODO code application logic here
         Administrador tico = new Administrador();
         tico.setVisible(true);

@@ -5,6 +5,7 @@ import Logica.Facturacion;
 import javax.swing.table.DefaultTableModel;
 
 public class Usuario extends javax.swing.JFrame {
+
     private Facturacion factura = new Facturacion(this);
 
     public Usuario() {
@@ -521,15 +522,14 @@ public class Usuario extends javax.swing.JFrame {
         String subcategoriaSeleccionada = (String) comboSubcategorias.getSelectedItem();
         cargarProductos(subcategoriaSeleccionada);
     }//GEN-LAST:event_comboSubcategoriasActionPerformed
-   
+
     private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
-   // TODO add your handling code here:
-      
-     this.factura.Facturar(tblCarrito, txtFactura);
-     
+
+        this.factura.Facturar(tblCarrito, txtFactura);
+
     }//GEN-LAST:event_btnFinalizarActionPerformed
-   
-    
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPLinea;
     private javax.swing.JTabbedPane JTabMain;
