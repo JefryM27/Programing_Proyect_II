@@ -1,9 +1,11 @@
 package GUI;
 
 import Logica.*;
+import Logica.Facturacion;
 import javax.swing.table.DefaultTableModel;
 
 public class Usuario extends javax.swing.JFrame {
+    private Facturacion factura = new Facturacion(this);
 
     public Usuario() {
         initComponents();
@@ -89,10 +91,13 @@ public class Usuario extends javax.swing.JFrame {
         btnEditarCarrito1 = new javax.swing.JButton();
         scrollCarrito = new javax.swing.JScrollPane();
         tblCarrito = new javax.swing.JTable();
+        btnFinalizar = new javax.swing.JButton();
         comboCategorias = new javax.swing.JComboBox<>();
         scrollProductos = new javax.swing.JScrollPane();
         jPProductos = new javax.swing.JPanel();
         comboSubcategorias = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtFactura = new javax.swing.JTextArea();
         JpFactura = new javax.swing.JPanel();
         JpMostrarFactura = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
@@ -181,6 +186,16 @@ public class Usuario extends javax.swing.JFrame {
         ));
         scrollCarrito.setViewportView(tblCarrito);
 
+        btnFinalizar.setBackground(new java.awt.Color(51, 153, 0));
+        btnFinalizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnFinalizar.setText("Finalizar Compra");
+        btnFinalizar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnFinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFinalizarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout JpCarrito1Layout = new javax.swing.GroupLayout(JpCarrito1);
         JpCarrito1.setLayout(JpCarrito1Layout);
         JpCarrito1Layout.setHorizontalGroup(
@@ -190,8 +205,10 @@ public class Usuario extends javax.swing.JFrame {
                 .addComponent(btnEliminarCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnEditarCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(scrollCarrito, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE)
+                .addGap(38, 38, 38)
+                .addComponent(btnFinalizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addComponent(scrollCarrito, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE)
         );
         JpCarrito1Layout.setVerticalGroup(
             JpCarrito1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,7 +218,8 @@ public class Usuario extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(JpCarrito1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnEditarCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnEliminarCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnEliminarCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnFinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -230,6 +248,10 @@ public class Usuario extends javax.swing.JFrame {
             }
         });
 
+        txtFactura.setColumns(20);
+        txtFactura.setRows(5);
+        jScrollPane1.setViewportView(txtFactura);
+
         javax.swing.GroupLayout JpCategorias1Layout = new javax.swing.GroupLayout(JpCategorias1);
         JpCategorias1.setLayout(JpCategorias1Layout);
         JpCategorias1Layout.setHorizontalGroup(
@@ -245,8 +267,10 @@ public class Usuario extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(scrollProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 1047, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JpCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(115, Short.MAX_VALUE))
+                        .addGroup(JpCategorias1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane1)
+                            .addComponent(JpCarrito1, javax.swing.GroupLayout.DEFAULT_SIZE, 482, Short.MAX_VALUE))))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
         JpCategorias1Layout.setVerticalGroup(
             JpCategorias1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -257,10 +281,11 @@ public class Usuario extends javax.swing.JFrame {
                     .addComponent(comboCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JpCategorias1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(scrollProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(scrollProductos, javax.swing.GroupLayout.DEFAULT_SIZE, 770, Short.MAX_VALUE)
                     .addGroup(JpCategorias1Layout.createSequentialGroup()
                         .addComponent(JpCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 446, Short.MAX_VALUE)))
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane1)))
                 .addContainerGap())
         );
 
@@ -496,15 +521,19 @@ public class Usuario extends javax.swing.JFrame {
         String subcategoriaSeleccionada = (String) comboSubcategorias.getSelectedItem();
         cargarProductos(subcategoriaSeleccionada);
     }//GEN-LAST:event_comboSubcategoriasActionPerformed
-
+   
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
+   // TODO add your handling code here:
+      
+     this.factura.Facturar(tblCarrito, txtFactura);
+     
+    }//GEN-LAST:event_btnFinalizarActionPerformed
+   
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPLinea;
     private javax.swing.JTabbedPane JTabMain;
-    private javax.swing.JPanel JpAccionesCarrito2;
-    private javax.swing.JPanel JpAccionesCarrito3;
     private javax.swing.JPanel JpCarrito1;
-    private javax.swing.JPanel JpCarrito2;
-    private javax.swing.JPanel JpCarrito3;
     private javax.swing.JPanel JpCategorias;
     private javax.swing.JPanel JpCategorias1;
     private javax.swing.JPanel JpFactura;
@@ -513,12 +542,9 @@ public class Usuario extends javax.swing.JFrame {
     private javax.swing.JPanel JpMostrarFactura;
     private javax.swing.JButton btnActulizarFacturazion;
     private javax.swing.JButton btnEditarCarrito1;
-    private javax.swing.JButton btnEditarCarrito2;
-    private javax.swing.JButton btnEditarCarrito3;
     private javax.swing.JButton btnEliminarCarrito1;
-    private javax.swing.JButton btnEliminarCarrito2;
-    private javax.swing.JButton btnEliminarCarrito3;
     private javax.swing.JButton btnEliminarFacturacion;
+    private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnFinalizarCompra;
     private javax.swing.JComboBox<String> comboCategorias;
     private javax.swing.JComboBox<String> comboSubcategorias;
@@ -530,19 +556,17 @@ public class Usuario extends javax.swing.JFrame {
     private javax.swing.JPanel jPProductos;
     private javax.swing.JPanel jPanel50;
     private javax.swing.JPanel jPanel51;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblImejenInicio;
     private javax.swing.JLabel lblLema;
     private javax.swing.JLabel lblNombreEmpresa;
     private javax.swing.JScrollPane scrollCarrito;
-    private javax.swing.JScrollPane scrollCarrito2;
-    private javax.swing.JScrollPane scrollCarrito3;
     private javax.swing.JScrollPane scrollFacturaProductos;
     private javax.swing.JScrollPane scrollProductos;
     private javax.swing.JTable tblCarrito;
-    private javax.swing.JTable tblCarrito2;
-    private javax.swing.JTable tblCarrito3;
     private javax.swing.JTable tblCarritoCompras;
     private javax.swing.JTextField txtEnvio;
+    private javax.swing.JTextArea txtFactura;
     private javax.swing.JTextField txtSubTotal;
     private javax.swing.JTextField txtTotal;
     // End of variables declaration//GEN-END:variables

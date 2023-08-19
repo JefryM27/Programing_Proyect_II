@@ -198,10 +198,13 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="scrollProductos" min="-2" pref="1047" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="JpCarrito1" min="-2" pref="450" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                                      <Component id="JpCarrito1" pref="482" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="115" max="32767" attributes="0"/>
+                          <EmptySpace pref="83" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -215,10 +218,11 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="scrollProductos" pref="0" max="32767" attributes="0"/>
+                              <Component id="scrollProductos" pref="770" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="JpCarrito1" min="-2" pref="324" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="446" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -250,9 +254,11 @@
                               <Component id="btnEliminarCarrito1" min="-2" pref="110" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="btnEditarCarrito1" min="-2" pref="110" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                              <Component id="btnFinalizar" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
-                          <Component id="scrollCarrito" alignment="0" pref="440" max="32767" attributes="0"/>
+                          <Component id="scrollCarrito" alignment="0" pref="472" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -264,6 +270,7 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="btnEditarCarrito1" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                                   <Component id="btnEliminarCarrito1" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="btnFinalizar" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
@@ -351,6 +358,25 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Component class="javax.swing.JButton" name="btnFinalizar">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="99" red="33" type="rgb"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Finalizar Compra"/>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                            <BevelBorder/>
+                          </Border>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFinalizarActionPerformed"/>
+                      </Events>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Component class="javax.swing.JComboBox" name="comboCategorias">
@@ -400,6 +426,21 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="txtFactura">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
               </SubComponents>
             </Container>
           </SubComponents>
