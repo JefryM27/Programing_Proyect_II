@@ -336,6 +336,12 @@ public class ChinoTico extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
         jLabel12.setText("Primer Apellido:");
 
+        txtCedulaCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCedulaClienteActionPerformed(evt);
+            }
+        });
+
         jLabel13.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
         jLabel13.setText("Segundo Apellido:");
 
@@ -1694,6 +1700,18 @@ public class ChinoTico extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Seleccione un cliente para eliminar", "Error", JOptionPane.ERROR_MESSAGE);
     }
     }//GEN-LAST:event_btnEliminarClienteActionPerformed
+
+    private void txtCedulaClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaClienteActionPerformed
+           String cedula = txtCedulaCliente.getText(); // Obtener el valor del campo de texto
+    
+    if (cedula.matches("\\d{10}")) {
+        // La cédula es válida, realizar acciones adicionales si es necesario
+        System.out.println("Cédula jurídica válida");
+    } else {
+        // La cédula no es válida, mostrar un mensaje de error
+        System.out.println("Cédula jurídica no válida");
+    }
+    }//GEN-LAST:event_txtCedulaClienteActionPerformed
 
    
  
