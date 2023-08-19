@@ -9,6 +9,7 @@ public class logica {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Producto.ActualizarID();
         // TODO code application logic here
         Administrador tico = new Administrador();
         tico.setVisible(true);

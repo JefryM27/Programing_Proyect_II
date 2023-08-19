@@ -1,6 +1,13 @@
 package Logica;
 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import javax.swing.table.DefaultTableModel;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 public class Producto {
 
@@ -143,4 +150,35 @@ public class Producto {
         return -1;
     }
 
+   public static void ActualizarID() {
+        try {
+            // Cargar el archivo JSON existente
+            JSONParser parser = new JSONParser();
+            Object obj = parser.parse(new FileReader("C:/Users/Bravo/Documents/Programing_Proyect_II/Proyecto_2/productos.json"));
+            JSONObject jsonObject = (JSONObject) obj;
+
+            int contadorID = 1; // Inicializar el contador global de IDs
+
+            // Iterar a través de cada categoría
+            for (Object categoriaKey : jsonObject.keySet()) {
+                JSONArray productosArray = (JSONArray) jsonObject.get(categoriaKey);
+
+                // Actualizar los IDs en orden secuencial para la categoría actual
+                for (int j = 0; j < productosArray.size(); j++) {
+                    JSONObject producto = (JSONObject) productosArray.get(j);
+                    producto.put("id", String.valueOf(contadorID));
+                    contadorID++; // Incrementar el contador global de IDs
+                }
+            }
+
+            // Guardar los cambios en el archivo JSON con formato
+            FileWriter fileWriter = new FileWriter("C:/Users/Bravo/Documents/Programing_Proyect_II/Proyecto_2/productos.json");
+            fileWriter.write(jsonObject.toJSONString());
+            fileWriter.close();
+
+            System.out.println("IDs actualizados y guardados en el archivo.");
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
+    }
 }
