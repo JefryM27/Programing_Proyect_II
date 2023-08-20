@@ -11,12 +11,12 @@ import org.json.simple.parser.*;
  *
  * @author jefry
  */
-public class Administrador extends javax.swing.JFrame {
+public final class Administrador extends javax.swing.JFrame {
 
-    private Cliente cliente = new Cliente(this);
-    private Proveedor proveedor = new Proveedor(this);
-    private Producto producto = new Producto(this);
-    private Marca marca = new Marca(this);
+    private final Cliente cliente = new Cliente(this);
+    private final Proveedor proveedor = new Proveedor(this);
+    private final Producto producto = new Producto(this);
+    private final Marca marca = new Marca(this);
 
     public Administrador() {
         initComponents();
@@ -1386,7 +1386,6 @@ public class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCorreoProveedorActionPerformed
 
     private void btnGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarClienteActionPerformed
-
         // Get the data entered in the text fields
         String cédula = txtCedulaCliente.getText();
         String nombre = txtNombreCliente.getText();
@@ -1426,7 +1425,6 @@ public class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarClienteActionPerformed
 
     private void btnEditarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarClienteActionPerformed
-
         int selectedRow = tblClientes.getSelectedRow();
         if (selectedRow >= 0) {
             String cedula = txtCedulaCliente.getText();
@@ -1446,7 +1444,6 @@ public class Administrador extends javax.swing.JFrame {
 
     private void txtCedulaClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaClienteActionPerformed
         String cedula = txtCedulaCliente.getText(); // Get the value of the text field
-
         if (cedula.matches("\\d{9}")) {
             System.out.println("Cédula normal válida");
         } else if (cedula.matches("\\d{10}")) {
@@ -1514,7 +1511,7 @@ public class Administrador extends javax.swing.JFrame {
             String idProducto = tblProducto.getValueAt(selectedRow, 0).toString();
             String subcategoria = (String) comboSubcategorias.getSelectedItem();
             String nombre = txtNombreProducto.getText();
-            double precio = 0.0; 
+            double precio = 0.0;
             String precioTexto = txtPrecioProducto.getText();
             if (!precioTexto.isEmpty()) {
                 precio = Double.parseDouble(precioTexto);
@@ -1523,9 +1520,7 @@ public class Administrador extends javax.swing.JFrame {
             String idProveedor = txtIDProveedorProducto.getText();
             String idCategoria = txtIDCategoriaProducto.getText();
             String idMarca = txtIDMarcaProducto.getText();
-
             producto.editarProducto(subcategoria, idProducto, nombre, precio, peso, idProveedor, idCategoria, idMarca);
-
             actualizarTablaProductos(subcategoria);
             limpiarCampos();
             JOptionPane.showMessageDialog(null, "Se actualizó el producto");

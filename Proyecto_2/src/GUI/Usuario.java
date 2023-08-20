@@ -118,7 +118,6 @@ public class Usuario extends javax.swing.JFrame {
         txtSubTotal = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1920, 1064));
 
         JTabMain.setBackground(new java.awt.Color(0, 204, 0));
         JTabMain.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
