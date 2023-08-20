@@ -2,6 +2,8 @@ package Logica;
 
 import GUI.*;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
@@ -208,15 +210,36 @@ public class Cliente {
         }
     }
 
-    public void actualizar_tblProveedores(int i, String cedula, String nombre, String primerA, String segundoA, String telefono, String correo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    public void eliminarCliente(int id) {
+        try {
+            // Leer el archivo JSON de clientes
+            JSONParser parser = new JSONParser();
+            JSONArray clientesArray = (JSONArray) parser.parse(new FileReader("Cliente.json"));
 
-    public void actualizar_cliente(int i, String cedula, String nombre, String primerA, String segundoA, String telefono, String correo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void actualizar_tblClientes(int i, String cedula, String nombre, String primerA, String segundoA, String telefono, String correo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            List<Integer> indicesAEliminar = new ArrayList<>();
+            // Buscar el cliente con el ID especificado
+            boolean clienteEncontrado = false;
+            for (int i = 0; i < clientesArray.size(); i++) {
+                JSONObject clienteJSON = (JSONObject) clientesArray.get(i);
+                int clienteId = Integer.parseInt(clienteJSON.get("id").toString());
+                if (clienteId == id) {
+                    indicesAEliminar.add(i);
+                    clienteEncontrado = true;
+                }
+            }
+            if (clienteEncontrado) {
+                // Eliminar los clientes con los IDs indicados del JSON
+                for (int i : indicesAEliminar) {
+                    clientesArray.remove(i);
+                }
+                // Escribir el array actualizado de clientes en el archivo JSON
+                FileWriter fileWriter = new FileWriter("Cliente.json");
+                fileWriter.write(clientesArray.toJSONString());
+                fileWriter.flush();
+                fileWriter.close();
+            }
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1355,20 +1355,12 @@ public class Administrador extends javax.swing.JFrame {
 
     private void btnEliminarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProveedorActionPerformed
         int selectedRow = tblProveedores.getSelectedRow();
-
-        if (selectedRow >= 0) {
-            DefaultTableModel model = (DefaultTableModel) tblProveedores.getModel();
-            model.removeRow(selectedRow);
-            String cedula = txtCedulaCliente.getText();
-            String nombre = txtNombreCliente.getText();
-            String primerA = txt1ApellidoCliente.getText();
-            String segundoA = txt2ApellidoCliente.getText();
-            String telefono = txtTelefonoCliente.getText();
-            String correo = txtCorreoCliente.getText();
-            this.cliente.actualizar_tblProveedores(selectedRow - 1, cedula, nombre, primerA, segundoA, telefono, correo);
-            JOptionPane.showMessageDialog(this, "El provedor fue eliminado correctamente");
-        } else {
-            JOptionPane.showMessageDialog(this, "Seleccione un provedor para eliminar", "Error", JOptionPane.ERROR_MESSAGE);
+        if (selectedRow != -1) {
+            int idProveedorAEliminar = Integer.parseInt(tblProveedores.getValueAt(selectedRow, 0).toString());
+            proveedor.eliminarProveedor(idProveedorAEliminar);
+            // Actualizar la tabla después de eliminar el cliente
+            actualizarTablaProveedores();
+            limpiarCampos();
         }
     }//GEN-LAST:event_btnEliminarProveedorActionPerformed
 
@@ -1423,20 +1415,13 @@ public class Administrador extends javax.swing.JFrame {
 
     private void btnEliminarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarClienteActionPerformed
         int selectedRow = tblClientes.getSelectedRow();
+        if (selectedRow != -1) {
+            int idClienteAEliminar = Integer.parseInt(tblClientes.getValueAt(selectedRow, 0).toString());
+            cliente.eliminarCliente(idClienteAEliminar);
 
-        if (selectedRow >= 0) {
-            DefaultTableModel model = (DefaultTableModel) tblClientes.getModel();
-            model.removeRow(selectedRow);
-            String cedula = txtCedulaCliente.getText();
-            String nombre = txtNombreCliente.getText();
-            String primerA = txt1ApellidoCliente.getText();
-            String segundoA = txt2ApellidoCliente.getText();
-            String telefono = txtTelefonoCliente.getText();
-            String correo = txtCorreoCliente.getText();
-            this.cliente.actualizar_tblProveedores(selectedRow - 1, cedula, nombre, primerA, segundoA, telefono, correo);
-            JOptionPane.showMessageDialog(this, "El cliente fue eliminado correctamente");
-        } else {
-            JOptionPane.showMessageDialog(this, "Seleccione un cliente para eliminar", "Error", JOptionPane.ERROR_MESSAGE);
+            // Actualizar la tabla después de eliminar el cliente
+            actualizarTablaClientes();
+            limpiarCampos();
         }
     }//GEN-LAST:event_btnEliminarClienteActionPerformed
 

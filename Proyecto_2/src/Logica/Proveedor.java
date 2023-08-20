@@ -2,6 +2,7 @@ package Logica;
 
 import GUI.Administrador;
 import java.io.*;
+import java.util.*;
 import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
@@ -170,6 +171,35 @@ public class Proveedor {
                 fileWriter.close();
             }
         } catch (IOException | ParseException e) {
+        }
+    }
+
+    public void eliminarProveedor(int id) {
+        try {
+            JSONParser parser = new JSONParser();
+            JSONArray proveedorArray = (JSONArray) parser.parse(new FileReader("proveedor.json"));
+            List<Integer> indicesAEliminar = new ArrayList<>();
+            boolean proveedorEncontrado = false;
+            for (int i = 0; i < proveedorArray.size(); i++) {
+                JSONObject proveedorJSON = (JSONObject) proveedorArray.get(i);
+                int proveedorId = Integer.parseInt(proveedorJSON.get("id").toString());
+
+                if (proveedorId == id) {
+                    indicesAEliminar.add(i);
+                    proveedorEncontrado = true;
+                }
+            }
+            if (proveedorEncontrado) {
+                for (int i : indicesAEliminar) {
+                    proveedorArray.remove(i);
+                }
+                FileWriter fileWriter = new FileWriter("proveedor.json");
+                fileWriter.write(proveedorArray.toJSONString());
+                fileWriter.flush();
+                fileWriter.close();
+            }
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
         }
     }
 
