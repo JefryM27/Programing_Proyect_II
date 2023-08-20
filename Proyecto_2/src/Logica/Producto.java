@@ -141,7 +141,7 @@ public class Producto {
         this.idMarca = idMarca;
     }
 
-    public void guardarProducto(String subcategoria) {
+    public void guardarProducto(String subcategoria, String nombre, double precio, String peso, String idProveedor, String idCategoria, String idMarca) {
         try {
             JSONParser parser = new JSONParser();
             JSONObject jsonObject;
@@ -156,8 +156,11 @@ public class Producto {
                 jsonObject.put(subcategoria, subcategoriaArray);
             }
 
+            // Obtener el nuevo ID usando el IdManager
+            String nuevoId = String.valueOf(IDManager.getNextId());
+
             JSONObject productoJSON = new JSONObject();
-            productoJSON.put("id", idProducto);
+            productoJSON.put("id", nuevoId); // Usar el nuevo ID
             productoJSON.put("nombre", nombre);
             productoJSON.put("precio", precio);
             productoJSON.put("peso", peso);
@@ -206,45 +209,54 @@ public class Producto {
         }
     }
 
-    public void eliminarProducto(String id) {
+    public void eliminarProducto(String subcategoria, String idProductoAEliminar) {
         try {
             JSONParser parser = new JSONParser();
-            JSONArray productosArray = (JSONArray) parser.parse(new FileReader("productos.json"));
+            JSONObject jsonObject;
 
-            List<Integer> indicesAEliminar = new ArrayList<>();
-            boolean productoEncontrado = false;
-            for (int i = 0; i < productosArray.size(); i++) {
-                JSONObject productoJSON = (JSONObject) productosArray.get(i);
-                String productoId = productoJSON.get("id").toString();
-                if (productoId.equals(id)) {
-                    indicesAEliminar.add(i);
-                    productoEncontrado = true;
-                } else {
-                }
+            try (FileReader reader = new FileReader("productos.json")) {
+                jsonObject = (JSONObject) parser.parse(reader);
             }
-            if (productoEncontrado) {
-                for (int i : indicesAEliminar) {
-                    productosArray.remove(i);
+
+            JSONArray subcategoriaArray = (JSONArray) jsonObject.get(subcategoria);
+            if (subcategoriaArray != null) {
+                List<Integer> indicesAEliminar = new ArrayList<>();
+                for (int i = 0; i < subcategoriaArray.size(); i++) {
+                    JSONObject productoJSON = (JSONObject) subcategoriaArray.get(i);
+                    String productoId = productoJSON.get("id").toString();
+                    if (productoId.equals(idProductoAEliminar)) {
+                        indicesAEliminar.add(i);
+                    }
                 }
-                FileWriter fileWriter = new FileWriter("productos.json");
-                fileWriter.write(productosArray.toJSONString());
-                fileWriter.flush();
-                fileWriter.close();
+
+                // Eliminar los productos encontrados
+                for (int i : indicesAEliminar) {
+                    subcategoriaArray.remove(i);
+                }
+
+                try (FileWriter fileWriter = new FileWriter("productos.json")) {
+                    fileWriter.write(jsonObject.toJSONString());
+                }
             }
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
     }
 
-    public void editarProducto(String id, String nombre, String peso, double precio, String id_proveedor, String id_categoria, String id_marca, String idMarca1) {
+    public void editarProducto(String subcategoria, String idProducto, String nombre, double precio, String peso, String idProveedor, String idCategoria, String idMarca) {
         try {
             JSONParser parser = new JSONParser();
-            JSONArray productosArray = (JSONArray) parser.parse(new FileReader("productos.json"));
-            boolean productoEncontrado = false;
-            for (Object obj : productosArray) {
-                JSONObject productoJSON = (JSONObject) obj;
+            JSONObject jsonObject;
+
+            try (FileReader reader = new FileReader("productos.json")) {
+                jsonObject = (JSONObject) parser.parse(reader);
+            }
+
+            JSONArray subcategoriaArray = (JSONArray) jsonObject.get(subcategoria);
+            for (int i = 0; i < subcategoriaArray.size(); i++) {
+                JSONObject productoJSON = (JSONObject) subcategoriaArray.get(i);
                 String productoId = productoJSON.get("id").toString();
-                if (productoId.equals(id)) {
+                if (productoId.equals(idProducto)) {
                     if (!nombre.isEmpty()) {
                         productoJSON.put("nombre", nombre);
                     }
@@ -254,24 +266,21 @@ public class Producto {
                     if (!peso.isEmpty()) {
                         productoJSON.put("peso", peso);
                     }
-                    if (!id_proveedor.isEmpty()) {
-                        productoJSON.put("id_proveedor", id_proveedor);
+                    if (!idProveedor.isEmpty()) {
+                        productoJSON.put("id_proveedor", idProveedor);
                     }
-                    if (!id_categoria.isEmpty()) {
-                        productoJSON.put("id_categoria", id_categoria);
+                    if (!idCategoria.isEmpty()) {
+                        productoJSON.put("id_categoria", idCategoria);
                     }
-                    if (!id_marca.isEmpty()) {
-                        productoJSON.put("id_marca", id_marca);
+                    if (!idMarca.isEmpty()) {
+                        productoJSON.put("id_marca", idMarca);
                     }
-                    productoEncontrado = true;
-                    break;
+                    break; // El producto ha sido encontrado y editado, no necesitamos seguir buscando
                 }
             }
-            if (productoEncontrado) {
-                FileWriter fileWriter = new FileWriter("productos.json");
-                fileWriter.write(productosArray.toJSONString());
-                fileWriter.flush();
-                fileWriter.close();
+
+            try (FileWriter fileWriter = new FileWriter("productos.json")) {
+                fileWriter.write(jsonObject.toJSONString());
             }
         } catch (IOException | ParseException e) {
             e.printStackTrace();

@@ -21,7 +21,6 @@ public class Administrador extends javax.swing.JFrame {
     public Administrador() {
         initComponents();
         actualizarTablaProveedores();
-        actualizarTablaProductos();
         actualizarTablaClientes();
         comboCategorias.addItem("Bebidas");
         comboCategorias.addItem("Abarrotes");
@@ -80,7 +79,7 @@ public class Administrador extends javax.swing.JFrame {
         proveedor.actualizarTabla((DefaultTableModel) tblProveedores.getModel());
     }
 
-    private void actualizarTablaProductos() {
+    private void actualizarTablaProductos(String subcategoria) {
         String subcategoriaSeleccionada = (String) comboSubcategorias.getSelectedItem();
         if (subcategoriaSeleccionada != null) {
             producto.actualizarTabla((DefaultTableModel) tblProducto.getModel(), subcategoriaSeleccionada);
@@ -1528,15 +1527,21 @@ public class Administrador extends javax.swing.JFrame {
         int selectedRow = tblProducto.getSelectedRow();
         if (selectedRow >= 0) {
             String idProducto = tblProducto.getValueAt(selectedRow, 0).toString();
+            String subcategoria = (String) comboSubcategorias.getSelectedItem();
             String nombre = txtNombreProducto.getText();
-            double precio = Double.parseDouble(txtPrecioProducto.getText());
+            double precio = 0.0; 
+            String precioTexto = txtPrecioProducto.getText();
+            if (!precioTexto.isEmpty()) {
+                precio = Double.parseDouble(precioTexto);
+            }
             String peso = txtPesoProducto.getText();
             String idProveedor = txtIDProveedorProducto.getText();
             String idCategoria = txtIDCategoriaProducto.getText();
             String idMarca = txtIDMarcaProducto.getText();
 
-            producto.editarProducto(idProducto,peso, nombre, precio, peso, idProveedor, idCategoria, idMarca);
-            actualizarTablaProductos();
+            producto.editarProducto(subcategoria, idProducto, nombre, precio, peso, idProveedor, idCategoria, idMarca);
+
+            actualizarTablaProductos(subcategoria);
             limpiarCampos();
             JOptionPane.showMessageDialog(null, "Se actualizó el producto");
         } else {
@@ -1548,14 +1553,18 @@ public class Administrador extends javax.swing.JFrame {
         int selectedRow = tblProducto.getSelectedRow();
         if (selectedRow != -1) {
             String idProductoAEliminar = tblProducto.getValueAt(selectedRow, 0).toString();
-            producto.eliminarProducto(idProductoAEliminar);
-            // Actualizar la tabla después de eliminar el producto
-            actualizarTablaProductos();
+            String subcategoria = (String) comboSubcategorias.getSelectedItem();
+
+            Producto producto = new Producto(this);
+            producto.eliminarProducto(subcategoria, idProductoAEliminar);
+
+            actualizarTablaProductos(subcategoria);
             limpiarCampos();
         }
     }//GEN-LAST:event_btnEliminarProductoActionPerformed
 
     private void btnGuardarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarProductoActionPerformed
+        String subcategoria = (String) comboSubcategorias.getSelectedItem();
         // Obtener los datos ingresados en los campos de texto
         String nombre = txtNombreProducto.getText();
         double precio = Double.parseDouble(txtPrecioProducto.getText());
@@ -1565,51 +1574,13 @@ public class Administrador extends javax.swing.JFrame {
         String idMarca = txtIDMarcaProducto.getText();
 
         // Crear el nuevo producto
-        Producto nuevoProducto = new Producto(this);
-        nuevoProducto.setNombre(nombre);
-        nuevoProducto.setPrecio(precio);
-        nuevoProducto.setPeso(peso);
-        nuevoProducto.setIdProveedor(idProveedor);
-        nuevoProducto.setIdCategoria(idCategoria);
-        nuevoProducto.setIdMarca(idMarca);
-        actualizarTablaProductos();
+        producto.guardarProducto(subcategoria, nombre, precio, peso, idProveedor, idCategoria, idMarca);
+
+        // Actualizar la tabla y limpiar los campos
+        actualizarTablaProductos(subcategoria);
         limpiarCampos();
     }//GEN-LAST:event_btnGuardarProductoActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Administrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Administrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Administrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Administrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Administrador().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPCompra;
