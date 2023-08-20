@@ -1,9 +1,7 @@
-
 package Logica;
-import Logica.*;
-
 
 public class DetalleCompra {
+
     private int Id_DetalleCompra;
     private int cantidad;
     private double monto;
@@ -37,6 +35,5 @@ public class DetalleCompra {
     public void setMonto(double monto) {
         this.monto = monto;
     }
-    
-    
+
 }

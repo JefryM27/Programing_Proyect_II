@@ -1,7 +1,6 @@
 package GUI;
 
 import Logica.*;
-import Logica.Facturacion;
 import javax.swing.table.DefaultTableModel;
 
 public class Usuario extends javax.swing.JFrame {

@@ -1,7 +1,7 @@
 
 package GUI;
 
-import Logica.Producto;
+import Logica.*;
 import java.awt.GridLayout;
 import java.util.List;
 import javax.swing.JPanel;

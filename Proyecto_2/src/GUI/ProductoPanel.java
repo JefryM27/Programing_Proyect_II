@@ -4,7 +4,7 @@ import Logica.*;
 
 public class ProductoPanel extends javax.swing.JPanel {
 
-    private Producto producto;
+    private Producto productos;
     private int cantidad;
     private double precioTotal;
     private Usuario parent;
@@ -12,7 +12,7 @@ public class ProductoPanel extends javax.swing.JPanel {
     public ProductoPanel(Producto producto, Usuario parent) {
         try {
             initComponents();
-            this.producto = producto;
+            this.productos = productos;
             lblNombre.setText(producto.getNombre());
             lblPeso.setText(producto.getPeso());
             lblPrecio.setText("₡ " + producto.getPrecio());
@@ -113,15 +113,15 @@ public class ProductoPanel extends javax.swing.JPanel {
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         if (parent != null) {
             cantidad = (int) spnCantidad.getValue();
-            precioTotal = producto.getPrecio() * cantidad;
-            parent.agregarProducto(producto, cantidad, precioTotal);
+            precioTotal = productos.getPrecio() * cantidad;
+            parent.agregarProducto(productos, cantidad, precioTotal);
         }
 
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void spnCantidadStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spnCantidadStateChanged
         cantidad = (int) spnCantidad.getValue();
-        precioTotal = producto.getPrecio() * cantidad;
+        precioTotal = productos.getPrecio() * cantidad;
     }//GEN-LAST:event_spnCantidadStateChanged
 
 

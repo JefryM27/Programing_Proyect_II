@@ -4,12 +4,9 @@
  */
 package Logica;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
-import org.json.simple.parser.JSONParser;
+import java.io.*;
+import org.json.simple.*;
+import org.json.simple.parser.*;
 
 /**
  *
@@ -68,7 +65,7 @@ public class Categoria {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    
+
     //este metodo pronto se borrará
     public static void AsignarIdCategoriaPorProducto() {
         try {

@@ -1,18 +1,10 @@
 package Logica;
 
 import GUI.Administrador;
-import GUI.Usuario;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import javax.swing.JOptionPane;
+import java.io.*;
 import javax.swing.table.DefaultTableModel;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import org.json.simple.*;
+import org.json.simple.parser.*;
 
 /**
  *
@@ -113,7 +105,7 @@ public class Proveedor {
             fileWriter.write(proveedorArray.toJSONString());
             fileWriter.flush();
             fileWriter.close();
-            tico.actualizarTablaProveedor();
+            tico.actualizarTablaProveedores();
             // Exception handling in case of error reading the JSON file or parsing its content.
         } catch (IOException | ParseException e) {
             e.printStackTrace();// Print the exception trace for debugging.
