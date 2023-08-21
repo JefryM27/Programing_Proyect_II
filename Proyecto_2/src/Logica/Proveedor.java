@@ -33,44 +33,44 @@ public class Proveedor {
         this.correo = correo;
     }
 
-    // Getters and Setters (Opcional, pero recomendado)
-    public int getId() { //Devuelve el valor actual del atributo id.
+    // Getters and Setters (Optional, but recommended)
+    public int getId() { //returns the current value of the id attribute.
         return id;
     }
 
-    public void setId(int id) { //Establece el valor del atributo id con el valor pasado como argumento.
+    public void setId(int id) { //Sets the value of the id attribute with the value passed as an argument.
         this.id = id;
     }
 
-    public String getCedulaJuridica() { // Devuelve el valor actual del atributo cedulaJuridica.
+    public String getCedulaJuridica() { // returns the current value of the cedulaJuridica attribute.
         return cedulaJuridica;
     }
 
-    public void setCedulaJuridica(String cedulaJuridica) { //Establece el valor del atributo cedulaJuridica con el valor pasado como argumento.
+    public void setCedulaJuridica(String cedulaJuridica) { //Sets the value of the cedulaJuridica attribute with the value passed as an argument.
         this.cedulaJuridica = cedulaJuridica;
     }
 
-    public String getNombre() { //Devuelve el valor actual del atributo nombre
+    public String getNombre() { //returns the current value of the name attribute.
         return nombre;
     }
 
-    public void setNombre(String nombre) { //Establece el valor del atributo nombre con el valor pasado como argumento.
+    public void setNombre(String nombre) { //Sets the value of the name attribute with the value passed as an argument.
         this.nombre = nombre;
     }
 
-    public String getTelefono() { // Devuelve el valor actual del atributo telefono.
+    public String getTelefono() { // returns the current value of the phone attribute.
         return telefono;
     }
 
-    public void setTelefono(String telefono) { //Establece el valor del atributo telefono con el valor pasado como argumento.
+    public void setTelefono(String telefono) { //Sets the value of the phone attribute with the value passed as an argument.
         this.telefono = telefono;
     }
 
-    public String getCorreo() {// Devuelve el valor actual del atributo correo.
+    public String getCorreo() {//returns the current value of the email attribute.
         return correo;
     }
 
-    public void setCorreo(String correo) { //Establece el valor del atributo correo con el valor pasado como argumento.
+    public void setCorreo(String correo) { //Sets the value of the email attribute with the value passed as an argument.
         this.correo = correo;
     }
 

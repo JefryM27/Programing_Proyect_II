@@ -1488,28 +1488,24 @@ public final class Administrador extends javax.swing.JFrame {
         actualizarTablaProveedores();
         limpiarCampos();
         //activarPaneles();
-          // Validar los datos utilizando las funciones de validación
+          // Validate the data using the functions
         boolean cedulaValida = ValidacionProveedor.validartxtCedulaProveedor(cedula);
         boolean nombreValido = ValidacionProveedor.validartxtNombreProveedor(nombre);
         boolean telefonoValido = ValidacionProveedor.validartxtTelefonoProveedor(telefono);
         boolean correoValido = ValidacionProveedor.validartxtCorreoProveedor(correo);
-
-        // Realizar acciones según la validación
+        // Perform actions based on validation
         if (!cedulaValida) {
             JOptionPane.showMessageDialog(this, "La cédula no es válida. Debe contener 10 dígitos.No digitar letras");
             return;
         }
-
         if (!nombreValido) {
             JOptionPane.showMessageDialog(this, "El nombre no es válido. Debe contener solo letras No números.");
             return;
         }
-
         if (!telefonoValido) {
             JOptionPane.showMessageDialog(this, "El número de teléfono no es válido. Debe contener de 8 a 10 números.No debe contener letras");
             return;
         }
-
         if (!correoValido) {
             JOptionPane.showMessageDialog(this, "El correo electrónico no es válido, No hacer espacios.");
             return;
@@ -1521,7 +1517,7 @@ public final class Administrador extends javax.swing.JFrame {
         if (selectedRow != -1) {
             int idProveedorAEliminar = Integer.parseInt(tblProveedores.getValueAt(selectedRow, 0).toString());
             proveedor.eliminarProveedor(idProveedorAEliminar);
-            // Actualizar la tabla después de eliminar el cliente
+            //update table after deleting customer
             actualizarTablaProveedores();
             limpiarCampos();
         }
@@ -1569,13 +1565,16 @@ public final class Administrador extends javax.swing.JFrame {
         nuevoCliente.setSegundoApellido(segundoApellido);
         nuevoCliente.setTeléfono(teléfono);
         nuevoCliente.setCorreo(correo);
+        //Save the new client object
         nuevoCliente.guardarCliente();
+        // Update the table displaying Brands
         actualizarTablaClientes();
+         // Clear the input field
         limpiarCampos();
         //activarPaneles();
-        // Obtener los datos ingresados en los campos de texto
+        // Get the data entered in the text fields
 
-        // Validar los datos utilizando las funciones de validación
+        // Validate the data using the validation functions
         boolean cedulaValida = ValidacionCliente.validartxtCedulaCliente(cédula);
         boolean nombreValido = ValidacionCliente.validartxtNombreCliente(nombre);
         boolean primerApellidoValido = ValidacionCliente.validartxt1ApellidoCliente(primerApellido);
@@ -1583,37 +1582,31 @@ public final class Administrador extends javax.swing.JFrame {
         boolean telefonoValido = ValidacionCliente.validartxtTelefonoCliente(teléfono);
         boolean correoValido = ValidacionCliente.validartxtCorreoCliente(correo);
 
-        // Realizar acciones según la validación
+        // Perform actions based on validation
         if (!cedulaValida) {
             JOptionPane.showMessageDialog(this, "La cédula no es válida. Debe contener 10 dígitos.No debe digitar letras");
             return;
         }
-
         if (!nombreValido) {
             JOptionPane.showMessageDialog(this, "El nombre no es válido. Debe contener solo letras No números.");
             return;
         }
-
         if (!primerApellidoValido) {
             JOptionPane.showMessageDialog(this, "El primer apellido no es válido. Debe contener solo letras No números.");
             return;
         }
-
         if (!segundoApellidoValido) {
             JOptionPane.showMessageDialog(this, "El segundo apellido no es válido. Debe contener solo letras No números.");
             return;
         }
-
         if (!telefonoValido) {
             JOptionPane.showMessageDialog(this, "El número de teléfono no es válido. Debe contener de 8 a 10 números.No debe contener letras");
             return;
         }
-
         if (!correoValido) {
             JOptionPane.showMessageDialog(this, "El correo electrónico no es válido. No hacer espacios.");
             return;
         }
-
     }//GEN-LAST:event_btnGuardarClienteActionPerformed
 
     private void btnEliminarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarClienteActionPerformed
@@ -1621,8 +1614,7 @@ public final class Administrador extends javax.swing.JFrame {
         if (selectedRow != -1) {
             int idClienteAEliminar = Integer.parseInt(tblClientes.getValueAt(selectedRow, 0).toString());
             cliente.eliminarCliente(idClienteAEliminar);
-
-            // Actualizar la tabla después de eliminar el cliente
+            // Update the table after deleting customer
             actualizarTablaClientes();
             limpiarCampos();
         }
@@ -1675,17 +1667,22 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEditarMarcaActionPerformed
 
     private void btnGuardarMarcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarMarcaActionPerformed
+        // Get the name entered in the text field
         String nombre = txtMarca.getText();
-
+        // Check if the name field is empty
         if (camposVacios(nombre)) {
             JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
+        // Create a new Brand object and set its properties
         Marca nuevaMarca = new Marca(this);
         nuevaMarca.setId(this.generarID("marca.json") + 1);
         nuevaMarca.setNombre(nombre);
+        // Save the new Brand object
         nuevaMarca.guardarMarca();
+        // Update the table displaying Brands
         actualizarTablaMarcas();
+        // Clear the input field
         limpiarCampos();
     }//GEN-LAST:event_btnGuardarMarcaActionPerformed
 
@@ -1780,9 +1777,9 @@ public final class Administrador extends javax.swing.JFrame {
         
         if (!cantidadTexto.isEmpty() && !montoTexto.isEmpty()) {
             double monto = Double.parseDouble(montoTexto);
-            // Aquí deberías implementar la lógica para actualizar el detalle de compra
-            // utilizando el idDetalleCompra, idProducto, idCompra, cantidad y monto
-            // Actualiza la tabla y muestra un mensaje de éxito
+            // here you should implement the logic to update the purchase detail
+            // using the purchase detail id, product id, purchase id, quantity and amount
+            // update the table and display a success message
             actualizarTablaDetallesCompra();
             limpiarCampos();
             JOptionPane.showMessageDialog(null, "Se actualizó el detalle de compra");
@@ -1810,7 +1807,7 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarProducto1ActionPerformed
 
     private void btnGuardarProducto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarProducto1ActionPerformed
-         String idProducto = txtIDProducto.getText();
+    String idProducto = txtIDProducto.getText();
     String idCompra = txtIDCompra.getText();
     String cantidadTexto = txtNuevaCantidad.getText();
     String montoTexto = txtNuevoMonto.getText();

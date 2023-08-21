@@ -194,7 +194,6 @@ public class Cliente {
                     if (!correo.isEmpty()) {
                         clienteJSON.put("correo", correo);
                     }
-
                     clienteEncontrado = true;
                     break;
                 }
@@ -212,12 +211,12 @@ public class Cliente {
 
     public void eliminarCliente(int id) {
         try {
-            // Leer el archivo JSON de clientes
+            // Read clients JSON file
             JSONParser parser = new JSONParser();
             JSONArray clientesArray = (JSONArray) parser.parse(new FileReader("Cliente.json"));
 
             List<Integer> indicesAEliminar = new ArrayList<>();
-            // Buscar el cliente con el ID especificado
+            // Find the customer with the specified Id
             boolean clienteEncontrado = false;
             for (int i = 0; i < clientesArray.size(); i++) {
                 JSONObject clienteJSON = (JSONObject) clientesArray.get(i);
@@ -228,11 +227,11 @@ public class Cliente {
                 }
             }
             if (clienteEncontrado) {
-                // Eliminar los clientes con los IDs indicados del JSON
+                // Delete the clients with the Ids indications from the JSON
                 for (int i : indicesAEliminar) {
                     clientesArray.remove(i);
                 }
-                // Escribir el array actualizado de clientes en el archivo JSON
+                // Write the updating array of clients to the JSON file
                 FileWriter fileWriter = new FileWriter("Cliente.json");
                 fileWriter.write(clientesArray.toJSONString());
                 fileWriter.flush();

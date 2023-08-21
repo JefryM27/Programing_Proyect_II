@@ -156,11 +156,11 @@ public class Producto {
                 jsonObject.put(subcategoria, subcategoriaArray);
             }
 
-            // Obtener el nuevo ID usando el IdManager
+            // Get the new Id using the manager Id
             String nuevoId = String.valueOf(IDManager.getNextId());
 
             JSONObject productoJSON = new JSONObject();
-            productoJSON.put("id", nuevoId); // Usar el nuevo ID
+            productoJSON.put("id", nuevoId); // Use the new ID
             productoJSON.put("nombre", nombre);
             productoJSON.put("precio", precio);
             productoJSON.put("peso", peso);
@@ -229,11 +229,10 @@ public class Producto {
                     }
                 }
 
-                // Eliminar los productos encontrados
+                // Delete found products 
                 for (int i : indicesAEliminar) {
                     subcategoriaArray.remove(i);
                 }
-
                 try (FileWriter fileWriter = new FileWriter("productos.json")) {
                     fileWriter.write(jsonObject.toJSONString());
                 }
@@ -275,10 +274,9 @@ public class Producto {
                     if (!idMarca.isEmpty()) {
                         productoJSON.put("id_marca", idMarca);
                     }
-                    break; // El producto ha sido encontrado y editado, no necesitamos seguir buscando
+                    break; //The product has been found and edited, we don't need to keep looking 
                 }
             }
-
             try (FileWriter fileWriter = new FileWriter("productos.json")) {
                 fileWriter.write(jsonObject.toJSONString());
             }
