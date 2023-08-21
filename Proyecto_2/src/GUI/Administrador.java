@@ -7,7 +7,7 @@ import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
 import Logica.Validaciones.ValidacionCliente;
-
+import Logica.Validaciones.ValidacionCliente.ValidacionProveedor;
 /**
  *
  * @author jefry
@@ -1488,6 +1488,32 @@ public final class Administrador extends javax.swing.JFrame {
         actualizarTablaProveedores();
         limpiarCampos();
         //activarPaneles();
+          // Validar los datos utilizando las funciones de validación
+        boolean cedulaValida = ValidacionProveedor.validartxtCedulaProveedor(cedula);
+        boolean nombreValido = ValidacionProveedor.validartxtNombreProveedor(nombre);
+        boolean telefonoValido = ValidacionProveedor.validartxtTelefonoProveedor(telefono);
+        boolean correoValido = ValidacionProveedor.validartxtCorreoProveedor(correo);
+
+        // Realizar acciones según la validación
+        if (!cedulaValida) {
+            JOptionPane.showMessageDialog(this, "La cédula no es válida. Debe contener 10 dígitos.No digitar letras");
+            return;
+        }
+
+        if (!nombreValido) {
+            JOptionPane.showMessageDialog(this, "El nombre no es válido. Debe contener solo letras No números.");
+            return;
+        }
+
+        if (!telefonoValido) {
+            JOptionPane.showMessageDialog(this, "El número de teléfono no es válido. Debe contener de 8 a 10 números.No debe contener letras");
+            return;
+        }
+
+        if (!correoValido) {
+            JOptionPane.showMessageDialog(this, "El correo electrónico no es válido, No hacer espacios.");
+            return;
+        }
     }//GEN-LAST:event_btnGuardarProveedorActionPerformed
 
     private void btnEliminarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProveedorActionPerformed
@@ -1559,7 +1585,7 @@ public final class Administrador extends javax.swing.JFrame {
 
         // Realizar acciones según la validación
         if (!cedulaValida) {
-            JOptionPane.showMessageDialog(this, "La cédula no es válida. Debe contener 10 dígitos.");
+            JOptionPane.showMessageDialog(this, "La cédula no es válida. Debe contener 10 dígitos.No debe digitar letras");
             return;
         }
 
@@ -1579,12 +1605,12 @@ public final class Administrador extends javax.swing.JFrame {
         }
 
         if (!telefonoValido) {
-            JOptionPane.showMessageDialog(this, "El número de teléfono no es válido. Debe contener de 8 o 10 números.");
+            JOptionPane.showMessageDialog(this, "El número de teléfono no es válido. Debe contener de 8 a 10 números.No debe contener letras");
             return;
         }
 
         if (!correoValido) {
-            JOptionPane.showMessageDialog(this, "El correo electrónico no es válido.");
+            JOptionPane.showMessageDialog(this, "El correo electrónico no es válido. No hacer espacios.");
             return;
         }
 
