@@ -1749,7 +1749,7 @@ public final class Administrador extends javax.swing.JFrame {
 
     private void btnGuardarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarProductoActionPerformed
         String subcategoria = (String) comboSubcategorias.getSelectedItem();
-        // Obtener los datos ingresados en los campos de texto
+        // Get the data entered in the text fields
         String nombre = txtNombreProducto.getText();
         double precio = Double.parseDouble(txtPrecioProducto.getText());
         String peso = txtPesoProducto.getText();
@@ -1757,10 +1757,10 @@ public final class Administrador extends javax.swing.JFrame {
         String idCategoria = txtIDCategoriaProducto.getText();
         String idMarca = txtIDMarcaProducto.getText();
 
-        // Crear el nuevo producto
+        // Create the new product
         producto.guardarProducto(subcategoria, nombre, precio, peso, idProveedor, idCategoria, idMarca);
 
-        // Actualizar la tabla y limpiar los campos
+        // Update the table and clear the fields
         actualizarTablaProductos(subcategoria);
         limpiarCampos();
     }//GEN-LAST:event_btnGuardarProductoActionPerformed
@@ -1770,15 +1770,63 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombreProducto1ActionPerformed
 
     private void btnEditarProducto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProducto1ActionPerformed
-        // TODO add your handling code here:
+        int selectedRow = tblCarritoCompras.getSelectedRow();
+    if (selectedRow >= 0) {
+        String idDetalleCompra = tblCarritoCompras.getValueAt(selectedRow, 0).toString();
+        String idProducto = txtIDProducto.getText();
+        String idCompra = txtIDCompra.getText();
+        String cantidadTexto = txtNuevaCantidad.getText();
+        String montoTexto = txtNuevoMonto.getText();
+        
+        if (!cantidadTexto.isEmpty() && !montoTexto.isEmpty()) {
+            double monto = Double.parseDouble(montoTexto);
+            // Aquí deberías implementar la lógica para actualizar el detalle de compra
+            // utilizando el idDetalleCompra, idProducto, idCompra, cantidad y monto
+            // Actualiza la tabla y muestra un mensaje de éxito
+            actualizarTablaDetallesCompra();
+            limpiarCampos();
+            JOptionPane.showMessageDialog(null, "Se actualizó el detalle de compra");
+        } else {
+            JOptionPane.showMessageDialog(null, "Completa los campos correctamente");
+        }
+    } else {
+        JOptionPane.showMessageDialog(null, "Selecciona un detalle de compra en la tabla");
+    }
     }//GEN-LAST:event_btnEditarProducto1ActionPerformed
 
     private void btnEliminarProducto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProducto1ActionPerformed
-        // TODO add your handling code here:
+         int selectedRow = tblCarritoCompras.getSelectedRow();
+    if (selectedRow != -1) {
+        String idDetalleCompraAEliminar = tblCarritoCompras.getValueAt(selectedRow, 0).toString();
+        
+      
+        
+        actualizarTablaDetallesCompra();
+        limpiarCampos();
+        JOptionPane.showMessageDialog(null, "Se eliminó el detalle de compra");
+    } else {
+        JOptionPane.showMessageDialog(null, "Selecciona un detalle de compra en la tabla");
+    }
     }//GEN-LAST:event_btnEliminarProducto1ActionPerformed
 
     private void btnGuardarProducto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarProducto1ActionPerformed
-        // TODO add your handling code here:
+         String idProducto = txtIDProducto.getText();
+    String idCompra = txtIDCompra.getText();
+    String cantidadTexto = txtNuevaCantidad.getText();
+    String montoTexto = txtNuevoMonto.getText();
+    
+    if (!idProducto.isEmpty() && !idCompra.isEmpty() && !cantidadTexto.isEmpty() && !montoTexto.isEmpty()) {
+        int cantidad = Integer.parseInt(cantidadTexto);
+        double monto = Double.parseDouble(montoTexto);
+        
+   
+        
+        actualizarTablaDetallesCompra();
+        limpiarCampos();
+        JOptionPane.showMessageDialog(null, "Se creó el detalle de compra");
+    } else {
+        JOptionPane.showMessageDialog(null, "Completa todos los campos correctamente");
+    }
     }//GEN-LAST:event_btnGuardarProducto1ActionPerformed
 
 
@@ -1913,4 +1961,8 @@ public final class Administrador extends javax.swing.JFrame {
     private javax.swing.JTextField txtTelefonoProveedor;
     private javax.swing.JTextField txtTotal;
     // End of variables declaration//GEN-END:variables
+
+    private void actualizarTablaDetallesCompra() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
