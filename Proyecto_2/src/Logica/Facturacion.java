@@ -150,5 +150,10 @@ public class Facturacion {
         FacturaProducto.append("                                                                                     Impuesto\t").append(subTotal / 15).append("\n");
         FacturaProducto.append("                                                                                     Total\t").append(subTotal + (subTotal / 15));
     }
+     public void eliminarFila(JTable tabla) {
+        DefaultTableModel model = (DefaultTableModel) tabla.getModel();
+        int eliminar = tabla.getSelectedRow();
+        model.removeRow(eliminar);
+    }
 
 }

@@ -169,6 +169,11 @@ public class Usuario extends javax.swing.JFrame {
         btnEliminarCarrito1.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminarCarrito1.setText("Eliminar");
         btnEliminarCarrito1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnEliminarCarrito1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarCarrito1ActionPerformed(evt);
+            }
+        });
 
         btnEditarCarrito1.setBackground(new java.awt.Color(0, 102, 102));
         btnEditarCarrito1.setForeground(new java.awt.Color(255, 255, 255));
@@ -526,6 +531,11 @@ public class Usuario extends javax.swing.JFrame {
         this.factura.Facturar(tblCarrito, txtFactura);
 
     }//GEN-LAST:event_btnFinalizarActionPerformed
+
+    private void btnEliminarCarrito1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarCarrito1ActionPerformed
+        // TODO add your handling code here:
+        this.factura.eliminarFila(tblCarrito);
+    }//GEN-LAST:event_btnEliminarCarrito1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
