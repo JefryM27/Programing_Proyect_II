@@ -6,6 +6,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
+import Logica.Validaciones.ValidacionCliente;
 
 /**
  *
@@ -1546,6 +1547,47 @@ public final class Administrador extends javax.swing.JFrame {
         actualizarTablaClientes();
         limpiarCampos();
         //activarPaneles();
+        // Obtener los datos ingresados en los campos de texto
+
+        // Validar los datos utilizando las funciones de validación
+        boolean cedulaValida = ValidacionCliente.validartxtCedulaCliente(cédula);
+        boolean nombreValido = ValidacionCliente.validartxtNombreCliente(nombre);
+        boolean primerApellidoValido = ValidacionCliente.validartxt1ApellidoCliente(primerApellido);
+        boolean segundoApellidoValido = ValidacionCliente.validartxt2ApellidoCliente(segundoApellido);
+        boolean telefonoValido = ValidacionCliente.validartxtTelefonoCliente(teléfono);
+        boolean correoValido = ValidacionCliente.validartxtCorreoCliente(correo);
+
+        // Realizar acciones según la validación
+        if (!cedulaValida) {
+            JOptionPane.showMessageDialog(this, "La cédula no es válida. Debe contener 10 dígitos.");
+            return;
+        }
+
+        if (!nombreValido) {
+            JOptionPane.showMessageDialog(this, "El nombre no es válido. Debe contener solo letras No números.");
+            return;
+        }
+
+        if (!primerApellidoValido) {
+            JOptionPane.showMessageDialog(this, "El primer apellido no es válido. Debe contener solo letras No números.");
+            return;
+        }
+
+        if (!segundoApellidoValido) {
+            JOptionPane.showMessageDialog(this, "El segundo apellido no es válido. Debe contener solo letras No números.");
+            return;
+        }
+
+        if (!telefonoValido) {
+            JOptionPane.showMessageDialog(this, "El número de teléfono no es válido. Debe contener de 8 o 10 números.");
+            return;
+        }
+
+        if (!correoValido) {
+            JOptionPane.showMessageDialog(this, "El correo electrónico no es válido.");
+            return;
+        }
+
     }//GEN-LAST:event_btnGuardarClienteActionPerformed
 
     private void btnEliminarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarClienteActionPerformed

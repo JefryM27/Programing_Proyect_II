@@ -902,7 +902,7 @@
                           <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jPanel50" alignment="0" max="32767" attributes="0"/>
-                              <Component id="JpFacturaProductos" alignment="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="JpFacturaProductos" alignment="0" pref="499" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace pref="177" max="32767" attributes="0"/>
                       </Group>
