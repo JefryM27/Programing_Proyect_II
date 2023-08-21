@@ -6,8 +6,6 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
-import Logica.Validaciones.ValidacionCliente;
-import Logica.Validaciones.ValidacionCliente.ValidacionProveedor;
 
 /**
  *
