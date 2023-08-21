@@ -138,41 +138,44 @@ public class Proveedor {
     }
 
     public void editar_Proveedor(int id, String cedula, String nombre, String telefono, String correo) {
-        try {
-            JSONParser parser = new JSONParser();
-            JSONArray clientesArray = (JSONArray) parser.parse(new FileReader("proveedor.json"));
-            boolean clienteEncontrado = false;
-            for (Object obj : clientesArray) {
-                JSONObject clienteJSON = (JSONObject) obj;
-                int clienteId = Integer.parseInt(clienteJSON.get("id").toString());
-                if (clienteId == id) {
-                    if (!cedula.isEmpty()) {
-                        clienteJSON.put("cedula", cedula);
-                    }
-                    if (!nombre.isEmpty()) {
-                        clienteJSON.put("nombre", nombre);
-                    }
+    try {
+        JSONParser parser = new JSONParser();
+        JSONArray proveedoresArray = (JSONArray) parser.parse(new FileReader("proveedor.json"));
+        boolean proveedorEncontrado = false;
 
-                    if (!telefono.isEmpty()) {
-                        clienteJSON.put("telefono", telefono);
-                    }
-                    if (!correo.isEmpty()) {
-                        clienteJSON.put("correo", correo);
-                    }
+        for (int i = 0; i < proveedoresArray.size(); i++) {
+            JSONObject proveedorJSON = (JSONObject) proveedoresArray.get(i);
+            int proveedorId = Integer.parseInt(proveedorJSON.get("id").toString());
 
-                    clienteEncontrado = true;
-                    break;
+            if (proveedorId == id) {
+                if (!cedula.isEmpty()) {
+                    proveedorJSON.put("cedula", cedula);
                 }
+                if (!nombre.isEmpty()) {
+                    proveedorJSON.put("nombre", nombre);
+                }
+                if (!telefono.isEmpty()) {
+                    proveedorJSON.put("telefono", telefono);
+                }
+                if (!correo.isEmpty()) {
+                    proveedorJSON.put("correo", correo);
+                }
+
+                proveedorEncontrado = true;
+                break;
             }
-            if (clienteEncontrado) {
-                FileWriter fileWriter = new FileWriter("proveedor.json");
-                fileWriter.write(clientesArray.toJSONString());
-                fileWriter.flush();
-                fileWriter.close();
-            }
-        } catch (IOException | ParseException e) {
         }
+
+        if (proveedorEncontrado) {
+            FileWriter fileWriter = new FileWriter("proveedor.json");
+            fileWriter.write(proveedoresArray.toJSONString());
+            fileWriter.flush();
+            fileWriter.close();
+        }
+    } catch (IOException | ParseException e) {
+        e.printStackTrace(); // Imprime detalles de la excepción para depuración
     }
+}
 
     public void eliminarProveedor(int id) {
         try {

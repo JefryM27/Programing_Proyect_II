@@ -1393,20 +1393,22 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarProveedorActionPerformed
 
     private void btnEditarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProveedorActionPerformed
-        // TODO add your handling code here:
-        int selectedRow = tblProveedores.getSelectedRow();
-        if (selectedRow >= 0) {
-            String cedula = txtCedulaProveedor.getText();
-            String nombre = txtNombreProveedor.getText();
-            String telefono = txtTelefonoProveedor.getText();
-            String correo = txtCorreoProveedor.getText();
-            this.proveedor.editar_Proveedor(selectedRow, cedula, nombre, telefono, correo);
-            this.actualizarTablaProveedores();
-            this.limpiarCampos();
-            JOptionPane.showMessageDialog(null, "Se actualizo el proveedor");
-        } else {
-            JOptionPane.showMessageDialog(null, "Seleciona un Proveedor en la tabla");
-        }
+       // TODO add your handling code here:
+    int selectedRow = tblProveedores.getSelectedRow();
+    
+    if (selectedRow != -1) { // Cambiado de != 0 a != -1
+        String cedula = txtCedulaProveedor.getText();
+        String nombre = txtNombreProveedor.getText();
+        String telefono = txtTelefonoProveedor.getText();
+        String correo = txtCorreoProveedor.getText();
+        
+        this.proveedor.editar_Proveedor(selectedRow + 1, cedula, nombre, telefono, correo); // Sumado 1 al índice
+        this.actualizarTablaProveedores();
+        this.limpiarCampos();
+        JOptionPane.showMessageDialog(null, "Se actualizó el proveedor");
+    } else {
+        JOptionPane.showMessageDialog(null, "Selecciona un Proveedor en la tabla");
+    }
     }//GEN-LAST:event_btnEditarProveedorActionPerformed
 
     private void txtCorreoProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoProveedorActionPerformed
@@ -1601,26 +1603,22 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombreDetalleActionPerformed
 
     private void btnEditarDetalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarDetalleActionPerformed
-        int selectedRow = tblDetalleCompra.getSelectedRow();
-        if (selectedRow >= 0) {
-            int idDetalleCompra = Integer.parseInt(tblDetalleCompra.getValueAt(selectedRow, 0).toString());
-            String cantidadTexto = txtCantidadDetalle.getText();
-            String montoTexto = txtMontoDetalle.getText();
-
-            if (!cantidadTexto.isEmpty() && !montoTexto.isEmpty()) {
-                int cantidad = Integer.parseInt(cantidadTexto);
-                double monto = Double.parseDouble(montoTexto);
-
-                detallecompra.editarDetalleCompra(idDetalleCompra, cantidad, monto);
-                actualizarTablaDetallesCompra();
-                limpiarCampos();
-                JOptionPane.showMessageDialog(null, "Se actualizó el detalle de compra");
-            } else {
-                JOptionPane.showMessageDialog(null, "Completa los campos correctamente");
-            }
-        } else {
-            JOptionPane.showMessageDialog(null, "Selecciona un detalle de compra en la tabla");
-        }
+        // TODO add your handling code here:
+    int selectedRow = tblProveedores.getSelectedRow();
+    
+    if (selectedRow != -1) { // Cambiado de != 0 a != -1
+        String cedula = txtCedulaProveedor.getText();
+        String nombre = txtNombreProveedor.getText();
+        String telefono = txtTelefonoProveedor.getText();
+        String correo = txtCorreoProveedor.getText();
+        
+        this.proveedor.editar_Proveedor(selectedRow + 1, cedula, nombre, telefono, correo); // Sumado 1 al índice
+        this.actualizarTablaProveedores();
+        this.limpiarCampos();
+        JOptionPane.showMessageDialog(null, "Se actualizó el proveedor");
+    } else {
+        JOptionPane.showMessageDialog(null, "Selecciona un Proveedor en la tabla");
+    }
     }//GEN-LAST:event_btnEditarDetalleActionPerformed
 
     private void btnEliminarDetalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarDetalleActionPerformed
