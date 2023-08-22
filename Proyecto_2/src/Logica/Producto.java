@@ -296,28 +296,4 @@ public class Producto {
         }
         return -1;
     }
-
-    //Este metodo pronto se borrará
-    public static void ActualizarID() {
-        try {
-            JSONParser parser = new JSONParser();
-            Object obj = parser.parse(new FileReader("C:/Users/Bravo/Documents/Programing_Proyect_II/Proyecto_2/productos.json"));
-            JSONObject jsonObject = (JSONObject) obj;
-            int contadorID = 1;
-            for (Object categoriaKey : jsonObject.keySet()) {
-                JSONArray productosArray = (JSONArray) jsonObject.get(categoriaKey);
-                for (int j = 0; j < productosArray.size(); j++) {
-                    JSONObject producto = (JSONObject) productosArray.get(j);
-                    producto.put("id", String.valueOf(contadorID));
-                    contadorID++;
-                }
-            }
-            FileWriter fileWriter = new FileWriter("C:/Users/Bravo/Documents/Programing_Proyect_II/Proyecto_2/productos.json");
-            fileWriter.write(jsonObject.toJSONString());
-            fileWriter.close();
-            System.out.println("IDs actualizados y guardados en el archivo.");
-        } catch (IOException | ParseException e) {
-            e.printStackTrace();
-        }
-    }
 }

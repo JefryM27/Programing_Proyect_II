@@ -5,6 +5,10 @@
 package Logica;
 
 import java.io.*;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 /**
  *
@@ -35,6 +39,20 @@ public class IDManager {
             fw.write(String.valueOf(lastId));
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+    public int generarID(String fileName) {
+        try {
+            File archivoJSON = new File(fileName);
+            JSONParser parser = new JSONParser();
+            JSONArray array = (JSONArray) parser.parse(new FileReader(archivoJSON));
+            int lastIndex = array.size() - 1;
+            JSONObject ultimo_cliente = (JSONObject) array.get(lastIndex);
+            //accesses the attributes of the last data in the table
+            Long id = (Long) ultimo_cliente.get("id");
+            return id.intValue();
+        } catch (IOException | ParseException e) {
+            return 1000;
         }
     }
 }

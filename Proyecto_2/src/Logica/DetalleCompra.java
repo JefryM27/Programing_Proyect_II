@@ -1,6 +1,6 @@
 package Logica;
 
-import GUI.Administrador;
+import GUI.*;
 import java.io.*;
 import java.util.*;
 import javax.swing.table.DefaultTableModel;
@@ -12,16 +12,25 @@ public class DetalleCompra {
     private int Id_DetalleCompra;
     private int cantidad;
     private double monto;
+    private String idProducto;
+    private int idCompra;
     private Administrador tico;
+    private Usuario tico2;
 
     public DetalleCompra(Administrador tico) {
         this.tico = tico;
     }
 
-    public DetalleCompra(int Id_DetalleCompra, int cantidad, double monto) {
+    public DetalleCompra(Usuario tico2) {
+        this.tico2 = tico2;
+    }
+
+    public DetalleCompra(int Id_DetalleCompra, int cantidad, double monto, String idProducto, int idCompra) {
         this.Id_DetalleCompra = Id_DetalleCompra;
         this.cantidad = cantidad;
         this.monto = monto;
+        this.idProducto = idProducto;
+        this.idCompra = idCompra;
     }
 
     public int getId_DetalleCompra() {
@@ -48,8 +57,36 @@ public class DetalleCompra {
         this.monto = monto;
     }
 
+    /**
+     * @return the idProducto
+     */
+    public String getIdProducto() {
+        return idProducto;
+    }
+
+    /**
+     * @param idProducto the idProducto to set
+     */
+    public void setIdProducto(String idProducto) {
+        this.idProducto = idProducto;
+    }
+
+    /**
+     * @return the idCompra
+     */
+    public int getIdCompra() {
+        return idCompra;
+    }
+
+    /**
+     * @param idCompra the idCompra to set
+     */
+    public void setIdCompra(int idCompra) {
+        this.idCompra = idCompra;
+    }
+
     // Method to save a detail purchase in the detail purchases JSON file
-    public void guardarDetalleCompra() {
+    public void guardarDetalleCompra(DetalleCompra nuevoDetalle) {
         try {
             // Check if the JSON file exists, if not, create a new one
             File archivoJSON = new File("DetalleCompra.json");
@@ -60,9 +97,11 @@ public class DetalleCompra {
 
             // Create the JSON object of the new detail purchase
             JSONObject detalleCompraJSON = new JSONObject();
-            detalleCompraJSON.put("Id_DetalleCompra", Id_DetalleCompra);
-            detalleCompraJSON.put("cantidad", cantidad);
-            detalleCompraJSON.put("monto", monto);
+            detalleCompraJSON.put("id", nuevoDetalle.getId_DetalleCompra());
+            detalleCompraJSON.put("cantidad", nuevoDetalle.getCantidad());
+            detalleCompraJSON.put("monto", nuevoDetalle.getMonto());
+            detalleCompraJSON.put("idProducto", nuevoDetalle.getIdProducto());
+            detalleCompraJSON.put("idCompra", nuevoDetalle.getIdCompra());
 
             // Add the new detail purchase to the detail purchases array
             detalleCompraArray.add(detalleCompraJSON);
@@ -72,7 +111,6 @@ public class DetalleCompra {
             fileWriter.write(detalleCompraArray.toJSONString());
             fileWriter.flush();
             fileWriter.close();
-            tico.actualizarTablaDetalle();
             // Exception handling in case of error reading the JSON file or parsing its content.
         } catch (IOException | ParseException e) {
             e.printStackTrace(); // Print the exception trace for debugging.
@@ -91,10 +129,12 @@ public class DetalleCompra {
             // Add the detail purchases to the table model
             for (Object obj : detalleCompraArray) {
                 JSONObject detalleCompraJSON = (JSONObject) obj;
-                int IdDetalleCompra = Integer.parseInt(detalleCompraJSON.get("Id_DetalleCompra").toString());
+                int IdDetalleCompra = Integer.parseInt(detalleCompraJSON.get("id").toString());
                 int Cantidad = Integer.parseInt(detalleCompraJSON.get("cantidad").toString());
                 double Monto = Double.parseDouble(detalleCompraJSON.get("monto").toString());
-                modeloTabla.addRow(new Object[]{IdDetalleCompra, Cantidad, Monto});
+                String IdProducto = detalleCompraJSON.getOrDefault("idProducto", "").toString();
+                int IdCompra = Integer.parseInt(detalleCompraJSON.get("idCompra").toString());
+                modeloTabla.addRow(new Object[]{IdDetalleCompra, Cantidad, Monto, IdProducto, IdCompra});
             }
             // Exception handling in case of error reading the JSON file or parsing its content
         } catch (IOException | ParseException e) {
@@ -102,7 +142,7 @@ public class DetalleCompra {
         }
     }
 
-    public void editarDetalleCompra(int idDetalleCompra, int cantidad, double monto) {
+    public void editarDetalleCompra(int idDetalleCompra, int cantidad, double monto, String idProducto, int idCompra) {
         try {
             JSONParser parser = new JSONParser();
             JSONArray detalleCompraArray = (JSONArray) parser.parse(new FileReader("detalleCompra.json"));
@@ -117,6 +157,12 @@ public class DetalleCompra {
                     }
                     if (monto >= 0) {
                         detalleCompraJSON.put("monto", monto);
+                    }
+                    if (idProducto != null) {
+                        detalleCompraJSON.put("idProducto", idProducto);
+                    }
+                    if (idCompra >= 0) {
+                        detalleCompraJSON.put("idCompra", idCompra);
                     }
                     detalleEncontrado = true;
                     break;
