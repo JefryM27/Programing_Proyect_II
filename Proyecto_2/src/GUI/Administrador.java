@@ -1,6 +1,8 @@
 package GUI;
 
 import Logica.*;
+import Logica.Validaciones.ValidacionCliente;
+import Logica.Validaciones.ValidacionProveedor;
 import java.io.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -18,6 +20,8 @@ public final class Administrador extends javax.swing.JFrame {
     private final Producto producto = new Producto(this);
     private final Marca marca = new Marca(this);
     private final DetalleCompra detallecompra = new DetalleCompra(this);
+    private Object Validar;
+    private Object nuevoProvvedor;
 
     public Administrador() {
         initComponents();
@@ -1379,6 +1383,17 @@ public final class Administrador extends javax.swing.JFrame {
         nuevoProveedor.guardarProveedor();
         actualizarTablaProveedores();
         limpiarCampos();
+          // Guardar el cliente y actualizar la tabla solo si la validación fue exitosa
+        if (Validar.equals(telefono) && Validar.equals(cedula) && Validar.equals(nombre)&& Validar.equals(correo)) {
+            Object guardarProveedor = null;
+            nuevoProvvedor.equals(guardarProveedor);
+            actualizartblProveedores();
+            limpiarCampos();
+            activarPaneles();
+        } else {
+            JOptionPane.showMessageDialog(this, "Algunos datos ingresados no son válidos: ");
+
+        }
     }//GEN-LAST:event_btnGuardarProveedorActionPerformed
 
     private void btnEliminarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProveedorActionPerformed
@@ -1443,6 +1458,57 @@ public final class Administrador extends javax.swing.JFrame {
         // Clear the input field
         limpiarCampos();
         //activarPaneles();
+                //Validar Cedula del cliente
+        String cedula = txtCedulaCliente.getText(); // Obtener el valor del campo de texto
+
+        if (cedula.matches("\\d{1,10}")) {
+            if (ValidacionCliente.validartxtCedulaCliente(cedula)) {
+                System.out.println("Cédula válida");
+            } else {
+                JOptionPane.showMessageDialog(this, "La cédula no es válida. Debe contener solo números y tener hasta 10 dígitos.", "Error Cédula", JOptionPane.ERROR_MESSAGE);
+                txtCedulaCliente.setText(""); // Limpiar el campo de texto
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "La cédula debe contener solo números y tener hasta 10 dígitos.", "Error cédula", JOptionPane.ERROR_MESSAGE);
+            txtCedulaCliente.setText(""); // Limpiar el campo de texto
+        }
+        //Validar nombre del cliente
+        String nombreCliente = txtNombreCliente.getText();
+
+        if (!ValidacionCliente.validartxtNombreCliente(nombreCliente)) {
+            JOptionPane.showMessageDialog(this, "El nombre del cliente solo debe contener letras y espacios.", "Error nombre cliente", JOptionPane.ERROR_MESSAGE);
+            txtNombreCliente.setText(""); // Limpiar el campo de texto si es inválido
+        }
+        //Validar primer Apellido
+        String apellido = txt1ApellidoCliente.getText();
+
+        if (!ValidacionCliente.validartxt1ApellidoCliente(apellido)) {
+            JOptionPane.showMessageDialog(this, "El primer apellido debe contener solo letras y espacios.", "Error primer apellido", JOptionPane.ERROR_MESSAGE);
+            txt1ApellidoCliente.setText(""); // Limpia el campo de entrada
+            boolean txt1ApellidoCliente = apellido.matches("^[a-zA-Z\\s]+$");
+
+            //Validar segundo apellido
+            if (!ValidacionCliente.validartxt2ApellidoCliente(apellido)) {
+                JOptionPane.showMessageDialog(this, "El segundo apellido solo debe contener letras y espacios.", "Error segundo apellido", JOptionPane.ERROR_MESSAGE);
+                // También podrías borrar el contenido del campo de apellido si deseas.
+                txt2ApellidoCliente.setText("");
+
+                //Validar telefono
+                String telefono = txtTelefonoCliente.getText();
+
+                if (!ValidacionCliente.validartxtTelefonoCliente(telefono)) {
+                    JOptionPane.showMessageDialog(this, "El número de teléfono no es válido.", "Error telefono", JOptionPane.ERROR_MESSAGE);
+                    // Puedes hacer más cosas aquí, como enfocar el campo de texto o borrar el contenido, según tus necesidades.
+                }
+                //Validar correo
+                String correoCliente = txtCorreoCliente.getText();
+
+                if (!ValidacionCliente.validartxtCorreoCliente(correoCliente)) {
+                    JOptionPane.showMessageDialog(this, "El correo electrónico no es válido.", "Error correos", JOptionPane.ERROR_MESSAGE);
+                }
+
+            }
+        }
     }//GEN-LAST:event_btnGuardarClienteActionPerformed
 
     private void btnEliminarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarClienteActionPerformed
@@ -1778,6 +1844,18 @@ public final class Administrador extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void actualizarTablaDetallesCompra() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private void actualizarTablaCliente() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private void actualizartblProveedores() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private void activarPaneles() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
