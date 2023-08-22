@@ -29,6 +29,7 @@ public final class Administrador extends javax.swing.JFrame {
         actualizarTablaProveedores();
         actualizarTablaClientes();
         actualizarTablaDetalle();
+        actualizarTablaCompra();
         comboCategorias.addItem("Bebidas");
         comboCategorias.addItem("Abarrotes");
         comboCategorias.addItem("Limpieza");

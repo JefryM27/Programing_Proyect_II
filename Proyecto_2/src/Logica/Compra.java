@@ -156,7 +156,7 @@ public class Compra {
                 String Fecha = compraJSON.getOrDefault("fecha", "").toString();
                 double MontoTotal = Double.parseDouble(compraJSON.get("montoTotal").toString());
                 int IdCliente = Integer.parseInt(compraJSON.get("id_cliente").toString());
-                int IdDetalleCompra = Integer.parseInt(compraJSON.get("id_detalleCompra").toString());
+                int IdDetalleCompra = Integer.parseInt(compraJSON.get("id_detallecompra").toString());
                 modeloTabla.addRow(new Object[]{IdCompra, Fecha, MontoTotal, IdCliente, IdDetalleCompra});
             }
             // Exception handling in case of error reading the JSON file or parsing its content
