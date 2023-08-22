@@ -3,6 +3,7 @@ package GUI;
 import Logica.*;
 import Logica.Validaciones.ValidacionCliente;
 import Logica.Validaciones.ValidacionProveedor;
+import static Logica.Validaciones.ValidacionProveedor.validarCedula;
 import java.io.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -1541,14 +1542,14 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEditarClienteActionPerformed
 
     private void txtCedulaClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaClienteActionPerformed
-        String cedula = txtCedulaCliente.getText(); // Get the value of the text field
-        if (cedula.matches("\\d{9}")) {
-            System.out.println("Cédula normal válida");
-        } else if (cedula.matches("\\d{10}")) {
-            System.out.println("Cédula jurídica válida");
-        } else {
-            System.out.println("Cédula no válida");
-        }
+      String cedula = txtCedulaCliente.getText();
+    boolean esValida = validarCedula(cedula);
+    
+    if (esValida) {
+        System.out.println("Cédula válida");
+    } else {
+        System.out.println("Cédula no válida");
+    }
     }//GEN-LAST:event_txtCedulaClienteActionPerformed
 
     private void txtCedulaProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaProveedorActionPerformed

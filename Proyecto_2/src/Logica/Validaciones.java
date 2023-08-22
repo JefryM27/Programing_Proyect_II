@@ -50,18 +50,27 @@ public class Validaciones {
 
     public static class ValidacionCliente {
 
-        public static boolean validartxtCedulaCliente(String txtCedulaCliente) {
-            if (txtCedulaCliente.length() != 10) {
-                return false; // The Id must have exactly 10 digits.
-            }
-            for (char c : txtCedulaCliente.toCharArray()) {
-                if (!Character.isDigit(c)) {
-                    return false; // The Id must be composed only of digits.
-                }
-            }
-
-            return true; // If it passes the above validations, the Id is valid.
+         public static boolean validartxtCedulaCliente(String cedula) {
+    if (cedula.matches("\\d{9}")) {
+        System.out.println("Cédula normal válida");
+    } else if (cedula.matches("\\d{10}")) {
+        System.out.println("Cédula jurídica válida");
+    } else {
+        System.out.println("Cédula no válida");
+        return false; // La cédula no tiene el formato adecuado
+    }
+    
+    if (cedula.length() != 9 && cedula.length() != 10) {
+        return false; // La cédula debe tener 9 o 10 dígitos, dependiendo de si es normal o jurídica
+    }
+    
+    for (char c : cedula.toCharArray()) {
+        if (!Character.isDigit(c)) {
+            return false; // La cédula debe estar compuesta solo de dígitos
         }
+    }
+    return true; // Si pasa todas las validaciones anteriores, la cédula es válida
+}
 
         public static boolean validartxtTelefonoCliente(String txtTelefonoCliente) {
             String cleanedNumber = txtTelefonoCliente.replaceAll("[\\s\\-()]", "");
