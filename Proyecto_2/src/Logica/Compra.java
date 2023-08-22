@@ -15,6 +15,7 @@ import org.json.simple.parser.*;
  * @author Bravo
  */
 public class Compra {
+
     private int idCompra;
     private String fecha;
     private double montoTotal;
@@ -26,7 +27,7 @@ public class Compra {
     public Compra(Usuario tico2) {
         this.tico2 = tico2;
     }
-    
+
     public Compra(Administrador tico) {
         this.tico = tico;
     }
@@ -108,6 +109,7 @@ public class Compra {
     public void setId_detalleCompra(int id_detalleCompra) {
         this.id_detalleCompra = id_detalleCompra;
     }
+
     // Method to save a purchase in the purchases JSON file
     public void guardarCompra(Compra nuevaCompra) {
         try {
@@ -153,11 +155,13 @@ public class Compra {
             for (Object obj : comprasArray) {
                 JSONObject compraJSON = (JSONObject) obj;
                 int IdCompra = Integer.parseInt(compraJSON.get("id").toString());
-                String Fecha = compraJSON.getOrDefault("fecha", "").toString();
-                double MontoTotal = Double.parseDouble(compraJSON.get("montoTotal").toString());
-                int IdCliente = Integer.parseInt(compraJSON.get("id_cliente").toString());
-                int IdDetalleCompra = Integer.parseInt(compraJSON.get("id_detallecompra").toString());
-                modeloTabla.addRow(new Object[]{IdCompra, Fecha, MontoTotal, IdCliente, IdDetalleCompra});
+                if (IdCompra != 0) {
+                    String Fecha = compraJSON.getOrDefault("fecha", "").toString();
+                    double MontoTotal = Double.parseDouble(compraJSON.get("montoTotal").toString());
+                    int IdCliente = Integer.parseInt(compraJSON.get("id_cliente").toString());
+                    int IdDetalleCompra = Integer.parseInt(compraJSON.get("id_detallecompra").toString());
+                    modeloTabla.addRow(new Object[]{IdCompra, Fecha, MontoTotal, IdCliente, IdDetalleCompra});
+                }
             }
             // Exception handling in case of error reading the JSON file or parsing its content
         } catch (IOException | ParseException e) {

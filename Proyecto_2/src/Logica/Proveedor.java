@@ -125,11 +125,13 @@ public class Proveedor {
             for (Object obj : proveedorArray) {
                 JSONObject proveedorJSON = (JSONObject) obj;
                 int Id = Integer.parseInt(proveedorJSON.get("id").toString());
-                String Cedula = proveedorJSON.get("cedula") != null ? proveedorJSON.get("cedula").toString() : "";
-                String Nombre = proveedorJSON.get("nombre") != null ? proveedorJSON.get("nombre").toString() : "";
-                String Telefono = proveedorJSON.get("telefono") != null ? proveedorJSON.get("telefono").toString() : "";
-                String Correo = proveedorJSON.get("correo") != null ? proveedorJSON.get("correo").toString() : "";
-                modeloTabla.addRow(new Object[]{Id, Cedula, Nombre, Telefono, Correo});
+                if (Id != 0) {
+                    String Cedula = proveedorJSON.get("cedula") != null ? proveedorJSON.get("cedula").toString() : "";
+                    String Nombre = proveedorJSON.get("nombre") != null ? proveedorJSON.get("nombre").toString() : "";
+                    String Telefono = proveedorJSON.get("telefono") != null ? proveedorJSON.get("telefono").toString() : "";
+                    String Correo = proveedorJSON.get("correo") != null ? proveedorJSON.get("correo").toString() : "";
+                    modeloTabla.addRow(new Object[]{Id, Cedula, Nombre, Telefono, Correo});
+                }
             }
             // Exception handling in case of error reading the JSON file or parsing its content
         } catch (IOException | ParseException e) {
@@ -138,44 +140,44 @@ public class Proveedor {
     }
 
     public void editar_Proveedor(int id, String cedula, String nombre, String telefono, String correo) {
-    try {
-        JSONParser parser = new JSONParser();
-        JSONArray proveedoresArray = (JSONArray) parser.parse(new FileReader("proveedor.json"));
-        boolean proveedorEncontrado = false;
+        try {
+            JSONParser parser = new JSONParser();
+            JSONArray proveedoresArray = (JSONArray) parser.parse(new FileReader("proveedor.json"));
+            boolean proveedorEncontrado = false;
 
-        for (int i = 0; i < proveedoresArray.size(); i++) {
-            JSONObject proveedorJSON = (JSONObject) proveedoresArray.get(i);
-            int proveedorId = Integer.parseInt(proveedorJSON.get("id").toString());
+            for (int i = 0; i < proveedoresArray.size(); i++) {
+                JSONObject proveedorJSON = (JSONObject) proveedoresArray.get(i);
+                int proveedorId = Integer.parseInt(proveedorJSON.get("id").toString());
 
-            if (proveedorId == id) {
-                if (!cedula.isEmpty()) {
-                    proveedorJSON.put("cedula", cedula);
-                }
-                if (!nombre.isEmpty()) {
-                    proveedorJSON.put("nombre", nombre);
-                }
-                if (!telefono.isEmpty()) {
-                    proveedorJSON.put("telefono", telefono);
-                }
-                if (!correo.isEmpty()) {
-                    proveedorJSON.put("correo", correo);
-                }
+                if (proveedorId == id) {
+                    if (!cedula.isEmpty()) {
+                        proveedorJSON.put("cedula", cedula);
+                    }
+                    if (!nombre.isEmpty()) {
+                        proveedorJSON.put("nombre", nombre);
+                    }
+                    if (!telefono.isEmpty()) {
+                        proveedorJSON.put("telefono", telefono);
+                    }
+                    if (!correo.isEmpty()) {
+                        proveedorJSON.put("correo", correo);
+                    }
 
-                proveedorEncontrado = true;
-                break;
+                    proveedorEncontrado = true;
+                    break;
+                }
             }
-        }
 
-        if (proveedorEncontrado) {
-            FileWriter fileWriter = new FileWriter("proveedor.json");
-            fileWriter.write(proveedoresArray.toJSONString());
-            fileWriter.flush();
-            fileWriter.close();
+            if (proveedorEncontrado) {
+                FileWriter fileWriter = new FileWriter("proveedor.json");
+                fileWriter.write(proveedoresArray.toJSONString());
+                fileWriter.flush();
+                fileWriter.close();
+            }
+        } catch (IOException | ParseException e) {
+            e.printStackTrace(); // Imprime detalles de la excepción para depuración
         }
-    } catch (IOException | ParseException e) {
-        e.printStackTrace(); // Imprime detalles de la excepción para depuración
     }
-}
 
     public void eliminarProveedor(int id) {
         try {

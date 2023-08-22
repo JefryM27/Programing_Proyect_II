@@ -597,7 +597,7 @@ public class Usuario extends javax.swing.JFrame {
             e.printStackTrace();
         }
 
-        if (idCliente != -1) { // Si se encontró el ID del cliente
+        if (idCliente != 0) { // Si se encontró el ID del cliente
             for (int i = 0; i < rowCount; i++) {
                 int nuevoIdDetalleCompra = (idmanager.generarID("DetalleCompra.json") + 1);
                 int nuevaCantidad = (int) modeloTablaCarrito.getValueAt(i, 2);

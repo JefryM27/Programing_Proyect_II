@@ -1519,16 +1519,15 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarProveedorActionPerformed
 
     private void btnEditarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProveedorActionPerformed
-        // TODO add your handling code here:
-        int selectedRow = tblProveedores.getSelectedRow();
 
-        if (selectedRow != -1) { // Cambiado de != 0 a != -1
+        int selectedRow = tblProveedores.getSelectedRow();
+        if (selectedRow != -1) {
             String cedula = txtCedulaProveedor.getText();
             String nombre = txtNombreProveedor.getText();
             String telefono = txtTelefonoProveedor.getText();
             String correo = txtCorreoProveedor.getText();
 
-            this.proveedor.editar_Proveedor(selectedRow + 1, cedula, nombre, telefono, correo); // Sumado 1 al índice
+            this.proveedor.editar_Proveedor(selectedRow + 1, cedula, nombre, telefono, correo);
             this.actualizarTablaProveedores();
             this.limpiarCampos();
             JOptionPane.showMessageDialog(null, "Se actualizó el proveedor");
@@ -1584,14 +1583,14 @@ public final class Administrador extends javax.swing.JFrame {
 
     private void btnEditarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarClienteActionPerformed
         int selectedRow = tblClientes.getSelectedRow();
-        if (selectedRow >= 0) {
+        if (selectedRow != -1) {
             String cedula = txtCedulaCliente.getText();
             String nombre = txtNombreCliente.getText();
             String primerA = txt1ApellidoCliente.getText();
             String segundoA = txt2ApellidoCliente.getText();
             String telefono = txtTelefonoCliente.getText();
             String correo = txtCorreoCliente.getText();
-            this.cliente.editar_cliente(selectedRow - 1, cedula, nombre, primerA, segundoA, telefono, correo);
+            this.cliente.editar_cliente(selectedRow +1, cedula, nombre, primerA, segundoA, telefono, correo);
             actualizarTablaClientes();
             limpiarCampos();
             JOptionPane.showMessageDialog(null, "Se actualizo el cliente");

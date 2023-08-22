@@ -130,11 +130,13 @@ public class DetalleCompra {
             for (Object obj : detalleCompraArray) {
                 JSONObject detalleCompraJSON = (JSONObject) obj;
                 int IdDetalleCompra = Integer.parseInt(detalleCompraJSON.get("id").toString());
-                int Cantidad = Integer.parseInt(detalleCompraJSON.get("cantidad").toString());
-                double Monto = Double.parseDouble(detalleCompraJSON.get("monto").toString());
-                String IdProducto = detalleCompraJSON.getOrDefault("idProducto", "").toString();
-                int IdCompra = Integer.parseInt(detalleCompraJSON.get("idCompra").toString());
-                modeloTabla.addRow(new Object[]{IdDetalleCompra, Cantidad, Monto, IdProducto, IdCompra});
+                if (IdDetalleCompra != 0) {
+                    int Cantidad = Integer.parseInt(detalleCompraJSON.get("cantidad").toString());
+                    double Monto = Double.parseDouble(detalleCompraJSON.get("monto").toString());
+                    String IdProducto = detalleCompraJSON.getOrDefault("idProducto", "").toString();
+                    int IdCompra = Integer.parseInt(detalleCompraJSON.get("idCompra").toString());
+                    modeloTabla.addRow(new Object[]{IdDetalleCompra, Cantidad, Monto, IdProducto, IdCompra});
+                }
             }
             // Exception handling in case of error reading the JSON file or parsing its content
         } catch (IOException | ParseException e) {
