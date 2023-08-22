@@ -1,9 +1,7 @@
 package GUI;
 
 import Logica.*;
-import Logica.Validaciones.ValidacionCliente;
-import Logica.Validaciones.ValidacionProveedor;
-import static Logica.Validaciones.ValidacionProveedor.validarCedula;
+import java.awt.event.KeyEvent;
 import java.io.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -336,6 +334,23 @@ public final class Administrador extends javax.swing.JFrame {
                 txtCedulaClienteActionPerformed(evt);
             }
         });
+        txtCedulaCliente.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCedulaClienteKeyTyped(evt);
+            }
+        });
+
+        txtNombreCliente.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNombreClienteKeyTyped(evt);
+            }
+        });
+
+        txt1ApellidoCliente.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt1ApellidoClienteKeyTyped(evt);
+            }
+        });
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
         jLabel13.setText("Segundo Apellido:");
@@ -345,6 +360,24 @@ public final class Administrador extends javax.swing.JFrame {
 
         jLabel15.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
         jLabel15.setText("Correo:");
+
+        txt2ApellidoCliente.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt2ApellidoClienteKeyTyped(evt);
+            }
+        });
+
+        txtTelefonoCliente.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTelefonoClienteKeyTyped(evt);
+            }
+        });
+
+        txtCorreoCliente.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCorreoClienteKeyTyped(evt);
+            }
+        });
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -528,6 +561,17 @@ public final class Administrador extends javax.swing.JFrame {
                 txtCedulaProveedorActionPerformed(evt);
             }
         });
+        txtCedulaProveedor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCedulaProveedorKeyTyped(evt);
+            }
+        });
+
+        txtNombreProveedor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNombreProveedorKeyTyped(evt);
+            }
+        });
 
         jLabel26.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
         jLabel26.setText("Telefono:");
@@ -535,9 +579,20 @@ public final class Administrador extends javax.swing.JFrame {
         jLabel27.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
         jLabel27.setText("Correo:");
 
+        txtTelefonoProveedor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTelefonoProveedorKeyTyped(evt);
+            }
+        });
+
         txtCorreoProveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCorreoProveedorActionPerformed(evt);
+            }
+        });
+        txtCorreoProveedor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCorreoProveedorKeyTyped(evt);
             }
         });
 
@@ -1384,17 +1439,6 @@ public final class Administrador extends javax.swing.JFrame {
         nuevoProveedor.guardarProveedor();
         actualizarTablaProveedores();
         limpiarCampos();
-          // Guardar el cliente y actualizar la tabla solo si la validación fue exitosa
-        if (Validar.equals(telefono) && Validar.equals(cedula) && Validar.equals(nombre)&& Validar.equals(correo)) {
-            Object guardarProveedor = null;
-            nuevoProvvedor.equals(guardarProveedor);
-            actualizartblProveedores();
-            limpiarCampos();
-            activarPaneles();
-        } else {
-            JOptionPane.showMessageDialog(this, "Algunos datos ingresados no son válidos: ");
-
-        }
     }//GEN-LAST:event_btnGuardarProveedorActionPerformed
 
     private void btnEliminarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProveedorActionPerformed
@@ -1409,22 +1453,22 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarProveedorActionPerformed
 
     private void btnEditarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProveedorActionPerformed
-       // TODO add your handling code here:
-    int selectedRow = tblProveedores.getSelectedRow();
-    
-    if (selectedRow != -1) { // Cambiado de != 0 a != -1
-        String cedula = txtCedulaProveedor.getText();
-        String nombre = txtNombreProveedor.getText();
-        String telefono = txtTelefonoProveedor.getText();
-        String correo = txtCorreoProveedor.getText();
-        
-        this.proveedor.editar_Proveedor(selectedRow + 1, cedula, nombre, telefono, correo); // Sumado 1 al índice
-        this.actualizarTablaProveedores();
-        this.limpiarCampos();
-        JOptionPane.showMessageDialog(null, "Se actualizó el proveedor");
-    } else {
-        JOptionPane.showMessageDialog(null, "Selecciona un Proveedor en la tabla");
-    }
+        // TODO add your handling code here:
+        int selectedRow = tblProveedores.getSelectedRow();
+
+        if (selectedRow != -1) { // Cambiado de != 0 a != -1
+            String cedula = txtCedulaProveedor.getText();
+            String nombre = txtNombreProveedor.getText();
+            String telefono = txtTelefonoProveedor.getText();
+            String correo = txtCorreoProveedor.getText();
+
+            this.proveedor.editar_Proveedor(selectedRow + 1, cedula, nombre, telefono, correo); // Sumado 1 al índice
+            this.actualizarTablaProveedores();
+            this.limpiarCampos();
+            JOptionPane.showMessageDialog(null, "Se actualizó el proveedor");
+        } else {
+            JOptionPane.showMessageDialog(null, "Selecciona un Proveedor en la tabla");
+        }
     }//GEN-LAST:event_btnEditarProveedorActionPerformed
 
     private void txtCorreoProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoProveedorActionPerformed
@@ -1459,57 +1503,6 @@ public final class Administrador extends javax.swing.JFrame {
         // Clear the input field
         limpiarCampos();
         //activarPaneles();
-                //Validar Cedula del cliente
-        String cedula = txtCedulaCliente.getText(); // Obtener el valor del campo de texto
-
-        if (cedula.matches("\\d{1,10}")) {
-            if (ValidacionCliente.validartxtCedulaCliente(cedula)) {
-                System.out.println("Cédula válida");
-            } else {
-                JOptionPane.showMessageDialog(this, "La cédula no es válida. Debe contener solo números y tener hasta 10 dígitos.", "Error Cédula", JOptionPane.ERROR_MESSAGE);
-                txtCedulaCliente.setText(""); // Limpiar el campo de texto
-            }
-        } else {
-            JOptionPane.showMessageDialog(this, "La cédula debe contener solo números y tener hasta 10 dígitos.", "Error cédula", JOptionPane.ERROR_MESSAGE);
-            txtCedulaCliente.setText(""); // Limpiar el campo de texto
-        }
-        //Validar nombre del cliente
-        String nombreCliente = txtNombreCliente.getText();
-
-        if (!ValidacionCliente.validartxtNombreCliente(nombreCliente)) {
-            JOptionPane.showMessageDialog(this, "El nombre del cliente solo debe contener letras y espacios.", "Error nombre cliente", JOptionPane.ERROR_MESSAGE);
-            txtNombreCliente.setText(""); // Limpiar el campo de texto si es inválido
-        }
-        //Validar primer Apellido
-        String apellido = txt1ApellidoCliente.getText();
-
-        if (!ValidacionCliente.validartxt1ApellidoCliente(apellido)) {
-            JOptionPane.showMessageDialog(this, "El primer apellido debe contener solo letras y espacios.", "Error primer apellido", JOptionPane.ERROR_MESSAGE);
-            txt1ApellidoCliente.setText(""); // Limpia el campo de entrada
-            boolean txt1ApellidoCliente = apellido.matches("^[a-zA-Z\\s]+$");
-
-            //Validar segundo apellido
-            if (!ValidacionCliente.validartxt2ApellidoCliente(apellido)) {
-                JOptionPane.showMessageDialog(this, "El segundo apellido solo debe contener letras y espacios.", "Error segundo apellido", JOptionPane.ERROR_MESSAGE);
-                // También podrías borrar el contenido del campo de apellido si deseas.
-                txt2ApellidoCliente.setText("");
-
-                //Validar telefono
-                String telefono = txtTelefonoCliente.getText();
-
-                if (!ValidacionCliente.validartxtTelefonoCliente(telefono)) {
-                    JOptionPane.showMessageDialog(this, "El número de teléfono no es válido.", "Error telefono", JOptionPane.ERROR_MESSAGE);
-                    // Puedes hacer más cosas aquí, como enfocar el campo de texto o borrar el contenido, según tus necesidades.
-                }
-                //Validar correo
-                String correoCliente = txtCorreoCliente.getText();
-
-                if (!ValidacionCliente.validartxtCorreoCliente(correoCliente)) {
-                    JOptionPane.showMessageDialog(this, "El correo electrónico no es válido.", "Error correos", JOptionPane.ERROR_MESSAGE);
-                }
-
-            }
-        }
     }//GEN-LAST:event_btnGuardarClienteActionPerformed
 
     private void btnEliminarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarClienteActionPerformed
@@ -1542,14 +1535,14 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEditarClienteActionPerformed
 
     private void txtCedulaClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaClienteActionPerformed
-      String cedula = txtCedulaCliente.getText();
-    boolean esValida = validarCedula(cedula);
-    
-    if (esValida) {
-        System.out.println("Cédula válida");
-    } else {
-        System.out.println("Cédula no válida");
-    }
+        String cedula = txtCedulaCliente.getText();
+        boolean esValida = validarCedula(cedula);
+
+        if (esValida) {
+            System.out.println("Cédula válida");
+        } else {
+            System.out.println("Cédula no válida");
+        }
     }//GEN-LAST:event_txtCedulaClienteActionPerformed
 
     private void txtCedulaProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaProveedorActionPerformed
@@ -1671,21 +1664,21 @@ public final class Administrador extends javax.swing.JFrame {
 
     private void btnEditarDetalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarDetalleActionPerformed
         // TODO add your handling code here:
-    int selectedRow = tblProveedores.getSelectedRow();
-    
-    if (selectedRow != -1) { // Cambiado de != 0 a != -1
-        String cedula = txtCedulaProveedor.getText();
-        String nombre = txtNombreProveedor.getText();
-        String telefono = txtTelefonoProveedor.getText();
-        String correo = txtCorreoProveedor.getText();
-        
-        this.proveedor.editar_Proveedor(selectedRow + 1, cedula, nombre, telefono, correo); // Sumado 1 al índice
-        this.actualizarTablaProveedores();
-        this.limpiarCampos();
-        JOptionPane.showMessageDialog(null, "Se actualizó el proveedor");
-    } else {
-        JOptionPane.showMessageDialog(null, "Selecciona un Proveedor en la tabla");
-    }
+        int selectedRow = tblProveedores.getSelectedRow();
+
+        if (selectedRow != -1) { // Cambiado de != 0 a != -1
+            String cedula = txtCedulaProveedor.getText();
+            String nombre = txtNombreProveedor.getText();
+            String telefono = txtTelefonoProveedor.getText();
+            String correo = txtCorreoProveedor.getText();
+
+            this.proveedor.editar_Proveedor(selectedRow + 1, cedula, nombre, telefono, correo); // Sumado 1 al índice
+            this.actualizarTablaProveedores();
+            this.limpiarCampos();
+            JOptionPane.showMessageDialog(null, "Se actualizó el proveedor");
+        } else {
+            JOptionPane.showMessageDialog(null, "Selecciona un Proveedor en la tabla");
+        }
     }//GEN-LAST:event_btnEditarDetalleActionPerformed
 
     private void btnEliminarDetalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarDetalleActionPerformed
@@ -1721,6 +1714,129 @@ public final class Administrador extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Completa todos los campos correctamente");
         }
     }//GEN-LAST:event_btnGuardarDetalleActionPerformed
+
+    private void txtCedulaProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCedulaProveedorKeyTyped
+        char caracter = evt.getKeyChar();
+
+        // Verificar si el caracter es una letra
+        if (Character.isLetter(caracter)) {
+            evt.consume(); // Consumir el evento para evitar que la letra sea ingresada
+            JOptionPane.showMessageDialog(this, "Error en Cédula: Ingrese solo números.", "Error de entrada", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_txtCedulaProveedorKeyTyped
+
+    private void txtNombreProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreProveedorKeyTyped
+        // Obtiene el texto actual en el campo de texto
+        String textoActual = txtNombreProveedor.getText();
+
+        // Obtiene el carácter que se acaba de escribir
+        char caracterIngresado = evt.getKeyChar();
+
+        // Realiza la validación según tus criterios
+        if (!Character.isLetter(caracterIngresado) && caracterIngresado != KeyEvent.VK_BACK_SPACE && caracterIngresado != KeyEvent.VK_DELETE) {
+            // Si el carácter no es una letra y no es un carácter de borrado, muestra una advertencia
+            JOptionPane.showMessageDialog(this, "Solo se permiten letras en este campo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            // Consumir el evento para evitar que el carácter incorrecto se muestre en el campo de texto
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtNombreProveedorKeyTyped
+
+    private void txtTelefonoProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoProveedorKeyTyped
+        char c = evt.getKeyChar();
+
+        // Verificar si el carácter ingresado es un dígito
+        if (!Character.isDigit(c)) {
+            evt.consume();  // Consumir el evento para que el carácter no se agregue al campo de texto
+            JOptionPane.showMessageDialog(this, "Solo se permiten números.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_txtTelefonoProveedorKeyTyped
+
+    private void txtCorreoProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoProveedorKeyTyped
+        char caracter = evt.getKeyChar();
+
+        // Verificar si el caracter es válido (letras, números y caracteres especiales permitidos)
+        if (!Character.isLetterOrDigit(caracter) && caracter != '@' && caracter != '.' && caracter != '_') {
+            // Mostrar mensaje de error o advertencia, por ejemplo:
+            javax.swing.JOptionPane.showMessageDialog(this, "Caracter no válido ingresado", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+
+            // Consumir el evento para evitar que el caracter incorrecto se agregue al campo de texto
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtCorreoProveedorKeyTyped
+
+    private void txtCedulaClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCedulaClienteKeyTyped
+        char caracter = evt.getKeyChar();
+
+        // Verificar si el caracter es una letra
+        if (Character.isLetter(caracter)) {
+            evt.consume(); // Consumir el evento para evitar que la letra sea ingresada
+            JOptionPane.showMessageDialog(this, "Error en Cédula: Ingrese solo números.", "Error de entrada", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_txtCedulaClienteKeyTyped
+
+    private void txtNombreClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreClienteKeyTyped
+        String textoActual = txtNombreCliente.getText();
+
+        // Obtiene el carácter que se acaba de escribir
+        char caracterIngresado = evt.getKeyChar();
+
+        // Realiza la validación según tus criterios
+        if (!Character.isLetter(caracterIngresado) && caracterIngresado != KeyEvent.VK_BACK_SPACE && caracterIngresado != KeyEvent.VK_DELETE) {
+            // Si el carácter no es una letra y no es un carácter de borrado, muestra una advertencia
+            JOptionPane.showMessageDialog(this, "Solo se permiten letras en este campo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            // Consumir el evento para evitar que el carácter incorrecto se muestre en el campo de texto
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtNombreClienteKeyTyped
+
+    private void txt1ApellidoClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt1ApellidoClienteKeyTyped
+        char c = evt.getKeyChar(); // Obtener el carácter ingresado
+
+        // Verificar si el carácter es una letra (mayúscula o minúscula) o una tilde
+        if (!Character.isLetter(c) && c != 'á' && c != 'é' && c != 'í' && c != 'ó' && c != 'ú'
+                && !Character.isUpperCase(c) && !Character.isLowerCase(c)) {
+            evt.consume(); // Consumir el evento para evitar que se ingrese el carácter inapropiado
+
+            // Mostrar un mensaje de error (puedes adaptar esto a tu forma de mostrar mensajes)
+            JOptionPane.showMessageDialog(this, "Solo se permiten letras, tildes, mayúsculas y minúsculas.");
+        }
+    }//GEN-LAST:event_txt1ApellidoClienteKeyTyped
+
+    private void txt2ApellidoClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt2ApellidoClienteKeyTyped
+        char c = evt.getKeyChar(); // Obtener el carácter ingresado
+
+        // Verificar si el carácter es una letra (mayúscula o minúscula) o una tilde
+        if (!Character.isLetter(c) && c != 'á' && c != 'é' && c != 'í' && c != 'ó' && c != 'ú'
+                && !Character.isUpperCase(c) && !Character.isLowerCase(c)) {
+            evt.consume(); // Consumir el evento para evitar que se ingrese el carácter inapropiado
+
+            // Mostrar un mensaje de error (puedes adaptar esto a tu forma de mostrar mensajes)
+            JOptionPane.showMessageDialog(this, "Solo se permiten letras, tildes, mayúsculas y minúsculas.");
+        }
+    }//GEN-LAST:event_txt2ApellidoClienteKeyTyped
+
+    private void txtTelefonoClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoClienteKeyTyped
+        char c = evt.getKeyChar();
+
+        // Verificar si el carácter ingresado es un dígito
+        if (!Character.isDigit(c)) {
+            evt.consume();  // Consumir el evento para que el carácter no se agregue al campo de texto
+            JOptionPane.showMessageDialog(this, "Solo se permiten números.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_txtTelefonoClienteKeyTyped
+
+    private void txtCorreoClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoClienteKeyTyped
+        char caracter = evt.getKeyChar();
+
+        // Verificar si el caracter es válido (letras, números y caracteres especiales permitidos)
+        if (!Character.isLetterOrDigit(caracter) && caracter != '@' && caracter != '.' && caracter != '_') {
+            // Mostrar mensaje de error o advertencia, por ejemplo:
+            javax.swing.JOptionPane.showMessageDialog(this, "Caracter no válido ingresado", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+
+            // Consumir el evento para evitar que el caracter incorrecto se agregue al campo de texto
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtCorreoClienteKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -1857,6 +1973,10 @@ public final class Administrador extends javax.swing.JFrame {
     }
 
     private void activarPaneles() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private boolean validarCedula(String cedula) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
