@@ -111,8 +111,10 @@ public class Marca {
             for (Object obj : marcasArray) {
                 JSONObject marcaJSON = (JSONObject) obj;
                 int Id = Integer.parseInt(marcaJSON.get("id").toString());
+                if(Id != 0){
                 String Nombre = marcaJSON.get("nombre") != null ? marcaJSON.get("nombre").toString() : "";
                 modeloTabla.addRow(new Object[]{Id, Nombre});
+                }
             }
             // Exception handling in case of error reading the JSON file or parsing its content
         } catch (IOException | ParseException e) {
@@ -125,9 +127,10 @@ public class Marca {
             JSONParser parser = new JSONParser();
             JSONArray marcasArray = (JSONArray) parser.parse(new FileReader("marca.json"));
             boolean marcaEncontrada = false;
-            for (Object obj : marcasArray) {
-                JSONObject marcaJSON = (JSONObject) obj;
+            for(int i= 0; i< marcasArray.size(); i++) {
+                JSONObject marcaJSON = (JSONObject) marcasArray.get(i);
                 int marcaId = Integer.parseInt(marcaJSON.get("id").toString());
+                
                 if (marcaId == id) {
                     if (!nombre.isEmpty()) {
                         marcaJSON.put("nombre", nombre);
