@@ -126,7 +126,7 @@ public class Compra {
             compraJSON.put("fecha", nuevaCompra.getFecha());
             compraJSON.put("montoTotal", nuevaCompra.getMontoTotal());
             compraJSON.put("id_cliente", nuevaCompra.getId_cliente());
-            compraJSON.put("id_detalleCompra", nuevaCompra.getId_detalleCompra());
+            compraJSON.put("id_detallecompra", nuevaCompra.getId_detalleCompra());
 
             // Add the new purchase to the purchases array
             comprasArray.add(compraJSON);

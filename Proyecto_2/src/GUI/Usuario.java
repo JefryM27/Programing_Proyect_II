@@ -569,6 +569,7 @@ public class Usuario extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarCarrito1ActionPerformed
 
     private void btnGuardarCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarCompraActionPerformed
+        String subCategoria = (String) comboSubcategorias.getSelectedItem();
         DefaultTableModel modeloTablaCarrito = (DefaultTableModel) tblCarrito.getModel();
         int rowCount = modeloTablaCarrito.getRowCount();
         IDManager idmanager = new IDManager();
@@ -607,18 +608,19 @@ public class Usuario extends javax.swing.JFrame {
                 String nuevoIdProducto = null;
                 try (Reader reader = new FileReader("productos.json")) {
                     JSONObject main = (JSONObject) parser.parse(reader);
-                    for (Object categoriaObj : main.keySet()) {
-                        JSONArray categoriaProductos = (JSONArray) main.get(categoriaObj);
-                        for (Object productoObj : categoriaProductos) {
-                            JSONObject producto = (JSONObject) productoObj;
-                            String nombre = (String) producto.get("nombre");
-                            String idProducto = (String) producto.get("id");
-                            if (nombre.equals(nombreProducto)) {
-                                nuevoIdProducto = idProducto;
-                                break;
-                            }
+
+                    JSONArray categoriaProductos = (JSONArray) main.get(subCategoria);
+
+                    for (Object productoObj : categoriaProductos) {
+                        JSONObject producto = (JSONObject) productoObj;
+                        String nombre = (String) producto.get("nombre");
+                        String idProducto = (String) producto.get("id");
+                        if (nombre.equals(nombreProducto)) {
+                            nuevoIdProducto = idProducto;
+                            break;
                         }
                     }
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
