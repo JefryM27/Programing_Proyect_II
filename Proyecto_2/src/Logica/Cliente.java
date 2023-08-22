@@ -18,9 +18,14 @@ public class Cliente {
     private String teléfono;
     private String correo;
     private Administrador tico;
+    private Usuario tico2;
 
     public Cliente(Administrador tico) {
         this.tico = tico;
+    }
+    
+    public Cliente(Usuario tico2) {
+        this.tico2 = tico2;
     }
 
     public Cliente(int id, String cédula, String nombre, String primerApellido, String segundoApellido, String teléfono, String correo) {
@@ -241,4 +246,5 @@ public class Cliente {
             e.printStackTrace();
         }
     }
+
 }

@@ -2,6 +2,9 @@ package GUI;
 
 import Logica.*;
 import java.io.*;
+import java.text.*;
+import java.util.*;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
@@ -10,9 +13,13 @@ public class Usuario extends javax.swing.JFrame {
 
     private Facturacion factura = new Facturacion(this);
     private DetalleCompra detallecompra = new DetalleCompra(this);
+    private Compra compra = new Compra(this);
+    private Cliente cliente = new Cliente(this);
+    private Login login;
 
-    public Usuario() {
+    public Usuario(Login login) {
         initComponents();
+        this.login = login;
         comboCategorias.addItem("Elegir...");
         comboCategorias.addItem("Bebidas");
         comboCategorias.addItem("Abarrotes");
@@ -37,6 +44,12 @@ public class Usuario extends javax.swing.JFrame {
             // Agrega un nuevo producto al carrito
             model.addRow(new Object[]{producto.getNombre(), producto.getPeso(), cantidad, precioTotal});
         }
+    }
+
+    private String obtenerFechaActual() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 
     private void actualizarComboSubcategorias(String categoria) {
@@ -547,61 +560,87 @@ public class Usuario extends javax.swing.JFrame {
     }//GEN-LAST:event_comboSubcategoriasActionPerformed
 
     private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
-
         this.factura.Facturar(tblCarrito, txtFactura);
 
     }//GEN-LAST:event_btnFinalizarActionPerformed
 
     private void btnEliminarCarrito1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarCarrito1ActionPerformed
-        // TODO add your handling code here:
         this.factura.eliminarFila(tblCarrito);
     }//GEN-LAST:event_btnEliminarCarrito1ActionPerformed
 
     private void btnGuardarCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarCompraActionPerformed
         DefaultTableModel modeloTablaCarrito = (DefaultTableModel) tblCarrito.getModel();
-        IDManager idmanager = new IDManager();
         int rowCount = modeloTablaCarrito.getRowCount();
-        for (int i = 0; i < rowCount; i++) {
-            int nuevoIdDetalleCompra = (idmanager.generarID("DetalleCompra.json") + 1);
-            int nuevaCantidad = (int) modeloTablaCarrito.getValueAt(i, 2);
-            double nuevoMonto = (double) modeloTablaCarrito.getValueAt(i, 3);
-            String nombreProducto = (String) modeloTablaCarrito.getValueAt(i, 0); // Nombre del producto en la tabla
-            String nuevoIdProducto = null;
-            JSONParser parser = new JSONParser();
-            try (Reader reader = new FileReader("productos.json")) {
-                JSONObject main = (JSONObject) parser.parse(reader);
-                for (Object categoriaObj : main.keySet()) {
-                    JSONArray categoriaProductos = (JSONArray) main.get(categoriaObj);
-                    for (Object productoObj : categoriaProductos) {
-                        JSONObject producto = (JSONObject) productoObj;
-                        String nombre = (String) producto.get("nombre");
-                        String idProducto = (String) producto.get("id");
-                        if (nombre.equals(nombreProducto)) {
-                            nuevoIdProducto = idProducto;
-                            break;
+        IDManager idmanager = new IDManager();
+        Administrador admin = new Administrador(); // Crear la instancia de Administrador
+
+        int nuevoIdCompra = (idmanager.generarID("compra.json") + 1);
+        double nuevoMontoTotal = 0.0; // Inicializar el monto total
+        int idCliente = -1; // Inicializar el ID del cliente
+
+        String nombreCliente = login.getNombreUsuario();
+        JSONParser parser = new JSONParser();
+        try (FileReader reader = new FileReader("cliente.json")) {
+            JSONArray clientesArray = (JSONArray) parser.parse(reader);
+
+            for (Object obj : clientesArray) {
+                JSONObject cliente = (JSONObject) obj;
+                String jsonUsername = (String) cliente.get("nombre");
+                int jsonId = Integer.parseInt(cliente.get("id").toString());
+
+                if (nombreCliente.equals(jsonUsername)) {
+                    idCliente = jsonId; // Encontrado el ID del cliente
+                    break; // Salir del loop una vez encontrado el cliente
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        if (idCliente != -1) { // Si se encontró el ID del cliente
+            for (int i = 0; i < rowCount; i++) {
+                int nuevoIdDetalleCompra = (idmanager.generarID("DetalleCompra.json") + 1);
+                int nuevaCantidad = (int) modeloTablaCarrito.getValueAt(i, 2);
+                double nuevoMonto = (double) modeloTablaCarrito.getValueAt(i, 3);
+                String nombreProducto = (String) modeloTablaCarrito.getValueAt(i, 0);
+
+                String nuevoIdProducto = null;
+                try (Reader reader = new FileReader("productos.json")) {
+                    JSONObject main = (JSONObject) parser.parse(reader);
+                    for (Object categoriaObj : main.keySet()) {
+                        JSONArray categoriaProductos = (JSONArray) main.get(categoriaObj);
+                        for (Object productoObj : categoriaProductos) {
+                            JSONObject producto = (JSONObject) productoObj;
+                            String nombre = (String) producto.get("nombre");
+                            String idProducto = (String) producto.get("id");
+                            if (nombre.equals(nombreProducto)) {
+                                nuevoIdProducto = idProducto;
+                                break;
+                            }
                         }
                     }
-                    if (nuevoIdProducto != null) {
-                        break;
-                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
+
+                if (nuevoIdProducto != null) {
+                    DetalleCompra nuevoDetalle = new DetalleCompra(nuevoIdDetalleCompra, nuevaCantidad, nuevoMonto, nuevoIdProducto, nuevoIdCompra);
+                    detallecompra.guardarDetalleCompra(nuevoDetalle);
+                    admin.actualizarTablaDetalle();
+                    nuevoMontoTotal += nuevoMonto; // Sumar al monto total
+                }
             }
-            System.out.println("Nuevo ID de Producto: " + nuevoIdProducto);
-            int nuevoIdCompra = (idmanager.generarID("DetalleCompra.json") + 1);
-            DetalleCompra nuevoDetalle = new DetalleCompra(nuevoIdDetalleCompra, nuevaCantidad, nuevoMonto, nuevoIdProducto, nuevoIdCompra);
-            detallecompra.guardarDetalleCompra(nuevoDetalle);
-            Administrador admin = new Administrador();
-            admin.actualizarTablaDetalle(); // Actualiza la tabla de detalles
-            
+
+            String fechaActual = obtenerFechaActual(); // Obtener la fecha actual
+            Compra nuevaCompra = new Compra(nuevoIdCompra, fechaActual, nuevoMontoTotal, idCliente, nuevoIdCompra);
+            compra.guardarCompra(nuevaCompra);
+            admin.actualizarTablaCompra(); // Actualizar la tabla de detalles
+            modeloTablaCarrito.getDataVector().removeAllElements();
+            modeloTablaCarrito.fireTableDataChanged(); // Limpiar tabla carrito
+        } else {
+            JOptionPane.showMessageDialog(this, "Cliente no encontrado.");
         }
-        Administrador admin = new Administrador();
-        admin.actualizarTablaDetalle(); // Actualiza la tabla de detalles
-        modeloTablaCarrito.setRowCount(0);
-
     }//GEN-LAST:event_btnGuardarCompraActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPLinea;
