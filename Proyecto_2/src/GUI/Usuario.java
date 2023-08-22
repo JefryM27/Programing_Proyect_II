@@ -1,6 +1,7 @@
 package GUI;
 
 import Logica.*;
+import java.applet.AudioClip;
 import java.io.*;
 import java.text.*;
 import java.util.*;
@@ -180,6 +181,11 @@ public class Usuario extends javax.swing.JFrame {
         lblNombreEmpresa.setBackground(new java.awt.Color(0, 0, 0));
         lblNombreEmpresa.setFont(new java.awt.Font("Segoe UI Emoji", 0, 48)); // NOI18N
         lblNombreEmpresa.setText("Bienvenidos a ChinoTico");
+        lblNombreEmpresa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblNombreEmpresaMouseClicked(evt);
+            }
+        });
         JpInicio.add(lblNombreEmpresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, 520, -1));
 
         lblImejenInicio.setForeground(new java.awt.Color(0, 0, 153));
@@ -496,6 +502,12 @@ public class Usuario extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Cliente no encontrado.");
         }
     }//GEN-LAST:event_btnGuardarCompraActionPerformed
+
+    private void lblNombreEmpresaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNombreEmpresaMouseClicked
+        // TODO add your handling code here:
+             AudioClip sound = java.applet.Applet.newAudioClip(getClass().getResource("/Sonidos/Bienvenidos.wav"));
+             sound.play();
+    }//GEN-LAST:event_lblNombreEmpresaMouseClicked
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPLinea;
