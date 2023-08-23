@@ -41,30 +41,18 @@ public class Producto {
         this.imagen = imagen;
     }
 
-    /**
-     * @return the nombre
-     */
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * @param nombre the nombre to set
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * @return the precio
-     */
     public double getPrecio() {
         return precio;
     }
 
-    /**
-     * @param precio the precio to set
-     */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
@@ -85,62 +73,41 @@ public class Producto {
         this.imagen = imagen;
     }
 
-    /**
-     * @return the idProducto
-     */
     public String getIdProducto() {
         return idProducto;
     }
 
-    /**
-     * @param idProducto the idProducto to set
-     */
     public void setIdProducto() {
         this.idProducto = idProducto;
     }
 
-    /**
-     * @return the idProveedor
-     */
     public String getIdProveedor() {
         return idProveedor;
     }
 
-    /**
-     * @param idProveedor the idProveedor to set
-     */
     public void setIdProveedor(String idProveedor) {
         this.idProveedor = idProveedor;
     }
 
-    /**
-     * @return the idCategoria
-     */
     public String getIdCategoria() {
         return idCategoria;
     }
 
-    /**
-     * @param idCategoria the idCategoria to set
-     */
     public void setIdCategoria(String idCategoria) {
         this.idCategoria = idCategoria;
     }
 
-    /**
-     * @return the idMarca
-     */
     public String getIdMarca() {
         return idMarca;
     }
 
-    /**
-     * @param idMarca the idMarca to set
-     */
     public void setIdMarca(String idMarca) {
         this.idMarca = idMarca;
     }
-
+    
+    /*here we need to go through the json and create an array of subcategories where if we assign null subcategories
+    it will create a json object with the corresponding values and with ID manager we generate an id and assign 
+    the values that the json needs.*/
     public void guardarProducto(String subcategoria, String nombre, double precio, String peso, String idProveedor, String idCategoria, String idMarca) {
         try {
             JSONParser parser = new JSONParser();
@@ -177,7 +144,9 @@ public class Producto {
             e.printStackTrace();
         }
     }
-
+    
+    /*in this method we will need to open the json file, we read it through an array, we verify 
+    and if it is it receives the values to update them inside the json.*/
     public void actualizarTabla(DefaultTableModel modeloTabla, String subcategoria) {
         try {
             JSONParser parser = new JSONParser();
@@ -208,7 +177,10 @@ public class Producto {
             e.printStackTrace();
         }
     }
-
+    
+    /*we read the json, we make an array that will get the subcategory and if this array is different
+    than null it will create a list to get the indexes, then create another variable that will get
+    the id of the product and then compare them and add the deleted id, also we use the array.remove to delete the product.*/
     public void eliminarProducto(String subcategoria, String idProductoAEliminar) {
         try {
             JSONParser parser = new JSONParser();
@@ -241,7 +213,9 @@ public class Producto {
             e.printStackTrace();
         }
     }
-
+    /*to edit the product it will be necessary to read the json, create a json array that goes through it and a json object
+    that stores it and obtains the id, then with an if we will verify if the product when editing is not empty with an empty
+    it verifies it and if so it will put the new values in the json. */
     public void editarProducto(String subcategoria, String idProducto, String nombre, double precio, String peso, String idProveedor, String idCategoria, String idMarca) {
         try {
             JSONParser parser = new JSONParser();
@@ -284,7 +258,8 @@ public class Producto {
             e.printStackTrace();
         }
     }
-
+    
+    //this method will search that the product dont repeat it
     public int productoExistente(DefaultTableModel model, String nombre) {
         int rowCount = model.getRowCount();
 

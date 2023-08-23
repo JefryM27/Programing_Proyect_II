@@ -1794,25 +1794,25 @@ public final class Administrador extends javax.swing.JFrame {
     private void txtCedulaProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCedulaProveedorKeyTyped
         char caracter = evt.getKeyChar();
 
-        // Verificar si el caracter es una letra
+     
         if (Character.isLetter(caracter)) {
-            evt.consume(); // Consumir el evento para evitar que la letra sea ingresada
+            evt.consume(); 
             JOptionPane.showMessageDialog(this, "Error en Cédula: Ingrese solo números.", "Error de entrada", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_txtCedulaProveedorKeyTyped
 
     private void txtNombreProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreProveedorKeyTyped
-        // Obtiene el texto actual en el campo de texto
+        
         String textoActual = txtNombreProveedor.getText();
 
-        // Obtiene el carácter que se acaba de escribir
+        
         char caracterIngresado = evt.getKeyChar();
 
-        // Realiza la validación según tus criterios
+      
         if (!Character.isLetter(caracterIngresado) && caracterIngresado != KeyEvent.VK_BACK_SPACE && caracterIngresado != KeyEvent.VK_DELETE) {
-            // Si el carácter no es una letra y no es un carácter de borrado, muestra una advertencia
+            
             JOptionPane.showMessageDialog(this, "Solo se permiten letras en este campo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
-            // Consumir el evento para evitar que el carácter incorrecto se muestre en el campo de texto
+            
             evt.consume();
         }
     }//GEN-LAST:event_txtNombreProveedorKeyTyped
@@ -1820,9 +1820,9 @@ public final class Administrador extends javax.swing.JFrame {
     private void txtTelefonoProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoProveedorKeyTyped
         char c = evt.getKeyChar();
 
-        // Verificar si el carácter ingresado es un dígito
+        
         if (!Character.isDigit(c)) {
-            evt.consume();  // Consumir el evento para que el carácter no se agregue al campo de texto
+            evt.consume();  
             JOptionPane.showMessageDialog(this, "Solo se permiten números.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_txtTelefonoProveedorKeyTyped
@@ -1830,12 +1830,12 @@ public final class Administrador extends javax.swing.JFrame {
     private void txtCorreoProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoProveedorKeyTyped
         char caracter = evt.getKeyChar();
 
-        // Verificar si el caracter es válido (letras, números y caracteres especiales permitidos)
+        
         if (!Character.isLetterOrDigit(caracter) && caracter != '@' && caracter != '.' && caracter != '_') {
-            // Mostrar mensaje de error o advertencia, por ejemplo:
+            
             javax.swing.JOptionPane.showMessageDialog(this, "Caracter no válido ingresado", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
 
-            // Consumir el evento para evitar que el caracter incorrecto se agregue al campo de texto
+            
             evt.consume();
         }
     }//GEN-LAST:event_txtCorreoProveedorKeyTyped
@@ -1843,9 +1843,9 @@ public final class Administrador extends javax.swing.JFrame {
     private void txtCedulaClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCedulaClienteKeyTyped
         char caracter = evt.getKeyChar();
 
-        // Verificar si el caracter es una letra
+        
         if (Character.isLetter(caracter)) {
-            evt.consume(); // Consumir el evento para evitar que la letra sea ingresada
+            evt.consume(); 
             JOptionPane.showMessageDialog(this, "Error en Cédula: Ingrese solo números.", "Error de entrada", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_txtCedulaClienteKeyTyped
@@ -1853,40 +1853,40 @@ public final class Administrador extends javax.swing.JFrame {
     private void txtNombreClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreClienteKeyTyped
         String textoActual = txtNombreCliente.getText();
 
-        // Obtiene el carácter que se acaba de escribir
+        
         char caracterIngresado = evt.getKeyChar();
 
-        // Realiza la validación según tus criterios
+        
         if (!Character.isLetter(caracterIngresado) && caracterIngresado != KeyEvent.VK_BACK_SPACE && caracterIngresado != KeyEvent.VK_DELETE) {
-            // Si el carácter no es una letra y no es un carácter de borrado, muestra una advertencia
+            
             JOptionPane.showMessageDialog(this, "Solo se permiten letras en este campo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
-            // Consumir el evento para evitar que el carácter incorrecto se muestre en el campo de texto
+            
             evt.consume();
         }
     }//GEN-LAST:event_txtNombreClienteKeyTyped
 
     private void txt1ApellidoClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt1ApellidoClienteKeyTyped
-        char c = evt.getKeyChar(); // Obtener el carácter ingresado
+        char c = evt.getKeyChar(); 
 
-        // Verificar si el carácter es una letra (mayúscula o minúscula) o una tilde
+        
         if (!Character.isLetter(c) && c != 'á' && c != 'é' && c != 'í' && c != 'ó' && c != 'ú'
                 && !Character.isUpperCase(c) && !Character.isLowerCase(c)) {
-            evt.consume(); // Consumir el evento para evitar que se ingrese el carácter inapropiado
+            evt.consume(); 
 
-            // Mostrar un mensaje de error (puedes adaptar esto a tu forma de mostrar mensajes)
+           
             JOptionPane.showMessageDialog(this, "Solo se permiten letras, tildes, mayúsculas y minúsculas.");
         }
     }//GEN-LAST:event_txt1ApellidoClienteKeyTyped
 
     private void txt2ApellidoClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt2ApellidoClienteKeyTyped
-        char c = evt.getKeyChar(); // Obtener el carácter ingresado
+        char c = evt.getKeyChar(); 
 
-        // Verificar si el carácter es una letra (mayúscula o minúscula) o una tilde
+       
         if (!Character.isLetter(c) && c != 'á' && c != 'é' && c != 'í' && c != 'ó' && c != 'ú'
                 && !Character.isUpperCase(c) && !Character.isLowerCase(c)) {
-            evt.consume(); // Consumir el evento para evitar que se ingrese el carácter inapropiado
+            evt.consume(); 
 
-            // Mostrar un mensaje de error (puedes adaptar esto a tu forma de mostrar mensajes)
+            
             JOptionPane.showMessageDialog(this, "Solo se permiten letras, tildes, mayúsculas y minúsculas.");
         }
     }//GEN-LAST:event_txt2ApellidoClienteKeyTyped
@@ -1894,9 +1894,9 @@ public final class Administrador extends javax.swing.JFrame {
     private void txtTelefonoClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoClienteKeyTyped
         char c = evt.getKeyChar();
 
-        // Verificar si el carácter ingresado es un dígito
+        
         if (!Character.isDigit(c)) {
-            evt.consume();  // Consumir el evento para que el carácter no se agregue al campo de texto
+            evt.consume();  
             JOptionPane.showMessageDialog(this, "Solo se permiten números.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_txtTelefonoClienteKeyTyped
@@ -1904,12 +1904,12 @@ public final class Administrador extends javax.swing.JFrame {
     private void txtCorreoClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoClienteKeyTyped
         char caracter = evt.getKeyChar();
 
-        // Verificar si el caracter es válido (letras, números y caracteres especiales permitidos)
+       
         if (!Character.isLetterOrDigit(caracter) && caracter != '@' && caracter != '.' && caracter != '_') {
-            // Mostrar mensaje de error o advertencia, por ejemplo:
+            
             javax.swing.JOptionPane.showMessageDialog(this, "Caracter no válido ingresado", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
 
-            // Consumir el evento para evitar que el caracter incorrecto se agregue al campo de texto
+            
             evt.consume();
         }
     }//GEN-LAST:event_txtCorreoClienteKeyTyped
@@ -1920,12 +1920,12 @@ public final class Administrador extends javax.swing.JFrame {
             int idCompra = Integer.parseInt(tblCompra.getValueAt(selectedRow, 0).toString());
             String fecha = txtFechaCompra.getText();
 
-            double montoTotal = 0.0; // Valor por defecto
+            double montoTotal = 0.0; 
             String montoTotalStr = txtMontoTotalCompra.getText();
             if (!montoTotalStr.isEmpty()) {
                 montoTotal = Double.parseDouble(montoTotalStr);
             } else {
-                // Obtener el monto total actual de la tabla
+                
                 montoTotal = Double.parseDouble(tblCompra.getValueAt(selectedRow, 2).toString());
             }
 
@@ -1964,7 +1964,7 @@ public final class Administrador extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarCompraActionPerformed
 
     private void txtCantidadDetalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCantidadDetalleActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtCantidadDetalleActionPerformed
 
     private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed

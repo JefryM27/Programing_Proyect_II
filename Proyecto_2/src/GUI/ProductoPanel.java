@@ -8,7 +8,8 @@ public class ProductoPanel extends javax.swing.JPanel {
     private int cantidad;
     private double precioTotal;
     private Usuario parent;
-
+    
+    /*Here we are set the text in the lbls of products and getting the name and more valvues */
     public ProductoPanel(Producto producto, Usuario parent) {
         try {
             initComponents();

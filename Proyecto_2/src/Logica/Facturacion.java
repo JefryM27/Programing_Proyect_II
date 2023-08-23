@@ -26,90 +26,56 @@ public class Facturacion {
         this.subTotal = subTotal;
     }
 
-    /**
-     * @return the nombre
-     */
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * @param nombre the nombre to set
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * @return the peso
-     */
     public String getPeso() {
         return peso;
     }
 
-    /**
-     * @param peso the peso to set
-     */
     public void setPeso(String peso) {
         this.peso = peso;
     }
 
-    /**
-     * @return the cantidad
-     */
     public int getCantidad() {
         return cantidad;
     }
 
-    /**
-     * @param cantidad the cantidad to set
-     */
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 
-    /**
-     * @return the precio
-     */
     public double getPrecio() {
         return precio;
     }
 
-    /**
-     * @param precio the precio to set
-     */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
-    /**
-     * @return the subTotal
-     */
     public double getSubTotal() {
         return subTotal;
     }
 
-    /**
-     * @param subTotal the subTotal to set
-     */
     public void setSubTotal(double subTotal) {
         this.subTotal = subTotal;
     }
 
-    /**
-     * @return the FacturaProducto
-     */
     public StringBuilder getFacturaProducto() {
         return FacturaProducto;
     }
 
-    /**
-     * @param FacturaProducto the FacturaProducto to set
-     */
     public void setFacturaProducto(StringBuilder FacturaProducto) {
         this.FacturaProducto = FacturaProducto;
     }
 
+    /*we call the InvoiceTitle method to create add a title to the invoice, we get the number of rows and start the for loop
+    to run through the table and get the required values*/
     public void Facturar(JTable tabla, JTextArea Area) {
         DefaultTableModel modelo = (DefaultTableModel) tabla.getModel();
         this.TituloFactura(Area);
@@ -126,6 +92,7 @@ public class Facturacion {
         Area.append(FacturaProducto.toString());
 
     }
+//Add product information to StrinBuilder 
 
     public void AñadirStringB() {
         FacturaProducto.append(nombre).append("\t  ");
@@ -133,6 +100,7 @@ public class Facturacion {
         FacturaProducto.append("Cant:" + cantidad).append("\t");
         FacturaProducto.append(precio).append("\n");
     }
+// we design the invoice format 
 
     public void TituloFactura(JTextArea Area) {
         String Mostrar = "";
@@ -143,6 +111,7 @@ public class Facturacion {
                 + "____________________________________________________________________________________________________________\n";
         Area.append(Mostrar);
     }
+//Part of the design to invoide
 
     public void Calculos() {
         FacturaProducto.append("_________________________________________________________________________________________________________________\n");
@@ -150,7 +119,9 @@ public class Facturacion {
         FacturaProducto.append("                                                                                     Impuesto\t").append(subTotal / 15).append("\n");
         FacturaProducto.append("                                                                                     Total\t").append(subTotal + (subTotal / 15));
     }
-     public void eliminarFila(JTable tabla) {
+
+    //we select the row and with the opcion "remove" we can delete anything inside
+    public void eliminarFila(JTable tabla) {
         DefaultTableModel model = (DefaultTableModel) tabla.getModel();
         int eliminar = tabla.getSelectedRow();
         model.removeRow(eliminar);

@@ -116,7 +116,8 @@ public class DetalleCompra {
             e.printStackTrace(); // Print the exception trace for debugging.
         }
     }
-
+ /*in this method we will need to open the json file, we read it through an array, we verify that the ID detalleCompra
+    is different to 0 and if it is it receives the values to update them inside the json.*/
     public void actualizarTabla(DefaultTableModel modeloTabla) {
         try {
             // Read the JSON file for detail purchases
@@ -144,7 +145,9 @@ public class DetalleCompra {
             e.printStackTrace(); // Print the exception trace for debugging.    
         }
     }
-
+/*we read the json, create a boolean variable and initialize it to false to proceed to perform an if,
+    where we notice that if the variable is greater than or equal to zero it places it in the json array
+    in the key assigned with a new value*/
     public void editarDetalleCompra(int idDetalleCompra, int cantidad, double monto, String idProducto, int idCompra) {
         try {
             JSONParser parser = new JSONParser();
@@ -178,7 +181,9 @@ public class DetalleCompra {
             e.printStackTrace();
         }
     }
-
+/* we read the json through an array with the address of the json
+and subtract the index of the selected object and with the Arrayremove option allows us to delete both in 
+the array and in the table.*/
     public void eliminarDetalleCompra(int idDetalleCompra) {
         try {
             JSONParser parser = new JSONParser();

@@ -7,10 +7,7 @@ import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
 
-/**
- *
- * @author Cristopher Matus
- */
+
 public class Proveedor {
 
     private int id;
@@ -24,7 +21,7 @@ public class Proveedor {
         this.tico = tico;
     }
 
-    // Constructor
+
     public Proveedor(int id, String cedulaJuridica, String nombre, String telefono, String correo) {
         this.id = id;
         this.cedulaJuridica = cedulaJuridica;
@@ -33,48 +30,49 @@ public class Proveedor {
         this.correo = correo;
     }
 
-    // Getters and Setters (Optional, but recommended)
-    public int getId() { //returns the current value of the id attribute.
+ 
+    public int getId() { 
         return id;
     }
 
-    public void setId(int id) { //Sets the value of the id attribute with the value passed as an argument.
+    public void setId(int id) { 
         this.id = id;
     }
 
-    public String getCedulaJuridica() { // returns the current value of the cedulaJuridica attribute.
+    public String getCedulaJuridica() { 
         return cedulaJuridica;
     }
 
-    public void setCedulaJuridica(String cedulaJuridica) { //Sets the value of the cedulaJuridica attribute with the value passed as an argument.
+    public void setCedulaJuridica(String cedulaJuridica) { 
         this.cedulaJuridica = cedulaJuridica;
     }
 
-    public String getNombre() { //returns the current value of the name attribute.
+    public String getNombre() { 
         return nombre;
     }
 
-    public void setNombre(String nombre) { //Sets the value of the name attribute with the value passed as an argument.
+    public void setNombre(String nombre) { 
         this.nombre = nombre;
     }
 
-    public String getTelefono() { // returns the current value of the phone attribute.
+    public String getTelefono() { 
         return telefono;
     }
 
-    public void setTelefono(String telefono) { //Sets the value of the phone attribute with the value passed as an argument.
+    public void setTelefono(String telefono) { 
         this.telefono = telefono;
     }
 
-    public String getCorreo() {//returns the current value of the email attribute.
+    public String getCorreo() {
         return correo;
     }
 
-    public void setCorreo(String correo) { //Sets the value of the email attribute with the value passed as an argument.
+    public void setCorreo(String correo) { 
         this.correo = correo;
     }
 
-    // Method to save a supplier in the customers JSON file
+    /*Using a try catch we access the json file that will allow us to save the suplier with their respective assigned values,
+   then using a for we check that the card is not repeated, also an object is created where we will save the new object (suplier) created.*/
     public void guardarProveedor() {
         try {
             // Check if the JSON file exists, if not, create a new one
@@ -112,7 +110,9 @@ public class Proveedor {
             e.printStackTrace();// Print the exception trace for debugging.
         }
     }
-
+    
+    /*This method allows us to show the new customers in the table by reading the json provided and also creates a new object
+    where with the condition "?" allows us that if the condition before ? is met will be executed what follows this.*/
     public void actualizarTabla(DefaultTableModel modeloTabla) {
         try {
             // Read the JSON file from supplier
@@ -138,7 +138,10 @@ public class Proveedor {
             e.printStackTrace();// Print the exception trace for debugging.
         }
     }
-
+    
+    /*Here what we do is a JsonArray which will read all the arrays that are in the Json file and create a boolean variable
+    initialized in false to then create a for each where we go through the json array and through an if we verify that if the
+    selected space is not empty it allows us to edit it and put another value to the variable*/
     public void editar_Proveedor(int id, String cedula, String nombre, String telefono, String correo) {
         try {
             JSONParser parser = new JSONParser();
@@ -178,7 +181,10 @@ public class Proveedor {
             e.printStackTrace(); // Imprime detalles de la excepción para depuración
         }
     }
-
+    
+    /*In the suplier delete method is the same, we read the json through an array with the address of the json
+    and subtract the index of the selected object and with the Arrayremove option allows us to delete both in 
+    the array and in the table.*/
     public void eliminarProveedor(int id) {
         try {
             JSONParser parser = new JSONParser();

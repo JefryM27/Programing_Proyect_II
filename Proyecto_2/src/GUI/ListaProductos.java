@@ -8,19 +8,18 @@ import javax.swing.JPanel;
 
 
 public class ListaProductos extends javax.swing.JPanel {
-
+    //Create variable type list of product
     private List<Producto> productos;
     private Usuario parent;
     
     public ListaProductos(List<Producto> productos, Usuario parent) {
         initComponents();
         this.productos = productos;
-      //  System.out.println(getParent());
         this.parent = parent;
         this.imprimirProductos();
         
     }
-    
+    //Method for print the panels with a for to get a index and then we do a instance of ProductoPanel
     private void imprimirProductos(){
         JPanel panel;
         setLayout(new GridLayout(0, 3, 8, 8));

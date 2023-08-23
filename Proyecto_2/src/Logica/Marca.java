@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Logica;
 
 import GUI.*;
@@ -10,10 +7,7 @@ import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
 
-/**
- *
- * @author Johana
- */
+
 public class Marca {
 
     private int id;
@@ -30,35 +24,24 @@ public class Marca {
 
     }
 
-    /**
-     * @return the id
-     */
     public int getId() {
         return id;
     }
 
-    /**
-     * @param id the id to set
-     */
     public void setId(int id) {
         this.id = id;
     }
 
-    /**
-     * @return the nombre
-     */
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * @param nombre the nombre to set
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    // Method to save a brand in the brands JSON file
+    /*In this method we will need to open the json file, we read it through an array, 
+    we create an object where we will obtain the values that the json file needs to be able to write and save in it.*/
     public void guardarMarca() {
         try {
             // Check if the JSON file exists, if not, create a new one
@@ -99,7 +82,8 @@ public class Marca {
             e.printStackTrace();// Print the exception trace for debugging.
         }
     }
-
+    /*in this method we will need to open the json file, we read it through an array, we verify 
+    if it is it receives the values to update them inside the json.*/
     public void actualizarTabla(DefaultTableModel modeloTabla) {
         try {
             //Read the JSON file from brands

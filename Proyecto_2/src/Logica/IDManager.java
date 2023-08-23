@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Logica;
 
 import java.io.*;
@@ -10,14 +7,11 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-/**
- *
- * @author Bravo
- */
+//this class is to generate id to de products
 public class IDManager {
     private static final String FILENAME = "Ultimo_id.txt";
     private static int lastId = 0;
-
+    //reed de file
     static {
         try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) {
             String line;
@@ -28,12 +22,13 @@ public class IDManager {
             e.printStackTrace();
         }
     }
+    //increase the number of id
     public static int getNextId() {
         lastId = Math.max(lastId + 1, 607);
         saveLastIdToFile();
         return lastId;
     }
-
+    // we save the last id
     private static void saveLastIdToFile() {
         try (FileWriter fw = new FileWriter(FILENAME)) {
             fw.write(String.valueOf(lastId));
@@ -41,6 +36,7 @@ public class IDManager {
             e.printStackTrace();
         }
     }
+    //here we are generating a id with a array to walk the array 
     public int generarID(String fileName) {
         try {
             File archivoJSON = new File(fileName);

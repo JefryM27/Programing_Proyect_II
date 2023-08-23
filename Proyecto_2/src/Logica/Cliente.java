@@ -90,14 +90,13 @@ public class Cliente {
         return correo;
     }
 
-    /**
-     * @param correo the correoElectrónico to set
-     */
+ 
     public void setCorreo(String correo) {
         this.correo = correo;
     }
 
-    // Method to save a customer in the customers JSON file
+   /*Using a try catch we access the json file that will allow us to save the client with their respective assigned values,
+   then using a for we check that the card is not repeated, also an object is created where we will save the new object (client) created.*/
     public void guardarCliente() {
         try {
             // Check if the JSON file exists, if not, create a new one
