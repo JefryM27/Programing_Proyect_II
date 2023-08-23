@@ -6,6 +6,7 @@ package Logica;
 
 import GUI.*;
 import java.io.*;
+import java.util.*;
 import javax.swing.table.DefaultTableModel;
 import org.json.simple.*;
 import org.json.simple.parser.*;
@@ -195,6 +196,38 @@ public class Compra {
             fileWriter.write(comprasArray.toJSONString());
             fileWriter.flush();
             fileWriter.close();
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Método para eliminar una compra del archivo JSON de compras
+    public void eliminarCompra(int idCompra) {
+        try {
+            JSONParser parser = new JSONParser();
+            JSONArray comprasArray = (JSONArray) parser.parse(new FileReader("compra.json"));
+
+            List<Integer> indicesAEliminar = new ArrayList<>();
+            boolean compraEncontrada = false;
+            for (int i = 0; i < comprasArray.size(); i++) {
+                JSONObject compraJSON = (JSONObject) comprasArray.get(i);
+                int compraId = Integer.parseInt(compraJSON.get("id").toString());
+                if (compraId == idCompra) {
+                    indicesAEliminar.add(i);
+                    compraEncontrada = true;
+                }
+            }
+
+            if (compraEncontrada) {
+                for (int i : indicesAEliminar) {
+                    comprasArray.remove(i);
+                }
+
+                FileWriter fileWriter = new FileWriter("compra.json");
+                fileWriter.write(comprasArray.toJSONString());
+                fileWriter.flush();
+                fileWriter.close();
+            }
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }

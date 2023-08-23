@@ -149,6 +149,7 @@ public class Usuario extends javax.swing.JFrame {
         txtFactura = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        btnCerrarSesion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -245,13 +246,10 @@ public class Usuario extends javax.swing.JFrame {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Subtotal: ");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtSubtotal.setBackground(new java.awt.Color(255, 255, 255));
         txtSubtotal.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
-        txtSubtotal.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout JpCarrito1Layout = new javax.swing.GroupLayout(JpCarrito1);
         JpCarrito1.setLayout(JpCarrito1Layout);
@@ -327,6 +325,13 @@ public class Usuario extends javax.swing.JFrame {
 
         jLabel2.setText("Categorias");
 
+        btnCerrarSesion.setText("CERRAR SESION");
+        btnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSesionActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout JpCategorias1Layout = new javax.swing.GroupLayout(JpCategorias1);
         JpCategorias1.setLayout(JpCategorias1Layout);
         JpCategorias1Layout.setHorizontalGroup(
@@ -341,7 +346,9 @@ public class Usuario extends javax.swing.JFrame {
                         .addGap(19, 19, 19)
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboSubcategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(comboSubcategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(btnCerrarSesion))
                     .addGroup(JpCategorias1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(scrollProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 1047, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -359,10 +366,11 @@ public class Usuario extends javax.swing.JFrame {
                     .addComponent(comboSubcategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(comboCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(jLabel2)
+                    .addComponent(btnCerrarSesion))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JpCategorias1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(scrollProductos, javax.swing.GroupLayout.DEFAULT_SIZE, 770, Short.MAX_VALUE)
+                    .addComponent(scrollProductos, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
                     .addGroup(JpCategorias1Layout.createSequentialGroup()
                         .addComponent(JpCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21)
@@ -424,6 +432,7 @@ public class Usuario extends javax.swing.JFrame {
         int filaSeleccionada = tblCarrito.getSelectedRow();
         if (filaSeleccionada >= -1) {
             eliminarProducto(filaSeleccionada);
+            actualizarSubtotalResta();
         }
     }//GEN-LAST:event_btnEliminarCarrito1ActionPerformed
 
@@ -434,7 +443,7 @@ public class Usuario extends javax.swing.JFrame {
         IDManager idmanager = new IDManager();
         Administrador admin = new Administrador(); // Crear la instancia de Administrador
 
-        int nuevoIdCompra = (idmanager.generarID("compra.json") + 1);
+        int nuevoIdCompras = (idmanager.generarID("compra.json") + 1);
         double nuevoMontoTotal = 0.0; // Inicializar el monto total
         int idCliente = -1; // Inicializar el ID del cliente
 
@@ -485,15 +494,16 @@ public class Usuario extends javax.swing.JFrame {
                 }
 
                 if (nuevoIdProducto != null) {
-                    DetalleCompra nuevoDetalle = new DetalleCompra(nuevoIdDetalleCompra, nuevaCantidad, nuevoMonto, nuevoIdProducto, nuevoIdCompra);
+                    DetalleCompra nuevoDetalle = new DetalleCompra(nuevoIdDetalleCompra, nuevaCantidad, nuevoMonto, nuevoIdProducto, nuevoIdCompras);
                     detallecompra.guardarDetalleCompra(nuevoDetalle);
                     admin.actualizarTablaDetalle();
                     nuevoMontoTotal += nuevoMonto; // Sumar al monto total
                 }
             }
-
+            int nuevoIddetalleCompra = (idmanager.generarID("DetalleCompra.json") + 1);
             String fechaActual = obtenerFechaActual(); // Obtener la fecha actual
-            Compra nuevaCompra = new Compra(nuevoIdCompra, fechaActual, nuevoMontoTotal, idCliente, nuevoIdCompra);
+            int nuevoIdCompra = (idmanager.generarID("compra.json") + 1);
+            Compra nuevaCompra = new Compra(nuevoIdCompra, fechaActual, nuevoMontoTotal, idCliente, nuevoIddetalleCompra);
             compra.guardarCompra(nuevaCompra);
             admin.actualizarTablaCompra(); // Actualizar la tabla de detalles
             modeloTablaCarrito.getDataVector().removeAllElements();
@@ -509,6 +519,12 @@ public class Usuario extends javax.swing.JFrame {
              sound.play();
     }//GEN-LAST:event_lblNombreEmpresaMouseClicked
 
+    private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed
+        Login login = new Login();
+        login.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnCerrarSesionActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPLinea;
     private javax.swing.JTabbedPane JTabMain;
@@ -516,6 +532,7 @@ public class Usuario extends javax.swing.JFrame {
     private javax.swing.JPanel JpCategorias;
     private javax.swing.JPanel JpCategorias1;
     private javax.swing.JPanel JpInicio;
+    private javax.swing.JButton btnCerrarSesion;
     private javax.swing.JButton btnEliminarCarrito1;
     private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnGuardarCompra;

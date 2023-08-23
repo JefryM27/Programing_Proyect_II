@@ -148,12 +148,11 @@ public class DetalleCompra {
     public void editarDetalleCompra(int idDetalleCompra, int cantidad, double monto, String idProducto, int idCompra) {
         try {
             JSONParser parser = new JSONParser();
-            JSONArray detalleCompraArray = (JSONArray) parser.parse(new FileReader("detalleCompra.json"));
+            JSONArray detalleCompraArray = (JSONArray) parser.parse(new FileReader("DetalleCompra.json"));
 
-            boolean detalleEncontrado = false;
             for (Object obj : detalleCompraArray) {
                 JSONObject detalleCompraJSON = (JSONObject) obj;
-                int detalleId = Integer.parseInt(detalleCompraJSON.get("Id_DetalleCompra").toString());
+                int detalleId = Integer.parseInt(detalleCompraJSON.get("id").toString());
                 if (detalleId == idDetalleCompra) {
                     if (cantidad >= 0) {
                         detalleCompraJSON.put("cantidad", cantidad);
@@ -164,20 +163,17 @@ public class DetalleCompra {
                     if (idProducto != null) {
                         detalleCompraJSON.put("idProducto", idProducto);
                     }
-                    if (idCompra >= 0) {
+                    if (idCompra != 0) {
                         detalleCompraJSON.put("idCompra", idCompra);
                     }
-                    detalleEncontrado = true;
                     break;
                 }
             }
 
-            if (detalleEncontrado) {
-                FileWriter fileWriter = new FileWriter("DetalleCompra.json");
-                fileWriter.write(detalleCompraArray.toJSONString());
-                fileWriter.flush();
-                fileWriter.close();
-            }
+            FileWriter fileWriter = new FileWriter("DetalleCompra.json");
+            fileWriter.write(detalleCompraArray.toJSONString());
+            fileWriter.flush();
+            fileWriter.close();
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
@@ -192,7 +188,7 @@ public class DetalleCompra {
             boolean detalleEncontrado = false;
             for (int i = 0; i < detalleCompraArray.size(); i++) {
                 JSONObject detalleCompraJSON = (JSONObject) detalleCompraArray.get(i);
-                int detalleId = Integer.parseInt(detalleCompraJSON.get("Id_DetalleCompra").toString());
+                int detalleId = Integer.parseInt(detalleCompraJSON.get("id").toString());
                 if (detalleId == idDetalleCompra) {
                     indicesAEliminar.add(i);
                     detalleEncontrado = true;
