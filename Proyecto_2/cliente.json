@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "cedula": 205460396,
        "nombre":  "Juan",
        "primer_apellido": "Rojas",
        "segundo_apellido":"Rojas",
@@ -9,6 +10,7 @@
     },
     {
         "id": 2,
+        "cedula": 209930478,
        "nombre":  "Carlos",
        "primer_apellido": "Rodriguez",
        "segundo_apellido":"Salas",
@@ -17,6 +19,7 @@
     },
     {
         "id": 3,
+        "cedula": 302550101,
        "nombre":  "Ana",
        "primer_apellido": "Barrantes",
        "segundo_apellido":"Arce",
@@ -25,6 +28,7 @@
     },
     {
         "id": 4,
+        "cedula": 603250890,
        "nombre":  "Nicole",
        "primer_apellido": "Torres",
        "segundo_apellido":"Blanco",
@@ -33,6 +37,7 @@
     },
     {
         "id": 5,
+        "cedula": 505520114,
        "nombre":  "Cristina",
        "primer_apellido": "Gonzalez",
        "segundo_apellido":"Catro",
@@ -41,6 +46,7 @@
     },
     {
         "id": 6,
+        "cedula": 501470369,
        "nombre":  "Priscilla",
        "primer_apellido": "Lopez",
        "segundo_apellido":"Chacon",
@@ -49,6 +55,7 @@
     },
     {
         "id": 7,
+        "cedula": 103210951,
        "nombre":  "Katherine",
        "primer_apellido": "Alfaro",
        "segundo_apellido":"Villalobos",
@@ -57,6 +64,7 @@
     },
     {
         "id": 8,
+        "cedula": 203910276,
        "nombre":  "Miguel",
        "primer_apellido": "Porras",
        "segundo_apellido":"Perez",
@@ -65,6 +73,7 @@
     },
     {
         "id": 9,
+        "cedula": 405240193,
        "nombre":  "Justin",
        "primer_apellido": "Hernandez",
        "segundo_apellido":"Hidalgo",
@@ -73,6 +82,7 @@
     },
     {
         "id": 10,
+        "cedula": 608760456,
        "nombre":  "Belen",
        "primer_apellido": "Camacho",
        "segundo_apellido":"Mora",
@@ -81,6 +91,7 @@
     },
     {
         "id": 11,
+        "cedula": 702230444,
        "nombre":  "Julieth",
        "primer_apellido": "Madrigal",
        "segundo_apellido":"Soto",
@@ -89,6 +100,7 @@
     },
     {
         "id": 12,
+        "cedula": 305020466,
        "nombre":  "Heiner",
        "primer_apellido": "Jimenez",
        "segundo_apellido":"Sibaja",
@@ -97,6 +109,7 @@
     },
     {
         "id": 13,
+        "cedula": 601120099,
        "nombre":  "Heylin",
        "primer_apellido": "Quesada",
        "segundo_apellido":"Cordoba",
@@ -105,6 +118,7 @@
     },
     {
         "id": 14,
+        "cedula": 106330202,
        "nombre":  "Andres",
        "primer_apellido": "Fernandez",
        "segundo_apellido":"Cubillo",
@@ -113,6 +127,7 @@
     },
     {
         "id": 15,
+        "cedula": 706430511,
        "nombre":  "Andrea",
        "primer_apellido": "Perera",
        "segundo_apellido":"Peraza",
@@ -121,6 +136,7 @@
     },
     {
         "id": 16,
+        "cedula": 202000362,
        "nombre":  "Fabian",
        "primer_apellido": "Benavidez",
        "segundo_apellido":"Soro",
@@ -129,6 +145,7 @@
     },
     {
         "id": 17,
+        "cedula": 401480152,
        "nombre":  "Michelle",
        "primer_apellido": "Alpizar",
        "segundo_apellido":"Brenes",
@@ -137,6 +154,7 @@
     },
     {
         "id": 18,
+        "cedula": 101790810,
        "nombre":  "Kattya",
        "primer_apellido": "Monge",
        "segundo_apellido":"Roman",
@@ -145,6 +163,7 @@
     },
     {
         "id": 19,
+        "cedula": 502230218,
        "nombre":  "Jeikel",
        "primer_apellido": "Cruz",
        "segundo_apellido":"Vega",
@@ -153,6 +172,7 @@
     },
     {
         "id": 20,
+        "cedula": 302550431,
        "nombre":  "Yorleny",
        "primer_apellido": "Mendez",
        "segundo_apellido":"Vargas",
