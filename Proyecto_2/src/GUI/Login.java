@@ -45,7 +45,7 @@ public class Login extends javax.swing.JFrame {
                     String jsonUsername = (String) cliente.get("nombre");
 
                     if (username.equals(jsonUsername)) {
-                        return true; // Las credenciales son válidas para clientes
+                        return true; // The credentials are valid for customers
                     }
                 }
             } catch (Exception e) {
@@ -53,7 +53,7 @@ public class Login extends javax.swing.JFrame {
             }
         }
 
-        return false; // Las credenciales no son válidas
+        return false; // Credentials are not valid
     }
 
     public String getNombreUsuario() {

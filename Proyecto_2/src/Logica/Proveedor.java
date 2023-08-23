@@ -178,7 +178,7 @@ public class Proveedor {
                 fileWriter.close();
             }
         } catch (IOException | ParseException e) {
-            e.printStackTrace(); // Imprime detalles de la excepción para depuración
+            e.printStackTrace(); // Print exception details for debugging
         }
     }
     

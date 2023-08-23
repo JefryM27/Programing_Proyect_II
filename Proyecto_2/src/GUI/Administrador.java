@@ -1804,11 +1804,7 @@ public final class Administrador extends javax.swing.JFrame {
     private void txtNombreProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreProveedorKeyTyped
         
         String textoActual = txtNombreProveedor.getText();
-
-        
-        char caracterIngresado = evt.getKeyChar();
-
-      
+        char caracterIngresado = evt.getKeyChar();      
         if (!Character.isLetter(caracterIngresado) && caracterIngresado != KeyEvent.VK_BACK_SPACE && caracterIngresado != KeyEvent.VK_DELETE) {
             
             JOptionPane.showMessageDialog(this, "Solo se permiten letras en este campo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
@@ -1829,12 +1825,9 @@ public final class Administrador extends javax.swing.JFrame {
 
     private void txtCorreoProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoProveedorKeyTyped
         char caracter = evt.getKeyChar();
-
-        
         if (!Character.isLetterOrDigit(caracter) && caracter != '@' && caracter != '.' && caracter != '_') {
             
             javax.swing.JOptionPane.showMessageDialog(this, "Caracter no válido ingresado", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
-
             
             evt.consume();
         }
