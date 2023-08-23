@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package GUI;
 
 import java.io.*;
@@ -15,7 +12,7 @@ import org.json.simple.parser.*;
  * @author Bravo
  */
 public class Login extends javax.swing.JFrame {
-
+    //we write the administrators and assign 3 valid passwords for it and with the Arrays.asList we convert the array to a list
     private final String CLIENTES_JSON_FILE = "cliente.json";
     private final List<String> nombresAdministradores = Arrays.asList("Carlos", "Jefry", "Johana", "Alisson", "Jose", "Cristopher");
     private final List<String> contraseñasAdministradores = Arrays.asList("ADMINPASS1", "ADMINPASS2", "ADMINPASS3");
@@ -42,7 +39,7 @@ public class Login extends javax.swing.JFrame {
                 //Create a json object with a array where we get the client name
                 for (Object obj : clientesArray) {
                     JSONObject cliente = (JSONObject) obj;
-                    String jsonUsername = (String) cliente.get("nombre");
+                    String jsonUsername = (String) cliente.get("nombre");// get the name of the json
 
                     if (username.equals(jsonUsername)) {
                         return true; // The credentials are valid for customers

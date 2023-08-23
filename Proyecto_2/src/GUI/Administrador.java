@@ -2,11 +2,9 @@ package GUI;
 
 import Logica.*;
 import java.awt.event.KeyEvent;
-import java.io.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import org.json.simple.*;
-import org.json.simple.parser.*;
+
 
 /**
  *
@@ -87,7 +85,8 @@ public final class Administrador extends javax.swing.JFrame {
             producto.actualizarTabla((DefaultTableModel) tblProducto.getModel(), subcategoriaSeleccionada);
         }
     }
-
+    
+    //here we remove the items and replace with the new items asignaded
     private void actualizarComboSubcategorias(String categoria) {
         comboSubcategorias.removeAllItems();
         switch (categoria) {
@@ -110,13 +109,14 @@ public final class Administrador extends javax.swing.JFrame {
                 break;
         }
     }
-
+    //allows you to add items (subcategories) to a combo box component.
     private void agregarSubcategoriaItems(String... items) {
         for (String item : items) {
             comboSubcategorias.addItem(item);
         }
     }
-
+    /*is responsible for loading and displaying products related to a specific subcategory.
+    It uses the table model and the Product instance to achieve this.*/
     private void cargarProductos(String subcategoria) {
         DefaultTableModel modeloTabla = (DefaultTableModel) tblProducto.getModel();
         Producto productoTabla = new Producto(this);

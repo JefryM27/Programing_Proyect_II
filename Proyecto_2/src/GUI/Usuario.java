@@ -147,13 +147,13 @@ public class Usuario extends javax.swing.JFrame {
         scrollCarrito = new javax.swing.JScrollPane();
         tblCarrito = new javax.swing.JTable();
         btnFinalizar = new javax.swing.JButton();
-        btnGuardarCompra = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         txtSubtotal = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        btnGuardarCompra = new javax.swing.JButton();
         comboCategorias = new javax.swing.JComboBox<>();
         scrollProductos = new javax.swing.JScrollPane();
         jPProductos = new javax.swing.JPanel();
@@ -251,17 +251,6 @@ public class Usuario extends javax.swing.JFrame {
             }
         });
 
-        btnGuardarCompra.setBackground(new java.awt.Color(255, 255, 255));
-        btnGuardarCompra.setForeground(new java.awt.Color(255, 255, 255));
-        btnGuardarCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondos/GuardarCompra.png"))); // NOI18N
-        btnGuardarCompra.setText("Guardar Compra");
-        btnGuardarCompra.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnGuardarCompra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarCompraActionPerformed(evt);
-            }
-        });
-
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
         jLabel3.setText("Subtotal: ");
@@ -287,6 +276,17 @@ public class Usuario extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Subtotal:");
 
+        btnGuardarCompra.setBackground(new java.awt.Color(255, 255, 255));
+        btnGuardarCompra.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondos/GuardarCompra.png"))); // NOI18N
+        btnGuardarCompra.setText("Guardar Compra");
+        btnGuardarCompra.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnGuardarCompra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarCompraActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout JpCarrito1Layout = new javax.swing.GroupLayout(JpCarrito1);
         JpCarrito1.setLayout(JpCarrito1Layout);
         JpCarrito1Layout.setHorizontalGroup(
@@ -299,9 +299,9 @@ public class Usuario extends javax.swing.JFrame {
                             .addComponent(btnEliminarCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(35, 35, 35)
-                        .addGroup(JpCarrito1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnGuardarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(JpCarrito1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnGuardarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(36, 36, 36)
                         .addGroup(JpCarrito1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnFinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -336,8 +336,8 @@ public class Usuario extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JpCarrito1Layout.createSequentialGroup()
                         .addGroup(JpCarrito1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnEliminarCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnGuardarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnFinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                            .addComponent(btnFinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(btnGuardarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(JpCarrito1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(JpCarrito1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -420,11 +420,11 @@ public class Usuario extends javax.swing.JFrame {
                     .addGroup(JpCategorias1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(scrollProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 1047, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(65, 65, 65)
                         .addGroup(JpCategorias1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(JpCarrito1, javax.swing.GroupLayout.PREFERRED_SIZE, 448, Short.MAX_VALUE)
                             .addComponent(jScrollPane1))))
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         JpCategorias1Layout.setVerticalGroup(
             JpCategorias1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
