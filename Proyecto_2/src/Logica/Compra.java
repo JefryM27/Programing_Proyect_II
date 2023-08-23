@@ -113,14 +113,11 @@ public class Compra {
     // Method to save a purchase in the purchases JSON file
     public void guardarCompra(Compra nuevaCompra) {
         try {
-            // Check if the JSON file exists, if not, create a new one
-            File archivoJSON = new File("compra.json");
-
-            // Read the JSON file for purchases
+            // Leer el archivo JSON de compras
             JSONParser parser = new JSONParser();
-            JSONArray comprasArray = (JSONArray) parser.parse(new FileReader(archivoJSON));
+            JSONArray comprasArray = (JSONArray) parser.parse(new FileReader("compra.json"));
 
-            // Create the JSON object of the new purchase
+            // Crear el objeto JSON de la nueva compra
             JSONObject compraJSON = new JSONObject();
             compraJSON.put("id", nuevaCompra.getId());
             compraJSON.put("fecha", nuevaCompra.getFecha());
@@ -128,30 +125,30 @@ public class Compra {
             compraJSON.put("id_cliente", nuevaCompra.getId_cliente());
             compraJSON.put("id_detallecompra", nuevaCompra.getId_detalleCompra());
 
-            // Add the new purchase to the purchases array
+            // Agregar la nueva compra al array de compras
             comprasArray.add(compraJSON);
 
-            // Write the updated array of purchases to the purchases JSON file
+            // Escribir el array actualizado de compras en el archivo JSON de compras
             FileWriter fileWriter = new FileWriter("compra.json");
             fileWriter.write(comprasArray.toJSONString());
             fileWriter.flush();
             fileWriter.close();
-            // Exception handling in case of error reading the JSON file or parsing its content.
+            // Manejo de excepciones en caso de error al leer el archivo JSON o analizar su contenido.
         } catch (IOException | ParseException e) {
-            e.printStackTrace(); // Print the exception trace for debugging.
+            e.printStackTrace(); // Imprimir la traza de la excepción para depuración.
         }
     }
 
     public void actualizarTabla(DefaultTableModel modeloTabla) {
         try {
-            // Read the JSON file for purchases
+            // Leer el archivo JSON de compras
             JSONParser parser = new JSONParser();
             JSONArray comprasArray = (JSONArray) parser.parse(new FileReader("compra.json"));
 
-            // Clear the table before adding the new data
+            // Limpiar la tabla antes de agregar los nuevos datos
             modeloTabla.setRowCount(0);
 
-            // Add the purchases to the table model
+            // Agregar las compras a la tabla
             for (Object obj : comprasArray) {
                 JSONObject compraJSON = (JSONObject) obj;
                 int IdCompra = Integer.parseInt(compraJSON.get("id").toString());
@@ -163,9 +160,43 @@ public class Compra {
                     modeloTabla.addRow(new Object[]{IdCompra, Fecha, MontoTotal, IdCliente, IdDetalleCompra});
                 }
             }
-            // Exception handling in case of error reading the JSON file or parsing its content
+            // Manejo de excepciones en caso de error al leer el archivo JSON o analizar su contenido.
         } catch (IOException | ParseException e) {
-            e.printStackTrace(); // Print the exception trace for debugging.
+            e.printStackTrace(); // Imprimir la traza de la excepción para depuración.
+        }
+    }
+
+    public void editarCompra(int idCompra, String fecha, double montoTotal, int idCliente, int idDetalleCompra) {
+        try {
+            JSONParser parser = new JSONParser();
+            JSONArray comprasArray = (JSONArray) parser.parse(new FileReader("compra.json"));
+
+            for (Object obj : comprasArray) {
+                JSONObject compraJSON = (JSONObject) obj;
+                int compraId = Integer.parseInt(compraJSON.get("id").toString());
+                if (compraId == idCompra) {
+                    if (!fecha.isEmpty()) {
+                        compraJSON.put("fecha", fecha);
+                    }
+                    if (montoTotal >= 0) {
+                        compraJSON.put("montoTotal", montoTotal);
+                    }
+                    if (idCliente != 0) {
+                        compraJSON.put("id_cliente", idCliente);
+                    }
+                    if (idDetalleCompra != 0) {
+                        compraJSON.put("id_detallecompra", idDetalleCompra);
+                    }
+                    break;
+                }
+            }
+
+            FileWriter fileWriter = new FileWriter("compra.json");
+            fileWriter.write(comprasArray.toJSONString());
+            fileWriter.flush();
+            fileWriter.close();
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
         }
     }
 }

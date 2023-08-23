@@ -132,7 +132,8 @@ public class DetalleCompra {
                 int IdDetalleCompra = Integer.parseInt(detalleCompraJSON.get("id").toString());
                 if (IdDetalleCompra != 0) {
                     int Cantidad = Integer.parseInt(detalleCompraJSON.get("cantidad").toString());
-                    double Monto = Double.parseDouble(detalleCompraJSON.get("monto").toString());
+                    String montoTotalStr = detalleCompraJSON.getOrDefault("monto", "0").toString();
+                    double Monto = Double.parseDouble(montoTotalStr);
                     String IdProducto = detalleCompraJSON.getOrDefault("idProducto", "").toString();
                     int IdCompra = Integer.parseInt(detalleCompraJSON.get("idCompra").toString());
                     modeloTabla.addRow(new Object[]{IdDetalleCompra, Cantidad, Monto, IdProducto, IdCompra});
@@ -140,7 +141,7 @@ public class DetalleCompra {
             }
             // Exception handling in case of error reading the JSON file or parsing its content
         } catch (IOException | ParseException e) {
-            e.printStackTrace(); // Print the exception trace for debugging.
+            e.printStackTrace(); // Print the exception trace for debugging.    
         }
     }
 
